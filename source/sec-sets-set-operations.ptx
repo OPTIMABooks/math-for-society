@@ -49,7 +49,10 @@
 		<title>Set Notation</title>
 		<p>
 			A set can be defined by describing the contents, or by listing the elements of the set, enclosed in curly brackets. Sets are symbolically represented using capital letters, and braces { } are used to enclose the set's elements. 
-			The method of listing the elements of a set in braces is called <term>roster notation</term>. A second method uses <term>set-builder notation</term>, where braces and a vertical line | (read <q>such that</q>) describes the set's contents.
+			The method of listing the elements of a set in braces is called <term>roster notation</term>. A second method uses <term>set-builder notation</term>, where braces and a vertical line | (read <q>such that</q>) describe the set's contents.
+		</p>
+		<p>
+			To say that an object <m>x</m> is an element of a set <m>A</m>, we write <m>x \in A</m>; if it is not, we write <m>x \notin A</m>. For example, <m>4 \in \{0,2,4,6,8\}</m>, but <m>5 \notin \{0,2,4,6,8\}</m>.
 		</p>
 		<example>
 			<p>
@@ -57,12 +60,12 @@
 				<ol marker="a)">
 					<li>
 						<p>
-							The set of all even numbers.
+							The even digits.
 						</p>
 					</li>
 					<li>
 						<p>
-							The seasons of the year.
+							The colors of the rainbow.
 						</p>
 					</li>
 				</ol>
@@ -87,12 +90,12 @@
 				<ol marker="a)">
 					<li>
 						<p>
-							<m>S = \{x \mid x \text{ is a student at WWU}\}</m>
+							<m>E = \{x \mid x \text{ is an even digit}\}</m>
 						</p>
 					</li>
 					<li>
 						<p>
-							<m>E = \{x \mid 2x \text{ is a whole number} \}</m>
+							<m>C = \{x \mid x \text{ is a color of the rainbow}\}</m>
 						</p>
 					</li>
 				</ol>
@@ -269,7 +272,7 @@
 	  	<idx><h>sets</h><h>intersection</h></idx>
 	  	<statement>
 	  		<p>
-					The <term>intersection</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, the set containing all elements that are in both <m>A</m> and <m>B</m>.  That is,
+					The <term>intersection</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A \cap B</m>, is the set containing all elements that are in both <m>A</m> and <m>B</m>.  That is,
 					<me>
 						A \cap B = \{x\mid x\in A \text{ AND } x\in B \}.
 					</me>
@@ -277,14 +280,14 @@
 	  	</statement>
 	  </definition>
 		<p>
-			The set of all friends that you and your roommate have invited is called the <term>union</term>. The union of two sets contains all the elements contained in either set (or both). To be in the union of set <m>A</m> and set <m>B</m>, an element must be contained in just set <m>A</m>, just set <m>B</m>, <alert>or</alert> in the intersection of sets <m>A</m> and <m>B</m>. Notice that in this case that the <q>or</q> is <alert>inclusive</alert>.
+			The set of all friends that you and your roommate have invited is called the <term>union</term>. The union of two sets contains all the elements contained in either set (or both). To be in the union of set <m>A</m> and set <m>B</m>, an element must be contained in just set <m>A</m>, just set <m>B</m>, <alert>or</alert> in the intersection of sets <m>A</m> and <m>B</m>. Notice that in this case the <q>or</q> is <alert>inclusive</alert>.
 		</p>
 		<definition xml:id="def_union">
 	  	<idx>union</idx>
 	  	<idx><h>sets</h><h>union</h></idx>
 	  	<statement>
 	  		<p>
-					The <term>union</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A\cup B</m>, the set containing all elements that are in <m>A</m> or in <m>B</m> (or both). That is,
+					The <term>union</term> of two sets, <m>A</m> and <m>B</m>, denoted <m>A\cup B</m>, is the set containing all elements that are in <m>A</m> or in <m>B</m> (or both). That is,
 					<me>
 						A \cup B = \{x\mid x\in A \text{ OR } x\in B \}.
 					</me>
@@ -292,7 +295,7 @@
 	  	</statement>
 	  </definition>
 		<p>
-			What about the people who were <em>not</em> invited to the party and showed up anyway? They are not elements of your set of invited friends. Nor are they an element of your roommate's set of invited friends. These uninvited party crashers are the <term>complement</term> to your set of invited friends. The complement of a set <em>A</em> contains everything that is <em>not</em> in the set <m>A</m>. To be in the complement of set <m>A</m>, an element <alert>cannot</alert> be in set <m>A</m>, but it will be an element of the universal set.
+			What about the people who were <em>not</em> invited to the party and showed up anyway? They are not elements of your set of invited friends. Nor are they elements of your roommate's set of invited friends. These uninvited party crashers are the <term>complement</term> to your set of invited friends. The complement of a set <em>A</em> contains everything that is <em>not</em> in the set <m>A</m>. To be in the complement of set <m>A</m>, an element <alert>cannot</alert> be in set <m>A</m>, but it will be an element of the universal set.
 		</p>
 		<definition xml:id="def_complement">
   		<idx>complement</idx>
@@ -301,7 +304,7 @@
   			<p>
 					The <term>complement</term> of a set <m>A</m> in a universal set <m>U</m> is the set <m>A^C</m> consisting of all elements in <m>U</m> that are not in <m>A</m>. That is,
 					<me>
-						A^{C} = \{x\in U\mid x\ \text{is NOT in } A \}.
+						A^{C} = \{x\in U\mid x \notin A \}.
 					</me>
 				</p>
 				<p>
