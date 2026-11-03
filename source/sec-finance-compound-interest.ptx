@@ -17,6 +17,16 @@
           Determine the present value of a lump sum of money.
         </p>
       </li>
+      <li>
+        <p>
+          Solve for the time needed for an investment to reach a goal.
+        </p>
+      </li>
+      <li>
+        <p>
+          Compute and compare effective rates (APY).
+        </p>
+      </li>
     </ul>
   </objectives>
 
@@ -28,14 +38,14 @@
   <subsection>
     <title>APR <mdash/> Annual Percentage Rate</title>
     <p>
-      Interest rates are usually stated as an <term>annual percentage rate (APR)</term> <mdash/> the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of time periods.
-      The APR divided by the number of time periods is called the <term>periodic interest rate</term>.
+      Interest rates are usually stated as an <term>annual percentage rate (APR)</term> <mdash/> the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of periods per year.
+      The APR divided by the number of periods per year is called the <term>periodic interest rate</term>.
     </p>
     <p>
       Note: The Federal Truth in Lending Act requires that every consumer be given the true APR, which includes the interest and any fees.
     </p>
     <p>
-      For example, a 6% APR paid monthly, would be divided by 12, because you would get one twelfth of the rate per month, which is a periodic interest rate of half a percent per month.
+      For example, a 6% APR paid monthly would be divided by 12, because you would get one-twelfth of the rate per month, which is a periodic interest rate of half a percent per month.
     </p>
   
     <p>
@@ -58,27 +68,27 @@
       </statement>
       <solution>
       <p>
-        The principal is <m>P = \$1000</m>. Since interest is being paid semi-annually (twice a year), the 4%  will be divided into two 2% payments.
+        The principal is <m>P = \$1{,}000</m>. Since interest is being paid semi-annually (twice a year), the 4% will be divided into two 2% payments.
 
         <me>r=\frac{0.04}{2}=0.02.</me>
       </p>
       <p>
-        Four years compounded twice a year gives <m>t=4\cdot 2=8</m> half-years. Thus
+        Four years with two interest payments per year gives <m>t=4\cdot 2=8</m> half-years. Thus
       </p>
       <p>
         <md>
           <mrow>I\amp=Prt</mrow>
-          <mrow>\amp=\$1000(0.02)(8)</mrow>
+          <mrow>\amp=\$1{,}000(0.02)(8)</mrow>
           <mrow>\amp=\$160.</mrow>
         </md>
       </p>
       <p>
-        You will earn $160 in interest over the four years. The future value of the loan is therefore
+        You will earn $160 in interest over the four years. The future value of the bond is therefore
       </p>
       <p>
         <md alignment="align">
           <mrow>A\amp=P+I</mrow>
-          <mrow>\amp=\$1000+\$160</mrow>
+          <mrow>\amp=\$1{,}000+\$160</mrow>
           <mrow>\amp=\$1{,}160.</mrow>
         </md>
       </p>
@@ -88,13 +98,13 @@
   <subsection>
     <title>Compound Interest</title>
     <p>
-      In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <alert>compounding</alert>. We will develop the mathematical formula for compound interest and then show the equivalent spreadsheet function.
+      In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <term>compounding</term>. We will develop the mathematical formula for compound interest.
     </p>
     <p>
-      Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly. How will our money grow?
+      Suppose that we deposit $1,000 in a bank account offering 3% interest, compounded monthly. How will our money grow?
     </p>
     <p>
-      The 3% interest is an annual percentage rate (APR) <mdash></mdash> the total interest to be paid during the year. Since interest is being paid monthly, each month, we will earn <m>\frac{0.03}{12}=0.0025</m> per month.
+      The 3% interest is an annual percentage rate (APR) <mdash></mdash> the total interest to be paid during the year. Since interest is paid monthly, each month we earn <m>\frac{0.03}{12}=0.0025</m>, or 0.25%, of our balance.
     </p>
     <p>
       In the first month,
@@ -102,27 +112,27 @@
   
     <p>
       <md>
-      <mrow>P\amp= \$1000</mrow>
+      <mrow>P\amp= \$1{,}000</mrow>
       <mrow>r\amp=0.0025</mrow>
-      <mrow>I\amp= \$1000 (0.0025)= \$2.50</mrow>
-      <mrow>A\amp= \$1000 + \$2.50 = \$1002.50</mrow>
+      <mrow>I\amp= \$1{,}000 (0.0025)= \$2.50</mrow>
+      <mrow>A\amp= \$1{,}000 + \$2.50 = \$1{,}002.50</mrow>
       </md>
     </p>
     <p>
-      In the first month, we will earn $2.50 in interest, raising our account balance to $1002.50.
+      In the first month, we will earn $2.50 in interest, raising our account balance to $1,002.50.
     </p>
     <p>
       In the second month,
     </p>
     <p>
       <md>
-        <mrow>P\amp=\$1002.50</mrow>
-        <mrow>I\amp=\$1002.50(0.0025)=\$2.51 \text{ (rounded)}</mrow>
-        <mrow>A\amp=\$1002.50+\$2.51=\$1005.01</mrow>
+        <mrow>P\amp=\$1{,}002.50</mrow>
+        <mrow>I\amp=\$1{,}002.50(0.0025)=\$2.51 \text{ (rounded)}</mrow>
+        <mrow>A\amp=\$1{,}002.50+\$2.51=\$1{,}005.01</mrow>
       </md>
     </p>
     <p>
-      Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original $1000 we deposited, but we also earned interest on the $2.50 of interest we earned the first month. This is the key advantage that compounding gives us.
+      Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original $1,000 we deposited, but we also earned interest on the $2.50 of interest we earned the first month. This is the key advantage that compounding gives us.
     </p>
     <p>
       Calculating out a few more months in a table or a spreadsheet we have:
@@ -132,107 +142,107 @@
         <cell>Month</cell>
         <cell>Starting balance</cell>
         <cell>Interest earned</cell>
-        <cell>Ending Balance</cell>
+        <cell>Ending balance</cell>
       </row>
       <row>
         <cell>1</cell>
-        <cell>1000.00</cell>
+        <cell>1,000.00</cell>
         <cell>2.50</cell>
-        <cell>1002.50</cell>
+        <cell>1,002.50</cell>
       </row>
       <row>
         <cell>2</cell>
-        <cell>1002.50</cell>
+        <cell>1,002.50</cell>
         <cell>2.51</cell>
-        <cell>1005.01</cell>
+        <cell>1,005.01</cell>
       </row>
       <row>
         <cell>3</cell>
-        <cell>1005.01</cell>
+        <cell>1,005.01</cell>
         <cell>2.51</cell>
-        <cell>1007.52</cell>
+        <cell>1,007.52</cell>
       </row>
       <row>
         <cell>4</cell>
-        <cell>1007.52</cell>
+        <cell>1,007.52</cell>
         <cell>2.52</cell>
-        <cell>1010.04</cell>
+        <cell>1,010.04</cell>
       </row>
       <row>
         <cell>5</cell>
-        <cell>1010.04</cell>
+        <cell>1,010.04</cell>
         <cell>2.53</cell>
-        <cell>1012.57</cell>
+        <cell>1,012.57</cell>
       </row>
       <row>
         <cell>6</cell>
-        <cell>1012.57</cell>
+        <cell>1,012.57</cell>
         <cell>2.53</cell>
-        <cell>1015.10</cell>
+        <cell>1,015.10</cell>
       </row>
       <row>
         <cell>7</cell>
-        <cell>1015.10</cell>
+        <cell>1,015.10</cell>
         <cell>2.54</cell>
-        <cell>1017.64</cell>
+        <cell>1,017.64</cell>
       </row>
       <row>
         <cell>8</cell>
-        <cell>1017.64</cell>
+        <cell>1,017.64</cell>
         <cell>2.54</cell>
-        <cell>1020.18</cell>
+        <cell>1,020.18</cell>
       </row>
       <row>
         <cell>9</cell>
-        <cell>1020.18</cell>
+        <cell>1,020.18</cell>
         <cell>2.55</cell>
-        <cell>1022.73</cell>
+        <cell>1,022.73</cell>
       </row>
       <row>
         <cell>10</cell>
-        <cell>1022.73</cell>
+        <cell>1,022.73</cell>
         <cell>2.56</cell>
-        <cell>1025.29</cell>
+        <cell>1,025.29</cell>
       </row>
       <row>
         <cell>11</cell>
-        <cell>1025.29</cell>
+        <cell>1,025.29</cell>
         <cell>2.56</cell>
-        <cell>1027.85</cell>
+        <cell>1,027.85</cell>
       </row>
       <row>
         <cell>12</cell>
-        <cell>1027.85</cell>
-        <cell>2.56</cell>
-        <cell>1030.42</cell>
+        <cell>1,027.85</cell>
+        <cell>2.57</cell>
+        <cell>1,030.42</cell>
       </row>
     </tabular>
     <p>
       To find an equation to represent this, we will go through a few months to see the pattern:
     </p>
     <p>
-      Initial Amount: <m>P=\$1000</m>
+      Initial Amount: <m>P=\$1{,}000</m>
     </p>
     <p>
-      <m>1^{\text{st}} \text{ Month } A=1.0025(\$1000)</m>
+      <m>1^{\text{st}} \text{ Month } A=1.0025(\$1{,}000)</m>
     </p>
     <p>
-      <m>2^{\text{nd}} \text{ Month } A=1.0025(1.0025(\$1000))=1.0025^{2}(\$1000)</m>
+      <m>2^{\text{nd}} \text{ Month } A=1.0025(1.0025(\$1{,}000))=1.0025^{2}(\$1{,}000)</m>
     </p>
     <p>
-      <m>3^{\text{rd}} \text{ Month } A=1.0025(1.0025^{2}(\$1000))=1.0025^{3}(\$1000)</m>
+      <m>3^{\text{rd}} \text{ Month } A=1.0025(1.0025^{2}(\$1{,}000))=1.0025^{3}(\$1{,}000)</m>
     </p>
     <p>
-      <m>4^{\text{th}} \text{ Month } A=1.0025(1.0025^{3}(\$1000))=1.0025^{4}(\$1000)</m>
+      <m>4^{\text{th}} \text{ Month } A=1.0025(1.0025^{3}(\$1{,}000))=1.0025^{4}(\$1{,}000)</m>
     </p>
     <p>
       Observing a pattern, we could conclude
     </p>
     <p>
-      <m>n^{\text{th}} \text{ Month } A=1.0025^{n}(\$1000).</m>
+      <m>n^{\text{th}} \text{ Month } A=1.0025^{n}(\$1{,}000).</m>
     </p>
     <p>
-      Notice that the $1000 in the equation represents P, the starting amount. We found 1.0025 by adding one to the periodic interest rate, which is the annual rate divided by 12, since we were compounding monthly. Generalizing our result, we could write
+      Notice that the $1,000 in the equation represents <m>P</m>, the starting amount. We found 1.0025 by adding one to the periodic interest rate, which is the annual rate divided by 12, since we were compounding monthly. Generalizing our result, we could write
     </p>
 	<assemblage>
 		<title>Compound Interest</title>
@@ -283,28 +293,28 @@
 		If the compounding is done daily, <m>n = 365</m>.
 	</p>
 	<p>
-		The most important thing to remember about using this formula is that it assumes that we put money in the account <alert><insert>once</insert></alert> and let it sit there earning interest.
+		The most important thing to remember about using this formula is that it assumes that we put money in the account <em>once</em> and let it sit there earning interest.
 	</p>
   <example xml:id="ex_future_value_compound_interest">
     <statement>
       <p>
-        If $3500 is invested at 9% compounded monthly, what will the future value be in four years?
+        If $3,500 is invested at 9% compounded monthly, what will the future value be in four years?
       </p>
     </statement>
     <solution>
       <p>
-        In this example we are given values of <m>P=\$3500</m>, <m>r = 0.09</m>, <m>n = 12</m>, and <m>t = 4</m>. We use these values to compute the future value <m>A</m>:
+        In this example we are given values of <m>P=\$3{,}500</m>, <m>r = 0.09</m>, <m>n = 12</m>, and <m>t = 4</m>. We use these values to compute the future value <m>A</m>:
       </p>
       <p>
         <md>
           <mrow> A =\amp P\left(1+\frac{r}{n}\right)^{nt} </mrow>
-          <mrow> =\amp \$3500\left(1+\frac{0.09}{12}\right)^{12\cdot 4} </mrow>
-          <mrow> =\amp \$3500(1+0.0075)^{48}</mrow>
-          <mrow> =\amp \$5009.92.</mrow>
+          <mrow> =\amp \$3{,}500\left(1+\frac{0.09}{12}\right)^{12\cdot 4} </mrow>
+          <mrow> =\amp \$3{,}500(1+0.0075)^{48}</mrow>
+          <mrow> =\amp \$5{,}009.92.</mrow>
         </md>
       </p>
       <p>
-        Thus, $3500 invested at 9% compounded monthly	will accumulate to $5009.92  in four years.
+        Thus, $3,500 invested at 9% compounded monthly will accumulate to $5,009.92 in four years.
       </p>
     </solution>
     </example>
@@ -316,18 +326,18 @@
       </statement>
       <solution>
         <p>
-          In this example we know the future value, but need to find the principal.  That is, <m>A=\$5000</m>, <m>r = 0.09</m>, <m>n = 365</m>, and <m>t = 5</m>, but <m>P</m> is unknown. 
+          In this example we know the future value, but need to find the principal.  That is, <m>A=\$5{,}000</m>, <m>r = 0.09</m>, <m>n = 365</m>, and <m>t = 5</m>, but <m>P</m> is unknown. 
         </p>
         <p>
           <md>
             <mrow> A =\amp P\left(1+\frac{r}{n}\right)^{nt} </mrow>
-            <mrow> \$5000 =\amp P\left(1+\frac{0.09}{365}\right)^{365\cdot 5} </mrow>
-            <mrow> \$5000 =\amp P(1.00024658)^{1825}</mrow>
-            <mrow> \$5000 =\amp P(1.56822519).</mrow>
+            <mrow> \$5{,}000 =\amp P\left(1+\frac{0.09}{365}\right)^{365\cdot 5} </mrow>
+            <mrow> \$5{,}000 =\amp P(1.00024658)^{1825}</mrow>
+            <mrow> \$5{,}000 =\amp P(1.56822519).</mrow>
           </md>
           Dividing to solve for <m>P</m> yields
           <me>
-            P = \frac{\$5000}{1.56822519} = \$3188.32
+            P = \frac{\$5{,}000}{1.56822519} = \$3{,}188.32.
           </me>
         </p>
         <p>
@@ -346,24 +356,24 @@
         </statement>
         <solution>
           <p>
-            Note that here, are values are known except <m>t</m>.  That is, <m>A=\$6000</m>, <m>r = 0.04</m>, <m>n = 1</m>, and <m>P=\$4000</m>. 
+            Note that here, all values are known except <m>t</m>.  That is, <m>A=\$6{,}000</m>, <m>r = 0.04</m>, <m>n = 1</m>, and <m>P=\$4{,}000</m>. 
           </p>
           <p>
             <md>
               <mrow> A =\amp P\left(1+\frac{r}{n}\right)^{nt} </mrow>
-              <mrow> \$6000 =\amp \$4000\left(1+\frac{0.04}{1}\right)^{1\cdot t} </mrow>
-              <mrow> \$6000 =\amp \$4000(1.04)^{t}</mrow>
-              <mrow> \frac{\$6000}{\$4000} = 1.5 \amp= 1.04^t. </mrow>
+              <mrow> \$6{,}000 =\amp \$4{,}000\left(1+\frac{0.04}{1}\right)^{1\cdot t} </mrow>
+              <mrow> \$6{,}000 =\amp \$4{,}000(1.04)^{t}</mrow>
+              <mrow> \frac{\$6{,}000}{\$4{,}000} = 1.5 \amp= 1.04^t. </mrow>
             </md>
-            To solve for <m>t</m> in the exponent we must take the <m>log</m> of both sides:
+            To solve for <m>t</m> in the exponent we must take the logarithm of both sides:
             <md>
               <mrow> \log(1.5) =\amp \log(1.04^t) </mrow>
               <mrow> \log(1.5) =\amp t\log(1.04) </mrow>
-              <mrow> t =\amp \frac{\log(1.5)}{\log(1.04)} = 10.3380. </mrow>
+              <mrow> t =\amp \frac{\log(1.5)}{\log(1.04)} \approx 10.338. </mrow>
             </md>
           </p>
           <p>
-            It takes 10.33 years for $4000 to accumulate to $6000 if invested at 4% interest compounded annually.
+            It takes about 10.34 years for $4,000 to accumulate to $6,000 if invested at 4% interest compounded annually. Because interest is only added once a year, though, the balance first passes $6,000 when the interest is paid at the end of year 11.
           </p>
         </solution>
         </example>
@@ -371,7 +381,7 @@
   <subsection>
     <title>Comparing Simple and Compound Interest</title>
       <p>
-        Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.
+        Let us compare the growth of $3,000 invested at 6% simple interest with the growth of $3,000 invested at 6% compounded monthly. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.
       </p>
       <!-- Note: widths are set to make pdf look good, not as good for web version -->
       <sidebyside valign="bottom" widths="60% 36%" margins="0%">
@@ -379,7 +389,7 @@
         <row header="yes">
           <cell>Year</cell>
           <cell><line>Simple Interest</line><line>($15 per month)</line></cell>
-          <cell><line>Compound Interest (6% compounded</line><line>monthly or 0.5% each month</line></cell>
+          <cell><line>Compound Interest (6% compounded</line><line>monthly or 0.5% each month)</line></cell>
         </row>
         <row>
           <cell>0</cell>
@@ -423,7 +433,7 @@
         </row>
       </tabular>
       <image source="images/financial_math/comparing_interest.png">
-      <shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. The simple interest increases in a straight line; the compound interest curves up faster because it is an exponential function.</shortdescription>
+      <shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. Simple interest (dark blue diamonds) increases in a straight line from $3,000 to $9,300; compound interest (pink squares) curves upward, reaching about $24,000 at 35 years, because it grows exponentially.</shortdescription>
       </image>
     </sidebyside>
     </subsection>
@@ -450,8 +460,8 @@
           To find the percentage of the total that is interest, divide the amount of interest by the total amount of the future value.
         </p>
         <p>
-          <me>\frac{\$1{,}509.92}{5{,}009.92}\approx0.3014\text{ or } 30.1\%</me>.
-          That is, after 4 years 30.1% of the account balance is due to interest.
+          <me>\frac{\$1{,}509.92}{\$5{,}009.92}\approx 0.3014\text{, or } 30.1\%.</me>
+          That is, after 4 years, 30.1% of the account balance is due to interest.
         </p>
       </example>
     </subsection>
@@ -462,7 +472,7 @@
         Banks are required to state their interest rate in terms of an "effective yield" or "effective interest rate", for comparison purposes.  The effective rate is also called the <term>Annual Percentage Yield (APY)</term>. 
       </p>
       <p>
-        The <term>effective rate</term> is the interest rate compounded annually that would be equivalent to the stated rate and compounding periods.To examine several investments to see which has the best rate, we find and compare the effective rate for each investment. The next example shows how to calculate the effective rate. 
+        The <term>effective rate</term> is the interest rate compounded annually that would be equivalent to the stated rate and compounding periods. To examine several investments to see which has the best rate, we find and compare the effective rate for each investment. The next example shows how to calculate the effective rate. 
         <idx>effective rate</idx>
       </p>
       <example>
@@ -471,16 +481,16 @@
           If Bank B pays 7.25% interest compounded semiannually, what is the effective interest rate?  Which bank pays more interest?
         </p>
         <p>
-          <alert>Bank A:</alert> Suppose we deposit $1 in this bank and leave it for a year, we will get
+          <alert>Bank A:</alert> If we deposit $1 in this bank and leave it for a year, we will have
           <me>
-            1\left(1+\frac{0.072}{12}\right)^12 = 1.0744.
+            1\left(1+\frac{0.072}{12}\right)^{12} \approx 1.0744.
           </me>
-          In an account at Bank A, the interest earned is <m>\$1.0744-\$1.00 = \$0.0744</m> on an investment of $1. The <term>effective interest rate</term> (or APY) is 7.44% for this account.
+          In an account at Bank A, the interest earned is <m>\$1.0744-\$1.00 = \$0.0744</m> on an investment of $1. The effective interest rate (or APY) is 7.44% for this account.
         </p>
         <p>
           <alert>Bank B:</alert> The effective rate is calculated as 
           <me>
-            1\left(1+\frac{0.072}{2}\right)^2-1 = 0.0738.
+            1\left(1+\frac{0.0725}{2}\right)^2-1 \approx 0.0738.
           </me>
           The effective interest rate for this account is 7.38%.
         </p>
