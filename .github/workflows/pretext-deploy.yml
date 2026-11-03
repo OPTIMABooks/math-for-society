@@ -57,7 +57,10 @@ jobs:
         run: pretext --version
 
       - name: build deploy targets
-        run: pretext build --deploys --generate
+        # generated-assets/ isn't in git, so always rebuild latex-images from .cache/
+        run: |
+          pretext generate latex-image -t web
+          pretext build --deploys
 
       - name: run deploy
         run: pretext deploy --no-push

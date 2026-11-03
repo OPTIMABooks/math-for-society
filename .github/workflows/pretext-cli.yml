@@ -34,7 +34,10 @@ jobs:
                 minor="$(echo $version | cut -d '.' -f 2)"
                 if [ "$major" -ge 2 -a "$minor" -ge 5 ]; then
                     echo "PreTeXt version is 2.5 or greater; using new build command"
-                    pretext build --deploys --generate
+                    # generated-assets/ isn't in git, so always rebuild latex-images
+                    # from the committed .cache/ (no LaTeX run unless an image changed)
+                    pretext generate latex-image -t web
+                    pretext build --deploys
                 else
                     echo "PreTeXt version is less than 2.5, using old build command"
                     pretext build
