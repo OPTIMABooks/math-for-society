@@ -7,12 +7,12 @@
 		<ul>
 			<li>
 				<p>
-					Use set notation and understand the empty set
+					Use set notation and understand the empty set.
 				</p>
 			</li>
 			<li>
 				<p>
-					Determine the universal set for a given context
+					Determine the universal set for a given context.
 				</p>
 			</li>
 			<li>
@@ -22,7 +22,7 @@
 			</li>
 			<li>
 				<p>
-					Use Venn diagrams and set notation to illustrate the intersection, union and complements of sets
+					Use Venn diagrams and set notation to illustrate the intersection, union, and complements of sets.
 				</p>
 			</li>
 		</ul>
@@ -48,7 +48,7 @@
 	<subsection>
 		<title>Set Notation</title>
 		<p>
-			A set can be defined by describing the contents, or by listing the elements of the set, enclosed in curly brackets. Sets are symbolically represented using capital letters, and braces { } are used to enclose the set's elements. 
+			A set can be defined by describing its contents or by listing its elements. Sets are usually named with capital letters, and braces { } are used to enclose the set's elements. 
 			The method of listing the elements of a set in braces is called <term>roster notation</term>. A second method uses <term>set-builder notation</term>, where braces and a vertical line | (read <q>such that</q>) describe the set's contents.
 		</p>
 		<p>
@@ -80,13 +80,13 @@
 					</li>
 					<li>
 						<p>
-							<m>C = \{\text{red, orange, yellow, green, blue, purple} \}</m>
+							<m>C = \{\text{red, orange, yellow, green, blue, indigo, violet} \}</m>
 						</p>
 					</li>
 				</ol>
 			</p>
 			<p>
-				Set builder notation:
+				Set-builder notation:
 				<ol marker="a)">
 					<li>
 						<p>
@@ -104,7 +104,7 @@
 		<example>
 			<statement>
 			<p>
-				Julia, Keenan, Jae, and Colin took a test. They received the following scores: 70, 95, 85 and 70. Let <m>P</m> be the set of test takers and <m>S</m> be the set of test scores. List the elements of each set using set notation.
+				Julia, Keenan, Jae, and Colin took a test. They received the following scores: 70, 95, 85, and 70. Let <m>P</m> be the set of test takers and <m>S</m> be the set of test scores. List the elements of each set using roster notation.
 			</p>
 			</statement>
 			<solution>
@@ -114,7 +114,7 @@
 			</solution>
 		</example>
 		<p>
-			Sometimes a collection might not contain all the elements of a set.  For example, suppose Chris owns three Madonna albums.  While Chris's collection is a set, we can also say it is a subset of the larger set of all Madonna albums.
+			Sometimes a collection might not contain all the elements of a set.  For example, suppose Chris owns three Taylor Swift albums.  While Chris's collection is a set, we can also say it is a subset of the larger set of all Taylor Swift albums.
 		</p>
 		<definition xml:id="def-subset">
 			<statement>
@@ -154,12 +154,6 @@
 			It is possible to have a set with nothing in it. This set is called the <term>null set</term> or <term>empty set</term>. It is like going to the grocery store to buy your favorite foods and realizing you left your wallet at home. 
 			You walk away with an empty bag. The set of items that you bought at the grocery store would be written in set notation as <m>\emptyset</m>. The empty set is a subset of every set.
 		</p>
-		<p>
-			In applications of sets the elements that may be considered are often limited to some context, or <term>universe of discourse</term>. This context is called the <term>universal set</term> and is the set containing every possible element of the described context. Every set is thus a subset of the universal set. The universal set is often labeled with a capital letter <m>U</m>. 
-		</p>
-		<p>
-			When represented visually, the universal set is often illustrated by a rectangle labeled with a capital letter <m>U</m>. Subsets of the universal set are usually illustrated with circles for simplicity, but other shapes can be used. The visual representation of sets is further discussed in <xref text="title" ref="subsec-sets-Venn-diagrams"/>.
-		</p>
 		<definition>
 			<statement>
 				<p>
@@ -167,6 +161,12 @@
 				</p>
 			</statement>
 		</definition>
+		<p>
+			In applications of sets, the elements that may be considered are often limited to some context, or <term>universe of discourse</term>. This context is called the <term>universal set</term> and is the set containing every possible element of the described context. Every set is thus a subset of the universal set.
+		</p>
+		<p>
+			When represented visually, the universal set is often illustrated by a rectangle labeled with a capital letter <m>U</m>. Subsets of the universal set are usually illustrated with circles for simplicity, but other shapes can be used. The visual representation of sets is further discussed in <xref text="title" ref="subsec-sets-Venn-diagrams"/>.
+		</p>
 		<definition>
 			<statement>
 				<p>
@@ -176,10 +176,10 @@
 		</definition>
 		<example>
 			<p>
-				What contents of the universal set depends on context and is sometime subject to interpretation. Here are some examples.
+				What the universal set contains depends on context and is sometimes subject to interpretation. Here are some examples.
 			</p>
 			<p>
-			<ol marker="a.">
+			<ol marker="a)">
 				<li>
 					<sidebyside valign="middle" width="40%">
 						<p>
@@ -208,10 +208,10 @@
 				<li>
 					<sidebyside valign="middle" width="40%">
 						<p>
-							If you are wanting to create a group of your Facebook friends that are coworkers, the universal set would be all your Facebook friends and the group of coworkers would be a subset of the universal set.
+							If you want to create a group of your Facebook friends who are coworkers, the universal set would be all your Facebook friends and the group of coworkers would be a subset of the universal set.
 						</p>
 						<image xml:id="UV-set-ex2" width="100%">
-							<shortdescription>A rectangle is drawn for the universal set U, labeled "All your facebook friends"; there is a circle inside the rectangle, labeled "Coworkers".</shortdescription>
+							<shortdescription>A rectangle is drawn for the universal set U, labeled "All your Facebook friends"; there is a circle inside the rectangle, labeled "Coworkers".</shortdescription>
 							<latex-image>
 								\begin{tikzpicture}[font=\sffamily]
 									% Define the universe as a rectangle
@@ -220,10 +220,10 @@
 									% Add label for the universe inside the box
 									\node[align=center] at (4.65,2) {U = All your \\ Facebook \\ friends};
 							
-									% Draw the yellow circle for research-relevant books
+									% Draw the yellow circle for the subset
 									\filldraw[fill=yellow!70, draw=black, thick] (1.75,2) circle (1.5);
 							
-									% Add label for the research books - on three lines
+									% Add label for the subset
 									\node[align=center] at (1.75,2) {Coworkers};
 								\end{tikzpicture}
 							</latex-image>
@@ -233,10 +233,10 @@
 				<li>
 					<sidebyside valign="middle" width="40%">
 						<p>
-							If you are working with sets of numbers, the universal set might be all whole numbers, and all prime numbers would be a subset of the universal set.
+							If you are working with sets of numbers, the universal set might be all whole numbers, and the set of all prime numbers would be a subset of the universal set.
 						</p>
 						<image xml:id="UV-set-ex3" width="100%">
-							<shortdescription>A rectangle is drawn for the universal set U, labeled "All whole numbers"; there is a circle inside the rectangle, labeled "All whole numbers".</shortdescription>
+							<shortdescription>A rectangle is drawn for the universal set U, labeled "All whole numbers"; there is a circle inside the rectangle, labeled "All prime numbers".</shortdescription>
 							<latex-image>
 								\begin{tikzpicture}[font=\sffamily]
 									% Define the universe as a rectangle
@@ -245,10 +245,10 @@
 									% Add label for the universe inside the box
 									\node[align=center] at (4.65,2) {U = All whole \\ numbers};
 							
-									% Draw the yellow circle for research-relevant books
+									% Draw the yellow circle for the subset
 									\filldraw[fill=yellow!70, draw=black, thick] (1.75,2) circle (1.5);
 							
-									% Add label for the research books - on three lines
+									% Add label for the subset
 									\node[align=center] at (1.75,2) {All prime \\numbers};
 								\end{tikzpicture}
 							</latex-image>
@@ -265,7 +265,7 @@
 			Suppose you and your roommate decide to have a house party, and you each invite your circle, or set, of friends. When you combine your two sets of friends, you discover that you have some friends in common.
 		</p>
 		<p>
-			The set of friends that you have in common is called the <term>intersection</term>. The intersection of two sets contains only the elements that are in both sets. An element must be in both set <m>A</m> <term>and</term> set <m>B</m> to be in their intersection.
+			The set of friends that you have in common is called the <term>intersection</term>. The intersection of two sets contains only the elements that are in both sets. An element must be in both set <m>A</m> <alert>and</alert> set <m>B</m> to be in their intersection.
 		</p>
 		<definition xml:id="def_intersection">
 	  	<idx>intersection</idx>
@@ -295,7 +295,7 @@
 	  	</statement>
 	  </definition>
 		<p>
-			What about the people who were <em>not</em> invited to the party and showed up anyway? They are not elements of your set of invited friends. Nor are they elements of your roommate's set of invited friends. These uninvited party crashers are the <term>complement</term> to your set of invited friends. The complement of a set <em>A</em> contains everything that is <em>not</em> in the set <m>A</m>. To be in the complement of set <m>A</m>, an element <alert>cannot</alert> be in set <m>A</m>, but it will be an element of the universal set.
+			What about the people who were <em>not</em> invited to the party and showed up anyway? They are not elements of your set of invited friends. Nor are they elements of your roommate's set of invited friends. These uninvited party crashers are in the <term>complement</term> of the set of all invited friends. The complement of a set <m>A</m> contains everything that is <em>not</em> in the set <m>A</m>. To be in the complement of set <m>A</m>, an element <alert>cannot</alert> be in set <m>A</m>, but it will be an element of the universal set.
 		</p>
 		<definition xml:id="def_complement">
   		<idx>complement</idx>
@@ -315,8 +315,8 @@
 		<example>
 			<statement>
 			<p>
-				Consider the sets: <m>A = \{\text{red, green, blue}\}</m>, <m>B = \{\text{red, yellow, orange}\}</m>, and <m>C = \{\text{red, orange, yellow, green, blue, purple}\}</m>.
-				<ol marker="a.">
+				Consider the sets: <m>A = \{\text{red, green, blue}\}</m>, <m>B = \{\text{red, yellow, orange}\}</m>, and <m>C = \{\text{red, orange, yellow, green, blue, indigo, violet}\}</m>.
+				<ol marker="a)">
 					<li>
 						<p>
 							Determine <m>A \cap B </m>, and write it in set notation.
@@ -337,7 +337,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol marker="a.">
+					<ol marker="a)">
 						<li>
 							<p>
 								The intersection contains the elements in both sets: <m>A \cap B = \{\text{red}\}</m>.
@@ -350,7 +350,7 @@
 						</li>
 						<li>
 							<p>
-								Here we are looking for all the elements that are <em>not</em> in set <m>A</m> and are in set <m>C</m>: <m>A^C \cap C = \{\text{orange, yellow, purple}\}</m>.
+								Here we are looking for all the elements that are <em>not</em> in set <m>A</m> and are in set <m>C</m>: <m>A^C \cap C = \{\text{orange, yellow, indigo, violet}\}</m>.
 							</p>
 						</li>
 					</ol>
@@ -361,7 +361,7 @@
 	<subsection xml:id="subsec-sets-Venn-diagrams">
 		<title>Venn Diagrams</title>
 		<p>
-			<term>Venn diagrams</term> are used to illustrate the relationships between two or more sets. To create a Venn diagram, start by drawing a rectangle to represent the universal set. Next draw and label overlapping circles to represent each of your sets. Most often there will be two or three sets illustrated in a Venn diagram. Finally, if elements are given, fill in each region with its corresponding elements. Venn diagrams are also a great way to illustrate intersections, unions and complements of sets as shown below.
+			<term>Venn diagrams</term> are used to illustrate the relationships between two or more sets. To create a Venn diagram, start by drawing a rectangle to represent the universal set. Next draw and label overlapping circles to represent each of your sets. Most often there will be two or three sets illustrated in a Venn diagram. Finally, if elements are given, fill in each region with its corresponding elements. Venn diagrams are also a great way to illustrate intersections, unions, and complements of sets, as shown below.
 		</p>
 		<definition xml:id="def_venn-diagram">
 	  	<idx>Venn diagram</idx>
@@ -376,9 +376,9 @@
 	  </definition>
 		<sidebyside widths="33% 33% 33%">
 			<figure>
-				<caption>The <alert>intersection</alert> is where the shading of the two sets overlaps in the center. It contains the elements of A <alert>and</alert> B.</caption>
+				<caption>The <alert>intersection</alert> is the shaded region where the two sets overlap. It contains the elements in <m>A</m> <alert>and</alert> <m>B</m>.</caption>
 				<image xml:id="set-intersection" width="100%">
-				<shortdescription>A Venn diagram of two overlapping sets, labeled set A and set B, with 3 regions; the crescent shape in yellow indicates the region for members who are only in set A; the crescent shape shaded blue indicates the members who are only in set B; the overlapping region in the middle is shaded green to indicate member in both sets; the green area is called the intersection</shortdescription>
+				<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U; only the region where the two circles overlap is shaded, showing the intersection.</shortdescription>
 				<latex-image>
 					\begin{tikzpicture}
 						% Define the universe as a rectangle
@@ -406,9 +406,9 @@
 				</image>
       </figure>
 			<figure>
-				<caption>The <alert>union</alert> includes all elements of A <alert>or</alert> B or both. It contains all three of the shaded regions.</caption>
+				<caption>The <alert>union</alert> includes all elements in <m>A</m> <alert>or</alert> <m>B</m> or both. It is the entire shaded region.</caption>
 				<image xml:id="set-union" width="100%">
-					<shortdescription>The same Venn diagram used to illustrate the union is all 3 regions</shortdescription>
+					<shortdescription>A Venn diagram of two overlapping sets A and B inside a rectangle labeled U; both circles, including their overlap, are shaded to show the union.</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}
 							% Define the universe as a rectangle
@@ -430,8 +430,8 @@
 				</image>
 			</figure>
 			<figure>
-				<caption>The <alert>complement</alert> of set A includes all the elements <alert>not</alert> in A. It is the shaded region outside the set of A, but within the universal set.</caption>
-				<image xml:id="set-complement" width="50%">
+				<caption>The <alert>complement</alert> of set <m>A</m> includes all the elements <alert>not</alert> in <m>A</m>. It is the shaded region outside <m>A</m>, but within the universal set.</caption>
+				<image xml:id="set-complement" width="100%">
 					<shortdescription>A Venn diagram with only one set A; The region outside of circle A but inside the rectangle is shaded to represent the complement of the set, or elements not in set A.</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}
@@ -456,10 +456,10 @@
 			<solution>
 				<p>Draw a box to represent <m>U</m> and one circle for each of <m>A</m> and <m>B</m>, making sure that there is a region inside both circles.  Then place the elements in the appropriate region as shown below.</p>
 				<figure xml:id="fig_ex_venn-diagram-const-letters">
-					<caption>Venn Diagram</caption>
+					<caption>Venn diagram of <m>A</m> and <m>B</m> in <m>U</m>.</caption>
 					<image width="45%" xml:id="image-ex_venn-diagram-const-letters">
 						<shortdescription>
-							A Venn Diagram with two circles, one for A and one for B, which overlap in the middle.  Elements a and c are in circle A but not circle B, element f is in circle B but not circle A, elements d and e are in both circles, and element b is not in either circle.
+							A Venn diagram with two circles, one for A and one for B, which overlap in the middle.  Elements a and c are in circle A but not circle B, element f is in circle B but not circle A, elements d and e are in both circles, and element b is not in either circle.
 						</shortdescription>
 						<latex-image>
 							\begin{tikzpicture}
@@ -489,13 +489,13 @@
 			</statement>
 			<solution>
 				<p>
-					The set <m>A^C</m> contains all elements not in set <m>A</m>. This means that <m>A^C \cap B</m> contains elements that are not in <m>A</m> and are in <m>B</m>. That is, it contains the elements of <m>B</m> that are not in <m>A</m> as shown in the following Venn Diagram.
+					The set <m>A^C</m> contains all elements not in set <m>A</m>. This means that <m>A^C \cap B</m> contains elements that are not in <m>A</m> and are in <m>B</m>. That is, it contains the elements of <m>B</m> that are not in <m>A</m> as shown in the following Venn diagram.
 				</p>
 				<figure xml:id="fig_Venn_ex_with-complement">
 					<caption>A Venn diagram illustrating the set <m>A^C \cap B</m> shaded in yellow.</caption>
 					<image width="45%" xml:id="image_Venn_ex_with-complement">
 						<shortdescription>
-							A Venn Diagram with two circles, one for A and one for B, which overlap in the middle.  The shaded region is a crescent shape in B that is not in A.
+							A Venn diagram with two circles, one for A and one for B, which overlap in the middle.  The shaded region is a crescent shape in B that is not in A.
 						</shortdescription>
 						<latex-image>
 							\begin{tikzpicture}
