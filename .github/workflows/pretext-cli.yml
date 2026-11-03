@@ -34,7 +34,7 @@ jobs:
                 minor="$(echo $version | cut -d '.' -f 2)"
                 if [ "$major" -ge 2 -a "$minor" -ge 5 ]; then
                     echo "PreTeXt version is 2.5 or greater; using new build command"
-                    pretext build --deploys
+                    pretext build --deploys --generate
                 else
                     echo "PreTeXt version is less than 2.5, using old build command"
                     pretext build

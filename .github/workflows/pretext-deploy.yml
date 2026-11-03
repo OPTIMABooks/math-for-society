@@ -57,7 +57,7 @@ jobs:
         run: pretext --version
 
       - name: build deploy targets
-        run: pretext build --deploys
+        run: pretext build --deploys --generate
 
       - name: run deploy
         run: pretext deploy --no-push
