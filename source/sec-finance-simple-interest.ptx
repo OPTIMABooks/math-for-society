@@ -22,7 +22,7 @@
 
   <introduction>
     <p>
-      It costs to borrow money.  The "rent" one pays for the use of money is called the <term>interest</term>. The amount of money that is being borrowed or loaned is called the <term>principal</term> or <term>present value</term>.
+      It costs to borrow money.  The "rent" one pays for the use of money is called the <term>interest</term>.<idx>interest</idx> The amount of money that is being borrowed or loaned is called the <term>principal</term> or <term>present value</term>.<idx>principal</idx><idx>present value</idx>
     </p>
   </introduction>
 
@@ -32,7 +32,7 @@
       Simple interest is interest paid only on the original amount borrowed.  In this scenario, the borrower pays a fixed interest rate on the principal for the entire time the money is held.
     </p>
     <p>
-      Calculating interest starts with the principal, <m>P</m>, or the beginning amount in your account. This could be a starting investment or the starting amount of a loan. The <term>interest rate</term>, <m>r</m>, in its most simple form, is a percentage of the principal.
+      Calculating interest starts with the principal, <m>P</m>, or the beginning amount in your account. This could be a starting investment or the starting amount of a loan. The <term>interest rate</term><idx>interest rate</idx>, <m>r</m>, in its most simple form, is a percentage of the principal.
     </p>
     <p>
       For example, if you borrow $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of $100. It is important to remember to change the interest rate, <m>r</m>, of 5% into a decimal by moving the decimal point two places to the left before performing any calculation.
@@ -41,7 +41,7 @@
       <me>(0.05)(\$100)=\$5</me>
     </p>
     <p>
-      The total amount you would repay is called the <term>future value</term> and would be $105, the original principal plus the interest.
+      The total amount you would repay is called the <term>future value</term><idx>future value</idx> and would be $105, the original principal plus the interest.
     </p>
     <p>
       <me>\$100+\$5=\$105</me>
@@ -190,7 +190,7 @@
   <subsection xml:id="subsec-simple-interest-discounts">
   <title>Discounts and Proceeds</title>
   <p>
-    Lenders sometimes deduct the simple interest from the loan amount at the time that the loan is made.  When this happens, we say the loan has been <term>discounted</term>.  The interest that is deducted is called the <term>discount</term>, and the actual amount that is given to the borrower is called the <term>proceeds</term>.  The amount the borrower is obligated to repay is called the <term>maturity value</term>.
+    Lenders sometimes deduct the simple interest from the loan amount at the time that the loan is made.  When this happens, we say the loan has been <term>discounted</term>.  The interest that is deducted is called the <term>discount</term><idx><h>discounted loans</h><h>discount</h></idx>, and the actual amount that is given to the borrower is called the <term>proceeds</term>.<idx><h>discounted loans</h><h>proceeds</h></idx>  The amount the borrower is obligated to repay is called the <term>maturity value</term>.<idx><h>discounted loans</h><h>maturity value</h></idx>
   </p>
   <assemblage>
     <title>Discount and Proceeds Formulas</title>

@@ -25,7 +25,7 @@
       For most of us it is not practical to deposit a large sum of money in the bank. Instead, we save by depositing smaller amounts of money regularly. We might save in an IRA or 401(k) for retirement. We might also save for a down payment on a car or house, or in a college savings plan for our children, or make regular payments into an insurance account.
     </p>
     <p>
-      A sequence of equal periodic payments is called an <term>annuity</term>. The payments (or deposits) can be made annually, quarterly, monthly, or at any other fixed interval of time. When the payments are made at the same time the interest is credited to the account, the annuity is called a <term>simple</term> annuity. When these payments are at the end of the payment period, the annuity is called <term>ordinary</term>.
+      A sequence of equal periodic payments is called an <term>annuity</term>.<idx>annuities</idx> The payments (or deposits) can be made annually, quarterly, monthly, or at any other fixed interval of time. When the payments are made at the same time the interest is credited to the account, the annuity is called a <term>simple</term> annuity.<idx><h>annuities</h><h>simple</h></idx> When these payments are at the end of the payment period, the annuity is called <term>ordinary</term>.<idx><h>annuities</h><h>ordinary</h></idx>
       There are many other types of annuities, but we will not consider them here. This text will only discuss simple, ordinary annuities with equal-sized payments. 
     </p>
     <p>
@@ -74,7 +74,7 @@
     <example xml:id="ex_future_value_annuity_1">
       <statement>
       <p>
-        A traditional individual retirement account (IRA) is a special type of retirement account in which income taxes on the money you invest and its earnings are deferred until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? 
+        A traditional individual retirement account (IRA)<idx>individual retirement account (IRA)</idx> is a special type of retirement account in which income taxes on the money you invest and its earnings are deferred until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? 
       </p>
       </statement>
       <solution>

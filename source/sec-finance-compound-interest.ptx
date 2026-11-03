@@ -32,14 +32,14 @@
 
   <introduction>
     <p>
-      In the last section, we examined problems involving simple interest.  Simple interest is generally charged when the lending period is short (often less than a year).   When the money is loaned or borrowed for a longer time period, interest is paid (or charged) not only on the principal, but also on the past interest. In this case, we say the interest is <term>compounded</term>.  
+      In the last section, we examined problems involving simple interest.  Simple interest is generally charged when the lending period is short (often less than a year).   When the money is loaned or borrowed for a longer time period, interest is paid (or charged) not only on the principal, but also on the past interest. In this case, we say the interest is <term>compounded</term>.<idx>compound interest</idx>  
     </p>
   </introduction>
   <subsection>
     <title>APR <mdash/> Annual Percentage Rate</title>
     <p>
-      Interest rates are usually stated as an <term>annual percentage rate (APR)</term> <mdash/> the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of periods per year.
-      The APR divided by the number of periods per year is called the <term>periodic interest rate</term>.
+      Interest rates are usually stated as an <term>annual percentage rate (APR)</term><idx>annual percentage rate (APR)</idx><idx><h>APR</h><see>annual percentage rate (APR)</see></idx> <mdash/> the total interest that will be paid in the year. Unless stated otherwise, assume the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of periods per year.
+      The APR divided by the number of periods per year is called the <term>periodic interest rate</term>.<idx><h>interest rate</h><h>periodic</h></idx>
     </p>
     <p>
       Note: The Federal Truth in Lending Act requires that every consumer be given the true APR, which includes the interest and any fees.
@@ -469,11 +469,10 @@
       <title>Effective Rate</title>
       <p>
         If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it is hard to know which account will give the better result. 
-        Banks are required to state their interest rate in terms of an "effective yield" or "effective interest rate", for comparison purposes.  The effective rate is also called the <term>Annual Percentage Yield (APY)</term>. 
+        Banks are required to state their interest rate in terms of an "effective yield" or "effective interest rate", for comparison purposes.  The effective rate is also called the <term>Annual Percentage Yield (APY)</term>.<idx><h>APY</h><see>effective rate</see></idx><idx><h>annual percentage yield (APY)</h><see>effective rate</see></idx> 
       </p>
       <p>
-        The <term>effective rate</term> is the interest rate compounded annually that would be equivalent to the stated rate and compounding periods. To examine several investments to see which has the best rate, we find and compare the effective rate for each investment. The next example shows how to calculate the effective rate. 
-        <idx>effective rate</idx>
+        The <term>effective rate</term> is the interest rate compounded annually that would be equivalent to the stated rate and compounding periods. To examine several investments to see which has the best rate, we find and compare the effective rate for each investment. The next example shows how to calculate the effective rate.
       </p>
       <example>
         <p>
