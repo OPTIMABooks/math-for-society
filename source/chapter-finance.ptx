@@ -10,7 +10,7 @@
       <ul>
         <li>
           <p>
-            Solve financial problems that involve simple interest.
+            Solve problems involving simple interest and discounted loans.
           </p>
         </li>
         <li>
@@ -20,17 +20,17 @@
         </li>
         <li>
           <p>
-            Find the future value of an annuity and the amount of payments to a sinking fund.
+            Find the future value of an annuity and the payment required for a sinking fund.
           </p>
         </li>
         <li>
           <p>
-            Find the future value of an annuity and an installment payment on a loan.
+            Find the present value of an annuity and the installment payment on a loan.
           </p>
         </li>
         <li>
           <p>
-            Calculate income tax from tables, including calculating gross and adjusted income and standard deductions.
+            Calculate income tax from tables, including calculating gross income, adjusted gross income, and deductions.
           </p>
         </li>
       </ul>
@@ -40,9 +40,9 @@
 
   <introduction>
     <p> 
-      Everyone needs money. We save money, and we borrow money. We work to earn money. If we are fortunate, our money can work for us in the form of investments with lump sum or regular payouts. 
+      Everyone needs money. We save money, and we borrow money. We work to earn money. If we are fortunate, our money can work for us in the form of investments with lump-sum or regular payouts. 
       Those payments represent interest on our investments. On the flip side, when we borrow money we pay interest for that privilege. 
-      In this section we develop the idea of interest first as simple interest and then in its compound form. We then apply compound interest to sequences of deposits (or payments) that work for or against us.
+      In this chapter we develop the idea of interest first as simple interest and then in its compound form. We then apply compound interest to sequences of deposits (or payments) that work for or against us. We close with income tax: how gross income, adjustments, and deductions determine what we owe.
     </p>
   </introduction>
 

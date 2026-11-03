@@ -32,10 +32,10 @@
       Simple interest is interest paid only on the original amount borrowed.  In this scenario, the borrower pays a fixed interest rate on the principal for the entire time the money is held.
     </p>
     <p>
-      Calculating interest starts with the <term>principal</term>, <em>P</em>, or the beginning amount in your account. This is also called the <term>present value</term>. This could be a starting investment, or the starting amount of a loan. The <term>interest rate</term>, <em>r</em>, in its most simple form, is a percentage of the principal.
+      Calculating interest starts with the principal, <m>P</m>, or the beginning amount in your account. This could be a starting investment or the starting amount of a loan. The <term>interest rate</term>, <m>r</m>, in its most simple form, is a percentage of the principal.
     </p>
     <p>
-      For example, if you borrowed $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of 100. It is important to remember to change the interest <term>rate</term>, r, of 5% into a decimal by moving the decimal two places to the left before performing any calculation.
+      For example, if you borrow $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of $100. It is important to remember to change the interest rate, <m>r</m>, of 5% into a decimal by moving the decimal point two places to the left before performing any calculation.
     </p>
     <p>
       <me>(0.05)(\$100)=\$5</me>
@@ -47,12 +47,12 @@
       <me>\$100+\$5=\$105</me>
     </p>
     <p>
-      One-time simple interest as in the above example is only common for extremely short-term or informal loans. For longer term loans or investments, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. 
+      One-time simple interest as in the above example is only common for extremely short-term or informal loans. For longer-term loans or investments, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. 
       In that case, interest would be earned regularly. 
     </p>
     <p>
       To see how this works, suppose you borrow $100 from a friend and agree to repay it with 5% interest per year, and you keep the money for 3 years. 
-      How much would you need to repay at the end of the loan? The amount of interest you would pay would be 5% of 100 each year for three years, that is:    
+      How much would you need to repay at the end of the loan? The amount of interest you would pay would be 5% of $100 each year for three years, that is:    
     </p>
     <p>
       <me> (0.05)(\$100)(3) = \$15. </me>
@@ -77,13 +77,13 @@
         <me>I=Prt.</me>
       </p>
       <p>
-        The amount <m>A</m> owed at the end of <m>t</m> years is given by
+        The amount <m>A</m> owed at the end of time <m>t</m> is given by
       </p>
       <p>
-        <me>A = P + I = P + Prt</me>
-      </p>
-      <p>
-        <me>\text{or   } A = P(1+rt). </me>
+        <md>
+          <mrow>A =\amp P + I = P + Prt</mrow>
+          <mrow> =\amp P(1+rt).</mrow>
+        </md>
       </p>
       <p>
         Glossary:
@@ -109,7 +109,7 @@
       </p>
     </assemblage>
     <p>
-      Bonds are an example of a simple investment with a regular interest payout. Bonds are issued by the federal, state or local governments to cover their expenses.
+      Bonds are an example of a simple investment with a regular interest payout. Governments (federal, state, and local) and corporations issue bonds to raise money.
     </p>
     <example>
       <statement>
@@ -119,17 +119,17 @@
       </statement>
       <solution>
         <p>
-          Each year, you would earn 5% interest so over the course of five years, you would earn:
+          Each year, you would earn 5% interest, so over the course of five years, you would earn:
         </p>
         <p>
-          <me>\$1000(0.05)(5)=\$250</me>
+          <me>\$1{,}000(0.05)(5)=\$250</me>
         </p>
 
         <p>
           When the bond matures, you would receive back the $1,000 you originally paid and the $250 in interest, so we could also put that into a single calculation:
         </p>
         <p>
-          <me>\$1000+\$1000(0.05)(5)=\$1250</me>
+          <me>\$1{,}000+\$1{,}000(0.05)(5)=\$1{,}250</me>
         </p>
       </solution>
     </example>
@@ -144,12 +144,12 @@
       </statement>
       <solution>
         <p>
-          The interest is computed by multiplying the principal with the interest rate and the time.
+          The interest is computed by multiplying the principal by the interest rate and the time.
 
           <me>
-            I = \$600(.15)\left(\frac{5}{12}\right) = \$37.50.
+            I = \$600(0.15)\left(\frac{5}{12}\right) = \$37.50.
           </me>
-          Note that here the rate has units of years and the time has units of months so we convert 5 months into years by dividing by 12.
+          Note that here the rate is per year but the time is given in months, so we convert 5 months to years by dividing by 12.
         </p>
         <p>
           The total amount is thus
@@ -159,7 +159,7 @@
           This total can be computed directly using
           <md>
             <mrow> A =\amp P(1+rt) </mrow>
-            <mrow> =\amp \$600[1+(.15)(5/12)] </mrow>
+            <mrow> =\amp \$600[1+(0.15)(5/12)] </mrow>
             <mrow> =\amp \$600(1+0.0625)</mrow>
             <mrow> =\amp \$637.50. </mrow>
           </md>
@@ -170,19 +170,19 @@
     <example>
       <statement>
         <p>
-          Darnel owes a total of $3060 which includes 12% interest for the three years he borrowed the money.  How much did he originally borrow? 
+          Darnel owes a total of $3,060, which includes 12% simple interest per year for the three years he borrowed the money.  How much did he originally borrow? 
         </p>
       </statement>
       <solution>
         <p>
-          This time we are asked to find the principal <me>P</me> given the future value.
+          This time we are asked to find the principal <m>P</m> given the future value.
           <md>
-            <mrow>\$3060 =\amp P[1+(.12)(3)] </mrow>
-            <mrow>\$3060 =\amp P(1.36)</mrow>
-            <mrow> \frac{\$3060}{1.36} =\amp P </mrow>
-            <mrow> \$2250 =\amp P </mrow>
+            <mrow>\$3{,}060 =\amp P[1+(0.12)(3)] </mrow>
+            <mrow>\$3{,}060 =\amp P(1.36)</mrow>
+            <mrow> \frac{\$3{,}060}{1.36} =\amp P </mrow>
+            <mrow> \$2{,}250 =\amp P </mrow>
           </md>
-          Darnel originally borrowed $2250.
+          Darnel originally borrowed $2,250.
         </p>
       </solution>
     </example>
@@ -197,19 +197,19 @@
     <idx>discounted loans</idx>
     <idx><h>financial formulas</h><h>discounted loans</h></idx>
     <p>
-      If an amount <m>L</m> is borrowed for a time <m>t</m> at an interest rate <m>r</m>, then the discount <m>D</m> is 
+      If a loan with maturity value <m>L</m> is discounted for a time <m>t</m> at a simple interest rate <m>r</m>, then the discount <m>D</m> is 
     </p>
     <p>
       <me> D = Lrt. </me>
     </p>
     <p>
-      The proceeds <m>R</m> is given by
+      The proceeds <m>R</m> are given by
     </p>
     <p>
-      <me>R = L - D = L - Lrt</me>
-    </p>
-    <p>
-      <me>\text{or   } R = L(1-rt). </me>
+      <md>
+        <mrow>R =\amp L - D = L - Lrt</mrow>
+        <mrow> =\amp L(1-rt).</mrow>
+      </md>
     </p>
     <p>
       Glossary:
@@ -220,7 +220,7 @@
               <p><m>D</m> is the discount (interest)</p>
           </li>
           <li>
-              <p><m>R</m> is the proceeds, (the actual amount the borrower gets)</p>
+              <p><m>R</m> is the proceeds (the actual amount the borrower gets)</p>
           </li>
           <li>
               <p><m>r</m> is the interest rate in decimal form</p>
@@ -229,7 +229,7 @@
               <p><m>t</m> is time, where the increment of time (years, months, etc.) matches the time period for the interest rate</p>
           </li>
           <li>
-              <p><m>L</m> is the amount of the loan that must be repaid, or the maturity value.</p>
+              <p><m>L</m> is the amount of the loan that must be repaid, or the maturity value</p>
           </li>
       </ul>
     </p>
@@ -237,7 +237,7 @@
   <example>
     <statement>
       <p>
-        Francisco borrows $1200 for 10 months at a simple interest rate of 15% per year.  Determine the discount and the proceeds.
+        Francisco borrows $1,200 from a bank for 10 months at a simple interest rate of 15% per year.  Determine the discount and the proceeds.
       </p>
     </statement>
     <solution>
@@ -245,33 +245,33 @@
         The discount <m>D</m> is the interest on the loan that the bank deducts from the loan amount.
         <md>
           <mrow>D =\amp Lrt </mrow>
-          <mrow> =\amp \$1200(.15)\left(\frac{10}{12}\right) </mrow>
+          <mrow> =\amp \$1{,}200(0.15)\left(\frac{10}{12}\right) </mrow>
           <mrow> =\amp \$150 </mrow>
         </md>
-        Therefore, the bank deducts $150 from the maturity value of $1200 and gives Francisco $1050. That is, <me> R = \$1200 - \$150 = \$1050.</me>  Francisco is obligated to repay the bank $1200.
+        Therefore, the bank deducts $150 from the maturity value of $1,200 and gives Francisco $1,050. That is, <me> R = \$1{,}200 - \$150 = \$1{,}050.</me>  Francisco is obligated to repay the bank $1,200.
       </p>
     </solution>
   </example>
   <example>
     <statement>
       <p>
-        If Francisco wants to receive $1200 for 10 months at a simple interest rate of 15% per year, what amount of loan should he apply for?
+        If Francisco wants to receive $1,200 for 10 months at a simple interest rate of 15% per year, what amount of loan should he apply for?
       </p>
     </statement>
     <solution>
       <p>
-        In this problem, we are given the proceeds <m>R</m> and are being asked to find the maturity value <m>L</m>. From the problem statement we see that <me>R = \$1200, r = .15, t = 10/12.</me>. We must solve for <m>L</m>. Thus
+        In this problem, we are given the proceeds <m>R</m> and are being asked to find the maturity value <m>L</m>. From the problem statement we see that <m>R = \$1{,}200</m>, <m>r = 0.15</m>, and <m>t = 10/12</m>. We must solve for <m>L</m>. Thus
       </p>
       <p>
         <md>
           <mrow>R =\amp L(1-rt) </mrow>
-          <mrow>\$1200 =\amp L\left[1-(.15)\left(\frac{10}{12}\right)\right] </mrow>
-          <mrow>\$1200 =\amp L(1-0.125)</mrow>
-          <mrow>\$1200 =\amp L(0.875).</mrow>
-          <mrow>L =\amp \frac{\$1200}{0.875} </mrow>
-          <mrow> =\amp \$1371.43. </mrow>
+          <mrow>\$1{,}200 =\amp L\left[1-(0.15)\left(\frac{10}{12}\right)\right] </mrow>
+          <mrow>\$1{,}200 =\amp L(1-0.125)</mrow>
+          <mrow>\$1{,}200 =\amp L(0.875)</mrow>
+          <mrow>L =\amp \frac{\$1{,}200}{0.875} </mrow>
+          <mrow> =\amp \$1{,}371.43. </mrow>
         </md>
-        Therefore, Francisco should ask for a loan of $1371.43. The lender will discount the loan by $171.43 and Francisco will receive $1200.
+        Therefore, Francisco should ask for a loan of $1,371.43. The lender will discount the loan by $171.43 and Francisco will receive $1,200.
       </p>
     </solution>
   </example>
