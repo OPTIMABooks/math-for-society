@@ -9,12 +9,17 @@
     <ul>
       <li>
         <p>
-          Find the present value of an annuity.
+          Find the present value of an annuity and the payment from a payout annuity.
         </p>
       </li>
       <li>
         <p>
-          Solve problems involving amortization.
+          Find the payment, total interest, and remaining balance on an installment loan.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate a credit card balance and minimum payment.
         </p>
       </li>
     </ul>
@@ -22,13 +27,13 @@
 
   <introduction>
     <p>
-      In the last section, you learned about savings plans. In this section, you will learn about <term> payout annuities</term> and <term>conventional loans</term>. These two financial concepts use the same formula: the <term>present value of an annuity</term> formula.  
+      In the last section, you learned about savings plans. In this section, you will learn about <term>payout annuities</term> and <term>conventional loans</term>. These two financial concepts use the same formula: the <term>present value of an annuity</term> formula.  
     </p>
     <p>
-      In a payout annuity, the account is opened with a lump sum, and money is withdrawn from the account on at regular intervals.  The money remaining in the account earns interest.  After a fixed amount of time, the account will be empty. 
+      In a payout annuity, the account is opened with a lump sum, and money is withdrawn from the account at regular intervals.  The money remaining in the account earns interest.  After a fixed amount of time, the account will be empty. 
     </p>
     <p>
-      Conventional loans are also called <term>amortized loans</term> or <term>installment loans</term>. They are designed so that the payment amount remains the same over the life (term) of the loan.Examples include student loans, car loans, and home mortgages. The techniques we use to analyze these loans do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. 
+      Conventional loans are also called <term>amortized loans</term> or <term>installment loans</term>. They are designed so that the payment amount remains the same over the life (term) of the loan. Examples include student loans, car loans, and home mortgages. The techniques we use to analyze these loans do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. 
     </p>
  
   </introduction>
@@ -42,38 +47,38 @@
     </p>
 
       <p>
-        Suppose Carlos owns a small business and employs an assistant manager to help him run the business.  Assume it is January 1 now.  Carlos plans to pay his assistant manager a $1000 bonus at the end of this year and another $1000 bonus at the end of the following year. Carlos' business earned good profits last year so he wants to put the money for his assistant's future bonuses into a savings account now.  The money he puts in now will earn interest at the rate of 4% per year compounded annually while in the savings account. 
+        Suppose Carlos owns a small business and employs an assistant manager to help him run the business.  Assume it is January 1 now.  Carlos plans to pay his assistant manager a $1,000 bonus at the end of this year and another $1,000 bonus at the end of the following year. Carlos' business earned good profits last year, so he wants to put the money for his assistant's future bonuses into a savings account now.  The money he puts in now will earn interest at the rate of 4% per year compounded annually while in the savings account. 
       </p>
       <p>
-        How much money should Carlos put into the savings account now so that he will be able to withdraw $1000 one year from now and another $1000 two years from now? At first, this sounds like a sinking fund, but the situation is actually different.  In a sinking fund, we put money into the fund with periodic payments to save to accumulate to a specified lump sum that is the future value at the end of a specified time period.
-        In this case we want to put a lump sum into the savings account now, so that lump sum is our principal, <m>P</m>.  Then we want to withdraw that amount as a series of period payments; here the withdrawals are an annuity with $1000 payments at the end of each of two years.
+        How much money should Carlos put into the savings account now so that he will be able to withdraw $1,000 one year from now and another $1,000 two years from now? At first, this sounds like a sinking fund, but the situation is actually different.  In a sinking fund, we put money into the fund with periodic payments to accumulate a specified lump sum that is the future value at the end of a specified time period.
+        In this case we want to put a lump sum into the savings account now, so that lump sum is our principal, <m>P</m>.  Then we want to withdraw that amount as a series of periodic payments; here the withdrawals are an annuity with $1,000 payments at the end of each of two years.
         This scenario is illustrated in <xref ref="fig-amortization-cartoon"/>.
       </p>   
       <!-- <p> </p> paragraph contains non-breaking space -->
       <figure xml:id="fig-amortization-cartoon">
-        <caption>How much should Carlos invest now to able to withdraw two payments of $1000 at the end of the next two years and end with a zero account balance? </caption>
+        <caption>How much should Carlos invest now to be able to withdraw two payments of $1,000 at the end of the next two years and end with a zero account balance?</caption>
         <image xml:id="tigz-amortization-cartoon" width="85%" source="images/financial_math/amortization-cartoon_300.png">
-          <description><p>An illustration of present value for 2 payments of $1000.</p></description>
+          <description><p>A timeline from 0 to 2 years: a deposit of $P at time 0, and withdrawals of $1,000 at the end of years 1 and 2.</p></description>
         </image>
       </figure>
       <p>
-        To answer this question we use the compound interest formula from <xref ref="sec-finance-compound-interest"/> with <m>r = 0.04</m> and <m>n = 1</m> for annual compounding to determine the present value of each payment of $1000.
-        Consider the first payment of $1000 at the end of year 1. Let <m>P_1</m> be its present value:
+        To answer this question we use the compound interest formula from <xref ref="sec-finance-compound-interest"/> with <m>r = 0.04</m> and <m>n = 1</m> for annual compounding to determine the present value of each payment of $1,000.
+        Consider the first payment of $1,000 at the end of year 1. Let <m>P_1</m> be its present value:
         <me>
-           \$1000 = P_1(1.04)^1 \Rightarrow P_1 =\$961.54.
+           \$1{,}000 = P_1(1.04)^1 \Rightarrow P_1 \approx \$961.54.
         </me>
-        Now consider the second payment of $1000 at the end of year 2. Let <m>P_2</m> is its present value:
+        Now consider the second payment of $1,000 at the end of year 2. Let <m>P_2</m> be its present value:
         <me>
-          \$1000 = P_2(1.04)^2 \Rightarrow P_2 =\$924.56.
+          \$1{,}000 = P_2(1.04)^2 \Rightarrow P_2 \approx \$924.56.
         </me>
-        To make the $1000 payments at the specified times in the future, the amount that Carlos needs to deposit now is the present value 
+        To make the $1,000 payments at the specified times in the future, the amount that Carlos needs to deposit now is the present value 
         <me>
-          P = P_1 + P_2 = \$961.54 + \$924.56 = \$1886.10.
+          P = P_1 + P_2 = \$961.54 + \$924.56 = \$1{,}886.10.
         </me>
-        <alert>Note:</alert> Carlos needs to save less than $2000 now because his deposit will earn interest while it is waiting to be withdrawn. 
+        <alert>Note:</alert> Carlos needs to save less than $2,000 now because his deposit will earn interest while it is waiting to be withdrawn. 
       </p>
       <p>
-        The calculation above was useful to illustrate the meaning of the present value of an annuity, but it is not an efficient way to calculate the present value.  If we were to have a large number of annuity payments, the step by step calculation would be long and tedious.  
+        The calculation above was useful to illustrate the meaning of the present value of an annuity, but it is not an efficient way to calculate the present value.  If we were to have a large number of annuity payments, the step-by-step calculation would be long and tedious.  
         Instead, we use the formula shown below. This formula is derived in a similar way to the way we derived the formula for the future value of an annuity in <xref ref="subsec-derivation-future-value-of-annuity"/>. The details are omitted here.
       </p>
       <assemblage>
@@ -82,7 +87,7 @@
         <idx><h>financial formulas</h><h>present value of an annuity</h></idx>
         <idx><h>annuities</h><h>present value formula</h></idx>
         <p>
-          If a payment of <m>d</m> dollars is made in an account <m>n</m> times a year at annual interest rate  <m>r</m>, then the present value <m>P</m> of the annuity after <m>t</m> years is 
+          If payments of <m>d</m> dollars are made <m>n</m> times a year for <m>t</m> years, at an annual interest rate <m>r</m> compounded <m>n</m> times per year, then the present value <m>P</m> of the annuity is
           <me>
             P = d \left[\frac{1-\left(1+\frac{r}{n}\right)^{-nt}}{\frac{r}{n}}\right].
           </me>
@@ -93,16 +98,16 @@
         <p>
           <ul>
             <li>
-              <p><m>P</m> is value of the annuity at the beginning (or the principal, or amount of the loan).</p>
+              <p><m>P</m> is the value of the annuity at the beginning (or the principal, or amount of the loan)</p>
             </li>
             <li>
-              <p><m>d</m> is the annuity payment (or disbursement). In a loan this is the monthly payment, annual payment, etc.</p>
+              <p><m>d</m> is the annuity payment (or disbursement); for a loan, this is the monthly payment, annual payment, etc.</p>
             </li>
             <li>
               <p><m>r</m> is the annual interest rate in decimal form</p>
             </li>
             <li>
-              <p><m>n</m> is the number of compounding periods in one year</p>
+              <p><m>n</m> is the number of payments (and compounding periods) per year</p>
             </li>
             <li>
               <p><m>t</m> is the number of years</p>
@@ -113,18 +118,18 @@
       <example>
         <statement>
           <p>
-            After retiring, you want to be able to take $1000 every month for a total of 20 years from your retirement account.  The account earns 6% interest.  How much will you need in your account when you retire?
+            After retiring, you want to be able to take $1,000 every month for a total of 20 years from your retirement account.  The account earns 6% interest.  How much will you need in your account when you retire?
           </p>
         </statement>          
         <solution>
           <p>
-            This is a annuity question where we seek the present value (or lump sum) needed to generate the sequence of anticipated payments. 
-            In this example, <m>d = \$1000</m>, <m>r = 0.06</m>, <m>n = 12</m>, since we want monthly withdrawals, and <m>t = 20</m> because we are taking withdrawals for 20 years. <m>P</m> is unknown.
+            This is an annuity question where we seek the present value (or lump sum) needed to generate the sequence of anticipated payments. 
+            In this example, <m>d = \$1{,}000</m>, <m>r = 0.06</m>, <m>n = 12</m>, since we want monthly withdrawals, and <m>t = 20</m> because we are taking withdrawals for 20 years. <m>P</m> is unknown.
             <md>
               <mrow> P =\amp d \left[\frac{1-\left(1+\frac{r}{n}\right)^{-nt}}{\frac{r}{n}}\right] </mrow>
-              <mrow>  =\amp 1000 \left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 20}}{\frac{0.06}{12}}\right]</mrow>
-              <mrow>  =\amp 1000 \left[\frac{1-1.005^{-240}}{0.005}\right] </mrow>
-              <mrow>  =\amp 1000(139.580772) </mrow>
+              <mrow>  =\amp \$1{,}000 \left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 20}}{\frac{0.06}{12}}\right]</mrow>
+              <mrow>  =\amp \$1{,}000 \left[\frac{1-1.005^{-240}}{0.005}\right] </mrow>
+              <mrow>  =\amp \$1{,}000(139.580772) </mrow>
               <mrow>  \approx\amp \$139{,}580.77. </mrow>
           </md>
             That is, you will need to have $139,580.77 in your account when you retire.
@@ -132,7 +137,7 @@
         </solution>
       </example>
       <p>
-        <alert>Note:</alert> In annuity problems the compounding frequency is not always explicitly given, but is is implicitly defined by how often you take the withdrawals.
+        <alert>Note:</alert> In annuity problems the compounding frequency is not always explicitly given, but it is implicitly defined by how often you take the withdrawals.
       </p>
       <p>
         The present value of an annuity formula can also be used to find the annuity payment, as shown in the next example.
@@ -145,15 +150,15 @@
         </statement>
         <solution>
           <p>
-            This is a annuity question where we know present value <m>P</m> but seek to find the payment (or dispersement) <m>d</m>.
+            This is an annuity question where we know the present value <m>P</m> but seek to find the payment (or disbursement) <m>d</m>.
             In this example, <m>P = \$500{,}000</m>, <m>r = 0.08</m>, <m>n = 12</m>, since we want monthly withdrawals, and <m>t = 30</m> because we are taking withdrawals for 30 years. The withdrawal amount <m>d</m> is unknown.
           <md>
-            <mrow>  500{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.08}{12}\right)^{-12\cdot 30}}{\frac{0.08}{12}}\right]</mrow>
-            <mrow>  500{,}000 =\amp d(136.283494) </mrow>
-            <mrow>  d =\amp\frac{500{,}000}{136.283494} </mrow>
+            <mrow>  \$500{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.08}{12}\right)^{-12\cdot 30}}{\frac{0.08}{12}}\right]</mrow>
+            <mrow>  \$500{,}000 =\amp d(136.283494) </mrow>
+            <mrow>  d =\amp\frac{\$500{,}000}{136.283494} </mrow>
             <mrow>  \approx\amp\$3{,}668.82 </mrow>
           </md>
-          You will need to withdraw $3,668.82 per month for 30 years.
+          You will be able to withdraw $3,668.82 per month for 30 years.
           </p>
         </solution>
       </example>
@@ -161,21 +166,21 @@
   <subsection xml:id="subsec-amortization">
     <title>Installment Loans</title>
     <p>
-      Installment loans are also called <alert>amortized loans</alert>. They are designed so that the payment amount remains the same over the life (term) of the loan. In order for that amount to remain constant, the amount of money going towards paying the <alert>principal</alert> (amount owed) and towards the <alert>interest</alert> will vary. At the beginning of the loan, the amount owed is the largest. So, at the beginning the amount of interest charged will also be the largest. As the loan gets repaid the amount owed is reduced and therefore the interest is reduced. Therefore, at the beginning of an installment loan payments go mostly towards the interest, towards the end the payments are going mostly towards the principal.
+      Because the payment on an installment loan stays the same over the life of the loan, the amounts going towards the principal (amount owed) and towards the interest must vary. At the beginning of the loan, the amount owed is the largest, so the interest charged is also the largest. As the loan is repaid, the amount owed shrinks, and so does the interest. Therefore, at the beginning of an installment loan, payments go mostly towards interest; towards the end, they go mostly towards principal.
     </p>
     <figure xml:id="fig-installment-loan-interest-principal">
-      <caption>This is a graph of the interest and principal paid on a loan of $34,000 at 10% APR. Each year $5,391.72 was paid in total. In the first year, $3,305.92 was applied to the interest, and $2,085.80 was applied to the principal. In the last year of the loan, only $281.04 was applied to the interest and $5,110.68 was applied to the principal. Over 5 years, a total of $53,917.2 was paid for a loan of $34,000.</caption>
+      <caption>Interest and principal paid each year on a 10-year, $34,000 loan at 10% APR with monthly payments of $449.31 ($5,391.72 per year). In the first year, $3,305.92 went to interest and $2,085.80 to principal; in the last year, only $281.04 went to interest and $5,110.68 to principal. Over 10 years, a total of $53,917.20 was paid on the $34,000 loan.</caption>
       <image width="85%" source="images/financial_math/interest_principal.png">
         <description><p>A graph that shows how most of the payment goes to interest at the beginning of the loan and that decreases over time until the end of the loan when most of the payment goes toward the principal.</p></description>
     </image>
     </figure>
     <p>
-      Amortized loan questions are solved using the same present value of annuity formula use for payout annuities. The primary difference is one of context. The equations can be solved for <m>P</m> or <m>d</m> as before, but the interpretation of the result is different.
+      Amortized loan questions are solved using the same present value of an annuity formula used for payout annuities. The primary difference is one of context. The equations can be solved for <m>P</m> or <m>d</m> as before, but the interpretation of the result is different.
     </p>
     <example>
       <statement>
       <p>
-        You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?
+        You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive a car can you afford? In other words, what loan amount can you pay off with $200 per month?
         How much interest would you pay for this loan?
       </p>
       </statement>
@@ -185,11 +190,11 @@
         Since we're doing monthly payments, <m>n=12</m>. Then:
         <md>
           <mrow>P \amp= d \left[\frac{1-\left(1+\frac{r}{n}\right)^{-nt}}{\frac{r}{n}} \right]</mrow>
-          <mrow> \amp= 200\left[\frac{1-\left(1+\frac{0.03}{12}\right)^{-12\cdot 5}}{\frac{0.03}{12}}\right] </mrow>
-          <mrow> \amp= 200\left[\frac{1-(1.0025)^{-60}}{0.0025}\right]</mrow>
+          <mrow> \amp= \$200\left[\frac{1-\left(1+\frac{0.03}{12}\right)^{-12\cdot 5}}{\frac{0.03}{12}}\right] </mrow>
+          <mrow> \amp= \$200\left[\frac{1-(1.0025)^{-60}}{0.0025}\right]</mrow>
           <mrow> \amp\approx\$11{,}130.47</mrow>
         </md>
-        That is, you can afford a maximum loan of $11,130.47. If you have a down payment you can add that to get the value of the car you can buy. Any closing costs for the loan should also be taken into consideration.
+        That is, you can afford a maximum loan of $11,130.47. If you have a down payment, you can add that to get the value of the car you can buy. Any closing costs for the loan should also be taken into consideration.
       </p>    
       <p>
         To find the amount of interest you will pay for this loan, calculate the total of all your payments.
@@ -211,11 +216,11 @@
           First note that Teresa is making a down payment, so the amount of the loan she needs is <m>\$15{,}000-\$3{,}000=\$12{,}000</m>. This is the value of <m>P</m>. We solve for the unknown payment, <m>d</m> using the present value of an annuity formula. 
         </p>
         <p>
-          <em>Loan Option 1:</em> For the first option, <m>P = 12000</m>, <m>n = 12</m>, <m>r = 0.0275</m>, and <m>t = 3</m>. Solving for <m>d</m>:
+          <em>Loan Option 1:</em> For the first option, <m>P = \$12{,}000</m>, <m>n = 12</m>, <m>r = 0.0275</m>, and <m>t = 3</m>. Solving for <m>d</m>:
           <md>
-            <mrow>  12{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}}{\frac{0.0275}{12}}\right]</mrow>
-            <mrow>  12{,}000 =\amp d(34.51708) </mrow>
-            <mrow>  d =\amp\frac{12{,}000}{34.51708} </mrow>
+            <mrow>  \$12{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}}{\frac{0.0275}{12}}\right]</mrow>
+            <mrow>  \$12{,}000 =\amp d(34.51708) </mrow>
+            <mrow>  d =\amp\frac{\$12{,}000}{34.51708} </mrow>
             <mrow>  \approx\amp\$347.65 </mrow>
           </md>
           For the first loan option, Teresa's payment is $347.65 per month. Over the course of this loan, she would pay
@@ -227,16 +232,16 @@
         <p>
           <em>Loan Option 2:</em> For the second option, the values of <m>P</m> and <m>n</m> are the same, but <m>r = 0.04</m>, and <m>t = 5</m>. Solving again for <m>d</m>:
           <md>
-            <mrow>  12{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 5}}{\frac{0.04}{12}}\right]</mrow>
-            <mrow>  12{,}000 =\amp d(54.29990688) </mrow>
-            <mrow>  d =\amp\frac{12{,}000}{54.29990688} </mrow>
+            <mrow>  \$12{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 5}}{\frac{0.04}{12}}\right]</mrow>
+            <mrow>  \$12{,}000 =\amp d(54.29906890) </mrow>
+            <mrow>  d =\amp\frac{\$12{,}000}{54.29906890} </mrow>
             <mrow>  \approx\amp\$221.00 </mrow>
           </md>
           For the second loan option, Teresa's payment is $221.00 per month. Over the course of this loan, she would pay
           <me>
-            12(5)(\$221.00) - \$12{,}000 = \$1{,}259.90
+            12(5)(\$221.00) - \$12{,}000 = \$1{,}260.00
           </me>
-          of interest. That is, for the second loan her monthly payment would be less, but because she is paying off the loan more slowly it accumulates more interest.
+          of interest. That is, for the second loan her monthly payment would be less, but because she is paying off the loan more slowly and at a higher rate, she pays more interest.
         </p>
       </solution>
     </example>
@@ -251,12 +256,12 @@
       </statement>
       <solution>
       <p>
-        In this example we have: <m>r=0.06</m>, <m>n=12</m>, <m>t=30</m>, and <m>P=\$140{,}000</m>. We will use the present value of an annuity formula to solve for for <m>d</m>.
+        In this example we have: <m>r=0.06</m>, <m>n=12</m>, <m>t=30</m>, and <m>P=\$140{,}000</m>. We will use the present value of an annuity formula to solve for <m>d</m>.
         <md>
-          <mrow>  140{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}}{\frac{0.06}{12}}\right]</mrow>
-          <mrow>  140{,}000 =\amp d \left[\frac{1-1.005^{-360}}{0.005}\right]</mrow>
-          <mrow>  140{,}000 =\amp d(166.791614) </mrow>
-          <mrow>  d =\amp\frac{140{,}000}{166.791614} </mrow>
+          <mrow>  \$140{,}000 =\amp d \left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}}{\frac{0.06}{12}}\right]</mrow>
+          <mrow>  \$140{,}000 =\amp d \left[\frac{1-1.005^{-360}}{0.005}\right]</mrow>
+          <mrow>  \$140{,}000 =\amp d(166.791614) </mrow>
+          <mrow>  d =\amp\frac{\$140{,}000}{166.791614} </mrow>
           <mrow>  \approx\amp\$839.37 </mrow>
         </md>
         You would make payments of $839.37 per month for 30 years. 
@@ -300,7 +305,7 @@
               <p><m>d=\$1{,}000</m></p>
             </li>
             <li>
-              <p> <m>r=0.06</m></p>
+              <p><m>r=0.06</m></p>
             </li>
             <li>
               <p><m>n=12</m></p>
@@ -311,11 +316,11 @@
           </ul>
           Solving for <m>P</m>:
           <md>
-            <mrow>P\amp=1000\left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}}{\frac{0.06}{12}}\right]</mrow>
-            <mrow>\amp=1000\left[\frac{1-(1.005)^{-300}}{0.005}\right]</mrow>
+            <mrow>P\amp=\$1{,}000\left[\frac{1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}}{\frac{0.06}{12}}\right]</mrow>
+            <mrow>\amp=\$1{,}000\left[\frac{1-(1.005)^{-300}}{0.005}\right]</mrow>
             <mrow>\amp\approx\$155{,}206.86</mrow>
           </md>
-          The loan balance with 25 years remaining on the loan will be $155,206.86
+          The loan balance with 25 years remaining on the loan will be $155,206.86.
         </p>
       </solution>
     </example>
@@ -339,27 +344,27 @@
     <title>Credit Cards</title>
       <p>
         In this section we will also briefly cover credit cards.
-        Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.
+        Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan, and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.
       </p>
       <p>
-        Credit cards are a common source of loan money, and therefore a common source of debt which must be repaid.  There are much fewer and lower barriers to obtaining and using a credit card than there are to obtaining, for example, a mortgage.  As such, there are some drawbacks both in terms of typically higher interest rates, as well as some structural differences.
+        Credit cards are a common source of loan money, and therefore a common source of debt which must be repaid.  There are fewer and lower barriers to obtaining and using a credit card than there are to obtaining, for example, a mortgage.  As such, there are some drawbacks both in terms of typically higher interest rates, as well as some structural differences.
       </p>
       <example>
         <statement>
         <p>
-          Amira gets a credit card, with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance after applying the APR; or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?
+          Amira gets a credit card with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance (after interest) or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?
         </p>
         </statement>
         <solution>
           <p>
             First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:
-            <me>900\left(1+\frac{0.1799}{365}\right)^{35} \approx 915.66</me>
-            With interest, at the end of the month Amira owes $915.66.
+            <me>\$900\left(1+\frac{0.1799}{365}\right)^{35} \approx \$915.66</me>
+            With interest, when her first payment is due, Amira owes $915.66.
           </p>
           <p>
              Next, we find one percent of the new balance, which is
              <me>\$915.66(0.01) \approx \$9.16</me>
-            $25 is larger than $9.16, so her first payment must be at least $25. If she makes the minimum payment we can subtract to find her new balance:
+            Since $25 is larger than $9.16, her minimum payment is $25. If she makes the minimum payment we can subtract to find her new balance:
             <me>\$915.66-\$25 = \$890.66</me>
             Her new balance will be $890.66.
           </p>
