@@ -22,11 +22,11 @@
 
   <introduction>
     <p>
-      For most of us it is not practical to deposit a large sum of money in the bank. Instead, we save by depositing smaller amounts of money regularly. We might save in an IRA or 401-K for retirement. We might also save for a down payment on a car or house, or in a college savings plan for our children, or make regular payments into an insurance account.
+      For most of us it is not practical to deposit a large sum of money in the bank. Instead, we save by depositing smaller amounts of money regularly. We might save in an IRA or 401(k) for retirement. We might also save for a down payment on a car or house, or in a college savings plan for our children, or make regular payments into an insurance account.
     </p>
     <p>
       A sequence of equal periodic payments is called an <term>annuity</term>. The payments (or deposits) can be made annually, quarterly, monthly, or at any other fixed interval of time. When the payments are made at the same time the interest is credited to the account, the annuity is called a <term>simple</term> annuity. When these payments are at the end of the payment period, the annuity is called <term>ordinary</term>.
-      There are many types of annuities, which we will ignore here. This text will only discuss simple, ordinary annuities with equal sized payments. 
+      There are many other types of annuities, but we will not consider them here. This text will only discuss simple, ordinary annuities with equal-sized payments. 
     </p>
     <p>
       <alert>Tip:</alert> If the compounding frequency is not explicitly stated in a problem, assume that the number of compounding periods per year is the same as the number of deposits per year.
@@ -35,7 +35,7 @@
   <subsection xml:id="subsec-annuities">
     <title>Future Value of an Annuity</title>
     <p>
-      The mathematical formula needed to solve problems involving the future value of simple, ordinary annuities is shown below. If you want to know where the formula comes from, it is derived at the end of the chapter.
+      The mathematical formula needed to solve problems involving the future value of simple, ordinary annuities is shown below. If you want to know where the formula comes from, it is derived at the end of this section in <xref ref="subsec-derivation-future-value-of-annuity"/>.
     </p>
     <assemblage>
       <title>Future Value of an Ordinary Annuity</title>
@@ -43,7 +43,7 @@
       <idx><h>financial formulas</h><h>future value of an annuity</h></idx>
       <idx><h>annuities</h><h>future value</h></idx>
       <p>
-        If a regular payment of <m>d</m> dollars is made in an account <m>n</m> times a year at annual interest rate <m>r</m>, then the future value <m>A</m> of the annuity after <m>t</m> years is
+        If a regular payment of <m>d</m> dollars is made in an account <m>n</m> times a year, and the account earns an annual interest rate <m>r</m> compounded <m>n</m> times per year, then the future value <m>A</m> of the annuity after <m>t</m> years is
         <me>
           A = d \left[\frac{\left(1+\frac{r}{n}\right)^{nt}-1}{\frac{r}{n}}\right].
         </me>
@@ -63,7 +63,7 @@
             <p><m>r</m> is the annual interest rate in decimal form</p>
           </li>
           <li>
-            <p><m>n</m> is the number of compounding periods in one year</p>
+            <p><m>n</m> is the number of deposits (and compounding periods) per year</p>
           </li>
           <li>
             <p><m>t</m> is the number of years</p>
@@ -74,19 +74,19 @@
     <example xml:id="ex_future_value_annuity_1">
       <statement>
       <p>
-        A traditional individual retirement account (IRA) is a special type of retirement account in which the money you invest is exempt from income taxes until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? 
+        A traditional individual retirement account (IRA) is a special type of retirement account in which income taxes on the money you invest and its earnings are deferred until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? 
       </p>
       </statement>
       <solution>
       
       <p>
-        In this example the monthly deposit is <m>d=\$100</m>, and since interest is compounded monthly <m>n = 12</m>. The annual interest rate is <m>r=0.06</m> and since we want the amount after 20 years <m>t=20</m>. The unknown value is <m>A</m>, which is the value we need to compute. Putting these values into the annuity equation we have:
+        In this example the monthly deposit is <m>d=\$100</m>, and since deposits are monthly (and, following the tip above, so is compounding), <m>n = 12</m>. The annual interest rate is <m>r=0.06</m>, and since we want the amount after 20 years, <m>t=20</m>. The unknown value is <m>A</m>, which is the value we need to compute. Putting these values into the annuity equation we have:
       </p>
       <p>
         <md>
-        <mrow> A\amp= 100\left[\frac{\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1}{\left(\frac{0.06}{12}\right)}\right]</mrow>
-        <mrow> \amp= 100\left[\frac{(1.005)^{240}-1}{(0.005)}\right]</mrow>
-        <mrow> \amp= 100(462.040895)</mrow>
+        <mrow> A\amp= \$100\left[\frac{\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1}{\left(\frac{0.06}{12}\right)}\right]</mrow>
+        <mrow> \amp= \$100\left[\frac{(1.005)^{240}-1}{(0.005)}\right]</mrow>
+        <mrow> \amp= \$100(462.040895)</mrow>
         <mrow> \amp\approx \$46{,}204.09</mrow>
       </md>
       </p>
@@ -109,7 +109,7 @@
       </statement>
       <solution>
         <p>
-          To find the <alert>amount of interest earned</alert>, calculate the total of all the deposits.
+          To find the <alert>amount of interest earned</alert>, first calculate the total of all the deposits.
         </p>
         <p>
           <me>\$100(20)(12)=\$24{,}000</me>
@@ -128,52 +128,52 @@
           To find the <alert>percentage of the balance that is interest</alert>, divide the interest by the total balance.
         </p>
         <p>
-          <me>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4810</me>
+          <me>\frac{\$22{,}204.09}{\$46{,}204.09}\approx 0.4806</me>
         </p>
         <p>
-          or 48.1%. After 20 years 48.1% of the balance is from interest.
+          or 48.1%. After 20 years, 48.1% of the balance is from interest.
         </p>
       </solution>
     </example>
     <assemblage>
       <title>A note on rounding</title>
       <p>
-        If you are using the formulas and round during intermediate steps you will probably have some roundoff error. For this reason, enter the whole expression into the calculator. Alternately, enter the parts of the equation separately but use the calculators stored values for subsequent computations. 
-        Do not write down rounded intermediate steps and then key them back into the calculator. In the examples in this section we show intermediate value to guide you but use the unrounded value stored in the calculator to find the final answer shown.
+        If you are using the formulas and round during intermediate steps you will probably have some roundoff error. For this reason, enter the whole expression into the calculator. Alternatively, enter the parts of the equation separately but use the calculator's stored values for subsequent computations. 
+        Do not write down rounded intermediate steps and then key them back into the calculator. In the examples in this section we show intermediate values to guide you, but use the unrounded value stored in the calculator to find the final answer shown.
       </p>
     </assemblage>
     <p>
-      Occasionally the problem is more complicated. For example, consider a scenario where a large, initial deposit is made   with subsequent smaller, monthly deposits.
+      Occasionally the problem is more complicated. For example, consider a scenario where a large initial deposit is made, followed by smaller monthly deposits.
     </p>
     <example>
       <statement>
       <p>
-        You want to jumpstart your saving by depositing $1500 from your tax return and then deposit $150 every month into an account that earns 5.5% APR compounded monthly. How much will you have in the account after 30 years?
+        You want to jumpstart your saving by depositing $1,500 from your tax refund and then depositing $150 every month into an account that earns 5.5% APR compounded monthly. How much will you have in the account after 30 years?
       </p>
       </statement>
       <solution>
       <p>
-        This problem is solved by applying the compound interest formula to the initial deposit, and the future value of an annuity formula to the sequence of monthly payments and adding the result together.  That is,
+        This problem is solved by applying the compound interest formula to the initial deposit, and the future value of an annuity formula to the sequence of monthly payments, and then adding the results.  That is,
         <me>
           \text{Total} = A_1 + A_2,
         </me>
         where <m>A_1</m> is the future value of the lump sum and <m>A_2</m> the future value of the payments. For both computations <m>r = 0.055</m>, <m>n = 12</m>, and <m>t = 30</m>.
       </p>
       <p>
-        Computing <m>A_1</m> first using <m>P = \$1500</m>:
+        Computing <m>A_1</m> first using <m>P = \$1{,}500</m>:
         <md>
           <mrow> A_1 =\amp P\left(1+\frac{r}{n}\right)^{nt} </mrow>
-          <mrow> =\amp 1500\left(1+\frac{0.055}{12}\right)^{12\cdot 30}</mrow>
-          <mrow> =\amp 7{,}781.081752</mrow>
+          <mrow> =\amp \$1{,}500\left(1+\frac{0.055}{12}\right)^{12\cdot 30}</mrow>
+          <mrow> =\amp \$7{,}781.081761</mrow>
         </md>
       </p>
       <p>
         Next, using <m>d = \$150</m> compute <m>A_2</m>:
         <md>
           <mrow> A_2 =\amp d \left[\frac{\left(1+\frac{r}{n}\right)^{nt}-1}{\frac{r}{n}}\right] </mrow>
-          <mrow> =\amp 150 \left[\frac{\left(1+\frac{0.055}{12}\right)^{12\cdot 30}-1}{\frac{.055}{12}}\right]</mrow>
-          <mrow> =\amp 150(913.611891)</mrow>
-          <mrow> =\amp 137{,}041.783674 </mrow>
+          <mrow> =\amp \$150 \left[\frac{\left(1+\frac{0.055}{12}\right)^{12\cdot 30}-1}{\frac{0.055}{12}}\right]</mrow>
+          <mrow> =\amp \$150(913.611893)</mrow>
+          <mrow> =\amp \$137{,}041.783877 </mrow>
         </md>
       </p>
       <p>
@@ -202,9 +202,9 @@
       <p>
         In this problem we know all the needed values to use the annuity formula except <m>d</m>: <m>A=\$5{,}000</m>, <m>r=0.08</m>, <m>n = 12</m>, and <m>t = 3</m>.  Thus,
         <md>
-          <mrow> 5{,}000 =\amp d \left[\frac{\left(1+\frac{0.08}{12}\right)^{12\cdot 3}-1}{\frac{0.08}{12}}\right] </mrow>
-          <mrow> 5{,}000 =\amp d(40.535558) </mrow>
-          <mrow> d =\amp\frac{5{,}000}{40.535558} </mrow>
+          <mrow> \$5{,}000 =\amp d \left[\frac{\left(1+\frac{0.08}{12}\right)^{12\cdot 3}-1}{\frac{0.08}{12}}\right] </mrow>
+          <mrow> \$5{,}000 =\amp d(40.535558) </mrow>
+          <mrow> d =\amp\frac{\$5{,}000}{40.535558} </mrow>
           <mrow> \approx\amp \$123.35. </mrow>
         </md>
       </p>
@@ -229,9 +229,9 @@
       <p>
         Solving,
         <md>
-          <mrow> 450{,}000 =\amp d \left[\frac{\left(1.0225\right)^{20}-1}{0.0225}\right]</mrow>
-          <mrow> 450{,}000 =\amp d(24.911520)</mrow>
-          <mrow> d =\amp \frac{450{,}000}{24.911520} </mrow>
+          <mrow> \$450{,}000 =\amp d \left[\frac{\left(1.0225\right)^{20}-1}{0.0225}\right]</mrow>
+          <mrow> \$450{,}000 =\amp d(24.911520)</mrow>
+          <mrow> d =\amp \frac{\$450{,}000}{24.911520} </mrow>
           <mrow> \approx\amp \$18{,}063.93.</mrow>
         </md>
       </p>
@@ -243,19 +243,19 @@
   <example>
     <statement>
       <p>
-        How much interest did the business in <xref ref="ex_sinking_fund_1"/> earn on their sinking fund? What percentage of the final account balance is interest?
+        How much interest did the business in <xref ref="ex_sinking_fund_1"/> earn on its sinking fund? What percentage of the final account balance is interest?
       </p>
     </statement>
     <solution>
       <p>
-        To find the amount of interest earned, calculate the total of all your deposits.
+        To find the amount of interest earned, first calculate the total of all the deposits.
       </p>
       <p>
         <me>\$18{,}063.93(4)(5)=\$361{,}278.60</me>
       </p>
   
       <p>
-        The difference between the total amount and the deposits is the interest earned.
+        The difference between the final balance and the total deposits is the interest earned.
       </p>
       <p>
         <me>\$450{,}000.00-\$361{,}278.60=\$88{,}721.40.</me>
@@ -278,13 +278,13 @@
   <subsection xml:id="subsec-derivation-future-value-of-annuity">
     <title>Deriving the Future Value of an Annuity Formula (Optional)</title>
     <p>
-      If you are interested in where the future value of an annuity formula came from, we explain it here. A savings plan with regular payments can be described recursively. Recall that basic compound interest follows from the relationship for each compound period:
+      If you are interested in where the future value of an annuity formula came from, we explain it here. A savings plan with regular payments can be described recursively. Recall that basic compound interest follows from the relationship for each compounding period:
 
       <me>A=P\left(1+\frac{r}{n}\right)</me>
     </p>
   
     <p>
-      For a savings plan, we need to add a deposit, d, to the account with each compounding period:
+      For a savings plan, we need to add a deposit, <m>d</m>, to the account with each compounding period:
 
       <me>A=P\left(1+\frac{r}{n}\right)+d</me>
     </p>
@@ -311,7 +311,7 @@
     </ul>
  
     <p>
-      Writing out the recursive equation, where we use <m>P_{m}</m> to represent the balance after <m>m</m> compounding periods yields
+      Using <m>P_{m}</m> to represent the balance after <m>m</m> compounding periods, the recursive equation is
       <me>P_{m}=\left(1+\frac{0.06}{12}\right)P_{m-1}+100=(1.005)P_{m-1}+100.</me>
     </p>
 
@@ -319,7 +319,7 @@
       Assuming we start with an empty account, we can begin using this relationship:
 
       <md>
-        <mrow> P_{0} =\amp 0. </mrow>
+        <mrow> P_{0} =\amp 0 </mrow>
         <mrow> \amp </mrow>
         <mrow> P_{1} =\amp (1.005)P_{0}+100</mrow>
         <mrow>       =\amp 100 </mrow>
@@ -335,32 +335,32 @@
     </p>
 
     <p>
-      Continuing this pattern, after m deposits, we'd have saved:
-      <me>P_{m}=100(1.005)^{m-1}+100(1.005)^{m-2}+...+100(1.005)+100</me>
+      Continuing this pattern, after <m>m</m> deposits, we'd have saved:
+      <me>P_{m}=100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100</me>
     </p>
   
     <p>
-      In other words, after <m>m</m> months, the first deposit will have earned compound interest for <m>m-1</m> months. The second deposit will have earned interest for <m>m-2</m> months. Last month's deposit would have earned only one month worth of interest. The most recent deposit will have earned no interest yet.
+      In other words, after <m>m</m> months, the first deposit will have earned compound interest for <m>m-1</m> months. The second deposit will have earned interest for <m>m-2</m> months. The next-to-last deposit will have earned only one month's worth of interest. The most recent deposit will have earned no interest yet.
     </p>
   
     <p>
-      This equation leaves a lot to be desired, though – it doesn't make calculating the ending balance any easier! To simplify things, multiply both sides of the equation by 1.005:
+      This equation leaves a lot to be desired, though<mdash/>it doesn't make calculating the ending balance any easier! To simplify things, multiply both sides of the equation by 1.005:
 
-      <me>1.005P_{m}=1.005[100(1.005)^{m-1}+100(1.005)^{m-2}+...+100(1.005)+100]</me>
+      <me>1.005P_{m}=1.005[100(1.005)^{m-1}+100(1.005)^{m-2}+\cdots+100(1.005)+100]</me>
     </p>
   
     <p>
       Distributing on the right side of the equation gives
 
-      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+...+100(1.005)^{2}+100(1.005)</me>
+      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+100(1.005)^{2}+100(1.005)</me>
     </p>
     <p>
       Now we'll line this up with like terms from our original equation and subtract:
-      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+...+ 100(1.005).</me>
+      <me>1.005P_{m}=100(1.005)^{m}+100(1.005)^{m-1}+\cdots+ 100(1.005).</me>
     </p>
 
     <p>
-      <me>P_{m} = 100(1.005)^{m-1}+...+ 100(1.005)+100</me>
+      <me>P_{m} = 100(1.005)^{m-1}+\cdots+ 100(1.005)+100</me>
     </p>
   
     <p>
@@ -376,13 +376,13 @@
       </md>
     </p>
     <p>
-      Replacing <m>P_{m}</m> with <m>A</m> (Future Value), <m>m</m> months with <m>12t</m>, where <m>t</m> is measured in years, gives
+      Replacing <m>P_{m}</m> with <m>A</m> (the future value), <m>m</m> months with <m>12t</m>, where <m>t</m> is measured in years, gives
 
       <me>A=\frac{100\left((1.005)^{12t}-1\right)}{0.005}</me>
     </p>
   
     <p>
-      Recall <m>0.005</m> was <m>r/n</m> and 100 was the deposit <m>d</m>. The value 12 is <m>n</m>, the number of deposits per year. Generalizing this result, we get the savings plan formula solved for <m>A</m>. The second formula uses algebra to rearrange the formula to be solved for <m>d</m>.
+      Recall <m>0.005</m> was <m>r/n</m> and 100 was the deposit <m>d</m>. The value 12 is <m>n</m>, the number of deposits per year. Generalizing this result gives the formula for the future value of an ordinary annuity in <xref ref="subsec-annuities"/>.
     </p>
   </subsection>
 </section>
