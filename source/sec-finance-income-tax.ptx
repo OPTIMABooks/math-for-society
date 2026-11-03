@@ -45,7 +45,7 @@
     <title>A Very Brief History of Taxes</title>
       <p>
         Benjamin Franklin famously claimed in 1789 that <q>in this world nothing can be said to be certain, except death and taxes.</q> It wasn't until 1913, however, that the 16th Amendment was ratified, allowing Congress to levy a federal income tax.
-        Prior to this, taxes were primarily collected through tariffs on imported goods, poll taxes, and property taxes. A <term>poll tax</term>, also referred to as a head tax, was a fixed amount every liable individual had to pay. 
+        Prior to this, taxes were primarily collected through tariffs on imported goods, poll taxes, and property taxes. A <term>poll tax</term><idx>poll tax</idx>, also referred to as a head tax, was a fixed amount every liable individual had to pay. 
         Payment of the poll tax was often required before a person could register to vote or be issued a hunting or fishing license.
       </p>
       <p>
@@ -56,10 +56,10 @@
     <subsection>
       <title>Types of Income Tax</title>
       <p>
-        <term>Income tax</term> is a tax that is levied on earned income or profit. Income taxes are collected by the federal government, states, and even some municipalities. Income taxes are an important source of funding and are used to finance social programs, maintain and expand infrastructure, and provide foreign aid, among other things.
+        <term>Income tax</term><idx>income tax</idx> is a tax that is levied on earned income or profit. Income taxes are collected by the federal government, states, and even some municipalities. Income taxes are an important source of funding and are used to finance social programs, maintain and expand infrastructure, and provide foreign aid, among other things.
       </p>
       <p>
-        <alert>Federal Income Tax:</alert> Anyone who earns income over a certain amount (for tax year 2024, $14,600 for a single filer under 65) must file a federal tax return. The amount of federal tax owed is determined by your <term>filing status</term> and <term>taxable income</term>.
+        <alert>Federal Income Tax:</alert> Anyone who earns income over a certain amount (for tax year 2024, $14,600 for a single filer under 65) must file a federal tax return. The amount of federal tax owed is determined by your <term>filing status</term><idx>filing status</idx> and <term>taxable income</term>.
       </p>
       <p>
         <alert>State Income Tax:</alert> Forty-one states and the District of Columbia tax wage income. Nine states<mdash/>Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, and Wyoming<mdash/>do not tax wages, although Washington does tax some capital gains. The amount of tax collected varies widely by state.
@@ -80,19 +80,19 @@
         </image>
       </figure>
       <p>
-        <term>Gross income</term> includes all wages, tips, earned interest, dividends, rents and royalties, alimony (for divorces finalized before 2019), property gains, some state income tax refunds, etc. Note that this includes all forms of income. Even income from illegal activities must be reported.
+        <term>Gross income</term><idx>gross income</idx> includes all wages, tips, earned interest, dividends, rents and royalties, alimony (for divorces finalized before 2019), property gains, some state income tax refunds, etc. Note that this includes all forms of income. Even income from illegal activities must be reported.
       </p>
       <p>
-        <term>Adjustments</term> are eligible expenses that reduce your gross income. Eligible expenses include contributions to tax-deferred savings plans (such as a 401(k) or an Individual Retirement Account (IRA)), student loan interest, moving expenses for members of the military, business expenses for the self-employed, flexible spending accounts, and health savings account contributions.
+        <term>Adjustments</term><idx>adjustments (to income)</idx> are eligible expenses that reduce your gross income. Eligible expenses include contributions to tax-deferred savings plans (such as a 401(k) or an Individual Retirement Account (IRA)), student loan interest, moving expenses for members of the military, business expenses for the self-employed, flexible spending accounts, and health savings account contributions.
       </p>
       <p>
-        <term>Taxable income</term> is determined by subtracting your <term>deductions</term> from your adjusted gross income. You may choose to take <em>either</em> a <term>standard deduction</term>, which is determined by your filing status, or you may choose to <term>itemize</term> your deductions. Itemized deductions may include state and local income taxes, property taxes, medical expenses, mortgage interest, and charitable donations.
+        <term>Taxable income</term><idx>taxable income</idx> is determined by subtracting your <term>deductions</term><idx>deductions</idx> from your adjusted gross income. You may choose to take <em>either</em> a <term>standard deduction</term><idx><h>deductions</h><h>standard</h></idx><idx><h>standard deduction</h><see>deductions, standard</see></idx>, which is determined by your filing status, or you may choose to <term>itemize</term><idx><h>deductions</h><h>itemized</h></idx><idx><h>itemized deductions</h><see>deductions, itemized</see></idx> your deductions. Itemized deductions may include state and local income taxes, property taxes, medical expenses, mortgage interest, and charitable donations.
       </p>
       <p>
-        Prior to the 2018 tax year, you could also claim <term>personal exemptions</term>. Exemptions of $4,050 for each member of the household were subtracted from the adjusted gross income along with either the standard or itemized deduction to determine taxable income. Starting in 2018, however, the standard deduction was doubled, and personal exemptions were eliminated.
+        Prior to the 2018 tax year, you could also claim <term>personal exemptions</term><idx>personal exemptions</idx>. Exemptions of $4,050 for each member of the household were subtracted from the adjusted gross income along with either the standard or itemized deduction to determine taxable income. Starting in 2018, however, the standard deduction was doubled, and personal exemptions were eliminated.
       </p>
       <p>
-        The following example illustrates how to calculate gross income and adjusted gross income (AGI).
+        The following example illustrates how to calculate gross income and adjusted gross income (AGI).<idx>adjusted gross income (AGI)</idx><idx><h>AGI</h><see>adjusted gross income (AGI)</see></idx>
       </p>
       <example>
         <statement>
@@ -216,7 +216,7 @@
     <subsection>
       <title>Tax Tables</title>
       <p>
-        The United States has a <term>progressive</term> federal income tax system: the more income you have, the more you generally pay in taxes. There are <term>marginal tax rates</term> that go up according to our income. However, we don't pay the same rate on all of our income. The ranges of income are called <term>tax brackets</term> and the buckets in the illustration below can help us visualize the brackets.
+        The United States has a <term>progressive</term><idx>progressive tax</idx> federal income tax system: the more income you have, the more you generally pay in taxes. There are <term>marginal tax rates</term><idx>marginal tax rate</idx> that go up according to our income. However, we don't pay the same rate on all of our income. The ranges of income are called <term>tax brackets</term><idx>tax brackets</idx> and the buckets in the illustration below can help us visualize the brackets.
       </p>
       
       <p>
@@ -541,7 +541,7 @@
   <subsection>
     <title>Tax Credits</title>
     <p>
-      <term>Tax credits</term> are different from deductions in that they reduce the amount of tax you owe by the full amount of the credit, not just a percentage. This makes credits much more valuable than deductions.
+      <term>Tax credits</term><idx>tax credits</idx> are different from deductions in that they reduce the amount of tax you owe by the full amount of the credit, not just a percentage. This makes credits much more valuable than deductions.
     </p>
   
     <p>
@@ -564,7 +564,7 @@
   <subsection>
     <title>Calculating a Refund or Payment Due</title>
     <p>
-      Employers are required to take out an estimated amount for taxes from each of our paychecks. These withholdings are taken out so that we don't all have huge tax bills at the end of the year, and so the government has the income it needs to run. When you file your taxes, you compare the amount of tax you actually owe with the withholdings from your paycheck. If you had more withheld during the year than you owe, you will file for a refund. If your withholdings were less, though, you must pay the difference. Let's look at a couple of examples with tax credits and withholdings.
+      Employers are required to take out an estimated amount for taxes from each of our paychecks. These withholdings<idx>withholdings</idx> are taken out so that we don't all have huge tax bills at the end of the year, and so the government has the income it needs to run. When you file your taxes, you compare the amount of tax you actually owe with the withholdings from your paycheck. If you had more withheld during the year than you owe, you will file for a refund. If your withholdings were less, though, you must pay the difference. Let's look at a couple of examples with tax credits and withholdings.
     </p>
     <example>
       <statement>
