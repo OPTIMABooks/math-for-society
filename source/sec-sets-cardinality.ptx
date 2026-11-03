@@ -7,12 +7,12 @@
 		<ul>
 			<li>
 				<p>
-					Use the addition rule to count the number of elements in the union of two sets.
+					Use the inclusion-exclusion rule to count the number of elements in the union of two sets.
 				</p>
 			</li>
 			<li>
 				<p>
-					Count the number of elements needed to solve 3-set problems.
+					Use a Venn diagram to find the number of elements in each region of a 3-set problem.
 				</p>
 			</li>
 		</ul>
@@ -25,7 +25,7 @@
 	<subsection>
 		<title>Counting Problems with 2 Sets</title>
 		<p>
-			The number of elements in a set is called the <term>cardinality</term> of the set. Sometimes we are interested in the cardinality of the union or intersection of sets, but do not know the actual elements of each set. The following sections explore these ideas in problems involving two or three sets.
+			Sometimes we are interested in the number of elements in the union or intersection of sets, but do not know the actual elements of each set. The following examples explore these ideas in problems involving two or three sets.
 		</p>
 		<definition xml:id="def-sets-cardinality">
 			<statement>      
@@ -36,7 +36,7 @@
 		</definition>
 		<example>
 			<p>
-				A survey asks 200 people <q>What beverage do you drink in the morning</q>, and offers choices:
+				A survey asks 200 people <q>What beverage do you drink in the morning?</q>, and offers choices:
 				<ul>
 					<li>
 						<p>
@@ -50,23 +50,28 @@
 					</li>
 					<li>
 						<p>
-							Both coffee and tea.
+							Both coffee and tea,
+						</p>
+					</li>
+					<li>
+						<p>
+							Neither.
 						</p>
 					</li>
 				</ul>
-				Suppose 20 report tea only, 80 report coffee only, 40 report both. How many people drink tea in the morning? How many people drink neither tea nor coffee?
+				Suppose 20 report tea only, 80 report coffee only, and 40 report both. How many people drink tea in the morning? How many people drink neither tea nor coffee?
 			</p>
 			<sidebyside widths="50% 45%" margins="2.5% 0%" valign="top">
 				<p>
 					This question can be most easily answered by creating a Venn diagram.  We see that we can find the people who drink tea by adding those who drink only tea to those who drink both: 60 people.
-					We can also see that those who drink neither are those not contained in the any of the three other groupings, so we can count those by subtracting from the cardinality of the universal set, 200.  
+					We can also see that those who drink neither are those not contained in any of the three other groupings, so we can count those by subtracting from the cardinality of the universal set, 200.  
 					<me>
 						200 - 20 - 80 - 40 = 60
 					</me>
 					people who drink neither.
 				</p>
 				<image xml:id="tigs-2venn-coffee-tea" width="100%">
-					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled coffee and contains the number 80. The other is labeled "Tea" and contains the number 20. The intersection of the two circles contains the number 40.</shortdescription>
+					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled "Coffee" and contains the number 80. The other is labeled "Tea" and contains the number 20. The intersection of the two circles contains the number 40.</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}[scale=2/7,font=\sffamily]
 							\draw[semithick] (0,0) rectangle (21,14);
@@ -96,7 +101,7 @@
 				<ul>
 					<li>
 						<p>
-							Twitter,
+							X (formerly Twitter),
 						</p>
 					</li>
 					<li>
@@ -106,27 +111,32 @@
 					</li>
 					<li>
 						<p>
-							Have used both.
+							Both X and Facebook,
+						</p>
+					</li>
+					<li>
+						<p>
+							Neither.
 						</p>
 					</li>
 				</ul>
-				The results show 40% of those surveyed have used Twitter, 70% have used Facebook, and 20% have used both.  How many people have used either Twitter or Facebook?  How many people have used neither?
+				The results show 40% of those surveyed have used X, 70% have used Facebook, and 20% have used both.  What percentage of those surveyed have used either X or Facebook?  What percentage have used neither?
 			</p>
 			<p>
-				Let <m>T</m> be the set of all people who have used Twitter, and <m>F</m> be the set of all people who have used Facebook.  Notice that <m>n(F)=0.70</m> and <m>n(T)=0.40</m>. It is tempting to simply add these two numbers together to compute the  size of <m>F \cup T</m>, but this is <em>incorrect</em> because doing so would count those who use both services twice.  
-				To correct for this, we can add <m>n(T)</m> to <m>n(F)</m>  and then subtract those in the intersection that have been added twice. That is,
+				Let <m>X</m> be the set of all people who have used X, and <m>F</m> be the set of all people who have used Facebook.  Since we only know percentages, we let <m>n</m> represent the proportion of those surveyed in each set, so <m>n(F)=0.70</m> and <m>n(X)=0.40</m>. It is tempting to simply add these two numbers together to compute the size of <m>F \cup X</m>, but this is <em>incorrect</em> because doing so would count those who use both services twice.  
+				To correct for this, we can add <m>n(X)</m> to <m>n(F)</m> and then subtract those in the intersection that have been added twice. That is,
 				<md>
-					<mrow>n(F\cup T) =\amp n(F) + n(T) - n(F\cap T) </mrow>
+					<mrow>n(F\cup X) =\amp n(F) + n(X) - n(F\cap X) </mrow>
 					<mrow> =\amp 0.70+0.40-0.20 </mrow>
 					<mrow> =\amp 0.90</mrow>
 				</md>
-				Thus, 90% of the people surveyed have used Facebook or Twitter.
+				Thus, 90% of the people surveyed have used Facebook or X.
 			</p>
 			<p>
-				To find how many people have <em>not</em> used either service, we want the cardinality of <m>(F \cup T)^C</m>. Since <m>U</m> is 100%, and <m>n(F\cup T) = 0.9</m>, it follows that <m>n((F\cup T)^C) = 1.0 - 0.9 = 0.1</m>, or 10% of those surveyed. These quantities are illustrated in the Venn diagram below.
+				To find how many people have <em>not</em> used either service, we want the cardinality of <m>(F \cup X)^C</m>. Since <m>U</m> is 100%, and <m>n(F\cup X) = 0.9</m>, it follows that <m>n((F\cup X)^C) = 1.0 - 0.9 = 0.1</m>, or 10% of those surveyed. These quantities are illustrated in the Venn diagram below.
 			</p>
 			<image xml:id="tigs-2venn-social-media" width="43%">
-				<shortdescription>One is labeled F and contains the number 0.50. The other is labeled T and contains the number 0.20. The intersection of the two circles contains the number 0.20.</shortdescription>
+				<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled F and contains the number 0.50. The other is labeled X and contains the number 0.20. The intersection of the two circles contains the number 0.20. The region outside both circles contains the number 0.10.</shortdescription>
 				<latex-image>
 					\begin{tikzpicture}[scale=2/7,font=\sffamily]
 						\draw[semithick,fill=white] (0,0) rectangle (21,14);
@@ -137,11 +147,11 @@
 						\draw[semithick] (14,7) circle (5);
 						% Set names
 						\node at (7,11) {$F$};
-						\node at (14,11) {$T$};
+						\node at (14,11) {$X$};
 						% Numbers in each region
 						\node at (6,7) {0.50};       % Only in F
 						\node at (10.5,7) {0.20};    % Intersection
-						\node at (15,7) {0.20};      % Only in T
+						\node at (15,7) {0.20};      % Only in X
 						\node at (19,1.5) {0.10};   % Complement of union
 					\end{tikzpicture}
 				</latex-image>
@@ -158,12 +168,15 @@
 				</p>
 			</statement>
 		</fact>
+		<p>
+			(Some texts call this the <term>addition rule</term>.)
+		</p>
 		<definition xml:id="def_mutually-exclusive">
 	  	<idx>mutually exclusive</idx>
 	  	<idx><h>sets</h><h>mutually exclusive</h></idx>
 	  	<statement>
 	  		<p>
-					Two sets, <m>A</m> and <m>B</m>, are <term>mutually exclusive</term> if their intersection is empty.  That is, <m>A\cap B = \emptyset</m>, which means that <m>n(A\cap B) = 0</m>.
+					Two sets, <m>A</m> and <m>B</m>, are <term>mutually exclusive</term> if their intersection is empty.  That is, <m>A\cap B = \emptyset</m>, which means that <m>n(A\cap B) = 0</m>. In this case, the <xref text="title" ref="fact-sets-inclusion-exclusion-rule"/> simplifies to <m>n(A\cup B) = n(A) + n(B)</m>.
 				</p>
 	  	</statement>
 	  </definition>
@@ -179,7 +192,7 @@
 			<solution>
 				<p>
 					Let <m>P</m> represent the set of people who bought popcorn, and <m>S</m> represent the set of people who bought soda. Then we are told that <m>n(P)=200</m>, <m>n(S)=150</m>, and <m>n(P\cap S) = 90</m>. 
-					The number of people who bought popcorn but so soda is the cardinality of <m>P\cap S^C</m>. This is the part of the Venn diagram inside of <m>P</m> but outside of <m>S</m>. Note that
+					The number of people who bought popcorn but no soda is the cardinality of <m>P\cap S^C</m>. This is the part of the Venn diagram inside of <m>P</m> but outside of <m>S</m>. Note that
 					<me>
 						n\left(P\cap S^C\right) = n(P)-n(P\cap S) = 200-90 = 110.
 					</me>
@@ -216,13 +229,13 @@
 			Note that the <xref text="title" ref="fact-sets-inclusion-exclusion-rule"/> can be updated for three-set problems, but we do not include the formula here.
 		</p>
 		<p>
-			To compute cardinality in 3-set counting problems, begin by finding the central intersection where all three sets overlap, if possible. Then, calculate the pairwise intersections where exactly two sets meet. 
+			To compute cardinality in 3-set counting problems, begin by finding the central intersection where all three sets overlap, if possible. Then, calculate the regions where exactly two sets overlap. 
 			Using these values, determine how many elements belong uniquely to each individual set. Finally, add all these regions together and verify that they match the given total, or use the total to compute any missing values. The following examples demonstrate this approach.
 		</p>
 		<example>
 			<statement>
 				<p>
-					Suppose that fifty students are surveyed and asked if they were taking a science (<m>S</m>), humanities (<m>H</m>) or a religion (<m>R</m>) course next quarter. The results are:
+					Suppose that fifty students are surveyed and asked if they would be taking a science (<m>S</m>), a humanities (<m>H</m>), or a religion (<m>R</m>) course next quarter. The results are:
 					<ul>
 						<li>
 							<p> 21 were taking a science course,</p>
@@ -231,7 +244,7 @@
 							<p> 26 were taking a humanities course,</p>
 						</li>
 						<li>
-							<p> 19 were taking a religion,</p>
+							<p> 19 were taking a religion course,</p>
 						</li>
 						<li>
 							<p>	9 were taking science and humanities,	</p>
@@ -305,7 +318,7 @@
 					</figure>
 				</sidebyside>
 				<p>
-					From the given data, we know that there are 3 students in region <m>e</m> and 7 students in region <m>h</m>. Since 7 students were taking a science and a religion course, we know that <m>n(d) + n(e) = 7</m>.  Since we know there are 3 students in region 3, there must be <m>7 - 3 = 4</m> students in region <m>d</m>. 
+					From the given data, we know that there are 3 students in region <m>e</m> and 7 students in region <m>h</m>. Since 7 students were taking a science and a religion course, we know that <m>n(d) + n(e) = 7</m>.  Since we know there are 3 students in region <m>e</m>, there must be <m>7 - 3 = 4</m> students in region <m>d</m>. 
 				</p>
 				<p>
 					Similarly, because there are 10 students taking both humanities and religion, which includes regions <m>e</m> and <m>f</m>, there must be <m>10 - 3 = 7</m> students in region <m>f</m>.  With 9 students taking science and humanities courses, there must be <m>9 - 3 = 6</m> students in region <m>b</m>. 
@@ -316,12 +329,12 @@
 				<sidebyside widths="48% 48%" margins="0% 0%" valigns="top top">
 					<p>
 						<alert>Note:</alert> The above work was directed at finding the number of students who were only taking a science class. However, it is a good idea to <q>solve</q> the 3-set diagram completely if possible. 
-						Once this is done, any question about cardinality can be solved quickly. In this case, we can find that <m>n(c)=26-6-3-7=10</m>, and <m>n(g)=19-4-6-7=5</m>. The solved diagram is shown here.
+						Once this is done, any question about cardinality can be solved quickly. In this case, we can find that <m>n(c)=26-6-3-7=10</m>, and <m>n(g)=19-4-3-7=5</m>. The solved diagram is shown here.
 					</p>
 					<figure xml:id="fig-3-set-venn-diagram-solved">
 						<caption>The <q>solved</q> 3-set Venn diagram showing the cardinality of each region.</caption>
 						<image xml:id="tikz-3venn-courses-solved" width="100%">
-							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with lower case letters a through g.</shortdescription>
+							<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled S, one H, and one R. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 							<latex-image>
 								\begin{venndiagram3sets}[
 										labelA={},
@@ -370,7 +383,7 @@
 		<example>
 			<statement>
 				<p>
-					In a survey of 75 consumers, 12 indicated they were going to buy a new couch, 18 said they were going to buy a new rug, and 24 said they were going to buy a new sofa. Of these, 6 were going to buy both a couch and a rug, 4 were going to buy a couch and a sofa, and 10 were going to buy a sofa and a rug. One person indicated he was going to buy all three.
+					In a survey of 75 consumers, 12 indicated they were going to buy a new couch, 18 said they were going to buy a new rug, and 24 said they were going to buy a new lamp. Of these, 6 were going to buy both a couch and a rug, 4 were going to buy a couch and a lamp, and 10 were going to buy a lamp and a rug. One person indicated they were going to buy all three.
 					<ol marker="a)">
 						<li>
 							<p> How many were going to buy none of these items?</p>
@@ -379,42 +392,42 @@
 							<p>	How many were going to buy only a couch? </p>
 						</li>
 						<li>
-							<p>	How many were going to buy only a sofa?	</p>
+							<p>	How many were going to buy only a lamp?	</p>
 						</li>
 						<li>
 							<p>	How many were going to buy only a rug? </p>
 						</li>
 						<li>
-							<p>	How many were going to buy a sofa and a rug but not a couch? </p>
+							<p>	How many were going to buy a lamp and a rug but not a couch? </p>
 						</li>
 					</ol>
 				</p>
 			</statement>
 			<solution>
 				<p>
-				 Label the sets of people buying couches, rugs, and sofas by <m>C</m>, <m>R</m>, and <m>S</m>. Let <m>U</m> denote the universal set. Then we know from the given problem statement that 
+				 Label the sets of people buying couches, rugs, and lamps by <m>C</m>, <m>R</m>, and <m>L</m>. Let <m>U</m> denote the universal set. Then we know from the given problem statement that 
 				 <md>
 					<mrow> n(C) =\amp 12, </mrow>
 					<mrow> n(R) =\amp 18, </mrow>
-					<mrow> n(S) =\amp 24, </mrow>
+					<mrow> n(L) =\amp 24, </mrow>
 					<mrow> n(C\cap R) =\amp 6, </mrow>
-					<mrow> n(C\cap S) =\amp 4, </mrow>
-					<mrow> n(S\cap R) =\amp 10, </mrow>
-					<mrow> n(C\cap R\cap S) =\amp 1, </mrow>
+					<mrow> n(C\cap L) =\amp 4, </mrow>
+					<mrow> n(L\cap R) =\amp 10, </mrow>
+					<mrow> n(C\cap R\cap L) =\amp 1, </mrow>
 					<mrow> n(U) =\amp 75. </mrow>
 				 </md>
-				 Use this information to create a Venn diagram with three interlocking circles labeled <m>C</m>, <m>R</m>, and <m>S</m>. To begin, use the fact that <m>n(C\cap R\cap S) = 1</m> to fill in the center of the diagram.
+				 Use this information to create a Venn diagram with three interlocking circles labeled <m>C</m>, <m>R</m>, and <m>L</m>. To begin, use the fact that <m>n(C\cap R\cap L) = 1</m> to fill in the center of the diagram.
 				</p>
 				<p>
-					Since <m>n(C\cap R) = 6</m>, <m>n(C\cap S) = 4</m>, and <m>n(S\cap R) = 10</m>, we compute <m>6-1=5</m> and place it in the proper region (giving a total of 6 in the set <m>C\cap R</m>). Similarly, we place 3 and 9 in the proper regions for the sets <m>C\cap S</m> and <m>S\cap R</m>.
+					Since <m>n(C\cap R) = 6</m>, <m>n(C\cap L) = 4</m>, and <m>n(L\cap R) = 10</m>, we compute <m>6-1=5</m> and place it in the proper region (giving a total of 6 in the set <m>C\cap R</m>). Similarly, we place 3 and 9 in the proper regions for the sets <m>C\cap L</m> and <m>L\cap R</m>.
 				</p>
 				<p>
-					Next, <m>n(C)=12</m>, and 9 of these 12 are accounted for, so 3 remain. In the same way, <m>n(R)=18</m> with 15 accounted for, so 3 remain. For <m>n(S)=24</m>, 13 are accounted for and 11 remain.
+					Next, <m>n(C)=12</m>, and 9 of these 12 are accounted for, so 3 remain. In the same way, <m>n(R)=18</m> with 15 accounted for, so 3 remain. For <m>n(L)=24</m>, 13 are accounted for and 11 remain.
 				</p>
 				<p>
-					Finally, the number in <m>(C\cup R\cup S)^C</m> is the total of 75 less those accounted for in <m>C</m>, <m>R</m>, and <m>S</m>. The total That is,
+					Finally, the number in <m>(C\cup R\cup L)^C</m> is the total of 75 less those accounted for in <m>C\cup R\cup L</m>. That is,
 					<md>
-						<mrow> n((C\cup R\cup S)^C) =\amp 75-(3+5+1+3+3+9+11) </mrow>
+						<mrow> n((C\cup R\cup L)^C) =\amp 75-(3+5+1+3+3+9+11) </mrow>
 						<mrow> =\amp 75-35 =40. </mrow>
 					</md>
 					These values are shown in the figure below.
@@ -422,12 +435,12 @@
 				<figure xml:id="fig-3-set-venn-diagram-consumer">
 					<caption>The <q>solved</q> 3-set Venn diagram showing the cardinality of each region.</caption>
 					<image xml:id="tikz-3venn-consumers-solved" width="45%">
-						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled C, one R, and one S. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
+						<shortdescription>A rectangle is drawn for the universal set U. There are three overlapping circles inside. One is labeled C, one R, and one L. The distinct regions are labeled with numbers representing their cardinality.</shortdescription>
 						<latex-image>
 							\begin{venndiagram3sets}[
 							labelA={$C$},
 							labelB={$R$},
-							labelC={$S$},
+							labelC={$L$},
 							labelOnlyA={3},
 							labelOnlyB={3},
 							labelOnlyC={11},
@@ -464,7 +477,7 @@
 					</image>
 				</figure>
 				<p>
-					The Venn diagram resulting from these calculations is shown above. From this figure, we can conclude that
+					From this figure, we can conclude that
 					<ol marker="a)">
 						<li>
 							<p> 40 were going to buy none of these items. </p>
@@ -473,13 +486,13 @@
 							<p>	3 were going to buy only a couch. </p>
 						</li>
 						<li>
-							<p>	11 were going to buy only a sofa.	</p>
+							<p>	11 were going to buy only a lamp.	</p>
 						</li>
 						<li>
 							<p>	3 were going to buy only a rug. </p>
 						</li>
 						<li>
-							<p>	9 were going to buy a sofa and a rug but not a couch. </p>
+							<p>	9 were going to buy a lamp and a rug but not a couch. </p>
 						</li>
 					</ol>
 				</p>
