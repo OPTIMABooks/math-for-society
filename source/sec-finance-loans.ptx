@@ -27,13 +27,13 @@
 
   <introduction>
     <p>
-      In the last section, you learned about savings plans. In this section, you will learn about <term>payout annuities</term> and <term>conventional loans</term>. These two financial concepts use the same formula: the <term>present value of an annuity</term> formula.  
+      In the last section, you learned about savings plans. In this section, you will learn about <term>payout annuities</term><idx><h>annuities</h><h>payout</h></idx> and <term>conventional loans</term>. These two financial concepts use the same formula: the <term>present value of an annuity</term> formula.  
     </p>
     <p>
       In a payout annuity, the account is opened with a lump sum, and money is withdrawn from the account at regular intervals.  The money remaining in the account earns interest.  After a fixed amount of time, the account will be empty. 
     </p>
     <p>
-      Conventional loans are also called <term>amortized loans</term> or <term>installment loans</term>. They are designed so that the payment amount remains the same over the life (term) of the loan. Examples include student loans, car loans, and home mortgages. The techniques we use to analyze these loans do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. 
+      Conventional loans are also called <term>amortized loans</term> or <term>installment loans</term>.<idx><h>loans</h><h>amortized</h></idx><idx><h>amortized loans</h><see>loans, amortized</see></idx><idx><h>installment loans</h><see>loans, amortized</see></idx><idx><h>conventional loans</h><see>loans, amortized</see></idx> They are designed so that the payment amount remains the same over the life (term) of the loan. Examples include student loans, car loans, and home mortgages. The techniques we use to analyze these loans do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. 
     </p>
  
   </introduction>
@@ -42,8 +42,6 @@
     <p>
       The <term>present value</term> of an annuity is the amount of money we would need now in order to be able to make the payments in the annuity in the future. In other words, the present value is the value now of a future stream of payments.
       To better understand what this means, consider the following example.
-      <idx>present value of an annuity</idx>
-      <idx><h>annuities</h><h>present value</h></idx>
     </p>
 
       <p>
@@ -85,7 +83,7 @@
         <title>Present Value of an Ordinary Annuity</title>
         <idx>present value of an annuity</idx>
         <idx><h>financial formulas</h><h>present value of an annuity</h></idx>
-        <idx><h>annuities</h><h>present value formula</h></idx>
+        <idx><h>annuities</h><h>present value</h></idx>
         <p>
           If payments of <m>d</m> dollars are made <m>n</m> times a year for <m>t</m> years, at an annual interest rate <m>r</m> compounded <m>n</m> times per year, then the present value <m>P</m> of the annuity is
           <me>
@@ -283,7 +281,7 @@
     </solution>
     </example>
     <p>
-      With loans, it is sometimes desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.
+      With loans, it is sometimes desirable to determine what the remaining loan balance<idx><h>loans</h><h>remaining balance</h></idx> will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.
     </p>
     <p>
       To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don't already know it. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will <em>not</em> have paid off $12,000 of the loan balance.
@@ -343,7 +341,7 @@
   <subsection>
     <title>Credit Cards</title>
       <p>
-        In this section we will also briefly cover credit cards.
+        In this section we will also briefly cover credit cards.<idx>credit cards</idx>
         Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan, and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.
       </p>
       <p>
@@ -352,7 +350,7 @@
       <example>
         <statement>
         <p>
-          Amira gets a credit card with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance (after interest) or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?
+          Amira gets a credit card with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment<idx><h>credit cards</h><h>minimum payment</h></idx> is calculated to be 1% of the outstanding balance (after interest) or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?
         </p>
         </statement>
         <solution>
