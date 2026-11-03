@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This frontmatter division will contain all content before the -->
-<!-- first chapter. Fill in and comment/uncomment to see how this -->
-<!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <bibinfo>
@@ -21,9 +18,9 @@
  -->
 
     <copyright>
-      <year>2025</year>
+      <year>2025–2026</year>
       <holder>Benjamin D. Jackson</holder>
-        <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License except for the components listed separately on the <xref ref="attributions" text="custom">attributions</xref> page. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+        <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License except for the components listed separately on the <xref ref="attributions" text="custom">attributions</xref> page. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0">CreativeCommons.org</url>.
       </shortlicense>
     </copyright>
 
@@ -43,18 +40,21 @@
     </sidebyside>
 	</dedication>
 
-  <!-- ToDo: 
-    Add Introduction to text
-  -->
-
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
 
+  <preface>
+    <title>Introduction</title>
+    <p>
+      This book has been written for use in Walla Walla University's Math 105, <em>Math for the Liberal Arts</em> class (previously titled <em>Finite Mathematics</em>). This course is taught over a 10-week quarter and fulfills the general studies mathematics requirement for many non-STEM majors. During a 10-week term I typically cover all sections except 1.5 (Income Taxes), 2.5 (Logical Fallacies), and 3.7 (Expected Value). These sections are included for colleagues who cover the material differently.
+    </p>
+  </preface>
+
   <preface xml:id="attributions">
     <title>Attributions</title>
 		<p>
-			This book is Licensed under
+			This book is licensed under
 			<url href="https://creativecommons.org/licenses/by-sa/4.0"
 				visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url> 
       except for the following component:
@@ -86,7 +86,7 @@
           </li>
           <li>
             <p>
-              <url href="https://www.deanza.edu/faculty/bloomroberta/math11/index.html"><q>Applied Finite Mathematics 3rd ed</q></url> by R. Sekhom and R. Bloom., Deanza College.
+              <url href="https://www.deanza.edu/faculty/bloomroberta/math11/index.html"><q>Applied Finite Mathematics 3rd ed</q></url> by R. Sekhon and R. Bloom, De Anza College.
             </p>
           </li>
           <li>
@@ -97,24 +97,18 @@
         </ul>
       </p>
       <p>
-        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies and the subsection on Expected Value are brought over from Lee et al with only brief edits or corrections, as are any provided exercises in this text.  Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation. The sections on sets contain material from Sekhom and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
+        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies, and Expected Value are brought over from Lee et al. with only brief edits or corrections, as are any provided exercises in this text. Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation. The sections on sets contain material from Sekhon and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
       </p>
     </paragraphs>
     <paragraphs>
-      <title> Thanks</title>
+      <title>Thanks</title>
       <p>
         I thank the authors listed above for their work and for making it public. Without them, this project would not have been completed in the time I had to work on it. I have freely edited, extended, and adapted these sources. Any mistakes are no doubt mine!
       </p>
       <p>
-        Finally, I want to thank <url href="https://www.wallawalla.edu/" visual="pcc.edu/math-in-society">Walla Walla University</url> for awarding me a sabbatical during Spring Quarter of 2025 to work on this project. This book would not have been possible without relief from both my teaching and administrative duties.
+        Finally, I want to thank <url href="https://www.wallawalla.edu/" visual="wallawalla.edu">Walla Walla University</url> for awarding me a sabbatical during Spring Quarter of 2025 to work on this project. This book would not have been possible without relief from both my teaching and administrative duties.
       </p>
     </paragraphs>
-  </preface>
-  <preface>
-    <title>Introduction</title>
-    <p>
-      This book has been written for use in Walla Walla University's Math 105, <em>Math for the Liberal Arts</em> class (previously titled <em>Finite Mathematics</em>). This course is taught over a 10-week quarter and fulfills the general studies mathematics requirement for many non STEM majors. During a 10-week term I typically cover all sections except 1.5 (Income Taxes), 2.5 (Logical Fallacies), and 3.7 (Expected Value). These sections are included for colleagues who cover the material differently.
-    </p>
   </preface>
 
 </frontmatter>
