@@ -37,7 +37,7 @@
 		<title>Propositions</title>
 		<p>  
 			The basic building block of symbolic logic is the <term>proposition</term> or <term>statement</term>.
-			A <term>proposition</term> is a declarative sentence that can be meaningfully classified as either true or false. Such statements are unlike everyday sentences, which can be questions, commands, or expressions with unclear meanings. 
+			A <term>proposition</term><idx>proposition</idx> is a declarative sentence that can be meaningfully classified as either true or false. Such statements are unlike everyday sentences, which can be questions, commands, or expressions with unclear meanings. 
 			Propositions are used in symbolic logic because they remove any vagueness or implied meanings that might confuse the application of logical principles.
 		</p>
 		<example>
@@ -75,14 +75,14 @@
 			</solution>
 		</example>
 		<p>
-			Arguments are made of one or more propositions (called <term>premises</term>), along with a <term>conclusion</term>. Propositions may be <term>negated</term> or combined with <term>connectors</term> (or <term>operators</term>) like <q>and</q> and <q>or</q> to make new propositions. Let's take a closer look at how negations and logical connectors are used to create more complex statements.
+			Arguments are made of one or more propositions (called <term>premises</term><idx>premise</idx>), along with a <term>conclusion</term><idx><h>conclusion</h><h>of an argument</h></idx>. Propositions may be <term>negated</term> or combined with <term>connectors</term><idx>logical connector</idx> (or <term>operators</term>) like <q>and</q> and <q>or</q> to make new propositions. Let's take a closer look at how negations and logical connectors are used to create more complex statements.
 		</p>
  	</subsection>
 	<subsection>
 		<title>Negation (not)</title>
 		<introduction>
 			<p>
-				One way to change a proposition is to use its <term>negation</term>, or opposite meaning. The word <q><term>not</term></q> is often used to negate a statement.
+				One way to change a proposition is to use its <term>negation</term><idx>negation</idx>, or opposite meaning. The word <q><term>not</term></q> is often used to negate a statement.
 			</p>
 			<example>
 				<statement>
@@ -143,7 +143,7 @@
 		<subsubsection>
 			<title>Negation of Quantifiers</title>
 			<p>
-				It is worth mentioning the quantifiers <q><term>all</term></q> and <q><term>some</term></q>, and how to negate them. If we were to make the statement, <q><alert>All</alert> students read this book</q>, we could negate it by saying <q><alert>Not all</alert> students read this book</q> or <q><alert>Some</alert> students <alert>don't</alert> read this book.</q> Notice how this is very different from <q><alert>No</alert> students read this book</q>.
+				It is worth mentioning the quantifiers <q><term>all</term></q><idx><h>quantifier</h><h>all</h></idx> and <q><term>some</term></q><idx><h>quantifier</h><h>some</h></idx>, and how to negate them. If we were to make the statement, <q><alert>All</alert> students read this book</q>, we could negate it by saying <q><alert>Not all</alert> students read this book</q> or <q><alert>Some</alert> students <alert>don't</alert> read this book.</q> Notice how this is very different from <q><alert>No</alert> students read this book</q>.
 			</p>
 			<p>
 				If we were to negate, <q><alert>No</alert> students read this book,</q> we could say, <q><alert>At least one</alert> student reads this book,</q> or even, <q><alert>Some</alert> students do read this book.</q> 
@@ -191,10 +191,10 @@
 		<subsubsection>
 			<title>Multiple Negations</title>
 			<p>
-				It is possible to use more than one negation in a statement. If you've ever said something like, <q>I <alert>can't not</alert> go,</q> you are saying you will go. In fact, people often say it for emphasis: you really must go. If someone says, <q>I <alert>don't disagree</alert>,</q> they may not be expressing full agreement but are acknowledging that the person has a valid point. A <term>double negative</term> is similar to multiplying two negative numbers, which gives a positive result. Using a third negation would then be equivalent to a single negation.
+				It is possible to use more than one negation in a statement. If you've ever said something like, <q>I <alert>can't not</alert> go,</q> you are saying you will go. In fact, people often say it for emphasis: you really must go. If someone says, <q>I <alert>don't disagree</alert>,</q> they may not be expressing full agreement but are acknowledging that the person has a valid point. A <term>double negative</term><idx>double negative</idx> is similar to multiplying two negative numbers, which gives a positive result. Using a third negation would then be equivalent to a single negation.
 			</p>
 			<p>
-				Note that in some instances a negation word like <q>no,</q> <q>nobody,</q> or <q>nothing</q> is used to emphasize rather than negate, and this is called <term>negative concord</term>. For example, <q>I ain't got no money</q> is not a double negative but rather an emphasis of not having any money. This is common across many varieties of English and other languages. You can read more about negative concord at this <url href="https://ygdp.yale.edu/phenomena/negative-concord" visual="ygdp.yale.edu/phenomena/negative-concord">site</url>. In general, use your judgment and context cues to distinguish between a double negative and negative concord. We will use multiple negations but not negative concord in this book.
+				Note that in some instances a negation word like <q>no,</q> <q>nobody,</q> or <q>nothing</q> is used to emphasize rather than negate, and this is called <term>negative concord</term><idx>negative concord</idx>. For example, <q>I ain't got no money</q> is not a double negative but rather an emphasis of not having any money. This is common across many varieties of English and other languages. You can read more about negative concord at this <url href="https://ygdp.yale.edu/phenomena/negative-concord" visual="ygdp.yale.edu/phenomena/negative-concord">site</url>. In general, use your judgment and context cues to distinguish between a double negative and negative concord. We will use multiple negations but not negative concord in this book.
 			</p>
 			<p>
 				In the media and in ballot measures we often see multiple negations and it can be confusing to figure out what a statement means.
@@ -315,9 +315,9 @@
 			</solution>
 		</example>
 		<p>
-			In English we often mean for <em>or</em> to be <term>exclusive</term>: one or the other, but not both. 
+			In English we often mean for <em>or</em> to be <term>exclusive</term><idx>exclusive or</idx>: one or the other, but not both. 
 			For example, when you order at a restaurant and are offered a soup <em>or</em> salad with your meal, you understand the <q>or</q> to be exclusive: you may choose a salad or a soup with your meal, but not both.
-			In math, however, <em>or</em> is usually <term>inclusive</term>: one or the other, or both. The thing we are including or excluding is the <q>both</q> option.
+			In math, however, <em>or</em> is usually <term>inclusive</term><idx>inclusive or</idx>: one or the other, or both. The thing we are including or excluding is the <q>both</q> option.
 		</p>
 		<example>
 			<statement>
@@ -357,8 +357,8 @@
 	<subsection>
 		<title>Conditional Statements: <em>if, then</em></title>
 		<p>
-			A <term>conditional</term> statement connects two propositions using <em>if, then</em>. An example of a conditional statement is <q><em>If</em> it is raining, <em>then</em> we'll go to the mall.</q>
-			The first part of the statement following <q><em>if</em></q> is called the <term>hypothesis</term> or the <term>antecedent</term>. The second part following <q><em>then</em></q> is called the <term>conclusion</term> or the <term>consequent</term>.
+			A <term>conditional</term><idx>conditional statement</idx> statement connects two propositions using <em>if, then</em>. An example of a conditional statement is <q><em>If</em> it is raining, <em>then</em> we'll go to the mall.</q>
+			The first part of the statement following <q><em>if</em></q> is called the <term>hypothesis</term><idx>hypothesis</idx> or the <term>antecedent</term><idx>antecedent</idx>. The second part following <q><em>then</em></q> is called the <term>conclusion</term><idx><h>conclusion</h><h>of a conditional</h></idx> or the <term>consequent</term><idx>consequent</idx>.
 		</p>
 		<p>
 			The statement, <q>It is raining,</q> may be true or false for any given day. If the hypothesis is true, then we will follow the course of action and go to the mall. If the hypothesis is false, though, we haven't said anything about what we will or won't do.
