@@ -340,7 +340,7 @@
 			</sidebyside>
 		</solution>
 		</example>
-		<example>
+		<example xml:id="ex-logic-xor">
 			<statement>
 				<p>
 					In <xref ref="sec-logic-propositions"/>, an offer of soup <em>or</em> salad meant one or the other, but not both. Let <m>A</m> be <q>You get soup</q> and <m>B</m> be <q>You get salad.</q> Create a truth table for the statement <m>(A \lor B) \land \neg(A \land B)</m>.

@@ -119,7 +119,7 @@
 			</statement>
 		</fact>
 		<p>
-			Can you demonstrate this equivalence using a truth table? Doing so is very similar to the previous example. The intuitive sense of the above logical statement is illustrated by the following example.
+			You can demonstrate this equivalence using a truth table, much like the previous example; try it in <xref ref="ex-logic-equivalence-negation"/>. The intuitive sense of the above logical statement is illustrated by the following example.
 		</p>
 		<example>
 			<statement>
@@ -524,7 +524,584 @@
 			</statement>
 		</fact>
 		<p>
-			De Morgan's laws can be demonstrated using truth tables. Try it: build a column for each side of each equivalence and check that the final columns match.
+			De Morgan's laws can be demonstrated using truth tables. Try it in <xref ref="ex-logic-equivalence-demorgan-1"/> and <xref ref="ex-logic-equivalence-demorgan-2"/>.
 		</p>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercises 1, 2, and 4 are adapted from Benjamin Jackson's
+		MATH 105 lecture slides (Objective 6, including clicker questions),
+		Walla Walla University, Fall 2026. Exercises 3, 6, and 8 are
+		based on his MATH 105 Written Homework 4 (Fall 2026), and
+		Exercise 7 on his MATH 105 written-homework question library
+		(Fall 2026). Exercises 5, 9, and 10 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise><!--  #1 (Obj 6 slides: clouds) -->
+			<statement>
+				<p>
+					Assume this conditional statement is true: <q>If it is raining, then there are clouds in the sky.</q> Write the converse, inverse, and contrapositive of the statement, and decide which of them must also be true.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ul>
+						<li>
+							<p>
+								Converse: <q>If there are clouds in the sky, then it is raining.</q> This does not have to be true; there are cloudy days without rain.
+							</p>
+						</li>
+						<li>
+							<p>
+								Inverse: <q>If it is not raining, then there are no clouds in the sky.</q> This does not have to be true, for the same reason.
+							</p>
+						</li>
+						<li>
+							<p>
+								Contrapositive: <q>If there are no clouds in the sky, then it is not raining.</q> This must be true, because it is equivalent to the original statement.
+							</p>
+						</li>
+					</ul>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #2 (Obj 6 clicker: giant cookie) -->
+			<statement>
+				<p>
+					Suppose this statement is true: <q>If I eat this giant cookie, then I will feel sick.</q> Which of the following statements must also be true?
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								If I feel sick, then I ate the giant cookie.
+							</p>
+						</li>
+						<li>
+							<p>
+								If I don't eat the giant cookie, then I won't feel sick.
+							</p>
+						</li>
+						<li>
+							<p>
+								If I don't feel sick, then I didn't eat the giant cookie.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Only (c) must be true; it is the contrapositive of the original statement. Statement (a) is the converse and (b) is the inverse. Neither has to be true, because I could feel sick for some other reason.
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #3 (Written Homework 4: 06e) -->
+			<statement>
+				<p>
+					Consider the statement <q>If you finish your chores, then you can have dessert.</q>
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Write the converse, the inverse, and the contrapositive of this statement in words.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write the negation of the original statement in words, without starting your sentence with <q>It is not true that.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								Rewrite the original statement as a biconditional (using <q>if and only if</q>), and explain in a sentence how its meaning is different from the original statement.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>p</m> be <q>You finish your chores,</q> and let <m>q</m> be <q>You can have dessert.</q> The statement is <m>p \to q</m>.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Converse (<m>q \to p</m>): <q>If you can have dessert, then you finished your chores.</q> Inverse (<m>\neg p \to \neg q</m>): <q>If you don't finish your chores, then you can't have dessert.</q> Contrapositive (<m>\neg q \to \neg p</m>): <q>If you can't have dessert, then you didn't finish your chores.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								Since <m>\neg(p \to q) \equiv p \land \neg q</m>, the negation is <q>You finish your chores, but you can't have dessert.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								<q>You can have dessert if and only if you finish your chores.</q> The biconditional <m>p \leftrightarrow q</m> also says that if you don't finish your chores, then you can't have dessert (the inverse, or equivalently the converse). The original statement says nothing about what happens if you don't finish your chores.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #4 (Obj 6 clicker: greased pan) -->
+			<statement>
+				<p>
+					Which of the following is equivalent to the negation of <q>If you don't grease the pan, then the food will stick to it</q>?
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								You don't grease the pan, and the food doesn't stick to it.
+							</p>
+						</li>
+						<li>
+							<p>
+								You don't grease the pan, and the food sticks to it.
+							</p>
+						</li>
+						<li>
+							<p>
+								You grease the pan, and the food doesn't stick to it.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The answer is (a). Let <m>g</m> be <q>You grease the pan,</q> and let <m>s</m> be <q>The food sticks to the pan.</q> The statement is <m>\neg g \to s</m>, so its negation is <m>\neg g \land \neg s</m>: you don't grease the pan, and the food doesn't stick. Statement (b) describes the original statement coming true, and (c) negates the wrong part.
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-logic-equivalence-negation"><!--  #5 (new) -->
+			<statement>
+				<p>
+					Use a truth table to show that <m>\neg(p \to q) \equiv p \land \neg q</m>.
+				</p>
+			</statement>
+			<solution>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>p \to q</m></cell>
+						<cell><m>\neg(p \to q)</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell><m>p \land \neg q</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+				</tabular>
+				<p>
+					Columns four and six match in every row, so the two statements are equivalent.
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-logic-equivalence-demorgan-1"><!--  #6 (Written Homework 4: 06a) -->
+			<statement>
+				<p>
+					The first of De Morgan's laws is <m>\neg(p \lor q) \equiv \neg p \land \neg q</m>.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Create a truth table that shows this equivalence.
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>p</m> be <q>You drink coffee,</q> and let <m>q</m> be <q>You eat breakfast.</q> Use De Morgan's law to write two sentences with equivalent meaning. (Think about this carefully, as a literal translation might be awkward and unclear.)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								See the truth table below. The last two columns match in every row, so the two statements are equivalent.
+							</p>
+						</li>
+						<li>
+							<p>
+								Answers will vary, for example <q>It is not true that you drink coffee or eat breakfast</q> (more smoothly, <q>You neither drink coffee nor eat breakfast.</q>) and <q>You don't drink coffee, and you don't eat breakfast.</q>
+							</p>
+						</li>
+					</ol>
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>\neg p</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell><m>p \lor q</m></cell>
+						<cell><m>\neg(p \lor q)</m></cell>
+						<cell><m>\neg p \land \neg q</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+				</tabular>
+			</solution>
+		</exercise>
+
+		<exercise xml:id="ex-logic-equivalence-demorgan-2"><!--  #7 (question library: 06b) -->
+			<statement>
+				<p>
+					The second of De Morgan's laws is <m>\neg(p \land q) \equiv \neg p \lor \neg q</m>.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Let <m>p</m> be <q>Jordan is at the game,</q> and let <m>q</m> be <q>Priya is at the game.</q> Use De Morgan's law to write two sentences with equivalent meaning.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use a truth table to show that the second of De Morgan's laws must be true.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Answers will vary, for example <q>Jordan and Priya are not both at the game</q> and <q>Either Jordan is not at the game, or Priya is not at the game.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								See the truth table below. The last two columns match in every row, so the two statements are equivalent.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>\neg p</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell><m>p \land q</m></cell>
+						<cell><m>\neg(p \land q)</m></cell>
+						<cell><m>\neg p \lor \neg q</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+				</tabular>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #8 (Written Homework 4: 06d) -->
+			<statement>
+				<p>
+					A friend claims that the exclusive or <m>p \oplus q</m> (see <xref ref="ex-logic-xor"/>) is equivalent to <m>(p \land \neg q) \lor (\neg p \land q)</m>.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Let <m>p</m> be <q>You can have fries with your meal,</q> and let <m>q</m> be <q>You can have a baked potato with your meal.</q> Argue whether or not your friend is correct.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use a truth table to check your conclusion to part (a).
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Your friend is correct. If a server says <q>You can have fries or a baked potato,</q> they mean the <em>or</em> exclusively: you can have one or the other, but not both. This is exactly what the right-hand side says: <q>You can have fries and not a baked potato, or a baked potato and not fries.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								See the truth table below. The last two columns match in every row. They also match <m>(p \lor q) \land \neg(p \land q)</m> from <xref ref="ex-logic-xor"/>.
+							</p>
+						</li>
+					</ol>
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>\neg p</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell><m>p \land \neg q</m></cell>
+						<cell><m>\neg p \land q</m></cell>
+						<cell><m>(p \land \neg q) \lor (\neg p \land q)</m></cell>
+						<cell><m>p \oplus q</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+				</tabular>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #9 (new) -->
+			<statement>
+				<p>
+					Suppose this statement is true: <q>The store is open if and only if it is a weekday.</q> Which of the following statements could be true?
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								It is Saturday, and the store is open.
+							</p>
+						</li>
+						<li>
+							<p>
+								It is Tuesday, and the store is closed.
+							</p>
+						</li>
+						<li>
+							<p>
+								It is Sunday, and the store is closed.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>p</m> be <q>The store is open,</q> and let <m>q</m> be <q>It is a weekday.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								This cannot be true. It is like the second row of the truth table for <m>p \leftrightarrow q</m>: the store is open, but it is not a weekday.
+							</p>
+						</li>
+						<li>
+							<p>
+								This cannot be true. It is like the third row: the store is not open, but it is a weekday.
+							</p>
+						</li>
+						<li>
+							<p>
+								This could be true. It is like the fourth row: the store is not open, and it is not a weekday.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!--  #10 (new) -->
+			<statement>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								Create a truth table for <m>p \leftrightarrow \neg q</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Compare your result with the truth table for the exclusive or in <xref ref="ex-logic-xor"/>. What do you notice?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell><m>p \leftrightarrow \neg q</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+				</tabular>
+				<p>
+					The last column is the same as the column for the exclusive or, <m>p \oplus q</m>. So <q><m>p</m> or <m>q</m>, but not both</q> means the same as <q><m>p</m> if and only if not <m>q</m>.</q>
+				</p>
+			</solution>
+		</exercise>
+	</exercises>
 </section>
