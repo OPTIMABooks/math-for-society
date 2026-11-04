@@ -24,7 +24,7 @@
 	</objectives>
 	<introduction>
 		<p>
-			Two statements are <term>logically equivalent</term> if they have the same truth value in every possible situation. In other words, no matter the circumstances, both statements are either simultaneously true or simultaneously false. We write this relationship as <m>P \equiv Q</m>. It means that statements <m>P</m> and <m>Q</m> are interchangeable in logical arguments.
+			Two statements are <term>logically equivalent</term><idx>logical equivalence</idx> if they have the same truth value in every possible situation. In other words, no matter the circumstances, both statements are either simultaneously true or simultaneously false. We write this relationship as <m>P \equiv Q</m>. It means that statements <m>P</m> and <m>Q</m> are interchangeable in logical arguments.
 		</p>
 	</introduction>
 	<subsection xml:id="subsec-logic-conditional-equivalence">
@@ -109,6 +109,7 @@
 			The negation of a conditional also has an equivalent form written using AND. That is,
 		</p>
 		<fact>
+			<idx><h>negation</h><h>of a conditional</h></idx>
 			<statement>
 				<p>
 					<me>
@@ -170,17 +171,17 @@
 				</li>
 				<li>
 					<p>
-						<term>Converse</term>: <m>q\to p</m> (<em>if</em> <m>q</m>, <em>then</em> <m>p</m>)
+						<term>Converse</term><idx>converse</idx>: <m>q\to p</m> (<em>if</em> <m>q</m>, <em>then</em> <m>p</m>)
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Inverse</term>: <m>\neg p\to \neg q</m> (<em>if not</em> <m>p</m>, <em>then not</em> <m>q</m>)
+						<term>Inverse</term><idx>inverse</idx>: <m>\neg p\to \neg q</m> (<em>if not</em> <m>p</m>, <em>then not</em> <m>q</m>)
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Contrapositive</term>: <m>\neg q\to \neg p</m> (<em>if not</em> <m>q</m>, <em>then not</em> <m>p</m>)
+						<term>Contrapositive</term><idx>contrapositive</idx>: <m>\neg q\to \neg p</m> (<em>if not</em> <m>q</m>, <em>then not</em> <m>p</m>)
 					</p>
 				</li>
 			</ul>
@@ -318,7 +319,7 @@
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
 				Because a biconditional statement <m>p \leftrightarrow q</m> is equivalent to <m>(p \rightarrow q) \land (q \rightarrow p)</m>, we can think of it as a conditional statement combined with its converse: <em>if</em> <m>p</m>, <em>then</em> <m>q</m>, <em>and</em> <em>if</em> <m>q</m>, <em>then</em> <m>p</m>.
-				The double-headed arrow shows that the conditional statement goes from left to right and from right to left. A biconditional is considered true as long as the antecedent and the consequent have the same truth value; that is, they are either both true or both false.
+				The double-headed arrow shows that the conditional statement goes from left to right and from right to left. A biconditional is considered true as long as the antecedent and the consequent have the same truth value; that is, they are either both true or both false.<idx><h>truth table</h><h>for a biconditional</h></idx>
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 				<row header="yes">
@@ -359,7 +360,7 @@
 				<me>
 					p \leftrightarrow q
 				</me>
-			and is read as <q><m>p</m> if and only if <m>q</m>.</q>
+			and is read as <q><m>p</m> if and only if <m>q</m>.</q><idx>if and only if</idx>
 			</p>
 		</assemblage>
 		<example>
