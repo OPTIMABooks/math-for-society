@@ -17,20 +17,20 @@
 			</li>
 			<li>
 				<p>
-					Show statement are equivalent using truth tables.
+					Show that statements are equivalent using truth tables.
 				</p>
 			</li>
 		</ul>
 	</objectives>
 	<introduction>
 		<p>
-			Two statements are <term>logically equivalent</term> if they have the same truth value in every possible situation. In other words, no matter the circumstances, both statements are either simultaneously true or simultaneously false. This relationship is often denoted <m>P\equiv Q</m> symbolically and means that statements <m>P</m> and <m>Q</m> are interchangeable in logical arguments.
+			Two statements are <term>logically equivalent</term> if they have the same truth value in every possible situation. In other words, no matter the circumstances, both statements are either simultaneously true or simultaneously false. We write this relationship as <m>P \equiv Q</m>. It means that statements <m>P</m> and <m>Q</m> are interchangeable in logical arguments.
 		</p>
 	</introduction>
-	<subsection xml:id="subsec-logic-contrapositive">
+	<subsection xml:id="subsec-logic-conditional-equivalence">
 		<title>Logical Equivalence and the Conditional</title>
 		<p>
-			It may seem counterintuitive at first, but the conditional statement <q>if p, then q</q> (<m>p \to q</m>) can be written using negation and an OR statement. To be precise,
+			It may seem counterintuitive at first, but the conditional statement <em>if</em> <m>p</m>, <em>then</em> <m>q</m> (<m>p \to q</m>) can be written using negation and an OR statement. To be precise,
 		</p>
 		<fact>
 			<statement>
@@ -42,16 +42,16 @@
 			</statement>
 		</fact>
 		<p>
-			To understand this intuitively, consider the following example. Keep in mind that symbolic logic cannot represent the English language example, and we may need to change verb tenses or otherwise rephrase to make equivalent forms clear.
-			(For a review of the conditional, re-read <xref text="global" ref="subsubsec-conditional-truth-table"/>.)
+			To understand this intuitively, consider the following example. Keep in mind that symbolic logic cannot capture every nuance of English, and we may need to change verb tenses or otherwise rephrase to make equivalent forms clear.
+			(For a review of the conditional, see <xref text="global" ref="subsubsec-conditional-truth-table"/>.)
 		</p>
 		<example>
 			<p>
-				You are told, <q>If the cookie contains nuts, then Alex cannot eat it</q>. With some thought, you should see that this is equivalent to saying, <q>Either the cookie does not contain nuts, or Alex cannot eat it</q>.
+				You are told, <q>If the cookie contains nuts, then Alex cannot eat it.</q> With some thought, you should see that this is equivalent to saying, <q>Either the cookie does not contain nuts, or Alex cannot eat it.</q>
 			</p>
 		</example>
 		<p>
-			While verbal example such as the one above illustrate our intuitive understanding that two statements are equivalent, equivalence is definitively demonstrated with a truth table. One advantage of a truth table is that the result can be shown independently of a problem's specific details.
+			While verbal examples such as the one above illustrate our intuitive understanding that two statements are equivalent, equivalence is definitively demonstrated with a truth table. One advantage of a truth table is that the result can be shown independently of a problem's specific details.
 		</p>
 		<example>
 			<statement>
@@ -112,7 +112,7 @@
 			<statement>
 				<p>
 					<me>
-						\neg(p \to q) \equiv p \land \neg{q}
+						\neg(p \to q) \equiv p \land \neg q.
 					</me>
 				</p>
 			</statement>
@@ -145,15 +145,18 @@
 			</statement>
 			<solution>
 				<p>
-					The first two statements are irrelevant because we don't know what will happen if you park somewhere else. The third statement, however, contradicts the conditional statement <q>If you park here, then you will get a ticket</q> because you parked here but didn't get a ticket.
+					The first two situations cannot make the statement false, because it makes no promise about what happens if you park somewhere else. The third statement, however, contradicts the conditional statement <q>If you park here, then you will get a ticket</q> because you parked here but didn't get a ticket.
 				</p>
 				<p>
 					This example demonstrates the general rule shown above that the negation of a conditional can be written as a conjunction: <q>It is not the case that if you park here, then you will get a ticket</q> is equivalent to <q>You park here and you do not get a ticket.</q>
 				</p>
+				<p>
+					Notice that the negation is an <em>and</em> statement, not another conditional. A common mistake is to negate the conclusion only, as in <q>If you park here, then you will not get a ticket.</q> That statement is not the negation of the original.
+				</p>
 			</solution>
 		</example>
 	</subsection>
-	<subsection>
+	<subsection xml:id="subsec-logic-contrapositive">
 		<title>The Contrapositive</title>
 		<p>
 			<em>And</em> and <em>or</em> statements can have their propositions reversed without affecting the truth value of the statement. If you need to buy beans <em>and</em> eggs, that's the same as buying eggs <em>and</em> beans. The order does matter for a conditional statement, however. Sometimes during an argument, an <em>if, then</em> statement will be reversed or combined with <em>not</em> in different ways. There are names for these combinations, and it is helpful to look at which statements are equivalent to each other. Here are the names for the different combinations of <em>if, then</em> and <em>not</em> statements.
@@ -162,22 +165,22 @@
 			<ul>
 				<li>
 					<p>
-						<term> Original Conditional</term>: <m>p\to q</m>
+						<term>Original Conditional</term>: <m>p\to q</m> (<em>if</em> <m>p</m>, <em>then</em> <m>q</m>)
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Converse</term>: <m>q\to p</m>
+						<term>Converse</term>: <m>q\to p</m> (<em>if</em> <m>q</m>, <em>then</em> <m>p</m>)
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Inverse</term>: <m>\neg p\to \neg q</m>
+						<term>Inverse</term>: <m>\neg p\to \neg q</m> (<em>if not</em> <m>p</m>, <em>then not</em> <m>q</m>)
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Contrapositive</term>: <m>\neg q\to \neg p</m>
+						<term>Contrapositive</term>: <m>\neg q\to \neg p</m> (<em>if not</em> <m>q</m>, <em>then not</em> <m>p</m>)
 					</p>
 				</li>
 			</ul>
@@ -188,7 +191,7 @@
 		<example>
 			<statement>
 			<p>
-				Assume this original conditional statement is true: <q>If you take your dog to the park, they will be happy.</q> Write the converse, inverse and contrapositive of the original statement and determine which are equivalent to each other.
+				Assume this original conditional statement is true: <q>If you take your dog to the park, they will be happy.</q> Write the converse, inverse, and contrapositive of the original statement and determine which are equivalent to each other.
 			</p>
 		</statement>
 		<solution>
@@ -196,22 +199,22 @@
 				<ul>
 					<li>
 						<p>
-							Original Statement: <m>p</m> is <q>You take your dog to the park,</q> and <q>q</q> is <q>Your dog is happy.</q>
+							Original Statement: <m>p</m> is <q>You take your dog to the park,</q> and <m>q</m> is <q>Your dog is happy.</q>
 						</p>
 					</li>
 					<li>
 						<p>
-							Converse: <q>If your dog is happy, then you took them to the park.</q> Notice we needed to change the tense to keep the order of events the same. If your dog is happy, does that mean you took them to the park? Not necessarily, because there are other reasons your dog could be happy like getting a treat or taking a walk. So, this is false.
+							Converse: <q>If your dog is happy, then you took them to the park.</q> Notice we needed to change the tense to keep the order of events the same. If your dog is happy, does that mean you took them to the park? Not necessarily, because there are other reasons your dog could be happy like getting a treat or taking a walk. So the converse does not have to be true.
 						</p>
 					</li>
 					<li>
 						<p>
-							Inverse: <q>If you don't take your dog to the park, they will not be happy.</q> This is similar to the converse. Even if you don't take your dog to the park, they could be unhappy for another reason. This is false. The inverse is logically equivalent to the converse.
+							Inverse: <q>If you don't take your dog to the park, they will not be happy.</q> This is similar to the converse. Even if you don't take your dog to the park, they could be happy for another reason. So the inverse does not have to be true. The inverse is logically equivalent to the converse.
 						</p>
 					</li>
 					<li>
 						<p>
-							Contrapositive: <q>If your dog is not happy, then you did not take them to the park.</q> Since the original statement is true, then this is also true. Taking your dog to the park would result in them being happy, so if they are not happy we can say that they did not go to the park. The contrapositive is logically equivalent to the original statement.
+							Contrapositive: <q>If your dog is not happy, then you did not take them to the park.</q> Since the original statement is true, this is also true. Taking your dog to the park would result in them being happy, so if they are not happy we can say that they did not go to the park. The contrapositive is logically equivalent to the original statement.
 						</p>
 					</li>
 				</ul>
@@ -225,25 +228,28 @@
 			<title>Logical Equivalence of the Contrapositive</title>
 			<statement>
 				<p>
-					A <term>conditional</term> statement and its <term>contrapositive</term> are equivalent. The <term>converse</term> and <term>inverse</term> of a conditional statement are also equivalent. That is,
+					A conditional statement and its contrapositive are equivalent. The converse and inverse of a conditional statement are also equivalent. That is,
 					<md>
 						<mrow>p \to q \equiv\amp \neg q\to \neg p </mrow>
 						<mrow>q \to p \equiv\amp \neg p\to \neg q</mrow>
 					</md>
-					However, <m>p\to q</m> is NOT equivalent to <m>q\to p</m>.
+					However, <m>p\to q</m> is <em>not</em> equivalent to its converse <m>q\to p</m> or its inverse <m>\neg p\to \neg q</m>.
 				</p>
 			</statement>
 		</fact>
 		<example>
 			<statement>
 				<p>
-					Use a truth table to demonstrate the equivalence of a conditional statement and its contrapositive. That is, verify that
-					<me> p \to q \equiv \neg q\to \neg p. </me>
+					Use a truth table to demonstrate the equivalence of a conditional statement and its contrapositive, and the equivalence of its converse and inverse. That is, verify that
+					<md>
+						<mrow>p \to q \equiv\amp \neg q\to \neg p</mrow>
+						<mrow>q \to p \equiv\amp \neg p\to \neg q.</mrow>
+					</md>
 				</p>
 			</statement>
 			<solution>
 				<p>
-					Here is a truth table with a column for each piece of the statement.
+					Here is a truth table with a column for each piece of the statements.
 				</p>
 				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
@@ -253,6 +259,8 @@
 						<cell><m>\neg q</m></cell>
 						<cell><m>\neg p</m></cell>
 						<cell><m>\neg q\to \neg p</m></cell>
+						<cell><m>q \to p</m></cell>
+						<cell><m>\neg p\to \neg q</m></cell>
 					</row>
 					<row>
 						<cell>T</cell>
@@ -261,6 +269,8 @@
 						<cell>F</cell>
 						<cell>F</cell>
 						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
 					</row>
 					<row>
 						<cell>T</cell>
@@ -268,19 +278,25 @@
 						<cell>F</cell>
 						<cell>T</cell>
 						<cell>F</cell>
-						<cell>F</cell>
-					</row>
-					<row>
-						<cell>F</cell>
-						<cell>T</cell>
-						<cell>T</cell>
 						<cell>F</cell>
 						<cell>T</cell>
 						<cell>T</cell>
 					</row>
 					<row>
 						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
 						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
 						<cell>T</cell>
 						<cell>T</cell>
 						<cell>T</cell>
@@ -288,7 +304,7 @@
 					</row>
 				</tabular>
 				<p>
-					Note that columns three and five show the same truth values. This demonstrates the equivalence of the conditional with its contrapositive.
+					Note that columns three and six show the same truth values. This demonstrates the equivalence of the conditional with its contrapositive. Similarly, columns seven and eight match, so the converse and the inverse are equivalent. Comparing columns three and seven, the conditional and its converse differ in rows two and three, so they are not equivalent.
 				</p>
 			</solution>
 		</example>
@@ -296,12 +312,12 @@
 	<subsection xml:id="subsec-logic-biconditional">
 		<title>The Biconditional</title>
 		<p>
-			In everyday life, we often have a stronger meaning in mind when we use a conditional statement. Consider the statement <q>If you submit your hours today, then you will be paid next Friday.</q> What the payroll representative really means is <q>If you submit your hours today, then you will be paid next Friday, and if you don't submit your hours today, then you won't be paid next Friday.</q> 
-			In this example, the conditional statement if <m>t</m>, then <m>p</m> also includes the (unspoken!) inverse of the statement: if not <m>t</m>, then not <m>p</m>. A more compact way to express this statement is <q>You will be paid next Friday if and only if you submit your timesheet today.</q> A statement of this form is called a <term>biconditional</term>.
+			In everyday life, we often have a stronger meaning in mind when we use a conditional statement. Consider the statement <q>If you submit your timesheet today, then you will be paid next Friday.</q> What the payroll representative really means is <q>If you submit your timesheet today, then you will be paid next Friday, and if you don't submit your timesheet today, then you won't be paid next Friday.</q>
+			Let <m>t</m> be <q>You submit your timesheet today,</q> and let <m>p</m> be <q>You will be paid next Friday.</q> The conditional <em>if</em> <m>t</m>, <em>then</em> <m>p</m> also includes the (unspoken!) inverse: <em>if not</em> <m>t</m>, <em>then not</em> <m>p</m>. Because the inverse is equivalent to the converse (<xref ref="fact-logic-equivalence-contrapositive"/>), this is the same as <em>if</em> <m>p</m>, <em>then</em> <m>t</m>. A more compact way to express this statement is <q>You will be paid next Friday if and only if you submit your timesheet today.</q> A statement of this form is called a <term>biconditional</term>.
 		</p>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				Because a biconditional statement <m>p \leftrightarrow q</m> is equivalent to <m>(p \rightarrow q) \land (q \rightarrow p)</m>, we can think of it as a conditional statement combined with its converse: if <m>p</m>, then <m>q</m> and if <m>q</m>, then <m>p</m>. 
+				Because a biconditional statement <m>p \leftrightarrow q</m> is equivalent to <m>(p \rightarrow q) \land (q \rightarrow p)</m>, we can think of it as a conditional statement combined with its converse: <em>if</em> <m>p</m>, <em>then</em> <m>q</m>, <em>and</em> <em>if</em> <m>q</m>, <em>then</em> <m>p</m>.
 				The double-headed arrow shows that the conditional statement goes from left to right and from right to left. A biconditional is considered true as long as the antecedent and the consequent have the same truth value; that is, they are either both true or both false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
@@ -328,7 +344,7 @@
 				<row>
 					<cell>F</cell>
 					<cell>F</cell>
-					<cell>F</cell>
+					<cell>T</cell>
 				</row>
 			</tabular>
 		</sidebyside>
@@ -343,7 +359,7 @@
 				<me>
 					p \leftrightarrow q
 				</me>
-			and is read as <q><m>p</m> if and only if <m>q</m></q>.
+			and is read as <q><m>p</m> if and only if <m>q</m>.</q>
 			</p>
 		</assemblage>
 		<example>
@@ -358,12 +374,12 @@
 					</li>
 					<li>
 						<p>
-							It is Monday, and the garbage truck is coming down my street.
+							It is Monday and the garbage truck is coming down my street.
 						</p>
 					</li>
 					<li>
 						<p>
-							It is Wednesday at 11:59PM and the garbage truck did not come down my street today.
+							It is Wednesday at 11:59 PM and the garbage truck did not come down my street today.
 						</p>
 					</li>
 				</ol>
@@ -371,20 +387,21 @@
 			</statement>
 			<solution>
 			<p>
+				Let <m>p</m> be <q>The garbage truck comes down my street,</q> and let <m>q</m> be <q>It is Thursday morning.</q>
 				<ol marker="a">
 					<li>
 						<p>
-							This cannot be true. This is like the second row of the truth table; it is true that I just experienced Thursday morning but it is false that the garbage truck came.
+							This cannot be true. This is like the third row of the truth table; it is false that the garbage truck came, but it is true that it was Thursday morning.
 						</p>
 					</li>
 					<li>
 						<p>
-							This cannot be true. This is like the third row of the truth table; it is false that it is Thursday, but it is true that the garbage truck came.
+							This cannot be true. This is like the second row of the truth table; it is true that the garbage truck came, but it is false that it is Thursday morning.
 						</p>
 					</li>
 					<li>
 						<p>
-							This could be true. This is like the fourth row of the truth table; it is false that it is Thursday, but it is also false that the garbage truck came, so everything worked out like it should.
+							This could be true. This is like the fourth row of the truth table; it is false that the garbage truck came, and it is also false that it is Thursday morning, so everything worked out like it should.
 						</p>
 					</li>
 				</ol>
@@ -392,7 +409,7 @@
 			</solution>
 		</example>
 		<p>
-			As shown in the next example, the biconditional can be used in truth table problems as seen in <xref ref="sec-logic-truth-tables"/>. 
+			The biconditional can also appear in larger truth tables like those in <xref ref="sec-logic-truth-tables"/>, as the next example shows.
 		</p>
 		<example>
 			<statement>
@@ -402,8 +419,8 @@
 			</statement>
 			<solution>
 				<p>
-					We start by listing all the possible truth value combinations for <m>A,\ B</m>, and <m>C</m>. After creating those three columns, we create a fourth column for the antecedent, <m>A \lor B</m>, whose values we find by temporarily ignoring the column for <m>C</m> and focusing on <m>A</m> and <m>B</m>.
-					Next, we can create a column for the negation of <m>C</m>.  Finally, we find the truth values of <m>(A \lor B) \leftrightarrow \neg C</m>. Remember, a biconditional is true when the truth value of the two parts match, but it is false when the truth values do not match. The resulting table is shown below.
+					We start by listing all the possible truth value combinations for <m>A</m>, <m>B</m>, and <m>C</m>. After creating those three columns, we create a fourth column for the antecedent, <m>A \lor B</m>, whose values we find by temporarily ignoring the column for <m>C</m> and focusing on <m>A</m> and <m>B</m>.
+					Next, we can create a column for the negation of <m>C</m>. Finally, we find the truth values of <m>(A \lor B) \leftrightarrow \neg C</m>. Remember, a biconditional is true when the truth value of the two parts match, but it is false when the truth values do not match. The resulting table is shown below.
 				</p>
 				<tabular halign= "center" top="minor" left="minor" right="minor" bottom="minor">
 					<row  header="yes">
@@ -485,26 +502,28 @@
 	<subsection xml:id="subsec-logic-deMorgan">
 		<title>De Morgan's Laws</title>
 		<p>
-			In 1847 Augustus De Morgan published two rules of logic that had previously been known only informally. These rules allow us to rewrite the negation of an AND statement with OR, and the negation of an OR statement with AND. 
+			In 1847, Augustus De Morgan published two rules of logic that had previously been known only informally. These rules allow us to rewrite the negation of an AND statement with OR, and the negation of an OR statement with AND. 
 		</p>
 		<p>
-			To illustrate the intuitive sense of <term>De Morgan's Law</term>, suppose you want to schedule a meeting with two colleagues at 4:30 PM on Friday, and you need both of them to be available at that time. What situation would make it impossible to have the meeting? That is, what would it mean if it were not the case that Colleague A and Colleague B could both meet? Writing this in logic, what is equivalent to <m>\neg(A \land B)</m>?
-			This situation is equivalent to either Colleague A not being available or Colleague B being not being available. That is, (again writing the result in logic) <m>\neg A \lor \neg B</m> is an equivalent form.
+			To illustrate the intuitive sense of <term>De Morgan's laws</term>, suppose you want to schedule a meeting with two colleagues at 4:30 PM on Friday, and you need both of them to be available at that time. Let <m>A</m> be <q>Colleague A is available,</q> and let <m>B</m> be <q>Colleague B is available.</q> What situation would make it impossible to have the meeting? That is, what would it mean if it were not the case that Colleague A and Colleague B could both meet? Writing this in logic, what is equivalent to <m>\neg(A \land B)</m>?
+			This situation is equivalent to either Colleague A not being available or Colleague B not being available. That is, (again writing the result in logic) <m>\neg A \lor \neg B</m> is an equivalent form.
 		</p>
 		<fact xml:id="fact-logic-deMorgan">
-			<title>De Morgan's Law</title>
-			<idx>De Morgan's law</idx>
-			<idx><h>logical rules</h><h>De Morgan's Law</h></idx>
+			<title>De Morgan's Laws</title>
+			<idx>De Morgan's laws</idx>
+			<idx><h>logical rules</h><h>De Morgan's laws</h></idx>
 			<statement>
 				<p>
 					For any two propositions <m>p</m> and <m>q</m>,
 					<md>
 						<mrow>\neg(p \lor q) \equiv\amp \neg p\land \neg q </mrow>
-						<mrow>\neg(q \land p) \equiv\amp \neg p\lor \neg q</mrow>
+						<mrow>\neg(p \land q) \equiv\amp \neg p\lor \neg q</mrow>
 					</md>
-					De Morgan's Law can be demonstrated using truth tables. This demonstration is left as a homework exercises.
 				</p>
 			</statement>
 		</fact>
+		<p>
+			De Morgan's laws can be demonstrated using truth tables. Try it: build a column for each side of each equivalence and check that the final columns match.
+		</p>
 	</subsection>
 </section>
