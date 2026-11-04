@@ -27,7 +27,7 @@
 			</li>
 			<li>
 				<p>
-					Introduce mathematical symbols used for logical operations.
+					Use mathematical symbols for logical operations.
 				</p>
 			</li>
 		</ul>
@@ -70,7 +70,7 @@
 			</statement>
 			<solution>
 			<p>
-				The first and second items are propositions. The third one is a question and the fourth is a phrase, so they are not propositions. We are not concerned right now about whether a statement is true or false. We will come back to that later when we look at compound statements.
+				The first and second items are propositions. The third one is a question and the fourth is a phrase, so they are not propositions. We are not concerned right now about whether a statement is true or false. We will come back to that later when we look at compound statements. The second item is an opinion, but it is still a declarative sentence that asserts something is true, so we treat it as a proposition.
 			</p>
 			</solution>
 		</example>
@@ -146,8 +146,8 @@
 				It is worth mentioning the quantifiers <q><term>all</term></q> and <q><term>some</term></q>, and how to negate them. If we were to make the statement, <q><alert>All</alert> students read this book</q>, we could negate it by saying <q><alert>Not all</alert> students read this book</q> or <q><alert>Some</alert> students <alert>don't</alert> read this book.</q> Notice how this is very different from <q><alert>No</alert> students read this book</q>.
 			</p>
 			<p>
-				If we were to negate, <q><alert>No</alert> students read this book,</q> we could say, <q><alert>A</alert> student is reading this book,</q> or even, <q><alert>Some</alert> students do read this book.</q> 
-				It only takes one counterexample to negate an all or nothing statement and the phrases <alert>some do</alert> and <alert>some don't</alert> are often used for this purpose. The same concept applies to similar words like everyone, nobody, always and never.
+				If we were to negate, <q><alert>No</alert> students read this book,</q> we could say, <q><alert>At least one</alert> student reads this book,</q> or even, <q><alert>Some</alert> students do read this book.</q> 
+				It only takes one counterexample to negate an all-or-nothing statement, and the phrases <alert>some do</alert> and <alert>some don't</alert> are often used for this purpose. The same concept applies to similar words like everyone, nobody, always, and never.
 			</p>
 			<example>
 				<statement>
@@ -191,10 +191,10 @@
 		<subsubsection>
 			<title>Multiple Negations</title>
 			<p>
-				It is possible to use more than one negation in a statement. If you've ever said something like, <q>I <alert>can't not</alert> go,</q> you are saying you will go. In fact, it's often used for emphasis or a slightly different meaning, that you really must go. If someone says, <q>I <alert>don't disagree</alert>,</q> they may not be expressing full agreement but are acknowledging that the person has a valid point. A <term>double negative</term> is similar to multiplying two negative numbers, which gives a positive result. Using a third negation would then be equivalent to a single negation.
+				It is possible to use more than one negation in a statement. If you've ever said something like, <q>I <alert>can't not</alert> go,</q> you are saying you will go. In fact, people often say it for emphasis: you really must go. If someone says, <q>I <alert>don't disagree</alert>,</q> they may not be expressing full agreement but are acknowledging that the person has a valid point. A <term>double negative</term> is similar to multiplying two negative numbers, which gives a positive result. Using a third negation would then be equivalent to a single negation.
 			</p>
 			<p>
-				Note that in some instances a negation word like <q>no,</q> <q>nobody,</q> or <q>nothing</q> is used to emphasize rather than negate and this is called <term>negative concord</term>. For example, <q>I ain't got no money,</q> is not a double negative but rather an emphasis of not having any money. This is common across many varieties of English and other languages. You can read more about negative concord at this <url href="https://ygdp.yale.edu/phenomena/negative-concord" visual="ygdp.yale.edu/phenomena/negative-concord">site</url>. In general, use your judgment and context cues to distinguish between a double negative and negative concord. We will use multiple negations but not negative concord in this book.
+				Note that in some instances a negation word like <q>no,</q> <q>nobody,</q> or <q>nothing</q> is used to emphasize rather than negate, and this is called <term>negative concord</term>. For example, <q>I ain't got no money</q> is not a double negative but rather an emphasis of not having any money. This is common across many varieties of English and other languages. You can read more about negative concord at this <url href="https://ygdp.yale.edu/phenomena/negative-concord" visual="ygdp.yale.edu/phenomena/negative-concord">site</url>. In general, use your judgment and context cues to distinguish between a double negative and negative concord. We will use multiple negations but not negative concord in this book.
 			</p>
 			<p>
 				In the media and in ballot measures we often see multiple negations and it can be confusing to figure out what a statement means.
@@ -210,7 +210,7 @@
 				</statement>
 				<solution>
 					<p>
-						If you said that a yes vote would enable plastic bag usage, you are correct. The ban stopped plastic bag usage, so to repeal the ban would allow plastic bags again. This measure has a double negation and is also not very good for the environment.
+						If you said that a yes vote would enable plastic bag usage, you are correct. The ban stopped plastic bag usage, so to repeal the ban would allow plastic bags again. This measure has a double negation.
 					</p>
 				</solution>
 			</example>
@@ -220,12 +220,12 @@
 					Read the statement and determine the outcome on mandatory minimum sentencing.
 				</p>
 				<p>
-					<q>The bill that overturned the ban on mandatory minimum sentencing was vetoed.</q>
+					<q>The bill to overturn the ban on mandatory minimum sentencing was vetoed.</q>
 				</p>
 				</statement>
 				<solution>
 					<p>
-						In this case mandatory minimum sentencing would not be allowed. The ban would stop it, and the bill to overturn it was vetoed. This is an example of a triple negation.
+						In this case mandatory minimum sentencing is still not allowed. The ban stops it, and the bill to overturn the ban was vetoed. This is an example of a triple negation.
 					</p>
 				</solution>
 			</example>
@@ -307,7 +307,7 @@
 					</li>
 						<li>
 						<p>
-							False. Neither of the parts are true, so the <q>or</q> statement is false.
+							False. Neither part is true, so the <q>or</q> statement is false.
 						</p>
 					</li>
 				</ol>
@@ -317,7 +317,7 @@
 		<p>
 			In English we often mean for <em>or</em> to be <term>exclusive</term>: one or the other, but not both. 
 			For example, when you order at a restaurant and are offered a soup <em>or</em> salad with your meal, you understand the <q>or</q> to be exclusive: you may choose a salad or a soup with your meal, but not both.
-			In math, however, <em>or</em> is usually <term>inclusive</term>: one or the other, or both. The thing we are including, or excluding is the <q>both</q> option.
+			In math, however, <em>or</em> is usually <term>inclusive</term>: one or the other, or both. The thing we are including or excluding is the <q>both</q> option.
 		</p>
 		<example>
 			<statement>
@@ -401,13 +401,13 @@
 			The only case where you can say your friend was wrong is the second case: you post the photo but still keep your job. This is the only time when a conditional statement is false. Your friend didn't say anything about what would happen if you didn't post the photo, so you can't say the last two scenarios are wrong. Even if you didn't post the photo and lost your job anyway, your friend never guaranteed that you would keep your job if you didn't post it.
 		</p>
 		<p>
-			It may be helpful to outline the possibilities and outcomes of this example in a table. The four cases above correspond to the four rows of a <term>truth table</term>, a tool which will be covered in <xref ref="sec-logic-truth-tables"/>. For this table we will use <m>P</m> for <q>posting the photo,</q> and <m>L</m> for <q>losing your job.</q>
+			It may be helpful to outline the possibilities and outcomes of this example in a table. The four cases above correspond to the four rows of a <term>truth table</term>, a tool that will be covered in <xref ref="sec-logic-truth-tables"/>. For this table we will use <m>P</m> for <q>posting the photo,</q> and <m>L</m> for <q>losing your job.</q>
 		</p>
 		<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 			<row header="yes">
-				<cell><em>Posting the Photo (P)</em></cell>
-				<cell><em>Losing Your Job (L)</em></cell>
-				<cell>If <em>P</em>, then <em>L</em></cell>
+				<cell><em>Posting the Photo</em> (<m>P</m>)</cell>
+				<cell><em>Losing Your Job</em> (<m>L</m>)</cell>
+				<cell>If <m>P</m>, then <m>L</m></cell>
 			</row>
 			<row>
 				<cell>You post the photo (T)</cell>
@@ -488,6 +488,9 @@
 				</p>
 			</solution>
 		</example>
+		<p>
+			A conditional only makes a promise in one direction. A statement such as <q>You will be paid next Friday <em>if and only if</em> you submit your timesheet today</q> makes the promise in both directions. This is called a <term>biconditional</term>, and we will study it in <xref ref="subsec-logic-biconditional"/>.
+		</p>
 	</subsection>
 	<subsection>
 		<title>Mathematical Notation for Logic</title>
@@ -495,10 +498,10 @@
 			The truth values for simple logical statements are often apparent. However, the truth value of a proposition composed of multiple connected propositions is harder to determine. Mathematical notation can help because it allows the reader to focus on the logical structure of a compound statement rather than the unnecessary details.
 		</p>
 		<p>
-			There are many symbols that can be used interchangeable to represent logical connections and ideas. Not all of the options are presented here.  Typically, propositions are represented using lowercase letters like <m>p</m> or <m>q</m>. In this text, we will sometimes use capital letters for clarity.
+			There are many symbols that can be used interchangeably to represent logical connections and ideas. Not all of the options are presented here. Typically, propositions are represented using lowercase letters like <m>p</m> or <m>q</m>. In this text, we will sometimes use capital letters for clarity.
 		</p>
 		<p>
-			Sometimes it is convenient to use all capitalized words to represent logical connectors. For example, the use of <q>AND</q> instead of <q>and</q> or <q>XOR</q> to indicate that the <q>or</q> used is exclusive emphasizes that the word is being used in its strict logical sense. This is common in fields like computer science. In mathematical contexts, symbols like those shown in the following table are common.
+			Sometimes it is convenient to use all capitalized words to represent logical connectors. For example, writing <q>AND</q> instead of <q>and</q>, or <q>XOR</q> for an exclusive <q>or</q>, emphasizes that the word is being used in its strict logical sense. This is common in fields like computer science. In mathematical contexts, symbols like those shown in the following table are common.
 		</p>
 		<assemblage xml:id="assemblage-logical-symbols">
 			<title>Common Logical Symbols</title>
@@ -522,25 +525,29 @@
 				</row>
 				<row>
 					<cell>XOR</cell>
-					<cell><m>\bigoplus\ \veebar</m></cell>
+					<cell><m>\oplus\ \veebar</m></cell>
 				</row>
 				<row>
 					<cell>conditional</cell>
 					<cell><m>\Rightarrow\ \rightarrow</m></cell>
 				</row>
 				<row>
+					<cell>biconditional</cell>
+					<cell><m>\leftrightarrow\ \Leftrightarrow</m></cell>
+				</row>
+				<row>
 					<cell>equivalent</cell>
-					<cell><m>\equiv\ \leftrightarrow</m></cell>
+					<cell><m>\equiv</m></cell>
 				</row>
 			</tabular>
 			<p>
-				This table is not exhaustive. This book will typically use <m>\neg</m>, <m>\land</m>, <m>\lor</m>, and <m>\rightarrow</m> to represent NOT (negation), AND, OR (inclusive), and <q>if then</q> (implication).
+				This table is not exhaustive. This book will typically use <m>\neg</m>, <m>\land</m>, <m>\lor</m>, and <m>\rightarrow</m> to represent NOT (negation), AND, OR (inclusive), and <q>if, then</q> (implication), along with <m>\leftrightarrow</m> for the biconditional (<q>if and only if</q>), which we introduce in <xref ref="subsec-logic-biconditional"/>.
 			</p>
 		</assemblage>
 	</subsection>
 	<exercises>
 		<!-- These are the first 18 exercises from PCC's second edition text. 
-		I did not include problems form the subsection I omitted, nor did I 	 
+		I did not include problems from the subsection I omitted, nor did I 	 
 		add any for the subsection I added on math notation.  
 		-->
 		<title>Exercises</title>
@@ -842,7 +849,7 @@
 		<exercise><!--  #9 -->
 			<statement>
 			<p>
-				For each situation, decide whether the “or” is most likely exclusive or inclusive.
+				For each situation, decide whether the <q>or</q> is most likely exclusive or inclusive.
 			</p>
 			<p>
 				<ol marker="a">
@@ -929,7 +936,7 @@
 					</li>
 					<li>
 						<p>
-							My next vacation will be on the Oregon Coast or Mount St. Helens.
+							I will spend Saturday night on the Oregon Coast or at Mount St. Helens.
 						</p>
 					</li>
 				</ol>
@@ -994,7 +1001,7 @@
 		<exercise><!--  #13 -->
 			<statement>
 			<p>
-				Rewrite the statement in the conditional form <em>if p, then q</em>.
+				Rewrite each statement in the conditional form <em>if p, then q</em>.
 			</p>
 			<p>
 				<ol marker="a.">
@@ -1032,7 +1039,7 @@
 		<exercise> <!-- #14 -->
 			<statement>
 			<p>
-				Rewrite the statement in the conditional form <em>if p, then q</em>.
+				Rewrite each statement in the conditional form <em>if p, then q</em>.
 			</p>
 			<p>
 				<ol marker="a.">
@@ -1059,7 +1066,7 @@
 					</li>
 					<li>
 						<p>
-							If it is the weekend, then I am hanging out with friends.
+							If it is the weekend, then I like to hang out with friends.
 						</p>
 					</li>
 				</ol>
@@ -1070,7 +1077,7 @@
 		<exercise><!--  #15 -->
 			<statement>
 			<p>
-				Determine whether the compound statement is true or false.
+				Determine whether each statement is true or false.
 			</p>
 			<p>
 				<ol marker="a">
@@ -1086,7 +1093,7 @@
 					</li>
 					<li>
 						<p>
-							Fish can walk and birds can swim.
+							Fish have feathers and birds can swim.
 						</p>
 					</li>
 					<li>
@@ -1128,7 +1135,7 @@
 		<exercise><!--  #16 -->
 			<statement>
 			<p>
-				Determine whether the compound statement is true or false.
+				Determine whether each statement is true or false.
 			</p>
 			<p>
 				<ol marker="a">
@@ -1186,7 +1193,7 @@
 		<exercise><!--  #17 -->
 			<statement>
 			<p>
-				Determine whether the compound statement is true or false.
+				Determine whether each statement is true or false.
 			</p>
 			<p>
 				<ol marker="a.">
@@ -1244,7 +1251,7 @@
 		<exercise><!--  #18 -->
 			<statement>
 			<p>
-				Determine whether the compound statement is true or false.
+				Determine whether each statement is true or false.
 			</p>
 			<p>
 				<ol marker="a.">
