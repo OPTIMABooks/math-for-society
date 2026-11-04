@@ -26,7 +26,7 @@
 	<title>Truth Tables</title>
 	<introduction>
 		<p>
-			In logic, we can use a <term>truth table</term> to analyze a complex statement by summarizing all its possibilities and their <term>truth values</term> (true or false). To do this, we break the statement down into its smallest elements, the propositions. We can then see the outcome of the complex statement for all possible combinations of true and false for the propositions.
+			In logic, we can use a <term>truth table</term><idx>truth table</idx> to analyze a complex statement by summarizing all its possibilities and their <term>truth values</term><idx>truth value</idx> (true or false). To do this, we break the statement down into its smallest elements, the propositions. We can then see the outcome of the complex statement for all possible combinations of true and false for the propositions.
 		</p>
 		<p>
 			For example, suppose we have the following two propositions:
@@ -114,7 +114,7 @@
 		<title>Truth Tables for NOT, AND, and OR</title>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>Not</term>: In the <m>\neg R</m> column, the truth value is the opposite of the value for <m>R</m>. For example, if <m>R</m> is true (you paid your rent), then <m>\neg R</m> (you did not pay your rent) is false.
+				<term>Not</term><idx><h>truth table</h><h>for negation</h></idx>: In the <m>\neg R</m> column, the truth value is the opposite of the value for <m>R</m>. For example, if <m>R</m> is true (you paid your rent), then <m>\neg R</m> (you did not pay your rent) is false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 				<row header="yes">
@@ -133,7 +133,7 @@
 		</sidebyside>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>And</term>: For <m>R \land E</m> to be true, you must have paid both your rent and your electric bill. Otherwise, <m>R \land E</m> is false.
+				<term>And</term><idx><h>truth table</h><h>for and</h></idx>: For <m>R \land E</m> to be true, you must have paid both your rent and your electric bill. Otherwise, <m>R \land E</m> is false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 				<row header="yes">
@@ -165,7 +165,7 @@
 		</sidebyside>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>Or</term>: For <m>R \lor E</m> to be true, you must have paid either your rent or your electric bill, or both (inclusive or). Otherwise, <m>R \lor E</m> is false.
+				<term>Or</term><idx><h>truth table</h><h>for or</h></idx>: For <m>R \lor E</m> to be true, you must have paid either your rent or your electric bill, or both (inclusive or). Otherwise, <m>R \lor E</m> is false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
@@ -215,7 +215,7 @@
 		</p>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>If, then</term>: In the <m>P\rightarrow L</m> (read <q>If <m>P</m>, then <m>L</m></q>) column, the only false row is the one where you post the photo and don't lose your job. Otherwise, <m>P\rightarrow L</m> is true.
+				<term>If, then</term><idx><h>truth table</h><h>for a conditional</h></idx>: In the <m>P\rightarrow L</m> (read <q>If <m>P</m>, then <m>L</m></q>) column, the only false row is the one where you post the photo and don't lose your job. Otherwise, <m>P\rightarrow L</m> is true.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 			<row header="yes">
@@ -393,7 +393,7 @@
 					</row>
 				</tabular>
 				<p>
-					The statement is true when exactly one of <m>A</m> and <m>B</m> is true: you get soup or salad, but not both. This is the <em>exclusive or</em>, often abbreviated XOR and written <m>A \oplus B</m>. Since we can build it from <em>and</em>, <em>or</em>, and <em>not</em>, we don't need a separate basic truth table for it.
+					The statement is true when exactly one of <m>A</m> and <m>B</m> is true: you get soup or salad, but not both. This is the <em>exclusive or</em><idx><h>exclusive or</h><h>truth table</h></idx>, often abbreviated XOR and written <m>A \oplus B</m>. Since we can build it from <em>and</em>, <em>or</em>, and <em>not</em>, we don't need a separate basic truth table for it.
 				</p>
 			</solution>
 		</example>
