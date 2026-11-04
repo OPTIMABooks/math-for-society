@@ -33,24 +33,24 @@
 			<ul>
 				<li>
 					<p>
-						<em>R</em>: You paid your rent this month.
+						<m>R</m>: You paid your rent this month.
 					</p>
 				</li>
 				<li>
 					<p>
-						<em>E</em>: You paid your electric bill this month.
+						<m>E</m>: You paid your electric bill this month.
 					</p>
 				</li>
 			</ul>
 		</p>
 		<p>
-			We use these two propositions to demonstrate the truth tables for <em>not, and,</em> and <em>or.</em>
+			We use these two propositions to demonstrate the truth tables for <em>not</em>, <em>and</em>, and <em>or</em>.
 			Before reading on, make sure you have reviewed the logical symbols shown in the <xref text="title" ref="assemblage-logical-symbols"/> block of <xref ref="sec-logic-propositions"/>.
 			<!--was 47% 47%-->
 		</p>
 			<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 				<p>
-					To set up a truth table, we list all the possible truth value combinations in a systematic way. One way to do this is to make the first column half true, then half false, then cut the pattern in half with each succeeding column. For two propositions, the first two columns are shown to the right.
+					To set up a truth table, we list all the possible truth value combinations in a systematic way. One way to do this is to make the first column half true, then half false, then cut the pattern in half with each succeeding column. For two propositions, the first two columns are filled in to the right.
 				</p>
 				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
@@ -107,7 +107,7 @@
 				</ul>
 		</p>
 		<p>
-			Once we fill in the starting columns, we add additional columns for the more complex statements. We can add as many columns as needed. Below are the basic truth tables for <em>not, and,</em> and <em>or.</em>
+			Once we fill in the starting columns, we add additional columns for the more complex statements. We can add as many columns as needed. Below are the basic truth tables for <em>not</em>, <em>and</em>, and <em>or</em>.
 		</p>
 	</introduction>
 	<subsubsection>
@@ -133,7 +133,7 @@
 		</sidebyside>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>And</term>: In the <m>R \land E</m> column, you must have paid both your rent and your electric bill. Otherwise, <m>R \land E</m> is false.
+				<term>And</term>: For <m>R \land E</m> to be true, you must have paid both your rent and your electric bill. Otherwise, <m>R \land E</m> is false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 				<row header="yes">
@@ -165,7 +165,7 @@
 		</sidebyside>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>Or</term>: In the <m>R \lor E</m> column, you must have paid either your rent or your electric bill, or both (inclusive or). Otherwise, <m>R \lor E</m> is false.
+				<term>Or</term>: For <m>R \lor E</m> to be true, you must have paid either your rent or your electric bill, or both (inclusive or). Otherwise, <m>R \lor E</m> is false.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
@@ -199,35 +199,7 @@
 	<subsubsection xml:id="subsubsec-conditional-truth-table">
 		<title>Truth Tables for the Conditional</title>
 		<p>
-			 To understand the truth table values for a conditional statement, it is helpful to look at it in context. We used this example in <xref ref="sec-logic-propositions"/> and we'll summarize it again here. Let's say a friend tells you, <q>If you post that photo to social media, you'll lose your job.</q> Under what conditions can you say that your friend was wrong?
-		</p>
-		<p>
-			 There are four possible outcomes:
-			 <ol>
-				 <li>
-					 <p>
-						 You post the photo and lose your job.
-					 </p>
-				 </li>
-				 <li>
-					 <p>
-						 You post the photo and don't lose your job.
-					 </p>
-				 </li>
-				 <li>
-					 <p>
-						 You don't post the photo and lose your job.
-					 </p>
-				 </li>
-				 <li>
-					 <p>
-						 You don't post the photo and don't lose your job.
-					 </p>
-				 </li>
-			 </ol>
-		</p>
-		<p>
-			 The only case where you can say your friend was wrong is the second case, in which you post the photo but still keep your job.
+			In <xref ref="sec-logic-propositions"/> we considered a friend's warning: <q>If you post that photo to social media, you'll lose your job.</q> The warning turns out to be wrong in only one situation: you post the photo and keep your job.
 		</p>
 		<assemblage>
 			<title>Remember</title>
@@ -236,14 +208,14 @@
 			</p>
 		</assemblage>
 		<p>
-			 Your friend didn't say anything about what would happen if you didn't post the photo, so you can't say the last two statements are wrong. Even if you didn't post the photo and lost your job anyway, your friend never said that you were guaranteed to keep your job if you didn't post it.
+			If you don't post the photo, the warning doesn't apply. Whether you keep your job or lose it for some other reason, your friend's prediction hasn't been broken, so we can't call it false.
 		</p>
 		<p>
-			The four cases above correspond to the four rows of the truth table. For this truth table we will use <m>P</m> for <q>posting the photo,</q> and <m>L</m> for <q>losing your job.</q>
+			To build the truth table, let <m>P</m> be <q>You post the photo</q> and <m>L</m> be <q>You lose your job.</q> Each of the four rows matches one of the possible outcomes.
 		</p>
 		<sidebyside widths="60% 34%" margins="0% 0%" valign="middle">
 			<p>
-				<term>If, then</term>: In the <m>P\rightarrow L</m> (read <q>If <m>P</m>, then <m>L</m></q>) column, the only outcome that is false is if you post the photo and don't lose your job. Otherwise <m>P\rightarrow L</m> is true.
+				<term>If, then</term>: In the <m>P\rightarrow L</m> (read <q>If <m>P</m>, then <m>L</m></q>) column, the only false row is the one where you post the photo and don't lose your job. Otherwise, <m>P\rightarrow L</m> is true.
 			</p>
 			<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 			<row header="yes">
@@ -274,23 +246,23 @@
 			</tabular>
 		</sidebyside>
 		<p>
-			If the hypothesis (the <q>if</q> part) is false, we cannot say that the statement is a lie, so the result of the third and fourth rows is true. Notice that we are using a double negation in this explanation.
+			The last two rows may seem strange at first. When the hypothesis (the <q>if</q> part) is false, the conditional promises nothing, so there is nothing to break, and we count it as true. In short, a conditional is true unless the hypothesis is true and the conclusion is false.
 		</p>
 	</subsubsection>
 	</subsection>
 	<subsection>
 		<title>Truth Tables for Complex Statements</title>
 		<p>
-			Truth tables really become useful when we seek to analyze complex statements composed of multiple propositions. To do so, we need truth tables with several columns. A good basic strategy in solving such problems is to work from the inside out and create a column in the table for each intermediate statement.
+			Truth tables really become useful when we seek to analyze complex statements composed of multiple propositions. To do so, we need truth tables with several columns. A good basic strategy for solving such problems is to work from the inside out and create a column in the table for each intermediate statement.
 			Each intermediate statement (and hence column) should require only a single logical operation to compute. This can be tedious for long problems but guards against error.
 		</p>
 		<example>
-			<!-- <statement> -->
+			<statement>
 			<p>
 				Create a truth table for the statement <m>A \lor (\neg B)</m>.
 			</p>
-			<!-- </statement> -->
-			<!-- <solution> -->
+			</statement>
+			<solution>
 			<sidebyside widths="47% 47%" margins="0% 0%" valign="top">
 				<p>
 					When we create the truth table, we start with columns for the propositions, <m>A</m> and <m>B</m>. Then we add a column for <m>\neg B</m> because that is part of the final statement. Our last column is the final statement <m>A \lor (\neg B)</m>.
@@ -331,7 +303,7 @@
 		</sidebyside>
 		<sidebyside widths="47% 47%" margins="0% 0%" valign="middle">
 				<p>
-					To complete the third column, <em>not B</em>, we take the opposite of the <em>B</em> column. Then to complete the fourth column, we only look at the <em>A</em> and the <em>not B</em> columns and compare them using <em>or</em>.
+					To complete the third column, <m>\neg B</m>, we take the opposite of the <m>B</m> column. Then to complete the fourth column, we only look at the <m>A</m> and the <m>\neg B</m> columns and compare them using <em>or</em>.
 				</p>
 				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row  header="yes">
@@ -366,13 +338,70 @@
 					</row>
 				</tabular>
 			</sidebyside>
-		<!-- </solution> -->
+		</solution>
+		</example>
+		<example>
+			<statement>
+				<p>
+					In <xref ref="sec-logic-propositions"/>, an offer of soup <em>or</em> salad meant one or the other, but not both. Let <m>A</m> be <q>You get soup</q> and <m>B</m> be <q>You get salad.</q> Create a truth table for the statement <m>(A \lor B) \land \neg(A \land B)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Working from the inside out, we need columns for <m>A \lor B</m> and <m>A \land B</m>, then the negation <m>\neg(A \land B)</m>, and finally the whole statement. The last column combines the third and fifth columns using <em>and</em>.
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell><m>A</m></cell>
+						<cell><m>B</m></cell>
+						<cell><m>A \lor B</m></cell>
+						<cell><m>A \land B</m></cell>
+						<cell><m>\neg(A \land B)</m></cell>
+						<cell><m>(A \lor B) \land \neg(A \land B)</m></cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+				</tabular>
+				<p>
+					The statement is true when exactly one of <m>A</m> and <m>B</m> is true: you get soup or salad, but not both. This is the <em>exclusive or</em>, often abbreviated XOR and written <m>A \oplus B</m>. Since we can build it from <em>and</em>, <em>or</em>, and <em>not</em>, we don't need a separate basic truth table for it.
+				</p>
+			</solution>
 		</example>
 	</subsection>
 	<subsection>
 			<title>Truth Tables with Three Propositions</title>
 		<p>
-			To create a truth table with three propositions we need eight rows to list all possible truth combinations. First, we will determine the columns we need to get to our final statement. Next, we will fill in the first three columns using the same methodology as before. Start with half true, half false, then cut the pattern in half each time.
+			To create a truth table with three propositions we need eight rows to list all possible truth combinations. Each new proposition doubles the number of rows, so three propositions need <m>2^3 = 8</m> rows. First, we will determine the columns we need to get to our final statement. Next, we will fill in the first three columns using the same method as before. Start with half true, half false, then cut the pattern in half each time.
 		</p>
 		<example>
 			<statement>
@@ -382,7 +411,7 @@
 			</statement>
 			<solution>
 				<p>
-					First, write out the columns we need. We have <m>A,\ B,\ C,</m>, then we need the statement in the parentheses, <m>(B \lor C)</m>. Then we need the negation of that column, <m> \neg(B \lor C)</m>. The last column we need is the final statement, <m>A \land \neg(B \lor C)</m>. 
+					First, write out the columns we need. We need columns for <m>A</m>, <m>B</m>, and <m>C</m>, then for the statement in the parentheses, <m>(B \lor C)</m>. Then we need the negation of that column, <m> \neg(B \lor C)</m>. The last column we need is the final statement, <m>A \land \neg(B \lor C)</m>. 
 				</p>
 				<p>
 					Here is the initial table:
@@ -462,7 +491,7 @@
 					</row>
 				</tabular>
 				<p>
-					Now we complete the columns one at a time. We use the <m>B</m> column and <m>C</m> column to complete <m>B \lor C</m>. Then, <m>\neg(B \lor C)</m> is the opposite of that column. For the final column we only need to look at the first and fifth columns, shaded in blue, with AND. Here is the completed table.
+					Now we complete the columns one at a time. We use the <m>B</m> column and <m>C</m> column to complete <m>B \lor C</m>. Then, <m>\neg(B \lor C)</m> is the opposite of that column. For the final column we only need to look at the first and fifth columns (<m>A</m> and <m>\neg(B \lor C)</m>) and combine them with AND. Here is the completed table.
 				</p>
 				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row  header="yes">
@@ -547,7 +576,7 @@
 			Perhaps the last example seems theoretical. What kind of application might require this kind of logic?  For an application, consider the following propositions taken from professional baseball:
 		</p>
 		<p>
-			Let <m>A= </m> Anaheim wins, <m>B= </m> Baltimore wins, and <m>C =</m> Cleveland wins.
+			Let <m>A</m>: Anaheim wins, <m>B</m>: Baltimore wins, and <m>C</m>: Cleveland wins.
 			Suppose that Anaheim will make the playoffs if: (1) Anaheim wins, and (2) neither Baltimore nor Cleveland wins. When will Anaheim make the playoffs?  Only in the case that the statement <m>A \land \neg(B \lor C)</m> is true!  
 			As we saw above, TFF (<m>A=</m> T, <m>B=</m> F, and <m>C=</m> F) is the only scenario in which Anaheim will make the playoffs.
 		</p>
@@ -637,7 +666,7 @@
 				</tabular>
 				<p>
 					For the fourth column, we take the opposite of <m>p</m>. Then we use the first and fourth columns to complete <m>m \land \neg\,p</m>. Next, we use columns five and three to complete our conditional statement. 
-					Be careful as we must read these columns right to left to get correct conditional values. Here is the completed table:
+					Be careful: the hypothesis (column five) is to the right of the conclusion (column three), so read these two columns from right to left. Here is the completed table:
 				</p>
 				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
@@ -714,7 +743,7 @@
 					</row>
 				</tabular>
 				<p>
-					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false—the fourth row of the table—then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion (<m>r</m>) is false, resulting in an invalid conditional statement; every other case gives a true result.
+					When <m>m</m> is true, <m>p</m> is false, and <m>r</m> is false—the fourth row of the table—then the hypothesis <m>m \land \neg\,p</m> will be true, but the conclusion (<m>r</m>) is false, so the conditional statement is false; every other case gives a true result.
 				</p>
 			</solution>
 		</example>
@@ -723,7 +752,7 @@
 			Here is a real-life situation that could be modeled by <m>(m \land\neg\,p)\rightarrow r</m>.
 		</p>
 		<p>
-			Suppose <m>m=</m> we order meatballs, <m>p=</m> we order pasta, and <m>r=</m> Ruba is happy. The statement <m>(m \land\neg,p)\rightarrow r</m> is then, <q>if we order meatballs and don't order pasta, then Ruba is happy</q>. If <m>m</m> is true (we order meatballs), <m>p</m> is false (we don't order pasta), and <m>r</m> is false (Ruba is not happy), then the statement is false, because we satisfied the premise but Ruba did not satisfy the conclusion. In all other cases, the statement is true.
+			Suppose <m>m</m>: we order meatballs, <m>p</m>: we order pasta, and <m>r</m>: Ruba is happy. The statement <m>(m \land\neg\,p)\rightarrow r</m> is then <q>If we order meatballs and don't order pasta, then Ruba is happy.</q> If <m>m</m> is true (we order meatballs), <m>p</m> is false (we don't order pasta), and <m>r</m> is false (Ruba is not happy), then the statement is false, because the hypothesis is true but the conclusion is false. In all other cases, the statement is true.
 		</p>
 	</subsection>
 

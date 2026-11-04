@@ -1001,7 +1001,7 @@
 		<exercise><!--  #13 -->
 			<statement>
 			<p>
-				Rewrite each statement in the conditional form <em>if p, then q</em>.
+				Rewrite each statement in the conditional form <em>if</em> <m>p</m>, <em>then</em> <m>q</m>.
 			</p>
 			<p>
 				<ol marker="a.">
@@ -1039,7 +1039,7 @@
 		<exercise> <!-- #14 -->
 			<statement>
 			<p>
-				Rewrite each statement in the conditional form <em>if p, then q</em>.
+				Rewrite each statement in the conditional form <em>if</em> <m>p</m>, <em>then</em> <m>q</m>.
 			</p>
 			<p>
 				<ol marker="a.">
