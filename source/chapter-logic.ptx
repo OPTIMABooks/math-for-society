@@ -22,6 +22,11 @@
 			</li>
 			<li>
 				<p>
+					Determine whether two statements are logically equivalent.
+				</p>
+			</li>
+			<li>
+				<p>
 					Distinguish between deductive and inductive arguments.
 				</p>
 			</li>
@@ -40,10 +45,10 @@
 
 	<introduction>
 		<p>
-			Symbolic logic emerged from ancient Greek foundations, but was revolutionized in the late 19th century when mathematicians like Boole, Frege, and Russell transformed philosophical reasoning into precise mathematical systems. By replacing ambiguous language with clear symbols and operations, they created a universal framework for analyzing arguments with unprecedented rigor.
+			Symbolic logic emerged from ancient Greek foundations and was revolutionized in the 19th and early 20th centuries when mathematicians like Boole, Frege, and Russell transformed philosophical reasoning into precise mathematical systems. By replacing ambiguous language with clear symbols and operations, they created a universal framework for analyzing arguments with unprecedented rigor.
 		</p>
 		<p>
-			This powerful analytical system extends far beyond theoretical exercises. Where natural language introduces ambiguity, symbolic logic provides a formal methodology for evaluating the validity of arguments with mathematical precision. Its applications span diverse fields including computer science, mathematics, philosophy, and formal linguistics. Students who master these logical structures will develop enhanced critical reasoning skills applicable to both academic inquiry and practical problem-solving scenarios across disciplines.
+			Symbolic logic lets us check whether an argument is valid without the ambiguity of everyday language. It is used throughout computer science, mathematics, philosophy, and linguistics, and the habits it builds, such as stating claims clearly and checking whether a conclusion really follows from its premises, are useful in any field.
 		</p>
 	</introduction>
 

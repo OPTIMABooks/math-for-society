@@ -35,8 +35,8 @@
 
 	<introduction>
 		<p>
-			A <term>logical argument</term> is a claim that a set of propositions, called <term>premises</term> or <term>hypotheses</term>, supports a proposition called the <alert>conclusion</alert>.
-			In this section we will look at <term>inductive</term> and <term>deductive</term> arguments and how to determine the strength, validity, and/or soundness of each. We will use truth tables as our primary tool for determining the validity of deductive arguments, but will also list several standard argument forms.
+			A <term>logical argument</term> is a claim that a set of propositions, called <term>premises</term>, supports a proposition called the <term>conclusion</term>.
+			In this section we will look at inductive and deductive arguments and how to determine the strength, validity, and/or soundness of each. We will use truth tables as our primary tool for determining the validity of deductive arguments, but will also list several standard argument forms.
 		</p>
 	</introduction>
 	<subsection>
@@ -77,7 +77,7 @@
 				</row>
 			</tabular>
 			<p>
-				Notice that both premises make a claim about a <alert>specific</alert> instance - the specific instance last week when I forgot my wallet, and the specific instance today when I forgot my wallet. The conclusion, on the other hand, states what we can expect to happen more generally.
+				Notice that both premises make a claim about a <alert>specific</alert> instance<mdash/>the specific instance last week when I forgot my wallet, and the specific instance today when I forgot my wallet. The conclusion, on the other hand, states what we can expect to happen more generally.
 			</p>
 		</example>
 		<p>
@@ -110,14 +110,14 @@
 				</row>
 			</tabular>
 			<p>
-				Unlike the first argument where the premises were specific and the conclusion was general, this argument's first premise is a general statement and the conclusion is specific.
+				Unlike the first argument, where the premises were specific and the conclusion was general, this argument's first premise is a general statement and the conclusion is specific.
 			</p>
 		</example>
 		<p>
-			We can determine whether an argument is inductive or deductive by looking at which part of the argument is general and which part is specific. In the first example, the premises were specific and the conclusion was more general. This is an example of an <term>inductive</term> argument. In the second example, it was the premises that were more general and the conclusion that was specific. This is an example of a <term>deductive</term> argument. 
+			We can determine whether an argument is inductive or deductive by looking at which part of the argument is general and which part is specific. In the first example, the premises were specific and the conclusion was more general. This is an example of an inductive argument. In the second example, it was the premises that were more general and the conclusion that was specific. This is an example of a deductive argument.
 		</p>
 		<p>
-			In general, an <term>inductive argument</term> uses a collection of <em>specific</em> examples (i.e. data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term> uses a collection of <em>general statements</em> (i.e., definitions) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
+			In general, an <term>inductive argument</term> uses a collection of <em>specific</em> examples (e.g., observations or data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term> uses a collection of <em>general statements</em> (e.g., definitions or rules) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
 		</p>
 		<sidebyside widths="40% 40%">
 			<image source="images/logic/ind_ded_argument1.png">
@@ -130,11 +130,11 @@
 		<example>
 			<statement>
 			<p>
-				Rewrite the following arguments in a precise <q>premise, premise, conclusion</q>> form, and determine if the argument is inductive or deductive.
+				Rewrite the following arguments in a precise <q>premise, premise, conclusion</q> form, and determine if the argument is inductive or deductive.
 				<ol marker="a.">
 					<li>
 						<p>
-							A number is prime if it is only divisible by itself and one. Since the number 13 is only divisible by itself and one, 13 must be prime. 
+							A whole number greater than one is prime if its only divisors are one and itself. Since 13 is greater than one and its only divisors are one and itself, 13 must be prime.
 						</p>
 					</li>
 					<li>
@@ -152,11 +152,11 @@
 						<tabular>
 							<row>
 								<cell><alert>P1:</alert></cell>
-								<cell>If a number is only divisible by itself and one, the number is prime.</cell>
+								<cell>If a whole number greater than one has only one and itself as divisors, the number is prime.</cell>
 							</row>
 							<row bottom="minor">
 								<cell><alert>P2:</alert></cell>
-								<cell>The number 13 is only divisible by itself and one.</cell>
+								<cell>The number 13 is greater than one, and its only divisors are one and itself.</cell>
 							</row>
 							<row>
 								<cell><alert>C:</alert></cell>
@@ -183,7 +183,7 @@
 							</row>
 						</tabular>
 						<p>
-							This is an example of an <alert>inductive argument</alert> since it uses specific experiences/instances as its premises, and its conclusion is a general expectation based on those specific experiences.
+							This is an example of an <alert>inductive argument</alert> since it uses specific instances (Goober's past litters) as its premises. The argument generalizes from these instances to a pattern (Goober always has 5 puppies) and applies that pattern to the current litter. Even if every past litter had 5 puppies, the conclusion is not guaranteed.
 						</p>
 					</li>
 				</ol>
@@ -197,7 +197,7 @@
 			Inductive arguments cannot be proven. The best we can do is evaluate the <term>strength</term> of the argument based on the evidence it provides.
 		</p> 
 		<p>
-			A strong inductive argument is one that is well supported by its premises, while a weak inductive argument is one whose premises do a poor job of supporting the conclusion. The strength of an inductive argument is subjective, because where one person sees a strong argument, another may see a weak argument. Additionally, the strength and truth of an argument are not necessarily related; it is possible to have a weak argument that is true, and a strong argument that is false.
+			A strong inductive argument is one that is well supported by its premises, while a weak inductive argument is one whose premises do a poor job of supporting the conclusion. The strength of an inductive argument is subjective, because where one person sees a strong argument, another may see a weak argument. Additionally, the strength and truth of an argument are not necessarily related; it is possible to have a weak argument whose conclusion is true, and a strong argument whose conclusion is false.
 		</p>
 		<example>
 			<statement>
@@ -206,7 +206,7 @@
 				</p>
 				<blockquote>
 					<p>
-						James Franco, Jodie Foster, Jennifer Lawrence, and Jack Nicholson have all won Academy Awards for acting. Actors whose names start with J are bound to win an Academy Award.
+						Jamie Foxx, Jodie Foster, Jennifer Lawrence, and Jack Nicholson have all won Academy Awards for acting. Actors whose names start with J are bound to win an Academy Award.
 					</p>
 				</blockquote>
 			</statement>
@@ -217,8 +217,39 @@
 			</solution>
 		</example>
 		<p>
-			Deductive arguments, on the other hand, can be proven and their validity and soundness can be evaluated. The <term>validity</term> of the argument is based on whether the conclusion follows logically from the premises, while the <term>soundness</term> of the argument is based on whether or not the premises are true. An argument cannot be sound if it is not valid, even if the premises appear reasonable. 
+			Deductive arguments, on the other hand, are evaluated by their validity and soundness. A deductive argument is <term>valid</term> if its conclusion must be true whenever its premises are true; that is, the conclusion follows logically from the premises. A valid argument is <term>sound</term> if, in addition, its premises are actually true. An argument cannot be sound if it is not valid, even if the premises appear reasonable.
 		</p>
+		<example>
+			<statement>
+				<p>
+					Determine whether the following argument is valid and whether it is sound.
+				</p>
+				<blockquote>
+					<p>
+						All birds can fly. Penguins are birds. Therefore, penguins can fly.
+					</p>
+				</blockquote>
+			</statement>
+			<solution>
+				<tabular>
+					<row>
+						<cell><alert>P1:</alert></cell>
+						<cell>All birds can fly.</cell>
+					</row>
+					<row bottom="minor">
+						<cell><alert>P2:</alert></cell>
+						<cell>Penguins are birds.</cell>
+					</row>
+					<row>
+						<cell><alert>C:</alert></cell>
+						<cell>Penguins can fly.</cell>
+					</row>
+				</tabular>
+				<p>
+					The argument is <alert>valid</alert>: if all birds could fly and penguins are birds, then penguins would have to be able to fly. However, the first premise is false, since penguins (along with ostriches and emus) are birds that cannot fly. Because one of its premises is false, the argument is <alert>not sound</alert>, even though it is valid.
+				</p>
+			</solution>
+		</example>
 	</subsection>
 	<subsection>
 		<title>Evaluating Deductive Arguments Using Truth Tables</title>
@@ -229,12 +260,12 @@
 			<example>
 				<statement>
 					<p>
-						Suppose each of the following statements are true:
+						Suppose each of the following statements is true:
 						<ol>
 							<li>Either the security system was activated or the alarm went off, but not both.</li>
 							<li>The alarm did not go off.</li>
 						</ol>
-						Prove that "The security system was activated."
+						Prove that <q>The security system was activated.</q>
 					</p>
 				</statement>
 				<solution>
@@ -244,7 +275,7 @@
 							<li>Let <m>S</m> = <q>The security system was activated</q></li>
 							<li>Let <m>A</m> = <q>The alarm went off</q></li>
 						</ul>
-						The first statement can be written as: <m>(S \lor A) \land \lnot(S \land A)</m>, which is more simply written using the symbol for the exclusive OR  <m>S \oplus A</m>.
+						The first statement can be written as: <m>(S \lor A) \land \lnot(S \land A)</m>, which is more simply written using the symbol for the exclusive OR, <m>S \oplus A</m>.
 						Similarly, the second statement may be written as <m>\lnot A</m>, and the conclusion is simply <m>S</m>. 
 						In its briefest form, the argument is thus
 					</p>
@@ -298,17 +329,17 @@
 						</row>
 					</tabular>
 					<p>
-						To evaluate the argument, we ask if the conclusion is true every time the premises are true. Row two of the truth table shows this to be the case. <alert>P1</alert> and <alert>P2</alert> (columns 2 and 4) are true and the conclusion (first column) is true as well.  Thus, this is a <alert>valid</alert> argument.
+						To evaluate the argument, we ask if the conclusion is true every time the premises are true. Row two is the only row of the truth table in which <alert>P1</alert> and <alert>P2</alert> (columns 3 and 4) are both true, and the conclusion (first column) is true in that row as well. Thus, this is a <alert>valid</alert> argument.
 					</p>
 				</solution>
 			</example>
 			<p>
-				Here is an example requiring three proportions.
+				Here is an example requiring three propositions.
 			</p>
 			<example>
 				<statement>
 					<p>
-						Suppose each of the following statements are true:
+						Suppose each of the following statements is true:
 						<ol>
 							<li>It is snowing.</li>
 							<li>If it is warm, then it is not snowing.</li>
@@ -334,7 +365,7 @@
 						</row>
 						<row>
 							<cell><alert>P2:</alert></cell>
-							<cell><m>q \rightarrow \neg r</m>,</cell>
+							<cell><m>q \rightarrow \neg p</m>,</cell>
 						</row>
 						<row bottom="minor">
 							<cell><alert>P3:</alert></cell>
@@ -440,20 +471,20 @@
 							<cell>T</cell>
 						</row>
 					</tabular>
+					<p>
+						Row 4 is the only row in which all three premises are true, and the conclusion is true in that row as well. Therefore, the argument is valid.
+					</p>
 				</solution>
-				<p>
-					Row 4 of this table shows that the argument is valid. In this row, each of the 3 premises is true as is the conclusion.
-				</p>
 			</example>
 			<assemblage xml:id="assemblage-logic-tabular-proof">
 				<title>Summary: Tabular Method</title>
 				<p>
-					To test the validity of an argument (i.e. prove or disprove):
+					To test the validity of an argument (i.e., prove or disprove it):
 					<ol>
 						<li> Write the verbal argument in symbolic form.</li>
 						<li> Draw a truth table where each premise and the conclusion gets its own column. Do this all in one (possibly large!) table.</li>
-						<li>Locate all rows where where <alert>all</alert> of the premises are true.</li>
-						<li>Look at each row from the previous step. Is the conclusion also true? If it is also true on each row, then the argument is valid (or true). Otherwise, the argument is not valid.</li>
+						<li>Locate all rows where <alert>all</alert> of the premises are true.</li>
+						<li>Look at each row from the previous step. Is the conclusion also true? If it is also true on each row, then the argument is valid. Otherwise, the argument is not valid.</li>
 					</ol>
 				</p>
 			</assemblage>
@@ -488,7 +519,7 @@
 						</row>
 						<row bottom="minor">
 							<cell><alert>P2:</alert></cell>
-							<cell><m>q \rightarrow  r</m>,</cell>
+							<cell><m>q \rightarrow r</m>,</cell>
 						</row>
 						<row>
 							<cell><alert>C:</alert></cell>
@@ -605,7 +636,7 @@
 				</solution>
 			</example>
 			<p>
-				<xref ref="ex-logic-invalid-argument-table"/> is invalid because it commits the fallacy of <term>denying the antecedent</term> (or <term>fallacy of the inverse</term>), which is based on the mistaken assumption that a conditional and its inverse are equivalent, as described in <xref ref="fact-logic-equivalence-contrapositive"/>.  
+				<xref ref="ex-logic-invalid-argument-table"/> is invalid because it commits the fallacy of <term>denying the antecedent</term> (or <term>fallacy of the inverse</term>), which is based on the mistaken assumption that a conditional and its inverse are equivalent, as described in <xref ref="fact-logic-equivalence-contrapositive"/>.
 				Even with the premises being true, the economy could still improve for reasons completely unrelated to tax cuts and retail sales. If you are interested in learning more about common logical fallacies, consider reading the next section of this chapter, <xref ref="sec-logic-fallacies"/>.
 			</p>
 	</subsection>
@@ -613,14 +644,14 @@
 		<title>Forms of Valid Arguments (Optional)</title>
 		<introduction>
 			<p>
-				Evaluating arguments by truth table is accurate and powerful, it can be tedious and exhausting to make them. Also, it is sometimes redundant, as arguments about different topics may have the same logical form. 
-				If we are able to recognize certain common forms of arguments as valid (or invalid), we can evaluate validity without the tedium of creating a table. The following is a sampling of valid logical forms. Invalid logical forms (or <term>fallacies</term>) are discussed in <xref ref="sec-logic-fallacies"/>.
+				Although evaluating arguments by truth table is accurate and powerful, making the tables can be tedious and exhausting. Also, it is sometimes redundant, as arguments about different topics may have the same logical form. 
+				If we are able to recognize certain common forms of arguments as valid (or invalid), we can evaluate validity without the tedium of creating a table. The following is a sampling of valid logical forms. Invalid logical forms (or fallacies) are discussed in <xref ref="sec-logic-fallacies"/>.
 			</p>
 		</introduction>
-		<subsubsection >
+		<subsubsection>
 			<title>The Law of Detachment</title>
 			<p>
-				Also called by its Latin name, <foreign>Modus Ponens</foreign> (<q>mode that affirms</q>), the law of detachment applies when a conditional and its antecedent are given as premises and the consequent is the conclusion. The general form is:
+				Also called by its Latin name, <foreign>modus ponens</foreign> (<q>mode that affirms</q>), the law of detachment applies when a conditional and its antecedent are given as premises and the consequent is the conclusion. The general form is:
 			</p>
 			<tabular>
 				<row>
@@ -661,7 +692,7 @@
 		<subsubsection>
 			<title>The Law of Contraposition</title>
 			<p>
-				The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion. This form is also called <foreign>Modus Tollens</foreign> (<q>mode that denies</q>). The general form is:
+				The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion. This form is also called <foreign>modus tollens</foreign> (<q>mode that denies</q>). The general form is:
 			</p>
 			<tabular>
 				<row>
@@ -704,8 +735,8 @@
 		<subsubsection>
 			<title>The Transitive Property</title>
 			<p>
-				The transitive property (or <term>Hypothetical Syllogism</term>) has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise. 
-				In other words, the transitive property describes a chain reaction: if the first thing happens, then the second thing happens, and if the second thing happens, then the third thing happens. Therefore, if we want to ignore the second thing, we can say that if the first thing happens, then we know the third thing will happen. 
+				The transitive property (or <term>hypothetical syllogism</term>) has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise. 
+				In other words, the transitive property describes a chain reaction: if the first thing happens, then the second thing happens, and if the second thing happens, then the third thing happens. Therefore, skipping over the middle step, we can say that if the first thing happens, then we know the third thing will happen. 
 				The general form is:
 			</p>
 			<tabular>
@@ -735,7 +766,7 @@
 			<example>
 				<blockquote>
 					<p>
-						If a soccer player commits a reckless foul, she will receive a yellow card. If Hayley receives a yellow card, she will be suspended for the next match. Therefore, if Hayley commits a reckless foul, she will be suspended for the next match.
+						If Hayley commits a reckless foul, she will receive a yellow card. If Hayley receives a yellow card, she will be suspended for the next match. Therefore, if Hayley commits a reckless foul, she will be suspended for the next match.
 					</p>
 				</blockquote>
 				<p>
