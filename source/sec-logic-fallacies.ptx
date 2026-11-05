@@ -17,7 +17,7 @@
 
   <introduction>
     <p>
-      In the last section, we saw that logical arguments are invalid when the premises are not sufficient to guarantee the conclusion. Even if an argument is valid, it may be unsound if the premises are not true. There are other ways that a logical argument may be invalid or unsound. One of the more common ways this can occur is if the argument is a <term>fallacy</term>..
+      In the last section, we saw that logical arguments are invalid when the premises are not sufficient to guarantee the conclusion. Even if an argument is valid, it may be unsound if the premises are not true. There are other ways that a logical argument may be invalid or unsound. One of the more common ways this can occur is if the argument is a fallacy.
     </p>
     <p>
       A <term>fallacy</term> is a type of argument that appears valid but uses a logical error to persuade or deceive. Fallacious arguments are especially common in advertising and politics, so it is important as informed citizens to recognize when we are being presented with a fallacious argument and to not be persuaded by it.
@@ -32,7 +32,7 @@
       </p>
     </introduction>   
     <subsubsection>
-      <title>Personal Attack (Ad hominem)</title>
+      <title>Personal Attack (<foreign>Ad Hominem</foreign>)</title>
         <p>
           A <term>personal attack</term> argument attacks the person making the argument while ignoring the argument itself. A personal attack is not the same as an insult; rather, it claims there is something wrong with the person or group in order to cast doubt on their character and discredit their argument.
         </p>
@@ -41,7 +41,7 @@
             <q>Jane says that whales are fish, but she's only in the second grade so she can't be right.</q>
           </p>
           <p>
-            Here, the argument is attacking Jane, not the validity of her claim, so this is a personal attack. 
+            Here, the argument is attacking Jane, not the truth of her claim, so this is a personal attack. (Jane happens to be wrong, but this argument doesn't show it.)
           </p>
         </example>
         <example>
@@ -49,7 +49,7 @@
             <q>Jane says that whales are fish, but everyone knows that they're really mammals. She's so stupid.</q>
           </p>
           <p>
-            This certainly isn't very nice, but it is <em>not</em> a personal attack since a valid counterargument is made (<q>they really are mammals</q>) along with a personal insult. 
+            This certainly isn't very nice, but it is <em>not</em> a personal attack since a relevant counterargument is made (<q>they really are mammals</q>) along with a personal insult. 
           </p>
         </example>
         <example>
@@ -57,21 +57,21 @@
             <q>Mr. Smith is a college dropout, so his stance on education reform cannot be trusted.</q> 
           </p>
           <p>
-            Here, the argument uses the fact that Mr. Smith did not complete his college degree to discredit their ideas on education reform, so it is a personal attack.
+            Here, the argument uses the fact that Mr. Smith did not complete his college degree to discredit his ideas on education reform, so it is a personal attack.
           </p>
         </example> 
     </subsubsection>
     <subsubsection>
       <title>Appeal to Ignorance</title> 
       <p>
-        An <term>appeal to ignorance</term> argument assumes something is true because it hasn't been proven false.
+        An <term>appeal to ignorance</term> argument assumes a claim is true because it hasn't been proven false, or false because it hasn't been proven true.
       </p>
       <example>
         <p>
           <q>Nobody has proven that photo isn't of Bigfoot, so it must be Bigfoot.</q>
         </p>
         <p>
-          This is an example of an appeal to ignorance since the fact that no one has been able to prove the picture of Bigfoot is false is being used as evidence that it is Bigfoot.
+          This is an example of an appeal to ignorance since the fact that no one has been able to prove the photo is not of Bigfoot is being used as evidence that it is Bigfoot.
         </p>
       </example>  
     </subsubsection>
@@ -85,22 +85,22 @@
           <q>A diet high in bacon can be healthy; Doctor Atkins said so.</q>
         </p>
         <p>
-          Here, an appeal to a doctor's authority is used for the argument. This generally would provide strength to the argument, except that the opinion that eating a diet high in saturated fat runs counter to general medical opinion. More supporting evidence would be needed to justify this claim.
+          Here, an appeal to a doctor's authority is used for the argument. This generally would provide strength to the argument, except that the claim that a diet high in saturated fat can be healthy runs counter to general medical opinion. More supporting evidence would be needed to justify this claim.
         </p>
       </example>
       <example>
         <p>
-          <q>Jennifer Hudson and Oprah lost weight with Weight Watchers, so their program must work.</q>
+          <q>A famous tennis player says this protein powder helped her recover faster, so it must work.</q>
         </p>
         <p>
-          In this example there is an appeal to the authority of celebrities. While their experience does provide evidence, it provides no more than any other person's experience would.
+          In this example there is an appeal to the authority of a celebrity. While her experience does provide evidence, it provides no more than any other person's experience would.
         </p>
       </example>
     </subsubsection>
     <subsubsection>
       <title>False Dilemma</title>
       <p>
-        A <term>false dilemma</term> argument falsely frames an argument as an <q>either or</q> choice without allowing for additional options. 
+        A <term>false dilemma</term> argument falsely frames an argument as an <q>either/or</q> choice without allowing for additional options. 
       </p>
       <example>
         <p>
@@ -114,7 +114,7 @@
     <subsubsection>
       <title>Straw Man</title>
       <p>
-        A <term>straw man</term> argument involves misrepresenting the argument in an oversimplified, distorted and less favorable way to make it easier to attack. 
+        A <term>straw man</term> argument involves misrepresenting an opponent's argument in an oversimplified, distorted, and less favorable way to make it easier to attack. 
       </p>
       <example>
         <p>
@@ -128,14 +128,14 @@
     <subsubsection>
       <title>Post Hoc</title>
       <p>
-        A <term>post hoc</term> argument claims that because two things happened sequentially, the first must have <em>caused</em> the second.
+        A <term>post hoc</term> argument (short for <foreign>post hoc ergo propter hoc</foreign>, <q>after this, therefore because of this</q>) claims that because two things happened sequentially, the first must have <em>caused</em> the second.
       </p>
       <example>
         <p>
           <q>Every morning the rooster crows just before dawn. It must be his crow that makes the sun rise.</q>
         </p>
         <p>
-          Here the arguer is saying the rooster caused the sun to rise, but it is more likely that the sun rising caused the rooster to crow.
+          Here the arguer is saying the rooster's crow causes the sun to rise. In fact, roosters crow in anticipation of dawn, and the sun would rise whether or not the rooster crowed.
         </p>
       </example>
       <example>
@@ -143,13 +143,13 @@
           <q>Today I wore a red shirt and my football team won! I need to wear a red shirt every time they play to make sure they keep winning.</q>
         </p>
         <p>
-          This person is saying their team won because they wore a red shirt. This type of superstition is quite common in sports even though we really know they are unrelated.
+          This person is saying their team won because they wore a red shirt. This type of superstition is quite common in sports even though the shirt has nothing to do with the outcome of the game.
         </p>
       </example>
     </subsubsection>
     <conclusion>
       <p>
-        Sometimes there may be more than one fallacy that seems reasonable. Consider this argument: <q>Emma Watson says she's a feminist, but she posed for these racy pictures. I'm a feminist and no self-respecting feminist would do that.</q> Could this be ad hominem, saying that Emma Watson has no self-respect? Could it be appealing to authority because the person making the argument claims to be a feminist? Could it be a false dilemma because the argument assumes that a woman is either a feminist or not, with no gray area in between?
+        Sometimes there may be more than one fallacy that seems reasonable. Consider this argument: <q>Emma Watson says she's a feminist, but she posed for these racy pictures. I'm a feminist and no self-respecting feminist would do that.</q> Could this be a personal attack, saying that Emma Watson has no self-respect? Could it be appealing to authority because the person making the argument claims to be a feminist? Could it be a false dilemma because the argument assumes that a woman must choose between being a feminist and posing for revealing photos?
       </p>
       <p>
         We have described just six of the many types of logical fallacies. Once you learn to recognize these you will also likely become aware of many others. There are many lists of logical fallacies online.
@@ -168,7 +168,7 @@
     <exercise>
       <statement>
       <p>
-        John Bardeen's work at the Advanced Institute for Physics has progressed so slowly that even his colleagues call him a plodder. Hence, it is prudent at present not to take seriously his current theory relating how strings constitute the smallest of subatomic particles.
+        Dr. Jan Novak's work at the Advanced Institute for Physics has progressed so slowly that even his colleagues call him a plodder. Hence, it is prudent at present not to take seriously his current theory relating how strings constitute the smallest of subatomic particles.
       </p>
       </statement>
       <solution>
@@ -197,7 +197,7 @@
       </statement>
       <solution>
         <p>
-          Personal Dilemma
+          Personal attack
         </p>
       </solution>
     </exercise>
@@ -221,7 +221,7 @@
       </statement>
       <solution>
         <p>
-          Post Hoc
+          Post hoc
         </p>
       </solution>
     </exercise>
@@ -234,7 +234,7 @@
       </statement>
       <solution>
         <p>
-          Post Hoc
+          Post hoc
         </p>
       </solution>
     </exercise>
@@ -242,12 +242,12 @@
     <exercise>
       <statement>
       <p>
-        Old man Brown claims that he saw a flying saucer in his farm, but he never got beyond the fourth grade in school and can hardly read or write. He is completely ignorant of what scientists have written on the subject, so his report cannot possibly be true.
+        Old man Brown claims that he saw a flying saucer on his farm, but he never got beyond the fourth grade in school and can hardly read or write. He is completely ignorant of what scientists have written on the subject, so his report cannot possibly be true.
       </p>
       </statement>
       <solution>
         <p>
-          Personal Attack
+          Personal attack
         </p>
       </solution>
     </exercise>
@@ -260,7 +260,7 @@
       </statement>
       <solution>
         <p>
-          Appeal to authority
+          Appeal to authority. Dentists are relevant experts, so the weakness here is the vague, unsourced statistic: we don't know which dentists were asked or what they were asked.
         </p>
       </solution>
     </exercise>
@@ -281,12 +281,12 @@
     <exercise>
       <statement>
       <p>
-        If you think that teens should be taught about contraceptive measures then you want to give kids license to have sex with no consequences.
+        If you think that teens should be taught about contraceptive measures, then you want to give kids license to have sex with no consequences.
       </p>
       </statement>
       <solution>
         <p>
-          Straw person
+          Straw man
         </p>
       </solution>
     </exercise>
@@ -377,7 +377,7 @@
       </statement>
       <solution>
         <p>
-          Post Hoc
+          Post hoc. (Large studies involving millions of children have found no link between vaccines and autism.)
         </p>
       </solution>
     </exercise>
@@ -403,7 +403,7 @@
       </statement>
       <solution>
         <p>
-          Personal Attack
+          Personal attack
         </p>
       </solution>
     </exercise>
