@@ -8,7 +8,7 @@
       <department>Department of Mathematics</department>
       <institution>Walla Walla University</institution>
     </author>
-    <date>Last updated <today /></date>
+    <date>Updated <today /></date>
     <!-- Bump the edition when content is added (1.1, 1.2, ...); a new major edition (2.0) only if section or exercise numbering changes. Typo fixes leave it alone. -->
     <edition>1.0</edition>
 <!-- 
@@ -100,7 +100,7 @@
         </ul>
       </p>
       <p>
-        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies, and Expected Value are brought over from Lee et al. with only brief edits or corrections. The exercises in the Income Taxes and Logical Fallacies sections also come from Lee et al., and those in the Propositions and Logical Operators section are adapted from Lee et al. Exercises in other sections are my own. Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation. The sections on sets contain material from Sekhon and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
+        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies, and Expected Value are brought over from Lee et al. with only brief edits or corrections. The exercises in the Income Taxes and Logical Fallacies sections also come from Lee et al., and those in the Propositions and Logical Operators section are adapted from Lee et al. Exercises in other sections are my own. Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation as a basis for my work here. The sections on sets contain material from Sekhon and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
       </p>
     </paragraphs>
     <paragraphs>
