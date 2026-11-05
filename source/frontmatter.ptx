@@ -8,9 +8,9 @@
       <department>Department of Mathematics</department>
       <institution>Walla Walla University</institution>
     </author>
-    <date>
-      <today />
-    </date>
+    <date>Last updated <today /></date>
+    <!-- Bump the edition when content is added (1.1, 1.2, ...); a new major edition (2.0) only if section or exercise numbering changes. Typo fixes leave it alone. -->
+    <edition>1.0</edition>
 <!-- 
     <website>
       <url href="https://www.wallawalla.edu/math">WWU Department of Mathematics</url>
@@ -69,35 +69,38 @@
     <paragraphs>
       <title>Sources</title>
       <p>
-        This book is a remix of the sources listed below. I have edited these sources to a greater or lesser degree as well as added original material. Each of these sources is licensed under
-        <url href="http://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url> except as noted in their own attributions.
+        This book is a remix of the sources listed below. I have edited these sources to a greater or lesser degree as well as added original material. Each source's license is listed with it; material within a source may carry its own exceptions, as noted in that source's attributions.
         <ul>
           <li>
             <p>
               <url href="https://www.pcc.edu/math-in-society/"
                 visual="pcc.edu/math-in-society"><q>Math In Society, 2nd Edition: Tools for decision making</q></url>
-              by Lee et al., Portland Community College Math Department.
+              by Lee et al., Portland Community College Math Department, licensed under
+              <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
             </p>
           </li>
           <li>
             <p>
-              <url href="https://www.opentextbookstore.com/mathinsociety/"><q>Math in Society</q></url> by David Lippman.
+              <url href="https://www.opentextbookstore.com/mathinsociety/"><q>Math in Society</q></url> by David Lippman, licensed under
+              <url href="https://creativecommons.org/licenses/by-sa/4.0" visual="creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</url>.
             </p>
           </li>
           <li>
             <p>
-              <url href="https://www.deanza.edu/faculty/bloomroberta/math11/index.html"><q>Applied Finite Mathematics 3rd ed</q></url> by R. Sekhon and R. Bloom, De Anza College.
+              <url href="https://www.deanza.edu/faculty/bloomroberta/math11/index.html"><q>Applied Finite Mathematics 3rd ed</q></url> by R. Sekhon and R. Bloom, De Anza College, licensed under
+              <url href="https://creativecommons.org/licenses/by/4.0" visual="creativecommons.org/licenses/by/4.0">CC BY 4.0</url>.
             </p>
           </li>
           <li>
             <p>
               <url href="https://stats.optimabooks.org"><q>OPTIMA Statistics</q></url> by Jonathan Duncan, Walla Walla University.
+              <!-- TODO: OPTIMA Statistics is CC BY-NC 4.0, which can't be relicensed CC BY-SA. Once Jonathan confirms permission, add: "Its original license is CC BY-NC 4.0; material from it is used here under CC BY-SA 4.0 with the author's permission." -->
             </p>
           </li>
         </ul>
       </p>
       <p>
-        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies, and Expected Value are brought over from Lee et al. with only brief edits or corrections, as are any provided exercises in this text. Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation. The sections on sets contain material from Sekhon and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
+        The git log for this book contains granular attribution of sources. In broad strokes, the Finance and Logical Reasoning chapters draw heavily from Lee et al. In particular, the sections on Income Taxes, Logical Fallacies, and Expected Value are brought over from Lee et al. with only brief edits or corrections. The exercises in the Income Taxes and Logical Fallacies sections also come from Lee et al., and those in the Propositions and Logical Operators section are adapted from Lee et al. Exercises in other sections are my own. Lee et al. was itself in part derived from Lippman's work; in places I have used the original source material rather than their adaptation. The sections on sets contain material from Sekhon and Bloom as well as Duncan. The sections on Probability and Statistics draw heavily on Duncan's work.
       </p>
     </paragraphs>
     <paragraphs>
