@@ -35,7 +35,7 @@
 
 	<introduction>
 		<p>
-			A <term>logical argument</term> is a claim that a set of propositions, called <term>premises</term>, supports a proposition called the <term>conclusion</term>.
+			A <term>logical argument</term><idx>argument</idx><idx><h>logical argument</h><see>argument</see></idx> is a claim that a set of propositions, called <term>premises</term>, supports a proposition called the <term>conclusion</term>.
 			In this section we will look at inductive and deductive arguments and how to determine the strength, validity, and/or soundness of each. We will use truth tables as our primary tool for determining the validity of deductive arguments, but will also list several standard argument forms.
 		</p>
 	</introduction>
@@ -117,7 +117,7 @@
 			We can determine whether an argument is inductive or deductive by looking at which part of the argument is general and which part is specific. In the first example, the premises were specific and the conclusion was more general. This is an example of an inductive argument. In the second example, it was the premises that were more general and the conclusion that was specific. This is an example of a deductive argument.
 		</p>
 		<p>
-			In general, an <term>inductive argument</term> uses a collection of <em>specific</em> examples (e.g., observations or data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term> uses a collection of <em>general statements</em> (e.g., definitions or rules) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
+			In general, an <term>inductive argument</term><idx><h>argument</h><h>inductive</h></idx><idx><h>inductive argument</h><see>argument, inductive</see></idx> uses a collection of <em>specific</em> examples (e.g., observations or data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term><idx><h>argument</h><h>deductive</h></idx><idx><h>deductive argument</h><see>argument, deductive</see></idx> uses a collection of <em>general statements</em> (e.g., definitions or rules) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
 		</p>
 		<sidebyside widths="40% 40%">
 			<image source="images/logic/ind_ded_argument1.png">
@@ -194,7 +194,7 @@
 	<subsection>
 		<title>Evaluating Arguments</title>
 		<p>
-			Inductive arguments cannot be proven. The best we can do is evaluate the <term>strength</term> of the argument based on the evidence it provides.
+			Inductive arguments cannot be proven. The best we can do is evaluate the <term>strength</term><idx><h>argument</h><h>strength of</h></idx> of the argument based on the evidence it provides.
 		</p> 
 		<p>
 			A strong inductive argument is one that is well supported by its premises, while a weak inductive argument is one whose premises do a poor job of supporting the conclusion. The strength of an inductive argument is subjective, because where one person sees a strong argument, another may see a weak argument. Additionally, the strength and truth of an argument are not necessarily related; it is possible to have a weak argument whose conclusion is true, and a strong argument whose conclusion is false.
@@ -217,7 +217,7 @@
 			</solution>
 		</example>
 		<p>
-			Deductive arguments, on the other hand, are evaluated by their validity and soundness. A deductive argument is <term>valid</term> if its conclusion must be true whenever its premises are true; that is, the conclusion follows logically from the premises. A valid argument is <term>sound</term> if, in addition, its premises are actually true. An argument cannot be sound if it is not valid, even if the premises appear reasonable.
+			Deductive arguments, on the other hand, are evaluated by their validity and soundness. A deductive argument is <term>valid</term><idx><h>argument</h><h>valid</h></idx><idx><h>validity</h><see>argument, valid</see></idx> if its conclusion must be true whenever its premises are true; that is, the conclusion follows logically from the premises. A valid argument is <term>sound</term><idx><h>argument</h><h>sound</h></idx><idx><h>soundness</h><see>argument, sound</see></idx> if, in addition, its premises are actually true. An argument cannot be sound if it is not valid, even if the premises appear reasonable.
 		</p>
 		<example>
 			<statement>
@@ -636,7 +636,7 @@
 				</solution>
 			</example>
 			<p>
-				<xref ref="ex-logic-invalid-argument-table"/> is invalid because it commits the fallacy of <term>denying the antecedent</term> (or <term>fallacy of the inverse</term>), which is based on the mistaken assumption that a conditional and its inverse are equivalent, as described in <xref ref="fact-logic-equivalence-contrapositive"/>.
+				<xref ref="ex-logic-invalid-argument-table"/> is invalid because it commits the fallacy of <term>denying the antecedent</term><idx>denying the antecedent</idx> (or <term>fallacy of the inverse</term><idx><h>fallacy of the inverse</h><see>denying the antecedent</see></idx>), which is based on the mistaken assumption that a conditional and its inverse are equivalent, as described in <xref ref="fact-logic-equivalence-contrapositive"/>.
 				Even with the premises being true, the economy could still improve for reasons completely unrelated to tax cuts and retail sales. If you are interested in learning more about common logical fallacies, consider reading the next section of this chapter, <xref ref="sec-logic-fallacies"/>.
 			</p>
 	</subsection>
@@ -651,7 +651,7 @@
 		<subsubsection>
 			<title>The Law of Detachment</title>
 			<p>
-				Also called by its Latin name, <foreign>modus ponens</foreign> (<q>mode that affirms</q>), the law of detachment applies when a conditional and its antecedent are given as premises and the consequent is the conclusion. The general form is:
+				Also called by its Latin name, <foreign>modus ponens</foreign><idx><h>modus ponens</h><see>law of detachment</see></idx> (<q>mode that affirms</q>), the law of detachment applies when a conditional and its antecedent are given as premises and the consequent is the conclusion. The general form is:
 			</p>
 			<tabular>
 				<row>
@@ -692,7 +692,7 @@
 		<subsubsection>
 			<title>The Law of Contraposition</title>
 			<p>
-				The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion. This form is also called <foreign>modus tollens</foreign> (<q>mode that denies</q>). The general form is:
+				The law of contraposition applies when a conditional and the negation of its consequent are given as premises, and the negation of its antecedent is the conclusion. This form is also called <foreign>modus tollens</foreign><idx><h>modus tollens</h><see>law of contraposition</see></idx> (<q>mode that denies</q>). The general form is:
 			</p>
 			<tabular>
 				<row>
@@ -735,7 +735,7 @@
 		<subsubsection>
 			<title>The Transitive Property</title>
 			<p>
-				The transitive property (or <term>hypothetical syllogism</term>) has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise. 
+				The transitive property (or <term>hypothetical syllogism</term><idx><h>hypothetical syllogism</h><see>transitive property</see></idx>) has as its premises a series of conditionals, where the consequent of one is the antecedent of the next. The conclusion is a conditional with the same antecedent as the first premise and the same consequent as the final premise. 
 				In other words, the transitive property describes a chain reaction: if the first thing happens, then the second thing happens, and if the second thing happens, then the third thing happens. Therefore, skipping over the middle step, we can say that if the first thing happens, then we know the third thing will happen. 
 				The general form is:
 			</p>
