@@ -775,4 +775,1410 @@
 			</example>
 		</subsubsection>
 	</subsection>
+
+	<exercises>
+		<!-- Sources: Exercise 2 is adapted from Benjamin Jackson's MATH 105
+		Written Homework question 07a, Exercise 5a-b from question 08a, and
+		Exercise 9 from question 08c (Walla Walla University, Fall 2026).
+		Exercises 12a-b and 13 are adapted from his MATH 105 Objective 8
+		slides, Exercises 10 and 11 from his Objective 8 practice handout, and
+		Exercise 14 from his Objective 8 activity. Exercises 1, 3, 4, 5c, 6, 7,
+		8, and 12c-e are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise><!-- #1 (new) -->
+			<statement>
+				<p>
+					Determine whether each argument is inductive or deductive.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Anyone who scores 90% or higher on the final exam earns an A on it. Theo scored 93% on the final exam. Therefore, Theo earned an A on the final exam.
+							</p>
+						</li>
+						<li>
+							<p>
+								Every apple I have picked from this tree has been sour. Therefore, all the apples on this tree are sour.
+							</p>
+						</li>
+						<li>
+							<p>
+								Ana has been late to every Monday meeting this month. Therefore, she will be late to next Monday's meeting.
+							</p>
+						</li>
+						<li>
+							<p>
+								Every planet in our solar system orbits the Sun. Mars is a planet in our solar system. Therefore, Mars orbits the Sun.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Deductive. It reasons from a general rule about everyone who scores 90% or higher to a specific conclusion about Theo.
+							</p>
+						</li>
+						<li>
+							<p>
+								Inductive. It reasons from the specific apples I have picked to a general conclusion about every apple on the tree.
+							</p>
+						</li>
+						<li>
+							<p>
+								Inductive. It reasons from specific past meetings to a pattern (Ana is late on Mondays) and applies that pattern to the next meeting. The conclusion is likely, but not guaranteed.
+							</p>
+						</li>
+						<li>
+							<p>
+								Deductive. It reasons from a general statement about the planets to a specific conclusion about Mars.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #2 (Written Homework question 07a) -->
+			<statement>
+				<p>
+					Rewrite each argument in <q>premise, premise, conclusion</q> form, and determine whether it is inductive or deductive. If the argument is inductive, describe its strength. If it is deductive, decide whether it is valid and whether it is sound.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								All bicycles have two wheels. My friend's Harley-Davidson has two wheels, so it must be a bicycle.
+							</p>
+						</li>
+						<li>
+							<p>
+								Kiran asked their friends what time they wake up on weekends. Every friend said they sleep past 9 a.m., so Kiran concluded that all college students sleep past 9 a.m. on weekends.
+							</p>
+						</li>
+						<li>
+							<p>
+								Since all cats are scared of vacuum cleaners and Max is a cat, Max must be scared of vacuum cleaners.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell>All bicycles have two wheels.</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P2:</alert></cell>
+									<cell>My friend's Harley-Davidson has two wheels.</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell>My friend's Harley-Davidson is a bicycle.</cell>
+								</row>
+							</tabular>
+							<p>
+								This argument is deductive, since it reasons from a general statement about bicycles to a specific vehicle. It is <alert>invalid</alert>, and therefore not sound: P1 says that if something is a bicycle, then it has two wheels, but that does not mean that everything with two wheels is a bicycle. (This mistake is called <em>affirming the consequent</em>.)
+							</p>
+						</li>
+						<li>
+							<tabular>
+								<row bottom="minor">
+									<cell><alert>P1:</alert></cell>
+									<cell>Every one of Kiran's friends sleeps past 9 a.m. on weekends.</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell>All college students sleep past 9 a.m. on weekends.</cell>
+								</row>
+							</tabular>
+							<p>
+								This argument is inductive, since it reasons from specific people to a general conclusion. It is <alert>weak</alert>: Kiran's friends are a small group, and probably not a representative sample of all college students.
+							</p>
+						</li>
+						<li>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell>All cats are scared of vacuum cleaners.</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P2:</alert></cell>
+									<cell>Max is a cat.</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell>Max is scared of vacuum cleaners.</cell>
+								</row>
+							</tabular>
+							<p>
+								This argument is deductive and <alert>valid</alert>: if both premises were true, the conclusion would have to be true. However, it is <alert>not sound</alert>, because P1 is false; some cats are not scared of vacuum cleaners.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #3 (new) -->
+			<statement>
+				<p>
+					Each of the following arguments is inductive. Decide whether each is strong or weak, and explain why.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								A survey of 2,000 randomly selected adults in Washington found that 58% of them own a pet. Therefore, about 58% of adults in Washington own a pet.
+							</p>
+						</li>
+						<li>
+							<p>
+								My two roommates both love pineapple on pizza. Therefore, most people love pineapple on pizza.
+							</p>
+						</li>
+						<li>
+							<p>
+								The 7:40 bus has arrived late every weekday for the past three months. Therefore, it will arrive late tomorrow.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Strong. The sample is large and randomly chosen from the group the conclusion is about, so it is likely to be representative.
+							</p>
+						</li>
+						<li>
+							<p>
+								Weak. Two roommates are far too few people to support a conclusion about most people, and roommates may share tastes.
+							</p>
+						</li>
+						<li>
+							<p>
+								Fairly strong. The pattern has held for many days in a row, so we would expect it to continue, but something could change (a new driver or a new schedule), so the conclusion is not guaranteed.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #4 (new) -->
+			<statement>
+				<p>
+					Fill in the blank to complete each argument. Then state whether the argument is inductive or deductive.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								All birds are <fillin characters="10"/>. A robin is a bird. Therefore, a robin is red.
+							</p>
+						</li>
+						<li>
+							<p>
+								For each of the past ten years, the first snow in our town fell in November. Therefore, this year <fillin characters="30"/>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Every triangle has three sides. This shape is a triangle. Therefore, <fillin characters="25"/>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								All birds are <em>red</em>. (Deductive; it is valid, but not sound, since not all birds are red.)
+							</p>
+						</li>
+						<li>
+							<p>
+								This year <em>the first snow will fall in November</em>. (Inductive)
+							</p>
+						</li>
+						<li>
+							<p>
+								Therefore, <em>this shape has three sides</em>. (Deductive)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #5 (parts a and b from Written Homework question 08a; part c new) -->
+			<statement>
+				<p>
+					Decide whether each argument is valid. If it is valid, decide whether it is sound. Explain your answers.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								All animals have four legs. A giraffe has four legs. Therefore, a giraffe is an animal.
+							</p>
+						</li>
+						<li>
+							<p>
+								All mathematicians are nice people. Your professor is a mathematician. Therefore, your professor is a nice person.
+							</p>
+						</li>
+						<li>
+							<p>
+								Everyone who is registered to vote in the United States is at least 18 years old. Jordan is 19 years old. Therefore, Jordan is registered to vote.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<alert>Invalid</alert>, and therefore not sound. Let <m>a</m> be <q>It is an animal</q> and <m>f</m> be <q>It has four legs.</q> The argument has the form <m>a \to f</m>, <m>f</m>, therefore <m>a</m>. In the row of the truth table where <m>a</m> is false and <m>f</m> is true, both premises are true but the conclusion is false. In words, having four legs does not make something an animal (a table has four legs, too). The conclusion happens to be true, but it does not follow from the premises. (The first premise is also false: birds are animals.)
+							</p>
+						</li>
+						<li>
+							<p>
+								<alert>Valid</alert>. Let <m>m</m> be <q>It is a mathematician</q> and <m>n</m> be <q>It is a nice person.</q> The argument has the form <m>m \to n</m>, <m>m</m>, therefore <m>n</m>, which is the law of detachment. Whether it is sound depends on whether <em>every</em> mathematician is a nice person, which is hard to believe, so the argument is probably <alert>not sound</alert>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<alert>Invalid</alert>, and therefore not sound. P1 says that if someone is registered to vote, then they are at least 18; it does not say that everyone who is at least 18 is registered. Jordan may never have registered. This is the same mistake as in part a.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #6 (new) -->
+			<statement>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write an argument whose premises and conclusion are all true, but which is <em>not</em> valid.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write an argument that is valid but has a false conclusion.
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain why a valid argument with a false conclusion must have at least one false premise.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers to parts a and b will vary. Sample answers:
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<q>If a number is divisible by 4, then it is even. The number 8 is even. Therefore, 8 is divisible by 4.</q> Each statement is true, but the conclusion does not follow from the premises: the number 6 is also even, and it is not divisible by 4.
+							</p>
+						</li>
+						<li>
+							<p>
+								<q>All planets have moons. Mercury is a planet. Therefore, Mercury has a moon.</q> The conclusion would follow if the premises were true, so the argument is valid, but Mercury has no moons. (The first premise is false.)
+							</p>
+						</li>
+						<li>
+							<p>
+								In a valid argument, the conclusion must be true whenever all of the premises are true. So if the conclusion is false, the premises cannot all be true; at least one of them is false. This means a valid argument with a false conclusion is never sound.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #7 (new) -->
+			<statement>
+				<p>
+					Each truth table below belongs to an argument with premises labeled P and conclusion C. The columns marked <m>*</m> are intermediate steps. Decide whether each argument is valid, and explain how you can tell.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>*</m></cell>
+									<cell>P1</cell>
+									<cell><m>*</m></cell>
+									<cell>P2</cell>
+									<cell>P3</cell>
+									<cell>C</cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell>P1</cell>
+									<cell><m>*</m></cell>
+									<cell>P2</cell>
+									<cell>C</cell>
+									<cell><m>*</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<alert>Valid</alert>. All three premises are true only in row 3, and the conclusion is true in that row.
+							</p>
+						</li>
+						<li>
+							<p>
+								<alert>Invalid</alert>. Both premises are true in rows 1 and 4, but the conclusion is false in row 4.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #8 (new) -->
+			<statement>
+				<p>
+					Use a truth table to decide whether each argument is valid.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell><m>p \to q</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>P2:</alert></cell>
+									<cell><m>q \to p</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P3:</alert></cell>
+									<cell><m>p \lor q</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>p \land q</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell><m>p \lor q</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P2:</alert></cell>
+									<cell><m>p \to \neg q</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>\neg q</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell>P1: <m>p \to q</m></cell>
+									<cell>P2: <m>q \to p</m></cell>
+									<cell>P3: <m>p \lor q</m></cell>
+									<cell>C: <m>p \land q</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+							</tabular>
+							<p>
+								All three premises are true only in row 1, and the conclusion is true in that row, so the argument is <alert>valid</alert>.
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell>P1: <m>p \lor q</m></cell>
+									<cell><m>\neg q</m></cell>
+									<cell>P2: <m>p \to \neg q</m></cell>
+									<cell>C: <m>\neg q</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								Both premises are true in rows 2 and 3. The conclusion is false in row 3, so the argument is <alert>invalid</alert>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #9 (Written Homework question 08c; Obj 8 slides) -->
+			<statement>
+				<p>
+					Suppose each of the following statements is true:
+				</p>
+				<tabular>
+					<row>
+						<cell><alert>P1:</alert></cell>
+						<cell>If I enjoy studying, then I will study.</cell>
+					</row>
+					<row>
+						<cell><alert>P2:</alert></cell>
+						<cell>I will do my homework or I will not study.</cell>
+					</row>
+					<row>
+						<cell><alert>P3:</alert></cell>
+						<cell>I will not do my homework.</cell>
+					</row>
+				</tabular>
+				<p>
+					Use a truth table to show that <q>I do not enjoy studying</q> must be true.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>p</m> be <q>I enjoy studying,</q> <m>q</m> be <q>I will study,</q> and <m>r</m> be <q>I will do my homework.</q> The premises are <m>p \to q</m>, <m>r \lor \neg q</m>, and <m>\neg r</m>, and the conclusion is <m>\neg p</m>.
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell>row</cell>
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>r</m></cell>
+						<cell>P1: <m>p \to q</m></cell>
+						<cell><m>\neg q</m></cell>
+						<cell>P2: <m>r \lor \neg q</m></cell>
+						<cell>P3: <m>\neg r</m></cell>
+						<cell>C: <m>\neg p</m></cell>
+					</row>
+					<row>
+						<cell>1</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>2</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>3</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>4</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>5</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>6</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>7</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>8</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+				</tabular>
+				<p>
+					Row 8 is the only row in which all three premises are true, and the conclusion is true in that row as well, so the argument is valid. Therefore, <q>I do not enjoy studying</q> must be true.
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #10 (Obj 8 practice handout) -->
+			<statement>
+				<p>
+					An art student is deciding whether to pursue a creative career. She reasons, <q>Either I pursue financial security or I pursue my passion for art. If I pursue financial security, I will be content. If I pursue my passion for art, I will be content. Therefore, I will be content.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write the argument in symbolic form. (Hint: you need three propositions.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Use a truth table to decide whether the argument is valid.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Let <m>p</m> be <q>I pursue financial security,</q> <m>q</m> be <q>I pursue my passion for art,</q> and <m>r</m> be <q>I will be content.</q>
+							</p>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell><m>p \lor q</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>P2:</alert></cell>
+									<cell><m>p \to r</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P3:</alert></cell>
+									<cell><m>q \to r</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>r</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>r</m></cell>
+									<cell>P1: <m>p \lor q</m></cell>
+									<cell>P2: <m>p \to r</m></cell>
+									<cell>P3: <m>q \to r</m></cell>
+									<cell>C: <m>r</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+							</tabular>
+							<p>
+								All three premises are true in rows 1, 3, and 5, and the conclusion is true in each of them, so the argument is <alert>valid</alert>. (Whether it is sound depends on whether both choices really would make her content.)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #11 (Obj 8 practice handout) -->
+			<statement>
+				<p>
+					Someone makes the following argument: <q>If people exercise regularly, then they maintain a healthy weight. If people maintain a healthy weight, then they have low cholesterol. Mel does not exercise regularly. Therefore, Mel does not have low cholesterol.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write the argument in symbolic form.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use a truth table to decide whether the argument is valid.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Let <m>p</m> be <q>Mel exercises regularly,</q> <m>q</m> be <q>Mel maintains a healthy weight,</q> and <m>r</m> be <q>Mel has low cholesterol.</q>
+							</p>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell><m>p \to q</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>P2:</alert></cell>
+									<cell><m>q \to r</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P3:</alert></cell>
+									<cell><m>\neg p</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>\neg r</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>r</m></cell>
+									<cell>P1: <m>p \to q</m></cell>
+									<cell>P2: <m>q \to r</m></cell>
+									<cell>P3: <m>\neg p</m></cell>
+									<cell>C: <m>\neg r</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								All three premises are true in rows 5, 7, and 8, but the conclusion is false in rows 5 and 7, so the argument is <alert>invalid</alert>. In words, Mel could have low cholesterol for some other reason. This argument commits the fallacy of denying the antecedent.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #12 (parts a and b from the Obj 8 slides; parts c to e new) -->
+			<statement>
+				<p>
+					For each argument, decide whether it is valid. If it is valid, name the form it uses (law of detachment, law of contraposition, or transitive property). If it is not valid, explain why.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								If today is Tuesday, then the library closes early. Today is Tuesday. Therefore, the library closes early.
+							</p>
+						</li>
+						<li>
+							<p>
+								If I don't wake up, then I can't go to work. If I can't go to work, then I won't get paid. Therefore, if I don't wake up, then I won't get paid.
+							</p>
+						</li>
+						<li>
+							<p>
+								If the package had been delivered, then the doorbell camera would have recorded it. The doorbell camera recorded nothing. Therefore, the package was not delivered.
+							</p>
+						</li>
+						<li>
+							<p>
+								If you studied, then you passed. You passed. Therefore, you studied.
+							</p>
+						</li>
+						<li>
+							<p>
+								If you studied, then you passed. You did not study. Therefore, you did not pass.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Valid, by the law of detachment.
+							</p>
+						</li>
+						<li>
+							<p>
+								Valid, by the transitive property.
+							</p>
+						</li>
+						<li>
+							<p>
+								Valid, by the law of contraposition.
+							</p>
+						</li>
+						<li>
+							<p>
+								Not valid. The argument has the form <m>p \to q</m>, <m>q</m>, therefore <m>p</m>. You could have passed without studying. (This fallacy is called <em>affirming the consequent</em>.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Not valid. The argument has the form <m>p \to q</m>, <m>\neg p</m>, therefore <m>\neg q</m>, which is the fallacy of denying the antecedent. Again, you could have passed without studying.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #13 (Obj 8 slides) -->
+			<statement>
+				<p>
+					Suppose each of the following statements is true:
+				</p>
+				<tabular>
+					<row>
+						<cell><alert>P1:</alert></cell>
+						<cell>If Dan is happy, then Bill is happy.</cell>
+					</row>
+					<row>
+						<cell><alert>P2:</alert></cell>
+						<cell>If Sandy is not happy, then Bill is not happy.</cell>
+					</row>
+					<row>
+						<cell><alert>P3:</alert></cell>
+						<cell>If Dan is not happy, then Bill is not happy.</cell>
+					</row>
+				</tabular>
+				<p>
+					Is <q>If Dan is happy, then Sandy is happy</q> a valid conclusion? Answer using a truth table or using the valid argument forms.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>p</m> be <q>Dan is happy,</q> <m>q</m> be <q>Bill is happy,</q> and <m>r</m> be <q>Sandy is happy.</q> The premises are <m>p \to q</m>, <m>\neg r \to \neg q</m>, and <m>\neg p \to \neg q</m>, and the conclusion is <m>p \to r</m>.
+				</p>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell>row</cell>
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>r</m></cell>
+						<cell>P1: <m>p \to q</m></cell>
+						<cell>P2: <m>\neg r \to \neg q</m></cell>
+						<cell>P3: <m>\neg p \to \neg q</m></cell>
+						<cell>C: <m>p \to r</m></cell>
+					</row>
+					<row>
+						<cell>1</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>2</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>3</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>4</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+					</row>
+					<row>
+						<cell>5</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>6</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>7</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>8</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+				</tabular>
+				<p>
+					All three premises are true in rows 1, 7, and 8, and the conclusion is true in each of them, so the conclusion is <alert>valid</alert>.
+				</p>
+				<p>
+					Using the argument forms instead: P2 is the contrapositive of <m>q \to r</m>, so it is equivalent to <q>If Bill is happy, then Sandy is happy.</q> Combining this with P1 by the transitive property gives <m>p \to r</m>. (P3 is not needed.)
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #14 (Obj 8 activity) -->
+			<statement>
+				<p>
+					The following is a version of a classic argument, often attributed to the Greek philosopher Epicurus (about 300 BCE), that tries to disprove the existence of an all-powerful, all-good God.
+				</p>
+				<tabular>
+					<row>
+						<cell><alert>P1:</alert></cell>
+						<cell>If God exists, then God is good enough to want to prevent evil and powerful enough to get rid of evil.</cell>
+					</row>
+					<row>
+						<cell><alert>P2:</alert></cell>
+						<cell>If God is good enough to want to prevent evil and powerful enough to get rid of evil, then evil does not exist.</cell>
+					</row>
+					<row bottom="minor">
+						<cell><alert>P3:</alert></cell>
+						<cell>Evil exists.</cell>
+					</row>
+					<row>
+						<cell><alert>C:</alert></cell>
+						<cell>Therefore, God does not exist.</cell>
+					</row>
+				</tabular>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								The argument contains four propositions. Name them <m>p</m>, <m>q</m>, <m>r</m>, and <m>s</m>, and write the argument in symbolic form.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use the transitive property to combine P1 and P2 into a single premise. Your new argument should have only two premises and two propositions.
+							</p>
+						</li>
+						<li>
+							<p>
+								Use a truth table to decide whether the argument is valid.
+							</p>
+						</li>
+						<li>
+							<p>
+								Is the argument sound? If you wanted to argue against its conclusion, which premise would you challenge, and why?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Let <m>p</m> be <q>God exists,</q> <m>q</m> be <q>God is good enough to want to prevent evil,</q> <m>r</m> be <q>God is powerful enough to get rid of evil,</q> and <m>s</m> be <q>Evil exists.</q>
+							</p>
+							<tabular>
+								<row>
+									<cell><alert>P1:</alert></cell>
+									<cell><m>p \to (q \land r)</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>P2:</alert></cell>
+									<cell><m>(q \land r) \to \neg s</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>P3:</alert></cell>
+									<cell><m>s</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>\neg p</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular>
+								<row>
+									<cell><alert>Q1:</alert></cell>
+									<cell><m>p \to \neg s</m>,</cell>
+								</row>
+								<row bottom="minor">
+									<cell><alert>Q2:</alert></cell>
+									<cell><m>s</m>,</cell>
+								</row>
+								<row>
+									<cell><alert>C:</alert></cell>
+									<cell><m>\neg p</m>.</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>s</m></cell>
+									<cell><m>\neg s</m></cell>
+									<cell>Q1: <m>p \to \neg s</m></cell>
+									<cell>Q2: <m>s</m></cell>
+									<cell>C: <m>\neg p</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								Both premises are true only in row 3, and the conclusion is true there, so the argument is <alert>valid</alert>. (It is an example of the law of contraposition.)
+							</p>
+						</li>
+						<li>
+							<p>
+								Answers will vary. Because the argument is valid, the only way to reject its conclusion is to reject one of its premises. Many people challenge P2: for example, a good and powerful God might allow evil for the sake of a greater good, such as human free will. Others question what <q>all-powerful</q> or <q>good</q> means in P1. The point is that whether the argument is sound depends on whether its premises are true, which logic alone cannot settle.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+	</exercises>
 </section>
