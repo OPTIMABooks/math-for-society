@@ -20,7 +20,7 @@
       In the last section, we saw that logical arguments are invalid when the premises are not sufficient to guarantee the conclusion. Even if an argument is valid, it may be unsound if the premises are not true. There are other ways that a logical argument may be invalid or unsound. One of the more common ways this can occur is if the argument is a fallacy.
     </p>
     <p>
-      A <term>fallacy</term> is a type of argument that appears valid but uses a logical error to persuade or deceive. Fallacious arguments are especially common in advertising and politics, so it is important as informed citizens to recognize when we are being presented with a fallacious argument and to not be persuaded by it.
+      A <term>fallacy</term><idx>fallacy</idx> is a type of argument that appears valid but uses a logical error to persuade or deceive. Fallacious arguments are especially common in advertising and politics, so it is important as informed citizens to recognize when we are being presented with a fallacious argument and to not be persuaded by it.
     </p> 
   </introduction>
 
@@ -34,7 +34,7 @@
     <subsubsection>
       <title>Personal Attack (<foreign>Ad Hominem</foreign>)</title>
         <p>
-          A <term>personal attack</term> argument attacks the person making the argument while ignoring the argument itself. A personal attack is not the same as an insult; rather, it claims there is something wrong with the person or group in order to cast doubt on their character and discredit their argument.
+          A <term>personal attack</term><idx><h>fallacy</h><h>personal attack</h></idx><idx><h>personal attack</h><see>fallacy, personal attack</see></idx><idx><h>ad hominem</h><see>fallacy, personal attack</see></idx> argument attacks the person making the argument while ignoring the argument itself. A personal attack is not the same as an insult; rather, it claims there is something wrong with the person or group in order to cast doubt on their character and discredit their argument.
         </p>
         <example>
           <p>
@@ -64,7 +64,7 @@
     <subsubsection>
       <title>Appeal to Ignorance</title> 
       <p>
-        An <term>appeal to ignorance</term> argument assumes a claim is true because it hasn't been proven false, or false because it hasn't been proven true.
+        An <term>appeal to ignorance</term><idx><h>fallacy</h><h>appeal to ignorance</h></idx><idx><h>appeal to ignorance</h><see>fallacy, appeal to ignorance</see></idx> argument assumes a claim is true because it hasn't been proven false, or false because it hasn't been proven true.
       </p>
       <example>
         <p>
@@ -78,7 +78,7 @@
     <subsubsection>
       <title>Appeal to Authority</title>
       <p>
-        An <term>appeal to authority</term> argument attempts to use the authority of a person to prove a claim. An authority could be an expert such as a doctor or scholar, or someone who is admired like a celebrity or sports figure. While an authority can provide strength to an argument, problems can occur when the person's opinion is not shared by other experts, or when the authority is irrelevant to the claim.
+        An <term>appeal to authority</term><idx><h>fallacy</h><h>appeal to authority</h></idx><idx><h>appeal to authority</h><see>fallacy, appeal to authority</see></idx> argument attempts to use the authority of a person to prove a claim. An authority could be an expert such as a doctor or scholar, or someone who is admired like a celebrity or sports figure. While an authority can provide strength to an argument, problems can occur when the person's opinion is not shared by other experts, or when the authority is irrelevant to the claim.
       </p>
       <example>
         <p>
@@ -100,7 +100,7 @@
     <subsubsection>
       <title>False Dilemma</title>
       <p>
-        A <term>false dilemma</term> argument falsely frames an argument as an <q>either/or</q> choice without allowing for additional options. 
+        A <term>false dilemma</term><idx><h>fallacy</h><h>false dilemma</h></idx><idx><h>false dilemma</h><see>fallacy, false dilemma</see></idx> argument falsely frames an argument as an <q>either/or</q> choice without allowing for additional options. 
       </p>
       <example>
         <p>
@@ -114,7 +114,7 @@
     <subsubsection>
       <title>Straw Man</title>
       <p>
-        A <term>straw man</term> argument involves misrepresenting an opponent's argument in an oversimplified, distorted, and less favorable way to make it easier to attack. 
+        A <term>straw man</term><idx><h>fallacy</h><h>straw man</h></idx><idx><h>straw man</h><see>fallacy, straw man</see></idx> argument involves misrepresenting an opponent's argument in an oversimplified, distorted, and less favorable way to make it easier to attack. 
       </p>
       <example>
         <p>
@@ -128,7 +128,7 @@
     <subsubsection>
       <title>Post Hoc</title>
       <p>
-        A <term>post hoc</term> argument (short for <foreign>post hoc ergo propter hoc</foreign>, <q>after this, therefore because of this</q>) claims that because two things happened sequentially, the first must have <em>caused</em> the second.
+        A <term>post hoc</term><idx><h>fallacy</h><h>post hoc</h></idx><idx><h>post hoc</h><see>fallacy, post hoc</see></idx> argument (short for <foreign>post hoc ergo propter hoc</foreign>, <q>after this, therefore because of this</q>) claims that because two things happened sequentially, the first must have <em>caused</em> the second.
       </p>
       <example>
         <p>
