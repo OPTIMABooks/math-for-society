@@ -134,6 +134,7 @@
     <!-- <css theme="default-modern" palette="blues"/> -->
     <css theme="salem" palette="ice-fire"/>
     <toc focused="no" preexpanded-levels="2" />
+    <baseurl href="https://mathforsociety.org/"/>
 	</html>
 
   <!-- <html> -->
@@ -192,8 +193,7 @@
       <!--<calculator model="geogebra-classic" activecode="python" />-->
 
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-      <!-- <baseurl href="https://mfs.optimabooks.org/"/> -->
-      <!-- <baseurl>https://mfs.optimabooks.org/</baseurl> -->
+      <!-- <baseurl href="https://example.org/"/> -->
 
     <!-- Control behavior of online WeBWorK, per type: -->
       <!--<webwork
