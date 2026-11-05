@@ -756,4 +756,1263 @@
 		</p>
 	</subsection>
 
+	<exercises>
+		<!-- Sources: Exercise 1 is adapted from Benjamin Jackson's MATH 105
+		Objective 6 warm-up and slides, Exercises 2 and 9 from his Objective 6
+		slides, and Exercise 3a from an Objective 6 clicker question (Walla
+		Walla University, Fall 2026). Exercises 7, 8, 10, and 11 are based on
+		his MATH 105 written-homework questions 05b, 05c, 05a, and 06c.
+		Exercises 3b, 4, 5, 6, and 12 are new.
+		-->
+		<title>Exercises</title>
+
+		<exercise><!-- #1 (Obj 6 warm-up and slides: Mia's promise) -->
+			<statement>
+				<p>
+					Mia tells Noah, <q>If you help me move on Saturday, then I'll buy you pizza.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								List all four possibilities for what could happen on Saturday (Noah helps or doesn't; Mia buys pizza or doesn't). For each one, decide whether Mia kept her promise or broke it.
+							</p>
+						</li>
+						<li>
+							<p>
+								In which situation can Noah honestly say that Mia lied?
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>h</m> be <q>Noah helps Mia move</q> and <m>z</m> be <q>Mia buys Noah pizza.</q> Explain how your answers match the truth table for <m>h \to z</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>Noah helps?</cell>
+									<cell>Mia buys pizza?</cell>
+									<cell>Promise</cell>
+								</row>
+								<row>
+									<cell>Yes</cell>
+									<cell>Yes</cell>
+									<cell>Kept</cell>
+								</row>
+								<row>
+									<cell>Yes</cell>
+									<cell>No</cell>
+									<cell>Broken</cell>
+								</row>
+								<row>
+									<cell>No</cell>
+									<cell>Yes</cell>
+									<cell>Kept</cell>
+								</row>
+								<row>
+									<cell>No</cell>
+									<cell>No</cell>
+									<cell>Kept</cell>
+								</row>
+							</tabular>
+							<p>
+								In the third row Mia was simply generous, and in the fourth row Noah didn't help, so Mia never owed him anything.
+							</p>
+						</li>
+						<li>
+							<p>
+								Only when Noah helps and Mia does not buy pizza.
+							</p>
+						</li>
+						<li>
+							<p>
+								The conditional <m>h \to z</m> is false only when <m>h</m> is true and <m>z</m> is false, which is exactly the one situation in which Mia broke her promise. In the other three rows, <m>h \to z</m> is true, just as Mia kept her promise.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #2 (Obj 6 slides: shelf) -->
+			<statement>
+				<p>
+					Let <m>p</m> be <q>To put this shelf together, I need a screwdriver,</q> and let <m>q</m> be <q>To put this shelf together, I need a wrench.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Make one truth table with columns for <m>p \land q</m>, <m>p \lor q</m>, and <m>\neg q</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								Suppose it turns out that you need a wrench but not a screwdriver. Use your table to decide which of the three statements are true.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>p \land q</m></cell>
+									<cell><m>p \lor q</m></cell>
+									<cell><m>\neg q</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<p>
+								This situation is row 3 (<m>p</m> false, <m>q</m> true). In that row, <m>p \land q</m> is false, <m>p \lor q</m> is true, and <m>\neg q</m> is false. So only <q>I need a screwdriver or a wrench</q> is true.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #3 (part a from an Obj 6 clicker question; part b new) -->
+			<statement>
+				<p>
+					The rows of each truth table below are in an unusual order, and one value is missing. Fill in the missing value, and explain how you know.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>p \oplus q</m></cell>
+								</row>
+								<row>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell><fillin characters="3"/></cell>
+								</row>
+							</tabular>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>p \to q</m></cell>
+								</row>
+								<row>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell><fillin characters="3"/></cell>
+								</row>
+								<row>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								F. The exclusive or <m>p \oplus q</m> is true when exactly one of <m>p</m> and <m>q</m> is true. When both are true, it is false.
+							</p>
+						</li>
+						<li>
+							<p>
+								T. A conditional is false only when its antecedent is true and its consequent is false. Here <m>p</m> is false, so <m>p \to q</m> is true.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #4 (new) -->
+			<statement>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								How many rows does a truth table need for a statement with one proposition? With two? With three? With four?
+							</p>
+						</li>
+						<li>
+							<p>
+								Explain the pattern. How many rows would a statement with five propositions need?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								One proposition needs 2 rows, two need 4, three need 8, and four need 16.
+							</p>
+						</li>
+						<li>
+							<p>
+								Each new proposition can be true or false in every row of the previous table, so adding a proposition doubles the number of rows. A statement with <m>n</m> propositions needs <m>2^n</m> rows, so five propositions need <m>2^5 = 32</m> rows.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #5 (new) -->
+			<statement>
+				<p>
+					Create a truth table for each statement. Then describe in words when the statement is true.
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>\neg p \land q</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\neg(p \lor q)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p \to \neg q</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(p \lor q) \to \neg p</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>\neg p</m></cell>
+									<cell><m>\neg p \land q</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is true only in row 3, when <m>p</m> is false and <m>q</m> is true.
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>p \lor q</m></cell>
+									<cell><m>\neg(p \lor q)</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is true only in row 4, when <m>p</m> and <m>q</m> are both false.
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>\neg q</m></cell>
+									<cell><m>p \to \neg q</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is false only in row 1, when <m>p</m> and <m>q</m> are both true.
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>p \lor q</m></cell>
+									<cell><m>\neg p</m></cell>
+									<cell><m>(p \lor q) \to \neg p</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is false in rows 1 and 2, the rows in which <m>p</m> is true.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #6 (new) -->
+			<statement>
+				<p>
+					Suppose <m>p</m> is true, <m>q</m> is false, and <m>r</m> is true. Find the truth value of each statement without making a full truth table. (Work from the inside of the parentheses out.)
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>p \land (q \lor r)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\neg p \lor (q \to r)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>(p \lor q) \to \neg r</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\neg(p \land q) \land \neg r</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>q \lor r</m> is <m>F \lor T = T</m>, so <m>p \land (q \lor r)</m> is <m>T \land T</m>, which is <alert>true</alert>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\neg p</m> is false, and <m>q \to r</m> is <m>F \to T</m>, which is true. So the statement is <m>F \lor T</m>, which is <alert>true</alert>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p \lor q</m> is true and <m>\neg r</m> is false, so the statement is <m>T \to F</m>, which is <alert>false</alert>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>p \land q</m> is false, so <m>\neg(p \land q)</m> is true. But <m>\neg r</m> is false, so the statement is <m>T \land F</m>, which is <alert>false</alert>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #7 (Written Homework question 05b) -->
+			<statement>
+				<p>
+					Let <m>F</m> represent <q>She finishes her bachelor's degree</q> and <m>G</m> represent <q>She gets the job.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write <q>She finishes her bachelor's degree but doesn't get the job</q> in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write <q>If she finishes her bachelor's degree, then she gets the job</q> in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Make one truth table with columns for both statements. What do you notice about the two columns?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>F \land \neg G</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>F \to G</m>
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>F</m></cell>
+									<cell><m>G</m></cell>
+									<cell><m>\neg G</m></cell>
+									<cell><m>F \land \neg G</m></cell>
+									<cell><m>F \to G</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The two columns are opposites in every row: whenever one statement is true, the other is false. This makes sense, since <q>she finishes her degree but doesn't get the job</q> is exactly the situation that would make the conditional false. (We will return to this idea in <xref ref="sec-logic-equivalence"/>.)
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #8 (Written Homework question 05c) -->
+			<statement>
+				<p>
+					Consider the following propositions:
+				</p>
+				<p>
+					<ul>
+						<li><p><m>P</m>: The restaurant is open.</p></li>
+						<li><p><m>Q</m>: The chef is working tonight.</p></li>
+						<li><p><m>R</m>: We can make a reservation.</p></li>
+					</ul>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Translate <m>P \land \neg Q</m> into smooth English.
+							</p>
+						</li>
+						<li>
+							<p>
+								Translate <m>(P \land Q) \to R</m> into smooth English.
+							</p>
+						</li>
+						<li>
+							<p>
+								Create a truth table for <m>(P \land Q) \to R</m>. In which situation is the statement false? Describe it in words.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<q>The restaurant is open, but the chef is not working tonight.</q>
+							</p>
+						</li>
+						<li>
+							<p>
+								<q>If the restaurant is open and the chef is working tonight, then we can make a reservation.</q>
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>P</m></cell>
+									<cell><m>Q</m></cell>
+									<cell><m>R</m></cell>
+									<cell><m>P \land Q</m></cell>
+									<cell><m>(P \land Q) \to R</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is false only in row 2: the restaurant is open and the chef is working tonight, but we still can't make a reservation.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #9 (Obj 6 slides: Service Day) -->
+			<statement>
+				<p>
+					Consider the statement <q>If it is raining and there is lightning, then Service Day will be canceled.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Choose letters for the three propositions, and write the statement in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Create a truth table for the statement.
+							</p>
+						</li>
+						<li>
+							<p>
+								Suppose it rains all day but there is no lightning, and Service Day goes ahead as planned. Was the statement true or false? Which row of your table describes this situation?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Let <m>r</m> be <q>It is raining,</q> <m>l</m> be <q>There is lightning,</q> and <m>c</m> be <q>Service Day will be canceled.</q> The statement is <m>(r \land l) \to c</m>.
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>r</m></cell>
+									<cell><m>l</m></cell>
+									<cell><m>c</m></cell>
+									<cell><m>r \land l</m></cell>
+									<cell><m>(r \land l) \to c</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is false only in row 2, when it rains and there is lightning but Service Day is not canceled.
+							</p>
+						</li>
+						<li>
+							<p>
+								True. This is row 4 (<m>r</m> true, <m>l</m> false, <m>c</m> false). Since there was no lightning, the antecedent <m>r \land l</m> is false, so the conditional is true no matter what happened to Service Day.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #10 (Written Homework question 05a) -->
+			<statement>
+				<p>
+					Consider the following propositions:
+				</p>
+				<p>
+					<ul>
+						<li><p><m>A</m>: Artificial intelligence will surpass human intelligence.</p></li>
+						<li><p><m>J</m>: Many jobs will be automated.</p></li>
+						<li><p><m>E</m>: Education systems need to be reformed.</p></li>
+					</ul>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write <q>If artificial intelligence surpasses human intelligence, then many jobs will be automated and education systems need to be reformed</q> in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Write <q>Many jobs will be automated, but education systems don't need to be reformed</q> in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Create a truth table for your answer to part a. In which rows is the statement false?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>A \to (J \land E)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>J \land \neg E</m>
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>A</m></cell>
+									<cell><m>J</m></cell>
+									<cell><m>E</m></cell>
+									<cell><m>J \land E</m></cell>
+									<cell><m>A \to (J \land E)</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+							</tabular>
+							<p>
+								The statement is false in rows 2, 3, and 4: artificial intelligence surpasses human intelligence, but it is not the case that many jobs are automated <em>and</em> education systems need reform.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #11 (Written Homework question 06c) -->
+			<statement>
+				<p>
+					Create a truth table for the statement <m>[(p \to q) \land (q \to r)] \to (p \to r)</m>. What do you notice about the final column?
+				</p>
+			</statement>
+			<solution>
+				<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+					<row header="yes">
+						<cell>row</cell>
+						<cell><m>p</m></cell>
+						<cell><m>q</m></cell>
+						<cell><m>r</m></cell>
+						<cell><m>p \to q</m></cell>
+						<cell><m>q \to r</m></cell>
+						<cell><m>p \to r</m></cell>
+						<cell><m>(p \to q) \land (q \to r)</m></cell>
+						<cell><m>[(p \to q) \land (q \to r)] \to (p \to r)</m></cell>
+					</row>
+					<row>
+						<cell>1</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>2</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>3</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>4</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>5</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>6</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>7</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+					<row>
+						<cell>8</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>F</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+						<cell>T</cell>
+					</row>
+				</tabular>
+				<p>
+					The final column is true in every row, so the statement is true no matter what the truth values of <m>p</m>, <m>q</m>, and <m>r</m> are. In words, if <m>p</m> leads to <m>q</m> and <m>q</m> leads to <m>r</m>, then <m>p</m> leads to <m>r</m>. This fact is called the <em>transitive property</em>, and it appears again in <xref ref="sec-logic-arguments"/>.
+				</p>
+			</solution>
+		</exercise>
+
+		<exercise><!-- #12 (new) -->
+			<statement>
+				<p>
+					A car rental company has this rule: <q>You can rent a car if you are at least 25 years old, or if you are at least 21 years old and you pay a young-driver fee.</q> Let <m>p</m> be <q>You are at least 25,</q> <m>q</m> be <q>You are at least 21,</q> and <m>r</m> be <q>You pay the young-driver fee.</q>
+				</p>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								Write the condition for renting a car in symbols.
+							</p>
+						</li>
+						<li>
+							<p>
+								Create a truth table for your answer to part a. In which rows can you rent a car?
+							</p>
+						</li>
+						<li>
+							<p>
+								Two rows of the table describe situations that cannot actually happen. Which rows are they, and why?
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a.">
+						<li>
+							<p>
+								<m>p \lor (q \land r)</m>
+							</p>
+						</li>
+						<li>
+							<tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+								<row header="yes">
+									<cell>row</cell>
+									<cell><m>p</m></cell>
+									<cell><m>q</m></cell>
+									<cell><m>r</m></cell>
+									<cell><m>q \land r</m></cell>
+									<cell><m>p \lor (q \land r)</m></cell>
+								</row>
+								<row>
+									<cell>1</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>2</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>3</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>4</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>5</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+									<cell>T</cell>
+								</row>
+								<row>
+									<cell>6</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>7</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>T</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+								<row>
+									<cell>8</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+									<cell>F</cell>
+								</row>
+							</tabular>
+							<p>
+								You can rent a car in rows 1, 2, 3, 4, and 5: whenever you are at least 25, or when you are at least 21 and pay the fee.
+							</p>
+						</li>
+						<li>
+							<p>
+								Rows 3 and 4, where <m>p</m> is true and <m>q</m> is false. Anyone who is at least 25 is also at least 21, so these rows can't happen. A truth table lists every combination of truth values, even ones that real-world facts rule out.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</exercise>
+
+	</exercises>
 </section>
