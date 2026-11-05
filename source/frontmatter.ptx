@@ -93,8 +93,7 @@
           </li>
           <li>
             <p>
-              <url href="https://stats.optimabooks.org"><q>OPTIMA Statistics</q></url> by Jonathan Duncan, Walla Walla University.
-              <!-- TODO: OPTIMA Statistics is CC BY-NC 4.0, which can't be relicensed CC BY-SA. Once Jonathan confirms permission, add: "Its original license is CC BY-NC 4.0; material from it is used here under CC BY-SA 4.0 with the author's permission." -->
+              <url href="https://stats.optimabooks.org"><q>OPTIMA Statistics</q></url> by Jonathan Duncan, Walla Walla University. Its original license is CC BY-NC 4.0; material from it is used here under CC BY-SA 4.0 with the author's permission.
             </p>
           </li>
         </ul>
