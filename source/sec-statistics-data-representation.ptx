@@ -663,7 +663,7 @@
 								A bar for each pizza topping with heights corresponding to the to frequency of the topping in our frequency table.
 							</shortdescription>
 							<latex-image>
-							\begin{tikzpicture}[font=\sffamily] % Apply \sffamily to the entire picture
+							\begin{tikzpicture}[font=\figfont] % Apply \figfont to the entire picture
 							\begin{axis}[
 									axis lines=left,
 									no markers,
@@ -672,14 +672,14 @@
 									xtick={1,2,3,4,5,6,7,8,9,10},
 									ytick={0,5,10,15,20},
 									xticklabels={Anchovies,Bacon,Cheese,Pepper,Mushroom,Olive,Onion,Pepperoni,Pineapple,Sausage},
-									ticklabel style={font=\normalsize\sffamily},
+									ticklabel style={font=\normalsize\figfont},
 									xticklabel style={rotate=90},
-									xlabel style={font=\sffamily, yshift=-0.5cm},
+									xlabel style={font=\figfont, yshift=-0.5cm},
 									xlabel={Pizza Topping},
-									ylabel style={font=\sffamily},
+									ylabel style={font=\figfont},
 									ylabel={Frequency},
 									title={Favorite Pizza Toppings},
-									title style={font=\large\sffamily\bfseries},
+									title style={font=\large\figfont\bfseries},
 									enlargelimits=false,
 									clip=false,
 									grid = none,
@@ -707,7 +707,7 @@
 							% Add value labels on top of bars
 							\addplot[
 									nodes near coords,
-									nodes near coords style={font=\normalsize\sffamily, anchor=south},
+									nodes near coords style={font=\normalsize\figfont, anchor=south},
 									only marks,
 									mark=none
 							] coordinates {
@@ -795,7 +795,7 @@
 										\coordinate (l10) at (-250.3:1.75); % Sausage
 
 										% Attach labels with clean positioning
-										\begin{scope}[lab/.style={gray!80!white,thick,draw,font={\footnotesize\sffamily}},outer sep=-0.75mm]
+										\begin{scope}[lab/.style={gray!80!white,thick,draw,font={\footnotesize\figfont}},outer sep=-0.75mm]
 											\fill[lab] (l1) circle(0.05) -- (l1-|left border) node[anchor=south east] {Anchovies (1\%)};
 											\fill[lab] (l2) circle(0.05) -- (l2-|left border) node[anchor=south east] {Bacon (9\%)};
 											\fill[lab] (l3) circle(0.05) -- (l3-|left border) node[anchor=south east] {Cheese (18\%)};
@@ -809,7 +809,7 @@
 										\end{scope}
 
 										% Enhanced title styling
-										\node[font=\normalsize\sffamily\bfseries, color=black!80] at (0,2.8) {Favorite Pizza Toppings};
+										\node[font=\normalsize\figfont\bfseries, color=black!80] at (0,2.8) {Favorite Pizza Toppings};
 
 								\end{tikzpicture}
 							</latex-image>
@@ -1076,12 +1076,12 @@
 											no markers,
 											xmin=6, xmax=20, ymin=0, ymax=18,
 											ytick={0,2,...,18},
-											xlabel style={font=\sffamily},
+											xlabel style={font=\figfont},
 											xlabel={Plant Height (inches)},
-											ylabel style={font=\sffamily},
+											ylabel style={font=\figfont},
 											ylabel={Frequency},
-											title={\large\bfseries\sffamily Heights of Tomato Plants},
-											ticklabel style={font=\sffamily},
+											title={\large\bfseries\figfont Heights of Tomato Plants},
+											ticklabel style={font=\figfont},
 											enlargelimits=false,
 											clip=false,
 											grid = none,
@@ -1310,10 +1310,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1321,7 +1321,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram A},
+														title={\large\bfseries\figfont Histogram A},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,
@@ -1353,10 +1353,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1364,7 +1364,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram B},
+														title={\large\bfseries\figfont Histogram B},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,
@@ -1398,10 +1398,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1409,7 +1409,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram C},
+														title={\large\bfseries\figfont Histogram C},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,
@@ -1441,10 +1441,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1452,7 +1452,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram D},
+														title={\large\bfseries\figfont Histogram D},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,
@@ -1486,10 +1486,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1497,7 +1497,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram E},
+														title={\large\bfseries\figfont Histogram E},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,
@@ -1529,10 +1529,10 @@ Stem | Leaf
 										<latex-image>
 											\begin{tikzpicture}
 												\begin{axis}[
-														xlabel style={font=\sffamily},
-														ylabel style={font=\sffamily},
-														ticklabel style={font=\sffamily},
-														% title style={font=\large\bfseries\sffamily}
+														xlabel style={font=\figfont},
+														ylabel style={font=\figfont},
+														ticklabel style={font=\figfont},
+														% title style={font=\large\bfseries\figfont}
 														axis lines*=left,
 														no markers,
 														xmin=0, xmax=25, ymin=0, ymax=12,
@@ -1540,7 +1540,7 @@ Stem | Leaf
 														ytick={0,2,...,12},
 														xlabel={Class},
 														ylabel={Frequency},
-														title={\large\bfseries\sffamily Histogram F},
+														title={\large\bfseries\figfont Histogram F},
 														ticklabel style={font=\small},
 														enlargelimits=false,
 														clip=false,

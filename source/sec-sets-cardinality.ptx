@@ -73,7 +73,7 @@
 				<image xml:id="tigs-2venn-coffee-tea" width="100%">
 					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled "Coffee" and contains the number 80. The other is labeled "Tea" and contains the number 20. The intersection of the two circles contains the number 40.</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}[scale=2/7,font=\sffamily]
+						\begin{tikzpicture}[scale=2/7,font=\figfont]
 							\draw[semithick] (0,0) rectangle (21,14);
 							% Sets: Path is fill, draw is bddry
 							\path[fill=white] (7,7) circle (5);
@@ -138,7 +138,7 @@
 			<image xml:id="tigs-2venn-social-media" width="43%">
 				<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled F and contains the number 0.50. The other is labeled X and contains the number 0.20. The intersection of the two circles contains the number 0.20. The region outside both circles contains the number 0.10.</shortdescription>
 				<latex-image>
-					\begin{tikzpicture}[scale=2/7,font=\sffamily]
+					\begin{tikzpicture}[scale=2/7,font=\figfont]
 						\draw[semithick,fill=white] (0,0) rectangle (21,14);
 						% Sets: Path is fill, draw is boundary only
 						\path[fill=white] (7,7) circle (5);
@@ -203,7 +203,7 @@
 				<image xml:id="tigs-2venn-popcorn" width="45%">
 					<shortdescription>A rectangle is drawn for the universal set U. There are two overlapping circles inside. One is labeled P and contains the number 110. The other is labeled S and contains the number 60. The intersection of the two circles contains the number 90.</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}[scale=2/7,font=\sffamily]
+						\begin{tikzpicture}[scale=2/7,font=\figfont]
 							\draw[semithick,fill=white] (0,0) rectangle (21,14);
 							% Sets: Path is fill, draw is boundary only
 							\path[fill=white] (7,7) circle (5);

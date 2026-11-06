@@ -150,7 +150,7 @@
 							% Define styles for bags and leaves
 							\tikzstyle{drawer} = [text width=4em, text centered]
 
-							\begin{tikzpicture}[grow=right, sloped, scale=1.0,font=\sffamily]
+							\begin{tikzpicture}[grow=right, sloped, scale=1.0,font=\figfont]
 								\node[drawer] {outfits}
 									child {
 										node[drawer] {pants 2}
@@ -217,7 +217,7 @@
 						<image xml:id="image_counting_multiplication_ex_unbalanced-tree">
 							<shortdescription> A tree with one branch from the starting point for each destination, Hawaii, Florida, and Alaska.  Hawaii has two branches for its two resorts, Florida has three branches for its three resorts, and Alaska has one branch.</shortdescription>
 							<latex-image>
-								\begin{tikzpicture}[font=\sffamily\tiny]
+								\begin{tikzpicture}[font=\figfont\tiny]
 									\node (r) at (0,0)       {};
 									\node (0) at (1,1.5)     [below right]{Hawaii};
 											\node (00) at (3,1.7)   {resort 1};

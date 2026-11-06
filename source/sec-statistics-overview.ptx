@@ -291,7 +291,7 @@
 						One of the first 5 dots was randomly selected, and then every 5th dot thereafter is selected for the sample.
 					</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}[font=\sffamily]
+						\begin{tikzpicture}[font=\figfont]
 							\foreach \num in {1,2,...,48} {
 									\draw[fill=gray] ({\num - 8*floor((\num-1) / 8)},{floor((\num-1) / 8)}) circle (0.3) node[white] {\num};
 							}
@@ -326,7 +326,7 @@
 						The dots have been divided into six groups, and then two dots are randomly selected from each group to form the sample.
 					</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}[font=\sffamily]
+						\begin{tikzpicture}[font=\figfont]
 							\edef\gnames{{"A","B","C","D","E","F"}};
 
 							% Draw group backgrounds and labels (once per group)
@@ -390,7 +390,7 @@
 						The dots have been divided into six groups, and then three of those groups are randomly selected and every dot from the selected groups is added to the sample.
 					</shortdescription>
 					<latex-image>
-						\begin{tikzpicture}[font=\sffamily]
+						\begin{tikzpicture}[font=\figfont]
 							\edef\gnames{{"A","B","C","D","E","F"}};
 
 							% Draw group backgrounds and labels (once per group)

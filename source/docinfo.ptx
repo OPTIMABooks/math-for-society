@@ -36,7 +36,24 @@
     \definecolor{CustomB1}{RGB}{17,117,167}
     \definecolor{CustomB2}{RGB}{60,84,111}
     \usepackage[parfill]{parskip} % no indent skip line between paragraphs
-    \usepackage{libertine} % change font
+    %
+    % FONTS. This preamble is used twice: to compile each latex-image alone
+    % into a web SVG, and (pasted into the book's preamble) for the PDF,
+    % where the TikZ code is recompiled inline. Every graphic sets its text
+    % with \figfont, so the graphics font is chosen here, per output.
+    % Math in graphics uses the document's math font (Computer Modern now).
+    % \divisionfont is defined by PreTeXt's PDF preamble only.
+    \ifdefined\divisionfont
+      % PDF: print fonts go here; point \figfont at the family the
+      % graphics should use (e.g. \rmfamily to match the body text).
+      \usepackage{libertine}
+      \usepackage[defaultsans]{opensans}
+      \newcommand{\figfont}{\sffamily}
+    \else
+      % Web SVGs: Open Sans, to match the HTML body text.
+      \usepackage[defaultsans]{opensans}
+      \newcommand{\figfont}{\sffamily}
+    \fi
   </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->

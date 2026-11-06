@@ -618,7 +618,7 @@
 									level 1/.style={sibling distance=2.85cm},
 									level 2/.style={sibling distance=1.2cm},
 									edge from parent/.style={draw},
-									every node/.style={font=\sffamily},
+									every node/.style={font=\figfont},
 									edge label/.style={midway, auto, font=\footnotesize},
 									parent anchor=east,
 									child anchor=west
@@ -724,7 +724,7 @@
 								level 1/.style={sibling distance=2.cm},
 								level 2/.style={sibling distance=1.2cm},
 								edge from parent/.style={draw},
-								every node/.style={font=\sffamily},
+								every node/.style={font=\figfont},
 								edge label/.style={midway, auto, font=\footnotesize},
 								parent anchor=east,
 								child anchor=west
@@ -844,7 +844,7 @@
 								level 1/.style={sibling distance=2.85cm},
 								level 2/.style={sibling distance=1.2cm},
 								edge from parent/.style={draw},
-								every node/.style={font=\sffamily},
+								every node/.style={font=\figfont},
 								edge label/.style={midway, auto, font=\footnotesize},
 								parent anchor=east,
 								child anchor=west

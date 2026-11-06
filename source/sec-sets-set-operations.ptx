@@ -188,7 +188,7 @@
 						<image xml:id="UV-set-ex1" width="100%">
 							<shortdescription>A rectangle is drawn for the universal set U, labeled all books in the library; there is a circle inside the rectangle, labeled books relevant to your research project.</shortdescription>
 							<latex-image>
-								\begin{tikzpicture}[font=\sffamily]
+								\begin{tikzpicture}[font=\figfont]
 									% Define the universe as a rectangle
 									\draw[thick] (0,0) rectangle (6,4);
 
@@ -198,8 +198,8 @@
 									% Draw the yellow circle for research-relevant books
 									\filldraw[fill=yellow!70, draw=black, thick] (1.75,2) circle (1.5);
 
-									% Add label for the research books - on three lines
-									\node[align=center] at (1.75,2) {Books relevant \\to your research \\project};
+									% Add label for the research books - on four lines
+									\node[align=center] at (1.75,2) {Books \\ relevant to \\ your research \\ project};
 								\end{tikzpicture}
 							</latex-image>
 						</image>
@@ -213,7 +213,7 @@
 						<image xml:id="UV-set-ex2" width="100%">
 							<shortdescription>A rectangle is drawn for the universal set U, labeled "All your Facebook friends"; there is a circle inside the rectangle, labeled "Coworkers".</shortdescription>
 							<latex-image>
-								\begin{tikzpicture}[font=\sffamily]
+								\begin{tikzpicture}[font=\figfont]
 									% Define the universe as a rectangle
 									\draw[thick] (0,0) rectangle (6,4);
 							
@@ -238,7 +238,7 @@
 						<image xml:id="UV-set-ex3" width="100%">
 							<shortdescription>A rectangle is drawn for the universal set U, labeled "All whole numbers"; there is a circle inside the rectangle, labeled "All prime numbers".</shortdescription>
 							<latex-image>
-								\begin{tikzpicture}[font=\sffamily]
+								\begin{tikzpicture}[font=\figfont]
 									% Define the universe as a rectangle
 									\draw[thick] (0,0) rectangle (6,4);
 							
