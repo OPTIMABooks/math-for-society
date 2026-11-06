@@ -30,7 +30,7 @@
 	<subsection xml:id="sec_probability_conditional_independence">
 		<title>Independence</title>
 		<p>
-			Sometimes, knowing about one event can change the probability of another. When the occurrence of one event changes the probability of another, the events are called <term>dependent</term>. When knowledge about one event makes no difference in the probability of another event happening, the events are called <term>independent</term>.
+			Sometimes, knowing about one event can change the probability of another. When the occurrence of one event changes the probability of another, the events are called <term>dependent</term><idx>dependent events</idx><idx><h>probability</h><h>dependence</h></idx>. When knowledge about one event makes no difference in the probability of another event happening, the events are called <term>independent</term>.
 		</p>
 		<definition xml:id="def_independent">
 			<idx><h>independent events</h></idx>
@@ -352,7 +352,7 @@
 	<subsection xml:id="sec_probability_conditional_multiplication-rule">
 		<title>General Multiplication Rule</title>
 		<p>
-			In <xref ref="sec_probability_more-rules"/>, we discussed a rule for finding <m>P(A\cup B)</m>, which we called the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>.  We have not yet, however, seen a general rule for finding <m>P(A\cap B)</m>, the probability that both <m>A</m> and <m>B</m> occur. Applying a little bit of algebra to the conditional probability formula produces just such a rule. This is called the <term>general multiplication rule</term> because it works in general<mdash/>for any <m>A</m> and <m>B</m>.
+			In <xref ref="sec_probability_more-rules"/>, we discussed a rule for finding <m>P(A\cup B)</m>, which we called the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>.  We have not yet, however, seen a general rule for finding <m>P(A\cap B)</m>, the probability that both <m>A</m> and <m>B</m> occur. Applying a little bit of algebra to the conditional probability formula produces just such a rule. This is called the <term>general multiplication rule</term><idx><h>general multiplication rule</h><see>multiplication rule (probability)</see></idx> because it works in general<mdash/>for any <m>A</m> and <m>B</m>.
 		</p>
 		<fact xml:id="thm_probability-rule_general-multiplication">
 			<title>General Multiplication Rule</title>
