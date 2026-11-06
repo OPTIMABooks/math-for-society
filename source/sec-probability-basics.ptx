@@ -17,7 +17,7 @@
 				</li>
 				<li>
 					<p>
-						Determine the difference between empirical and theoretical probability
+						Determine the difference between empirical and theoretical probability.
 					</p>
 				</li>
 				<li>
@@ -34,7 +34,7 @@
 			<ul>
 				<li><p>A weather forecaster predicts that there is a 20% chance of rain tomorrow.</p></li>
 				<li><p>A newscast predicts that the probability a ballot measure will pass is 60%.</p></li>
-				<li><p>The lottery introduces a new scratch ticket in which the odds of winning are 1 in 200.</p></li>
+				<li><p>The lottery introduces a new scratch ticket in which the chance of winning is 1 in 200.</p></li>
 			</ul>
 			In each of these cases, we are measuring how likely a certain event is to take place. This is probability.
 		</p>
@@ -49,7 +49,7 @@
 	<subsection>
 		<title>Theoretical Probability</title>
 		<p>
-			Probabilities calculated from counting data or simulated results are known as <term>experimental probabilities</term>. In contrast, when the likelihood (or chance) of an event is determined by analyzing all the possible outcomes and calculating the ratio of favorable outcomes to the total number of outcomes, it is referred to as <term>theoretical probability</term>. A third type of probability, called <term>subjective probability</term>, is essentially an educated guess based on personal experience or intuition. This section will primarily focus on theoretical probabilities.
+			Probabilities calculated from observed data or simulated results are known as <term>experimental</term> (or <term>empirical</term>) <term>probabilities</term>. In contrast, when the likelihood (or chance) of an event is determined by analyzing all the possible outcomes and calculating the ratio of favorable outcomes to the total number of outcomes, it is referred to as <term>theoretical probability</term>. A third type of probability, called <term>subjective probability</term>, is essentially an educated guess based on personal experience or intuition. This section will primarily focus on theoretical probabilities.
 		</p>
 		<definition xml:id="def_theoretical-probability">
 			<idx>theoretical probability</idx>
@@ -58,7 +58,7 @@
 				<p>
 					The <term>theoretical probability</term> of a certain event <m>E</m> happening in an experiment is found by counting the number of possible outcomes of the experiment in which <m>E</m> happens and dividing by the total number of outcomes, assuming each outcome is equally likely. That is:
 					<me>
-						P(E)=\frac{\text{number of outcomes corresponding to the event E}}{\text{total number of equally-likely outcomes}}
+						P(E)=\frac{\text{number of outcomes corresponding to the event E}}{\text{total number of equally likely outcomes}}
 					</me>
 				</p>
 			</statement>
@@ -73,7 +73,25 @@
 		<definition xml:id="def-experiment_probability">
 			<statement>
 				<p>
-					An <term>experiment</term> or <term>trial</term> is any procedure that can be infinitely repeated and has a well-defined set of possible outcomes, known as the <term>sample space</term>.
+					An <term>experiment</term> or <term>trial</term> is any procedure that can be repeated any number of times and has a well-defined set of possible outcomes, known as the <term>sample space</term>.
+				</p>
+			</statement>
+		</definition>
+		<definition xml:id="def_sample-space">
+			<idx>sample space</idx>
+			<idx><h>probability</h><h>sample space</h></idx>
+			<statement>
+				<p>
+					The <term>sample space</term> for an experiment is the set of all possible outcomes of the experiment.
+				</p>
+			</statement>
+		</definition>
+		<definition xml:id="def_event">
+			<idx>event</idx>
+			<idx><h>probability</h><h>event</h></idx>
+			<statement>
+				<p>
+					An <term>event</term> for a particular experiment is a subset of the sample space for that experiment.
 				</p>
 			</statement>
 		</definition>
@@ -83,10 +101,10 @@
 		<example xml:id="ex_probabilty_basic-rules_coin-flip">
 			<title>Analyzing a Simple Experiment</title>
 			<p>
-				A fair coin is flipped twice, and the number of heads is noted. What is the probability that exactly one heads appears in these two flips?
+				A fair coin is flipped twice, and the result of each flip is noted. What is the probability that exactly one head appears in these two flips?
 			</p>
 			<p>
-				The <term>experiment</term> here is a coin toss. This experiment has possible outcomes of the coin landing on <q>heads</q> or <q>tails</q>. This set of possible outcomes is called the <term>sample space</term> and typically named <m>S</m>.  We write the sample space as
+				The <term>experiment</term> here is flipping a coin twice. Each flip lands on <q>heads</q> (<m>H</m>) or <q>tails</q> (<m>T</m>), so the possible outcomes are the four sequences of two flips. This set of possible outcomes is called the <term>sample space</term> and is typically named <m>S</m>.  We write the sample space as
 				<me>
 					S = \lbrace HH, HT, TH, TT \rbrace
 				</me>.
@@ -104,43 +122,26 @@
 				</me>.
 			</p>
 		</example>
-		<definition xml:id="def_sample-space">
-			<idx>sample space</idx>
-			<idx><h>probability</h><h>sample space</h></idx>
-			<statement>
-				<p>
-					The <term>sample space</term> for an experiment is the set of all possible outcomes of the experiment.
-				</p>
-			</statement>
-		</definition>
-				<example xml:id="ex_probability_basic-rules-2">
+		<example xml:id="ex_probability_basic-rules-2">
+			<title>Identifying a Sample Space</title>
 			<statement>
 				<p>
 					An experiment consists of rolling two fair dice and noting the sum of the numbers rolled. Below are several sets related to this experiment.
 					<ol marker="a.">
-						<li><p><m>\lbrace 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 , 11, 12 \rbrace</m></p></li>
+						<li><p><m>\lbrace 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 \rbrace</m></p></li>
 						<li><p><m>\lbrace 2, 4, 6, 8, 10, 12 \rbrace</m></p></li>
-						<li><p><m>\lbrace (1,1), (1,2), ... , (5,6), (6,6) \rbrace</m></p></li>
+						<li><p><m>\lbrace (1,1), (1,2), \ldots, (5,6), (6,6) \rbrace</m></p></li>
 						<li><p><m>\lbrace 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 \rbrace</m></p></li>
 						<li><p><m>\lbrace 3, 5, 7, 9, 11 \rbrace</m></p></li>
 					</ol>
-					Which of these sets is the sample space of for this experiment?
+					Which of these sets is the sample space for this experiment?
 				</p>
 			</statement>
-			<answer><p>the set in (d) gives the possible sums.</p></answer>
+			<answer><p>The set in (d) gives the possible sums. Set (a) includes 1, which cannot be a sum of two dice. Sets (b) and (e) contain only some of the possible sums, so they are events rather than the full sample space. Set (c) would be the sample space if we recorded the number on each die, but here we note only the sum.</p></answer>
 		</example>
-		<definition xml:id="def_event">
-			<idx>event</idx>
-			<idx><h>probability</h><h>event</h></idx>
-			<statement>
-				<p>
-					An <term>event</term> for a particular experiment is a subset of the sample space for that experiment.
-				</p>
-			</statement>
-		</definition>
 		<p>
 			In <xref ref="ex_probabilty_basic-rules_coin-flip"/>, the event of interest was <m>E = \lbrace HT, TH \rbrace</m>. Notice that every outcome in that event is also an outcome in the sample space <m>S</m>. This is what it means to say that <m>E</m> is a <idx><h>sets</h><h>subset</h></idx><term>subset</term> of <m>S</m>. 
-			Also, notice that because <m>E</m> is a subset of <m>S</m>, it must always be true that <m>E</m> contains at most the same number of elements as <m>S</m>. That is, <m>n(E) \leq n(S)</m>. This, together with our definition of <xref ref="def_theoretical-probability" text="custom">theoretical probability</xref>, leads to the following rules.
+			Also, notice that because <m>E</m> is a subset of <m>S</m>, it must always be true that <m>E</m> contains no more elements than <m>S</m>. That is, <m>n(E) \leq n(S)</m>. This, together with our definition of <xref ref="def_theoretical-probability" text="custom">theoretical probability</xref>, leads to the following rules.
 		</p>
 		<fact xml:id="thm_basic-probability">
 			<title>Basic Probability Rules</title>
@@ -155,14 +156,14 @@
 			</statement>
 		</fact>
 		<p>
-			The first rule says that because <m>E</m> is a subset of <m>S</m>, the ratio of <m>n(E)</m> to <m>n(S)</m> can be at most one, and as with any ratio, must be at least 0. 
+			The first rule says that because <m>E</m> is a subset of <m>S</m>, the ratio of <m>n(E)</m> to <m>n(S)</m> can be at most 1, and since neither count can be negative, it must be at least 0. 
 			The second rule tells us that the probability of something in the sample space happening is 1. Since the sample space contains all possible outcomes, this gives us the maximum possible probability of 1.
 		</p>
 		<example xml:id="ex_probability_measure_urn">
-			<!-- <title>Assigning Probabilities to Outcomes</title> -->
+			<title>Assigning Probabilities to Outcomes</title>
 			<statement>
 				<p>
-					A jar contains four red marbles, three blue marbles, two green marbles, and one white marble. A marble is drawn and its color is noted. Find the sample space in this experiment, and assign each outcome a probability.
+					A jar contains four red marbles, three blue marbles, two green marbles, and one white marble. A marble is drawn and its color is noted. Find the sample space for this experiment, and assign each outcome a probability.
 				</p>
 			</statement>
 			<solution>
@@ -173,12 +174,12 @@
 						<li><p>Since we can't actually tell the marbles of the same color apart, it is more accurate to say that the sample space is:
 							<me>S = \lbrace R, B, G, W\rbrace</me>.</p></li>
 					</ol>
-					The best answer for the sample space is <m>S = \lbrace R,B,G, W\rbrace</m> as shown in (2). However, the sample space from (1) can be a good way to answer the second part of the problem.
+					The best answer for the sample space is <m>S = \lbrace R,B,G, W\rbrace</m> as shown in (2). To assign probabilities, however, we use the sample space from (1), where each of the 10 marbles is equally likely.
 					<ul marker="">
-						<li><p><m>P(R) = \frac{n(R)}{n(S)} = \frac{4}{10} = \frac{2}{5} = 0.40</m></p></li>
-						<li><p><m>P(B) = \frac{n(B)}{n(S)} = \frac{3}{10} = 0.30</m></p></li>
-						<li><p><m>P(G) = \frac{n(G)}{n(S)} = \frac{2}{10} = \frac{1}{5} = 0.20</m></p></li>
-						<li><p><m>P(W) = \frac{n(W)}{n(S)} = \frac{1}{10} = 0.10</m></p></li>
+						<li><p><m>P(R) = \frac{4}{10} = \frac{2}{5} = 0.40</m></p></li>
+						<li><p><m>P(B) = \frac{3}{10} = 0.30</m></p></li>
+						<li><p><m>P(G) = \frac{2}{10} = \frac{1}{5} = 0.20</m></p></li>
+						<li><p><m>P(W) = \frac{1}{10} = 0.10</m></p></li>
 					</ul>
 				</p>
 			</solution>
@@ -187,18 +188,18 @@
 	<subsection xml:id="sec_probability_more-rules">
 		<title>More Probability Rules</title>
 		<p>
-			There are other useful probability rules for working with events. The first follows from the <xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion/exclusion rule</xref> that we saw in the previous section.
+			There are other useful probability rules for working with events. The first follows from the <xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref> that we saw in <xref ref="sec-set-cardinality"/>.
 		</p>
 		<fact xml:id="thm_probability-rule_general-addition">
 			<idx>general addition rule (probability)</idx>
 			<idx><h>probability</h><h>formula</h><h>general addition rule</h></idx>
 			<statement>
 				<p>
-					The <term>general addition rule</term> states that if events <m>A</m> and <m>B</m> are events in a sample space, then:
+					The <term>general addition rule</term> states that if <m>A</m> and <m>B</m> are events in a sample space, then:
 					<me>
 						P(A\cup B) = P(A) + P(B) - P(A\cap B)
 					</me>.
-					<alert>Note:</alert> If <m>A</m> and <m>B</m> are <xref ref="def_mutually-exclusive" text="custom">mutually exclusive</xref> this reduces to
+					<alert>Note:</alert> If <m>A</m> and <m>B</m> are <xref ref="def_mutually-exclusive" text="custom">mutually exclusive</xref>, this reduces to
 					<me>
 						P(A\cup B) = P(A) + P(B)
 					</me>.
@@ -236,14 +237,14 @@
 						<p>
 							Since <q>yellow</q> is a single event, we just need to know how many prizes there are in total, and how many of the prizes are yellow. The yellow prizes include the 10 yellow erasers and the 8 yellow pencil sharpeners.
 							<md>
-								<mrow>P(\text{yellow})\amp=\frac{18}{33}</mrow>
+								<mrow>P(\text{yellow})\amp=\frac{18}{33} = \frac{6}{11}</mrow>
 								<mrow>\amp\approx 0.545 \text{ or } 54.5\%</mrow>
 							</md>
 						</p>
 					</li>
 					<li>
 						<p>
-							To find the probability of getting a prize that is yellow or an eraser, we need to be careful because these are overlapping sets. There are two ways to calculate this. The first way is to add all the items separately, being careful not to double count.
+							To find the probability of getting a prize that is yellow or an eraser, we need to be careful because these are overlapping sets. There are two ways to calculate this. The first way is to add the probabilities of the kinds of prizes that qualify, counting each kind only once.
 						</p>
 						<p>
 							<md>
@@ -251,7 +252,7 @@
 								<mrow> \amp+P(\text{yellow pencil sharpener}) </mrow>
 								<mrow> \amp+P(\text{green eraser})</mrow>
 								<mrow>\amp=\frac{10}{33}+\frac{8}{33}+\frac{6}{33}</mrow>
-								<mrow>\amp=\frac{24}{33}</mrow>
+								<mrow>\amp=\frac{24}{33} = \frac{8}{11}</mrow>
 								<mrow>\amp\approx 0.727 \text{ or } 72.7\%</mrow>
 							</md>
 						</p>
@@ -263,20 +264,20 @@
 								<mrow>P(\text{yellow or eraser})\amp=P(\text{yellow})+P(\text{eraser}) </mrow>
 								<mrow> \amp-P(\text{yellow and eraser})</mrow>
 								<mrow>\amp=\frac{18}{33}+\frac{16}{33}-\frac{10}{33}</mrow>
-								<mrow>\amp=\frac{24}{33}</mrow>
+								<mrow>\amp=\frac{24}{33} = \frac{8}{11}</mrow>
 								<mrow>\amp\approx 0.727 \text{ or } 72.7\%</mrow>
 							</md>
 						</p>
 					</li>
 					<li>
 						<p>
-							For a red or yellow prize, the set of red and the set of yellow do not overlap. They are mutually exclusive sets, so we will add the probability of getting a red prize to the probability of getting a yellow prize.
+							For a red or yellow prize, the set of red and the set of yellow do not overlap. They are mutually exclusive events, so we will add the probability of getting a red prize to the probability of getting a yellow prize.
 						</p>
 						<p>
 							<md>
 								<mrow>P(\text{red or yellow})\amp=P(\text{red})+P(\text{yellow})</mrow>
 								<mrow>\amp=\frac{9}{33}+\frac{18}{33}</mrow>
-								<mrow>\amp=\frac{27}{33}</mrow>
+								<mrow>\amp=\frac{27}{33} = \frac{9}{11}</mrow>
 								<mrow>\amp\approx 0.818 \text{ or } 81.8\%</mrow>
 							</md>
 						</p>
@@ -298,7 +299,7 @@
 			<solution>
 				<p>Using the general addition rule,
 					<md>
-						<mrow>P(X\cup Y) \amp= P(X) + P(X) - P(X\cap Y) </mrow>
+						<mrow>P(X\cup Y) \amp= P(X) + P(Y) - P(X\cap Y) </mrow>
 						<mrow> \Rightarrow 0.80 \amp= 0.45 + 0.65 - P(X\cap Y)</mrow>
 						<mrow>\Rightarrow P(X\cap Y) \amp= 0.30.</mrow>
 					</md>
@@ -306,7 +307,7 @@
 			</solution>
 		</example>
 		<p>
-			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding on how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right <mdash/> 60%!  This is the <term>complement rule</term> and closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
+			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right <mdash/> 60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
 		</p>
 		<definition xml:id="def-complement_event">
 			<statement>
@@ -332,18 +333,18 @@
 			<title>Finding the Probability of a Complement</title>
 			<statement>
 				<p>
-					A fair die is rolled and the number that comes up is noted. This results in the sample space <m>S = \lbrace 1,2,3,4,5,6\rbrace</m>. Consider the event <m>E =</m> <q>an even number is rolled</q> and <m>F =</m> <q>a number greater than 4 is rolled.</q> Find the probabilities of both <m>E</m> and <m>F</m> and their complements.
+					A fair die is rolled and the number that comes up is noted. This results in the sample space <m>S = \lbrace 1,2,3,4,5,6\rbrace</m>. Consider the events <m>E =</m> <q>an even number is rolled</q> and <m>F =</m> <q>a number greater than 4 is rolled.</q> Find the probabilities of both <m>E</m> and <m>F</m> and their complements.
 				</p>
 			</statement>
 			<solution>
 				<p>
-					The set <m>E = \lbrace 2, 4, 6 \rbrace</m> consists of all even numbers. The complement of <m>E</m>, <m>E^C = \lbrace 1, 3, 5 \rbrace</m>. The probability of each of these sets is <m>\frac{3}{6} = \frac{1}{2}</m>. Note that <m>P(E^C)</m> can also be calculated as
+					The set <m>E = \lbrace 2, 4, 6 \rbrace</m> consists of all even numbers. The complement of <m>E</m> is <m>E^C = \lbrace 1, 3, 5 \rbrace</m>. The probability of each of these sets is <m>\frac{3}{6} = \frac{1}{2}</m>. Note that <m>P(E^C)</m> can also be calculated as
 					<me>
 						P(E^C)=1-\frac{1}{2}=\frac{1}{2}.
 					</me>
 				</p>
 				<p>
-					The set <m>F = \lbrace 5, 6 \rbrace</m> has probability <m>P(F) = \frac{2}{6} = \frac{1}{3}</m>. The complement of <m>F</m> is <m>F^C = \lbrace 1,2,3,4 \rbrace</m>. The probability of this set is <m>P(F^C) = \frac{4}{6} = \frac{2}{3}</m>. Again, this agrees with the complement law:
+					The set <m>F = \lbrace 5, 6 \rbrace</m> has probability <m>P(F) = \frac{2}{6} = \frac{1}{3}</m>. The complement of <m>F</m> is <m>F^C = \lbrace 1,2,3,4 \rbrace</m>. The probability of this set is <m>P(F^C) = \frac{4}{6} = \frac{2}{3}</m>. Again, this agrees with the complement rule:
 					<me>
 						P(F^C) = 1-\frac{1}{3} = \frac{2}{3}
 					</me>.
@@ -357,27 +358,27 @@
 			Throughout this section, we have assumed that each outcome is equally likely. In <xref ref="ex_probability_measure_urn"/>, we pulled colored marbles from a jar in which each marble was equally likely, but not each color. This was because there were more marbles of some colors than others. In that example, we had two different ways to list the sample space, depending on how (or what) we counted. This illustrates how counting is an important tool for computing probabilities.
 		</p>
 		<p>
-			The definition of theoretical probability shown in <xref ref="def_theoretical-probability" text="type-global"/> is fundamentally based on enumeration (counting). By applying the counting techniques introduced in <xref ref="sec-set-cardinality"/>, we can now address more complex probability problems. In the examples that follow, we will use a variety of counting rules to compute probabilities. Pay close attention to how, in each case, we must first determine which counting rule(s) to apply and how to combine them to count the number of outcomes in both the sample space and the event whose probability we wish to find.
+			The definition of theoretical probability shown in <xref ref="def_theoretical-probability" text="type-global"/> is fundamentally based on enumeration (counting). By applying the counting techniques introduced in <xref ref="sec-set-multiplication-principle"/> and <xref ref="sec-set-permutation-combination"/>, we can now address more complex probability problems. In the examples that follow, we will use a variety of counting rules to compute probabilities. Pay close attention to how, in each case, we must first determine which counting rule(s) to apply and how to combine them to count the number of outcomes in both the sample space and the event whose probability we wish to find.
 		</p>
 		<example xml:id="ex_probability_counting_basic">
 			<title>Probability Using Basic Counting Rules</title>
 			<statement>
 				<p>
-					An elderly woman owns 12 cats. She has 3 male tabby cats, 4 female tabby cats, 3 female calico cats, and 2 male Siamese cats. A single cat is chosen from the group at random. Find the probability that the cat is:
+					A woman owns 12 cats. She has 3 male tabby cats, 4 female tabby cats, 3 female calico cats, and 2 male Siamese cats. A single cat is chosen from the group at random. Find the probability that the cat is:
 					<ol marker="a." cols="3">
 						<li><p>male</p></li>
 						<li><p>a tabby cat</p></li>
-						<li><p>a male or a calico.</p></li>
+						<li><p>a male or a calico</p></li>
 					</ol>
 				</p>
 			</statement>
 			<solution>
 				<p>
-					Since we are told the cat is chosen at random, we know that each cat is equally likely to be chosen. Thus, we can use the theoretical probability definition to solve these problems. For each of these events, note that the sample space is all of the cats owned by this woman. Thus, <m>n(S) = 12</m> for each problem. 
+					Since we are told the cat is chosen at random, we know that each cat is equally likely to be chosen. Thus, we can use the theoretical probability definition to solve these problems. For each of these events, note that the sample space is all of the cats owned by this woman. Thus, <m>n(S) = 12</m> for each problem. Let <m>M</m>, <m>T</m>, and <m>C</m> be the events that the chosen cat is male, a tabby, and a calico, respectively.
 					<ol marker="a.">
-						<li><p>Since we are told that <m>n(M) = 5</m>, we compute <m>P(M) = \frac{5}{12}</m>.</p></li>
-						<li><p>Because <m>n(T) = 7</m>, we get <m>P(T) = \frac{7}{12}</m>.</p></li>
-						<li><p>Finally, <m>n(M \cup C) = 5 + 3 = 8</m>, so <m>P(M\cup C) = \frac{8}{12} = \frac{2}{3}</m>.</p></li>
+						<li><p>There are <m>3 + 2 = 5</m> male cats, so <m>n(M) = 5</m> and <m>P(M) = \frac{5}{12}</m>.</p></li>
+						<li><p>There are <m>3 + 4 = 7</m> tabby cats, so <m>n(T) = 7</m> and <m>P(T) = \frac{7}{12}</m>.</p></li>
+						<li><p>Since all of the calico cats are female, <m>M</m> and <m>C</m> do not overlap. So <m>n(M \cup C) = 5 + 3 = 8</m>, so <m>P(M\cup C) = \frac{8}{12} = \frac{2}{3}</m>.</p></li>
 					</ol>
 				</p>
 			</solution>
@@ -416,12 +417,12 @@
 									<mrow>\amp = 6 \times 15</mrow>
 									<mrow>\amp = 90.</mrow>
 								</md>
-								Thus, <m>P(\text{ 2 black and 2 red }) = \frac{90}{210} = \frac{3}{7}</m>.
+								Thus, <m>P(\text{2 black and 2 red}) = \frac{90}{210} = \frac{3}{7}</m>.
 							</p>
 						</li>
 						<li>
 							<p>
-								<q>At least one queen</q> means we could have one queen, two queens, three queens, or all four queens. If we try to count this directly, we must count these four separate cases and then use the addition rule to add them together. Instead, let's take a short-cut. The opposite of <q>at least one queen</q> is <q>no queens</q>. 
+								<q>At least one queen</q> means we could have one queen, two queens, three queens, or all four queens. If we try to count this directly, we must count these four separate cases and then use the addition rule to add them together. Instead, let's take a shortcut. The opposite of <q>at least one queen</q> is <q>no queens</q>. 
 								If we can find the probability of no queens, then we can use the complement rule to find the probability of at least one queen. If we don't allow the queens to be chosen, there are only 6 cards available. We can pick our entire hand from these 6 cards in <m>C(6,4) = 15</m> ways. So, <m>P(\text{no queens}) = \frac{15}{210} = \frac{1}{14}</m>. Therefore,
 								<md>
 									<mrow> P(\text{at least one queen}) \amp = 1 - P(\text{no queens}) </mrow>
@@ -430,7 +431,7 @@
 							</p></li>
 						<li>
 							<p>
-								Our last event is different from the other three because the order in which we pick our cards matters.  We should therefore use a <xref ref="fact-permutation-formula" text="custom">permutation</xref> or the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref> instead of a combination. Keeping in mind that there is only one of each suite's queen in the deck, we compute
+								Our last event is different from the other three because the order in which we pick our cards matters.  We should therefore use a <xref ref="fact-permutation-formula" text="custom">permutation</xref> or the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref> instead of a combination. Keeping in mind that there is only one of each suit's queen in the deck, we compute
 								<md>
 									<mrow>P(\text{Queen of Hearts, }\amp\text{Diamonds, Clubs, then Spades}) </mrow>
 									<mrow>\amp = \frac{1\times 1\times 1\times 1}{P(10,4)}</mrow>
@@ -447,17 +448,17 @@
 			<title>Probabilities Using Cases</title>
 			<statement>
 				<p>
-					An experiment consists of randomly selecting three marbles from an jar containing six red marbles, four white marbles, and two green marbles. What is the probability that:
+					An experiment consists of randomly selecting three marbles from a jar containing six red marbles, four white marbles, and two green marbles. What is the probability that:
 					<ol marker="a.">
-						<li><p>All three marbles are green?</p></li>
-						<li><p>All three marbles are white?</p></li>
-						<li><p>All three marbles are of the same color?</p></li>
+						<li><p>all three marbles are green?</p></li>
+						<li><p>all three marbles are white?</p></li>
+						<li><p>all three marbles are the same color?</p></li>
 					</ol>
 				</p>
 			</statement>
 			<solution>
 				<p>
-					We start by counting the sample space, which will be the same for all three events. We are drawing three marbles from an jar containing 12 total marbles. We don't care about the order in which we draw the marbles, just the colors that are drawn. Therefore, <m>n(S) = C(12,3) = 220</m>.
+					We start by counting the sample space, which will be the same for all three events. We are drawing three marbles from a jar containing 12 total marbles. We don't care about the order in which we draw the marbles, just the colors that are drawn. Therefore, <m>n(S) = C(12,3) = 220</m>.
 					<ol marker="a.">
 						<li>
 							<p>
@@ -474,7 +475,7 @@
 								All three marbles can be the same color by being all green, all white, or all red. We said that <m>P(\text{all green}) = 0</m> and <m>P(\text{all white}) = \frac{1}{55}</m>. To determine the probability they are all red, we count <m>n(\text{all three red}) = C(6,3) = 20</m>. Thus, <m>P(\text{all red}) = \frac{20}{220} = \frac{1}{11}</m>.
 							</p>
 							<p>
-								Since these are three different ways that we can get all three marbles to be the same color, and since each of these events is mutually exclusive (we can't get all three red and all three white), we use the general addition rule to get:
+								Since these are three different ways that we can get all three marbles to be the same color, and since these events are mutually exclusive (we can't get all three red and all three white), we add their probabilities (the mutually exclusive case of the general addition rule):
 								<md>
 									<mrow>P(\text{same color}) \amp = P(\text{all green}) + P(\text{all white}) + P(\text{all red} )</mrow>
 									<mrow>\amp = 0 + \frac{4}{220} + \frac{20}{220} = \frac{24}{220}</mrow>
