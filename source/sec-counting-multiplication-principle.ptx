@@ -32,7 +32,7 @@
 			<title>Addition Rule</title>
 			<statement>
 				<p>
-					The <term>addition rule</term> states that if the things being counted fall into two distinct cases that don't overlap, with <m>n</m> possibilities in the first case and <m>m</m> in the second, then there are <m>n+m</m> possibilities in all.
+					The <term>addition rule</term><idx>addition rule (counting)</idx><idx><h>counting rules</h><h>addition</h></idx> states that if the things being counted fall into two distinct cases that don't overlap, with <m>n</m> possibilities in the first case and <m>m</m> in the second, then there are <m>n+m</m> possibilities in all.
 				</p>
 			</statement>
 		</principle>
@@ -69,7 +69,7 @@
 			<idx><h>counting rules</h><h>multiplication</h></idx>
 			<statement>
 				<p>
-					The <term>multiplication rule</term> (also called the <term>multiplication principle</term>) states that if a task consists of two steps where step one can happen in <m>n_1</m> ways and step two can happen in <m>n_2</m> ways, then the entire task can be done in <m>n_1 \times n_2</m> different ways.
+					The <term>multiplication rule</term> (also called the <term>multiplication principle</term><idx><h>multiplication principle</h><see>multiplication rule (counting)</see></idx>) states that if a task consists of two steps where step one can happen in <m>n_1</m> ways and step two can happen in <m>n_2</m> ways, then the entire task can be done in <m>n_1 \times n_2</m> different ways.
 				</p>
 			</statement>
 		</principle>
