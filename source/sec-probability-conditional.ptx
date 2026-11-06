@@ -709,13 +709,13 @@
 			</statement>
 			<solution>
 				<p>
-					While not strictly necessary, drawing a tree diagram will help us find the required probabilities. Let <m>M</m> represent the event <q>person is a man</q>, <m>W</m> be the event <q>person is a woman</q>, and <m>V</m> be the event <q>person has experienced intimate partner violence</q>. In this notation, <m>\overline{V}</m> (also written <m>V^C</m>) is the complement of <m>V</m>, that is, the people who have not experienced IPV.
+					While not strictly necessary, drawing a tree diagram will help us find the required probabilities. Let <m>M</m> represent the event <q>person is a man</q>, <m>W</m> be the event <q>person is a woman</q>, and <m>V</m> be the event <q>person has experienced intimate partner violence</q>. In this notation, <m>V^C</m> is the complement of <m>V</m>, that is, the people who have not experienced IPV.
 				</p>
 				<figure xml:id="fig_conditional_ex_probability-tree-IPV">
 					<caption>Tree Diagram</caption>
 					<image xml:id="image_conditional_ex_probability-tree-IPV" width="45%">
 						<shortdescription>
-							A tree two branches from the root. The top is labeled M for men, the second W for women. The edge from the root to the M node is labeled 1/2 as is the edge from the root to the W node. The M node has two children, labeled V and not V. The edges are labeled 1/7 and 6/7, respectively. Similarly, the W node has two children labeled V and not V with edges labeled 1/4 and 3/4.
+							A tree two branches from the root. The top is labeled M for men, the second W for women. The edge from the root to the M node is labeled 1/2 as is the edge from the root to the W node. The M node has two children, labeled V and V complement. The edges are labeled 1/7 and 6/7, respectively. Similarly, the W node has two children labeled V and V complement with edges labeled 1/4 and 3/4.
 						</shortdescription>
 						<latex-image>
 							\begin{tikzpicture}[
@@ -734,13 +734,13 @@
 										% Level 1 nodes in reverse order: W, R, B
 										child {node {$W$}
 												% Children of W in reverse order: R, B
-												child {node {$\overline{V}$} edge from parent node[edge label, below] {$3/4$}}
+												child {node {$V^C$} edge from parent node[edge label, below] {$3/4$}}
 												child {node {$V$} edge from parent node[edge label, above] {$1/4$}}
 												edge from parent node[edge label, below] {$1/2$}
 										}
 										child {node {$M$}
 												% Children of B in reverse order: W, R, B
-												child {node {$\overline{V}$} edge from parent node[edge label, below] {$6/7$}}
+												child {node {$V^C$} edge from parent node[edge label, below] {$6/7$}}
 												child {node {$V$} edge from parent node[edge label, above] {$1/7$}}
 												edge from parent node[edge label, above] {$1/2$}
 										};

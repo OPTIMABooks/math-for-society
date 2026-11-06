@@ -318,7 +318,7 @@
 			<idx><h>probability</h><h>complement of an event</h></idx>
 			<statement>
 				<p>
-					The <term>complement</term> of an event <m>E</m> is the set of outcomes in the sample space that are not in <m>E</m>. That is, <m>E^C</m> is the event <q><m>E</m> didn't happen.</q>
+					The <term>complement</term> of an event <m>E</m> is the set of outcomes in the sample space that are not in <m>E</m>. That is, <m>E^C</m> is the event <q><m>E</m> didn't happen.</q> As with sets, you may also see the complement written <m>E'</m> or <m>\overline{E}</m>.
 				</p>
 			</statement>
 		</definition>
