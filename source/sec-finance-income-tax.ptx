@@ -75,8 +75,36 @@
       </p>
       <figure>
         <caption>Steps to Calculate Federal Income Tax</caption>
-        <image width="100%" source="images/financial_math/calculating_federal.png">
+        <image width="100%">
         <shortdescription>Five rectangles showing the steps: 1. Calculate gross income by adding all income; 2. Calculate adjusted gross income (AGI) by subtracting any pre-tax adjustments; 3. Calculate taxable income by subtracting deductions (itemized or standard); 4. Calculate tax using tax table for your filing status; 5. Calculate refund or amount owed by subtracting credits and withholdings. If the amount is negative you get a refund; if the amount is positive you owe money.</shortdescription>
+          <latex-image>
+            % resizebox: at full size (21cm) the picture is wider than the page
+            % each latex-image is compiled on, and the SVG gets cut off
+            \resizebox{7in}{!}{%
+            \begin{tikzpicture}[font=\figfont,
+                heading/.style={anchor=north, text width=2.7cm, align=center, font=\figfont\bfseries},
+                body/.style={text width=2.7cm, align=center},
+                go/.style={single arrow, draw=CustomB2, fill=CustomB1, minimum height=1cm,
+                  minimum width=1.3cm, single arrow head extend=0.15cm, inner sep=0pt}]
+              % five boxes 3cm wide, 4.4cm apart; headings at the top, bodies centered below
+              \foreach \i in {1,...,5} {
+                \draw[very thick] ({4.4*\i-1.5},0) rectangle ({4.4*\i+1.5},8);
+              }
+              \foreach \i in {1,...,4}
+                \node[go] at ({4.4*\i+2.2},4) {};
+              \node[heading] at (4.4,7.7) {Calculate\\ Gross\\ Income};
+              \node[heading] at (8.8,7.7) {Calculate\\ Adjusted\\ Gross Income\\ (AGI)};
+              \node[heading] at (13.2,7.7) {Calculate\\ Taxable\\ Income};
+              \node[heading] at (17.6,7.7) {Calculate\\ Tax Using\\ Marginal\\ Tax Table};
+              \node[heading] at (22,7.7) {Calculate\\ Refund or\\ Amount Owed};
+              \node[body] at (4.4,3.4) {Sum together all earnings};
+              \node[body] at (8.8,3.4) {Gross Income\\ $-$\\ Adjustments\\ $=$\\ Adjusted Gross Income};
+              \node[body] at (13.2,3.4) {AGI\\ $-$\\ Deductions (Standard or Itemized)\\ $=$\\ Taxable Income};
+              \node[body] at (17.6,3.4) {Calculate taxes from your taxable income using the tax table for your filing status};
+              \node[body] at (22,3.4) {Tax\\ $-$\\ Credits\\ $-$\\ Withholdings\\ $=$\\ Refund (if $-$)\\ or\\ Owed (if $+$)};
+            \end{tikzpicture}
+            }
+          </latex-image>
         </image>
       </figure>
       <p>

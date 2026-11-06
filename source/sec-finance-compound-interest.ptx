@@ -432,8 +432,38 @@
           <cell>$24,370.65</cell>
         </row>
       </tabular>
-      <image source="images/financial_math/comparing_interest.png">
+      <image>
       <shortdescription>A coordinate graph with years on the x-axis and account balance on the y-axis. Simple interest (dark blue diamonds) increases in a straight line from $3,000 to $9,300; compound interest (pink squares) curves upward, reaching about $24,000 at 35 years, because it grows exponentially.</shortdescription>
+        <latex-image>
+          \begin{tikzpicture}[font=\figfont]
+          \begin{axis}[
+              width=8cm, height=8cm,
+              axis lines=left,
+              axis line style={thick, -}, tick style={thick},
+              xmin=0, xmax=36, ymin=0, ymax=25000,
+              xtick={0,5,...,35},
+              ytick={0,5000,...,25000},
+              scaled y ticks=false,
+              yticklabel={\$\pgfmathprintnumber[1000 sep={,}]{\tick}},
+              ymajorgrids=true,
+              xlabel={Years},
+              ylabel={Account balance},
+              ticklabel style={font=\figfont},
+              legend style={at={(0.03,0.97)}, anchor=north west, font=\figfont},
+              legend cell align=left,
+            ]
+            % compound: $3,000 at 6% compounded monthly
+            \addplot[very thick, magenta, mark=square*, mark size=2.5pt] coordinates {
+              (0,3000) (5,4046.55) (10,5458.19) (15,7362.28)
+              (20,9930.61) (25,13394.91) (30,18067.73) (35,24370.65)};
+            % simple: $3,000 at 6% simple interest ($15 per month)
+            \addplot[very thick, CustomB2, mark=diamond*, mark size=3.5pt] coordinates {
+              (0,3000) (5,3900) (10,4800) (15,5700)
+              (20,6600) (25,7500) (30,8400) (35,9300)};
+            \legend{Compound, Simple}
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
       </image>
     </sidebyside>
     </subsection>

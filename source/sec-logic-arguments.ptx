@@ -120,11 +120,37 @@
 			In general, an <term>inductive argument</term><idx><h>argument</h><h>inductive</h></idx><idx><h>inductive argument</h><see>argument, inductive</see></idx> uses a collection of <em>specific</em> examples (e.g., observations or data) as its premises and uses them to propose a <em>general</em> conclusion. This is shown in the image on the left below, where the argument moves from the narrow specific premises at the bottom up to the wide general conclusion at the top. A <term>deductive argument</term><idx><h>argument</h><h>deductive</h></idx><idx><h>deductive argument</h><see>argument, deductive</see></idx> uses a collection of <em>general statements</em> (e.g., definitions or rules) as its premises and uses them to propose a <em>specific conclusion</em>. This is shown in the image to the right below, where the argument moves from the wide general premises at the bottom to the narrow specific conclusion at the top.
 		</p>
 		<sidebyside widths="40% 40%">
-			<image source="images/logic/ind_ded_argument1.png">
+			<image>
 			<shortdescription>A pyramid upside down with the narrow end at the bottom for a specific premise, the middle section is another specific premise; the wide part at the top is for the general conclusion</shortdescription>
+				<latex-image>
+					\begin{tikzpicture}[font=\figfont, align=center,
+							band/.style={draw=CustomB2, thick, top color=CustomB1!25, bottom color=CustomB1!55}]
+						% inverted triangle: tip at (0,0), top edge at y=4.8, half-width = 2y/3
+						\path[band] (0,0) -- (1.333,2) -- (-1.333,2) -- cycle;
+						\path[band] (-1.333,2) -- (1.333,2) -- (2.267,3.4) -- (-2.267,3.4) -- cycle;
+						\path[band] (-2.267,3.4) -- (2.267,3.4) -- (3.2,4.8) -- (-3.2,4.8) -- cycle;
+						\node at (0,1.45) {Specific\\ Premise};
+						\node at (0,2.7) {Specific Premise};
+						\node at (0,4.1) {General Conclusion};
+						\node at (0,-0.9) {\textbf{Inductive Argument}\\ (Specific to General)};
+					\end{tikzpicture}
+				</latex-image>
 			</image>
-			<image source="images/logic/ind_ded_argument2.png">
+			<image>
 			<shortdescription>A pyramid right-side up with the wide base at the bottom for a general premise; another general premise in the middle section, and a specific conclusion in the narrow part at the top</shortdescription>
+				<latex-image>
+					\begin{tikzpicture}[font=\figfont, align=center,
+							band/.style={draw=CustomB2, thick, top color=CustomB1!25, bottom color=CustomB1!55}]
+						% triangle: base at y=0, apex at (0,4.8), half-width = 2(4.8-y)/3
+						\path[band] (-3.2,0) -- (3.2,0) -- (2.267,1.4) -- (-2.267,1.4) -- cycle;
+						\path[band] (-2.267,1.4) -- (2.267,1.4) -- (1.333,2.8) -- (-1.333,2.8) -- cycle;
+						\path[band] (-1.333,2.8) -- (1.333,2.8) -- (0,4.8) -- cycle;
+						\node at (0,3.35) {Specific\\ Conclusion};
+						\node at (0,2.1) {General Premise};
+						\node at (0,0.7) {General Premise};
+						\node at (0,-0.9) {\textbf{Deductive Argument}\\ (General to Specific)};
+					\end{tikzpicture}
+				</latex-image>
 			</image>
 		</sidebyside>
 		<example>

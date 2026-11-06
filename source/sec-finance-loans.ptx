@@ -55,8 +55,24 @@
       <!-- <p> </p> paragraph contains non-breaking space -->
       <figure xml:id="fig-amortization-cartoon">
         <caption>How much should Carlos invest now to be able to withdraw two payments of $1,000 at the end of the next two years and end with a zero account balance?</caption>
-        <image xml:id="tigz-amortization-cartoon" width="85%" source="images/financial_math/amortization-cartoon_300.png">
+        <image xml:id="tigz-amortization-cartoon" width="85%">
           <description><p>A timeline from 0 to 2 years: a deposit of $P at time 0, and withdrawals of $1,000 at the end of years 1 and 2.</p></description>
+          <latex-image>
+            \begin{tikzpicture}[font=\figfont, x=3cm, y=1cm]
+              % timeline with year ticks
+              \draw[thick] (0,0) -- (2,0);
+              \foreach \x in {0,1,2}
+                \draw[thick] (\x,0) -- (\x,0.25) node[above] {\x};
+              % row labels, right-aligned left of the timeline
+              \node[anchor=east] at (-0.15,0.55) {Time (years)};
+              \node[anchor=east] at (-0.15,-0.8) {Deposit of Present Value:};
+              \node[anchor=east] at (-0.15,-1.7) {Withdrawals for Payments:};
+              % amounts under the matching year
+              \node at (0,-0.8) {\$P};
+              \node at (1,-1.7) {\$1,000};
+              \node at (2,-1.7) {\$1,000};
+            \end{tikzpicture}
+          </latex-image>
         </image>
       </figure>
       <p>
@@ -168,8 +184,40 @@
     </p>
     <figure xml:id="fig-installment-loan-interest-principal">
       <caption>Interest and principal paid each year on a 10-year, $34,000 loan at 10% APR with monthly payments of $449.31 ($5,391.72 per year). In the first year, $3,305.92 went to interest and $2,085.80 to principal; in the last year, only $281.04 went to interest and $5,110.68 to principal. Over 10 years, a total of $53,917.20 was paid on the $34,000 loan.</caption>
-      <image width="85%" source="images/financial_math/interest_principal.png">
-        <description><p>A graph that shows how most of the payment goes to interest at the beginning of the loan and that decreases over time until the end of the loan when most of the payment goes toward the principal.</p></description>
+      <image width="85%">
+        <description><p>A stacked bar graph with one bar for each year of the loan, each bar the same height ($5,391.72 paid that year). The interest part of each bar shrinks from about $3,306 in year 1 to about $281 in year 10, while the principal part grows from about $2,086 to about $5,111: most of the payment goes to interest at the beginning of the loan and most goes to principal at the end.</p></description>
+        <latex-image>
+          \begin{tikzpicture}[font=\figfont]
+          \begin{axis}[
+              ybar stacked,
+              bar width=0.6cm,
+              width=12cm, height=8cm,
+              axis lines=left,
+              axis line style={thick, -}, tick style={thick},
+              xmin=0.3, xmax=10.7,
+              ymin=0, ymax=6000,
+              xtick={1,...,10},
+              ytick={0,1000,...,6000},
+              yticklabel={\$\pgfmathprintnumber[1000 sep={,}]{\tick}},
+              scaled y ticks=false,
+              ymajorgrids=true,
+              xlabel={Year of loan},
+              ylabel={Amount paid that year},
+              ticklabel style={font=\figfont},
+              legend style={at={(0.5,1.03)}, anchor=south, legend columns=-1,
+                draw=none, font=\figfont, /tikz/every even column/.append style={column sep=0.5cm}},
+            ]
+            % yearly interest and principal: $34,000 at 10% APR, 120 payments of $449.31
+            \addplot[fill=CustomB1, draw=black] coordinates {
+              (1,3306.13) (2,3087.74) (3,2846.49) (4,2579.95) (5,2285.52)
+              (6,1960.28) (7,1600.97) (8,1204.01) (9,765.50) (10,281.08)};
+            \addplot[fill=orange!35, draw=black] coordinates {
+              (1,2085.59) (2,2303.98) (3,2545.23) (4,2811.77) (5,3106.20)
+              (6,3431.44) (7,3790.75) (8,4187.71) (9,4626.22) (10,5110.64)};
+            \legend{Interest, Principal}
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
     </image>
     </figure>
     <p>
