@@ -7,17 +7,17 @@
 			<ul>
 				<li>
 					<p>
-						Make a probability model
+						Make a probability model.
 					</p>
 				</li>
 				<li>
 					<p>
-						Calculate the expected value for a probability model
+						Calculate the expected value for a probability model.
 					</p>
 				</li>
 				<li>
 					<p>
-						Determine whether a game is fair
+						Determine whether a game is fair.
 					</p>
 				</li>
 			</ul>
@@ -25,14 +25,14 @@
 
 	<introduction>
 		<p>
-			Finding the <term>expected value</term> is a useful application of probability. It has many applications, from insurance policies to making financial decisions, and it's a topic that the casinos and government agencies that run gambling operations and lotteries may hope most people never learn about!
+			Expected value is one of the most useful ideas in probability. It has many applications, from insurance policies to making financial decisions, and it's a topic that the casinos and government agencies that run gambling operations and lotteries may hope most people never learn about!
 		</p>
 	</introduction>
 
 	<subsection xml:id="subsec-probability-models">
 		<title>Probability Models</title>
 		<p>
-			Before we can compute an expected value, we need to understand what a <term>probability distribution</term> (also called a <term>probability model</term>) is. The example below will help illustrate this concept and show how a distribution might arise. We will then use this example to introduce and develop the idea of expected value.
+			Before we can compute an expected value, we need to understand what a probability distribution (also called a probability model) is. The example below will help illustrate this concept and show how a distribution might arise. We will then use this example to introduce and develop the idea of expected value.
 		</p>
 		<p>
 			Suppose you are commissioned to design a game for the annual College Place Block Party to raise money for the Blue Mountain Humane Society. In your proposed game, players roll a six-sided die. If they roll a 6 on the first try, they win $10. If they roll any other number, they get a second chance. 
@@ -45,7 +45,7 @@
 			One way to do this is with a probability model. A <term>probability model</term> or <term>probability distribution</term> is a table listing all possible outcomes and their corresponding probabilities. The outcomes are the amounts a player can win, and we will calculate the probabilities using what we have learned about theoretical probability.
 		</p>
 		<p>
-			Here is the probability model for the carnival game. Note that the probabilities in a probability distribution must add to 1.
+			Here is the probability model for the Block Party game. Note that the probabilities in a probability distribution must add to 1.
 		</p>
 		<tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
 			<row header="yes">
@@ -73,7 +73,7 @@
 	<subsection xml:id="subsec-probability-expected-val">
 		<title>Expected Value</title>
 		<p>
-			Think of the expected value as a weighted average. In the Block Party example above, we could take the average of $10, $3, and $0, but they are not all equally likely. It is much more likely to win $0 than it is to win $10. So, to find the average, we multiply each outcome by the chance it will happen and add the products together. This is the <term>expected value</term> of the game.
+			Think of the expected value as a weighted average. In the Block Party example above, we could take the average of $10, $3, and $0, but they are not all equally likely. It is much more likely to win $0 than it is to win $10. So, to find the average, we multiply each outcome by the chance it will happen and add the products together. This is the expected value of the game.
 		</p>
 		<assemblage xml:id="assemblage-expected-value">
 			<title>Expected Value</title>
@@ -85,58 +85,58 @@
 			For the Block Party example we have:
 			<md>
 				<mrow> \text{Expected winnings} \amp= \$10\left(\frac{1}{6}\right)+\$3\left(\frac{5}{36}\right)+\$0\left(\frac{25}{36}\right) </mrow>
-				<mrow> \amp =\$2.08 </mrow>
+				<mrow> \amp \approx\$2.08 </mrow>
 			</md>
 			This tells us that, over the long run, players can expect to win $2.08 per game. This also means that the game organizer will be paying out an average of $2.08 per game. Since the game is intended to be a fundraiser, the organizers need to charge <em>more</em> than $2.08 per game in order to raise money.
 		</p>
 		<p>
-			If the game organizers charge exactly $2.08 to play, the game is considered a <term>fair game</term> since the expected winnings would be $0. In a fair game, the player isn't expected to win anything, nor is the owner expected to earn anything over the long run. However, if organizers charge the player more than $2.08 to play, they will earn money over the long run.
+			If the game organizers charge exactly the expected value (about $2.08) to play, the game is considered a <term>fair game</term> since the expected net winnings would be $0. In a fair game, the player isn't expected to win anything, nor is the owner expected to earn anything over the long run. However, if organizers charge the player more than $2.08 to play, they will earn money over the long run.
 		</p>
 		<p>
-			Suppose you suggest charging $5 to play the game. We can determine the net winnings by subtracting the $5 the player has to pay from their expected winnings. This gives us:
+			Suppose you suggest charging $5 to play the game. We can determine the expected net winnings by subtracting the $5 the player has to pay from their expected winnings. This gives us:
 			<md>
-				<mrow>\text{Net player winnings}\amp=\$2.08-\$5</mrow>
-				<mrow> \amp=-\$2.92 </mrow>
+				<mrow>\text{Expected net winnings}\amp=\$2.08-\$5</mrow>
+				<mrow> \amp=-\$2.92. </mrow>
 			</md>
-			This means that, over the long run, players can expect to lose an average of $2.92 per game, while the organizers can expect to fundraise an average of $2.92 per game.
+			This means that, over the long run, players can expect to lose an average of $2.92 per game, while the organizers can expect to raise an average of $2.92 per game.
 		</p>
 		<example>
 			<statement>
 				<p>
-					Pick4 is a game by the Oregon Lottery that costs $1 to play. In this game you pick 4 numbers in a specific pattern. If the chosen number matches the winning number exactly, the player receives a big payout. Smaller payouts are possible for other matching conditions. Suppose that the payouts are as follows. Determine the player's expected net winnings.
+					A state lottery sells a $1 ticket with the prizes and probabilities shown below. (This game is made up, but its payouts are similar to those of real lottery games.) Determine the player's expected net winnings.
 				</p>
 				<tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
-						<cell><alert>Prize ($)</alert></cell>
-						<cell><alert>Probability</alert></cell>
+						<cell>Prize ($)</cell>
+						<cell>Probability</cell>
 					</row>
 					<row>
-						<cell>$250</cell>
+						<cell>$50</cell>
 						<cell><m>\sfrac{1}{417}</m></cell>
 					</row>
 					<row>
-						<cell>$500</cell>
-						<cell><m>\sfrac{1}{1833}</m></cell>
+						<cell>$100</cell>
+						<cell><m>\sfrac{1}{833}</m></cell>
 					</row>
 					<row>
-						<cell>$1000</cell>
+						<cell>$200</cell>
 						<cell><m>\sfrac{1}{1667}</m></cell>
 					</row>
 					<row>
-						<cell>$1500</cell>
+						<cell>$300</cell>
 						<cell><m>\sfrac{1}{2500}</m></cell>
 					</row>
 				</tabular>
 			</statement>
 			<solution>
 				<p>
-					The provided table is not quite a complete probability distribution since it is missing one important outcome: when the player loses. In that case the prize is $0. We need to add a line for this. The prize for this missing outcome is $0, and since losing is the complement to winning <em>something</em>, the probability will be:
+					The provided table is not quite a complete probability distribution since it is missing one important outcome: when the player loses. In that case the prize is $0, so we need to add a row for it. Since losing is the complement to winning <em>something</em>, the probability will be:
 				</p>
 				<p>
 					<md>
-						<mrow>P(\text{Win }\$0)\amp=1-(\frac{1}{417}+\frac{1}{1833}+\frac{1}{1667}+\frac{1}{2500})</mrow>
-						<mrow>\amp=1-0.0039</mrow>
-						<mrow>\amp=0.9961</mrow>
+						<mrow>P(\text{Win }\$0)\amp=1-\left(\frac{1}{417}+\frac{1}{833}+\frac{1}{1667}+\frac{1}{2500}\right)</mrow>
+						<mrow>\amp\approx 1-0.0046</mrow>
+						<mrow>\amp=0.9954.</mrow>
 					</md>
 				</p>
 				
@@ -146,49 +146,49 @@
 
 				<tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
 					<row header="yes">
-						<cell><alert>Prize ($)</alert></cell>
-						<cell><alert>Probability</alert></cell>
+						<cell>Prize ($)</cell>
+						<cell>Probability</cell>
 					</row>
 					<row>
-						<cell>$250</cell>
+						<cell>$50</cell>
 						<cell><m>\sfrac{1}{417}</m></cell>
 					</row>
 					<row>
-						<cell>$500</cell>
-						<cell><m>\sfrac{1}{1833}</m></cell>
+						<cell>$100</cell>
+						<cell><m>\sfrac{1}{833}</m></cell>
 					</row>
 					<row>
-						<cell>$1000</cell>
+						<cell>$200</cell>
 						<cell><m>\sfrac{1}{1667}</m></cell>
 					</row>
 					<row>
-						<cell>$1500</cell>
+						<cell>$300</cell>
 						<cell><m>\sfrac{1}{2500}</m></cell>
 					</row>
 					<row>
 						<cell>$0</cell>
-						<cell>0.9961</cell>
+						<cell>0.9954</cell>
 					</row>
 				</tabular>
 				<p>
 					<md>
-					<mrow>\text{Expected winnings}\amp=\$250\left(\frac{1}{417}\right)+\$500\left(\frac{1}{1833}\right)</mrow>
-					<mrow>\amp +\$1000\left(\frac{1}{1667}\right)+\$1500\left(\frac{1}{2500}\right) </mrow>
-					<mrow>\amp +\$0(0.9961)</mrow>
-					<mrow> \amp </mrow>
-					<mrow>\amp =\$2.07</mrow>
+					<mrow>\text{Expected winnings}\amp=\$50\left(\frac{1}{417}\right)+\$100\left(\frac{1}{833}\right)</mrow>
+					<mrow>\amp +\$200\left(\frac{1}{1667}\right)+\$300\left(\frac{1}{2500}\right) </mrow>
+					<mrow>\amp +\$0(0.9954)</mrow>
+					<mrow>\amp \approx \$0.12+\$0.12+\$0.12+\$0.12+\$0</mrow>
+					<mrow>\amp =\$0.48.</mrow>
 				</md>
 				</p>
 				<p>
-					Therefore, the player's expected winnings are $2.07 on average over the long run. To find the expected <alert>net</alert> winnings, we subtract the cost to play. Since it costs $1 to play,
+					Therefore, the player's expected winnings are $0.48 on average over the long run. To find the expected <em>net</em> winnings, we subtract the cost to play. Since it costs $1 to play,
 				</p>
 				<p>
 					<md>
-					<mrow>\text{Net Expected Winnings}= \$2.07 - \$1.00 = \$1.07.</mrow>
+					<mrow>\text{Expected net winnings}= \$0.48 - \$1.00 = -\$0.52.</mrow>
 					</md>
 				</p>
 				<p>
-					Assuming the given payouts are correct, this would be one game you would want to play for investment purposes since you can expect to earn $1.07 per game, on average, over the long run. Play a million times, and you just might become a millionaire!
+					Over the long run, a player can expect to lose about 52 cents for every dollar spent on this game. Play a million times, and you can expect to lose about $520,000! That 52 cents per ticket is what the lottery keeps, on average, to pay its costs and fund state programs.
 				</p>
 			</solution>
 		</example>
@@ -199,12 +199,12 @@
 			Not surprisingly, the expected value for casino games is always negative for the player, and therefore positive for the casino. It must be positive for the casino, or they would go out of business! Players just need to keep in mind that when they play a game repeatedly, they should expect to lose money. That is fine so long as you enjoy playing the game and think it is worth the cost, but it would be wrong to expect to come out ahead.
 		</p>
 		<p>
-			Expected value is not only used to determine the average amount won and lost at casinos and carnivals, it also has applications in business and insurance, just to name a few. Let's look at a couple of those applications.
+			Expected value is used not only to determine the average amount won and lost at casinos and carnivals but also in business and insurance. Let's look at an example of each.
 		</p>
 		<example>
 			<statement>
 				<p>
-					For 3 months, a coffee shop tracked their morning sales of coffee, between 6am and 10am. The following results were recorded:
+					For 3 months, a coffee shop tracked its morning sales of coffee between 6 a.m. and 10 a.m. The following results were recorded:
 				</p>
 					<tabular row-headers="yes" halign="center" top="minor" left="minor" right="minor" bottom="minor">
 						<row>
@@ -230,7 +230,7 @@
 			</statement>
 			<solution>
 				<p>
-					In this case the table tells us that 15% of the time they sell 145 cups of coffee between 6am and 10am, 22% of the time they sell 150 cups, 37% of the time they sell 155 cups, 19% of the time they sell 160 cups, and 7% of the time they sell 170 cups. Since the highest probability is associated with 155 cups, the expected value should lie somewhat close to this.
+					In this case the table tells us that 15% of the time they sell 145 cups of coffee between 6 a.m. and 10 a.m., 22% of the time they sell 150 cups, 37% of the time they sell 155 cups, 19% of the time they sell 160 cups, and 7% of the time they sell 170 cups. Since the highest probability is associated with 155 cups, the expected value should lie somewhat close to this.
 				</p>
 				<p>
 					To find the expected number of coffees sold, we multiply each number of cups of coffee by its respective probability and then add the products.
@@ -240,7 +240,7 @@
 						<mrow> \text{Expected number of coffees sold}\amp=145(0.15)+150(0.22)</mrow>
 						<mrow> \amp +155(0.37)+160(0.19)</mrow>
 						<mrow> \amp +170(0.07)</mrow>
-						<mrow> \amp=154.4\text{ cups of coffee}</mrow>
+						<mrow> \amp=154.4\text{ cups of coffee.}</mrow>
 					</md>
 					This means that over the long run, the coffee shop can expect, on average, to sell around 154 cups of coffee each morning. This is an important tool for businesses since it helps inform them how much stock they should keep on hand.
 				</p>
@@ -254,7 +254,7 @@
 			</statement>
 			<solution>
 				<p>
-					The first thing we want to do is organize the probabilities and outcomes in a probability distribution table. There are two outcomes<mdash/>either the policy holder dies, and the insurance company pays the benefit, or the policy holder does not die, and they do not pay anything. 
+					The first thing we want to do is organize the probabilities and outcomes in a probability distribution table. There are two outcomes<mdash/>either the policyholder dies, and the insurance company pays the benefit, or the policyholder does not die, and the company pays nothing. 
 				</p>
 				<p>
 					The probability of paying the death benefit is equal to the chance of the person dying in the next year, and the probability of paying nothing is equal to the complement of the chance of dying in the next year.
@@ -265,7 +265,7 @@
 							<cell>Probability</cell>
 						</row>
 						<row>
-							<cell>$100000</cell>
+							<cell>$100,000</cell>
 							<cell><m>0.00242</m></cell>
 						</row>
 						<row>
@@ -278,21 +278,21 @@
 				</p>
 				<p>
 					<md>
-					<mrow>\text{Expected Payout}\amp=\$100000(0.00242)+\$0(0.99758)</mrow>
-					<mrow>\amp =\$242</mrow>
+					<mrow>\text{Expected payout}\amp=\$100{,}000(0.00242)+\$0(0.99758)</mrow>
+					<mrow>\amp =\$242.</mrow>
 					</md>
 				</p>
 				<p>
-					So, the expected payout for the insurance company is $242, but they are charging $275 for the policy. Their net revenue would be
+					So, the expected payout for the insurance company is $242, but they are charging $275 for the policy. Their expected net revenue is
 				</p>
 				<p>
 					<md>
-					<mrow>\text{Net Value to Insurance Company}\amp=\$275-\$242</mrow>
-					<mrow> \amp=\$33</mrow>
+					<mrow>\text{Expected net revenue}\amp=\$275-\$242</mrow>
+					<mrow> \amp=\$33.</mrow>
 				</md>
 				</p>
 				<p>
-					The insurance company is making, on average, $33 per policy per year. It shouldn't be too surprising because there are overhead costs and the insurance company can only afford to offer policies if they, on average, make money on them. But how much money should they make? As a consumer, it is important to know about expected value.
+					The insurance company is making, on average, $33 per policy per year. This isn't surprising: the company has overhead costs and can only afford to offer policies if it makes money on them, on average. But how much money should it make? As a consumer, you should know about expected value.
 				</p>
 			</solution>
 		</example>
