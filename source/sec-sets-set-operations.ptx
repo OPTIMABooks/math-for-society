@@ -39,7 +39,7 @@
 		<definition>
 			<statement>
 				<p>
-					A <term>set</term> is an unordered collection of distinct objects, called the <term>elements</term> (or <term>members</term>) of the set.
+					A <term>set</term><idx>sets</idx> is an unordered collection of distinct objects, called the <term>elements</term><idx><h>sets</h><h>element</h></idx> (or <term>members</term><idx><h>member (of a set)</h><see>sets, element</see></idx>) of the set.
 				</p>
 			</statement>
 		</definition>
@@ -49,7 +49,7 @@
 		<title>Set Notation</title>
 		<p>
 			A set can be defined by describing its contents or by listing its elements. Sets are usually named with capital letters, and braces { } are used to enclose the set's elements. 
-			The method of listing the elements of a set in braces is called <term>roster notation</term>. A second method uses <term>set-builder notation</term>, where braces and a vertical line | (read <q>such that</q>) describe the set's contents.
+			The method of listing the elements of a set in braces is called <term>roster notation</term><idx>roster notation</idx><idx><h>sets</h><h>roster notation</h></idx>. A second method uses <term>set-builder notation</term><idx>set-builder notation</idx><idx><h>sets</h><h>set-builder notation</h></idx>, where braces and a vertical line | (read <q>such that</q>) describe the set's contents.
 		</p>
 		<p>
 			To say that an object <m>x</m> is an element of a set <m>A</m>, we write <m>x \in A</m>; if it is not, we write <m>x \notin A</m>. For example, <m>4 \in \{0,2,4,6,8\}</m>, but <m>5 \notin \{0,2,4,6,8\}</m>.
@@ -119,14 +119,14 @@
 		<definition xml:id="def-subset">
 			<statement>
 				<p>
-					Let <m>A</m> and <m>B</m> be two sets. Then <m>A</m> is a <term>subset</term> of <m>B</m>, written <m>A\subseteq B</m>, if and only if every element of <m>A</m> is also an element of <m>B</m>.
+					Let <m>A</m> and <m>B</m> be two sets. Then <m>A</m> is a <term>subset</term><idx>subset</idx><idx><h>sets</h><h>subset</h></idx> of <m>B</m>, written <m>A\subseteq B</m>, if and only if every element of <m>A</m> is also an element of <m>B</m>.
 				</p>
 			</statement>
 		</definition>
 		<definition>
 			<statement>
 				<p>
-					Let <m>A</m> and <m>B</m> be two sets. We say that <m>A</m> is <term>equal</term> to <m>B</m>, written <m>A = B</m>, if and only if <m>A\subseteq B</m> and <m>B\subseteq A</m>. This means that <m>A</m> and <m>B</m> contain the same elements.
+					Let <m>A</m> and <m>B</m> be two sets. We say that <m>A</m> is <term>equal</term><idx><h>sets</h><h>equal</h></idx> to <m>B</m>, written <m>A = B</m>, if and only if <m>A\subseteq B</m> and <m>B\subseteq A</m>. This means that <m>A</m> and <m>B</m> contain the same elements.
 				</p>
 			</statement>
 		</definition>
@@ -151,18 +151,18 @@
 			</p>
 		</example>
 		<p>
-			It is possible to have a set with nothing in it. This set is called the <term>null set</term> or <term>empty set</term>. It is like going to the grocery store to buy your favorite foods and realizing you left your wallet at home. 
+			It is possible to have a set with nothing in it. This set is called the <term>null set</term><idx><h>null set</h><see>empty set</see></idx> or <term>empty set</term>. It is like going to the grocery store to buy your favorite foods and realizing you left your wallet at home. 
 			You walk away with an empty bag. The set of items that you bought at the grocery store would be written in set notation as <m>\emptyset</m>. The empty set is a subset of every set.
 		</p>
 		<definition>
 			<statement>
 				<p>
-					The set that contains no elements is called the <term>empty set</term> and is denoted <m>\emptyset</m>.
+					The set that contains no elements is called the <term>empty set</term><idx>empty set</idx><idx><h>sets</h><h>empty set</h></idx> and is denoted <m>\emptyset</m>.
 				</p>
 			</statement>
 		</definition>
 		<p>
-			In applications of sets, the elements that may be considered are often limited to some context, or <term>universe of discourse</term>. This context is called the <term>universal set</term> and is the set containing every possible element of the described context. Every set is thus a subset of the universal set.
+			In applications of sets, the elements that may be considered are often limited to some context, or <term>universe of discourse</term><idx><h>universe of discourse</h><see>universal set</see></idx>. This context is called the <term>universal set</term> and is the set containing every possible element of the described context. Every set is thus a subset of the universal set.
 		</p>
 		<p>
 			When represented visually, the universal set is often illustrated by a rectangle labeled with a capital letter <m>U</m>. Subsets of the universal set are usually illustrated with circles for simplicity, but other shapes can be used. The visual representation of sets is further discussed in <xref text="title" ref="subsec-sets-Venn-diagrams"/>.
@@ -170,7 +170,7 @@
 		<definition>
 			<statement>
 				<p>
-					The <term>universal set</term> <m>U</m> is defined to be the set of all elements under consideration.
+					The <term>universal set</term><idx>universal set</idx><idx><h>sets</h><h>universal set</h></idx> <m>U</m> is defined to be the set of all elements under consideration.
 				</p>
 			</statement>
 		</definition>
@@ -365,9 +365,7 @@
 		</p>
 		<definition xml:id="def_venn-diagram">
 	  	<idx>Venn diagram</idx>
-	  	<idx>universal set</idx>
 	  	<idx><h>sets</h><h>Venn diagram</h></idx>
-	  	<idx><h>sets</h><h>universal set</h></idx>
 	  	<statement>
 	  		<p>
 					A <term>Venn diagram</term> is a picture used to represent sets and their relationships.  Each set is represented by a circle, with the area inside the circle representing the elements that are in the set.  The entire diagram is enclosed in a rectangle representing the set of all possible elements, called the <term>universal set</term>.
