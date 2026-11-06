@@ -249,7 +249,7 @@
 		<example>
 			<statement>
 				<p>
-					On average, a 40-year-old man in the US has a 0.242% chance of dying in the next year<fn>According to the estimator at <url href="http://www.numericalexample.com/index.php?view=article;&amp;ampid=91" visual="numericalexample.com/index.php?view=article;&amp;ampid=91"/></fn>. An insurance company charges $275 annually for a life insurance policy that pays a $100,000 death benefit. What is the expected value for the insurance company on this policy?
+					On average, a 40-year-old man in the US has a 0.3115% chance of dying in the next year<fn>According to the Social Security Administration's Actuarial Life Table, <url href="https://www.ssa.gov/oact/STATS/table4c6.html" visual="ssa.gov/oact/STATS/table4c6.html"/>.</fn>. An insurance company charges $350 annually for a life insurance policy that pays a $100,000 death benefit. What is the expected value for the insurance company on this policy?
 				</p>
 			</statement>
 			<solution>
@@ -266,11 +266,11 @@
 						</row>
 						<row>
 							<cell>$100,000</cell>
-							<cell><m>0.00242</m></cell>
+							<cell><m>0.003115</m></cell>
 						</row>
 						<row>
 							<cell>$0</cell>
-							<cell><m>1-0.00242=0.99758</m></cell>
+							<cell><m>1-0.003115=0.996885</m></cell>
 						</row>
 					</tabular>
 				<p>
@@ -278,21 +278,21 @@
 				</p>
 				<p>
 					<md>
-					<mrow>\text{Expected payout}\amp=\$100{,}000(0.00242)+\$0(0.99758)</mrow>
-					<mrow>\amp =\$242.</mrow>
+					<mrow>\text{Expected payout}\amp=\$100{,}000(0.003115)+\$0(0.996885)</mrow>
+					<mrow>\amp =\$311.50.</mrow>
 					</md>
 				</p>
 				<p>
-					So, the expected payout for the insurance company is $242, but they are charging $275 for the policy. Their expected net revenue is
+					So, the expected payout for the insurance company is $311.50, but they are charging $350 for the policy. Their expected net revenue is
 				</p>
 				<p>
 					<md>
-					<mrow>\text{Expected net revenue}\amp=\$275-\$242</mrow>
-					<mrow> \amp=\$33.</mrow>
+					<mrow>\text{Expected net revenue}\amp=\$350-\$311.50</mrow>
+					<mrow> \amp=\$38.50.</mrow>
 				</md>
 				</p>
 				<p>
-					The insurance company is making, on average, $33 per policy per year. This isn't surprising: the company has overhead costs and can only afford to offer policies if it makes money on them, on average. But how much money should it make? As a consumer, you should know about expected value.
+					The insurance company is making, on average, $38.50 per policy per year. This isn't surprising: the company has overhead costs and can only afford to offer policies if it makes money on them, on average. But how much money should it make? As a consumer, you should know about expected value.
 				</p>
 			</solution>
 		</example>
