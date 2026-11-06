@@ -30,7 +30,7 @@
 		<definition xml:id="def-sets-cardinality">
 			<statement>      
 				<p>
-					The number of elements in a set is called the <term>cardinality</term> of the set. The cardinality of set <m>A</m> is denoted <m>\lvert A \rvert</m> or <m>n(A)</m>.
+					The number of elements in a set is called the <term>cardinality</term><idx>cardinality</idx><idx><h>sets</h><h>cardinality</h></idx> of the set. The cardinality of set <m>A</m> is denoted <m>\lvert A \rvert</m> or <m>n(A)</m>.
 				</p>
 			</statement>
 		</definition>
