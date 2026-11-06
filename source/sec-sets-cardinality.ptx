@@ -169,7 +169,7 @@
 			</statement>
 		</fact>
 		<p>
-			(Some texts call this the <term>addition rule</term>.)
+			(This is also called the <term>addition law</term>; its probability version is the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref> in <xref ref="sec-probability-basics"/>. It is not the same as the <xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> in <xref ref="sec-set-multiplication-principle"/>, which applies only when the sets do not overlap.)
 		</p>
 		<definition xml:id="def_mutually-exclusive">
 	  	<idx>mutually exclusive</idx>

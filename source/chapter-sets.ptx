@@ -17,12 +17,12 @@
 			</li>
 			<li>
 				<p>
-					Use the addition rule to count the number of elements in the union of two sets.
+					Use the inclusion-exclusion rule (also called the addition law) to count the number of elements in the union of two sets.
 				</p>
 			</li>
 			<li>
 				<p>
-					Use counting to solve 3-set problems.
+					Use a Venn diagram to solve counting problems involving three sets.
 				</p>
 			</li>
 			<li>
@@ -40,14 +40,19 @@
 					Illustrate, compute, and interpret conditional probabilities, including Bayesian problems.
 				</p>
 			</li>
-      <li>
-        <p>
-          Distinguish between mutually exclusive and independent events.
-        </p>
-      </li>
+			<li>
+				<p>
+					Distinguish between mutually exclusive and independent events.
+				</p>
+			</li>
 			<li>
 				<p>
 					Solve counting problems using combined methods.
+				</p>
+			</li>
+			<li>
+				<p>
+					Construct a probability model and compute its expected value.
 				</p>
 			</li>
 		</ul>
@@ -55,8 +60,8 @@
 
 	<introduction>
 		<p>
-			Sets, counting, and probability are fundamental concepts in mathematics that are deeply interconnected. Sets provide a structured way to group objects, forming the basis for understanding collections and relationships. Counting techniques, such as permutations and combinations, allow us to determine the number of ways elements can be arranged or selected from sets. 
-      Probability builds on these principles by quantifying the likelihood of events occurring within a given set. Taken together, these topics form a cohesive framework for analyzing and predicting outcomes in various scenarios, from simple games to complex scientific experiments.
+			Sets, counting, and probability are fundamental concepts in mathematics that are deeply interconnected. Sets provide a structured way to group objects, forming the basis for understanding collections and relationships. Counting techniques, such as permutations and combinations, allow us to determine the number of ways elements can be arranged or selected from sets.
+			Probability builds on these principles by quantifying how likely an event is, using the set of all possible outcomes. Expected value then combines probabilities with payoffs to measure what happens on average over many repetitions, such as whether a game is fair. Taken together, these topics form a cohesive framework for analyzing and predicting outcomes in various scenarios, from simple games to complex scientific experiments.
 		</p>
 	</introduction>
 
