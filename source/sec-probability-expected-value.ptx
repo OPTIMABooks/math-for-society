@@ -42,7 +42,7 @@
 			To make a profit, the organizers need to know how much they will pay in winnings, on average, over the long run and charge more than that amount. In other words, they must charge more than the <em>expected value</em> of the game. To figure out the average winnings, you need to tabulate all the possible outcomes of the game.
 		</p>
 		<p>
-			One way to do this is with a probability model. A <term>probability model</term> or <term>probability distribution</term> is a table listing all possible outcomes and their corresponding probabilities. The outcomes are the amounts a player can win, and we will calculate the probabilities using what we have learned about theoretical probability.
+			One way to do this is with a probability model. A <term>probability model</term><idx><h>probability model</h><see>probability distribution</see></idx> or <term>probability distribution</term><idx>probability distribution</idx><idx><h>probability</h><h>distribution</h></idx> is a table listing all possible outcomes and their corresponding probabilities. The outcomes are the amounts a player can win, and we will calculate the probabilities using what we have learned about theoretical probability.
 		</p>
 		<p>
 			Here is the probability model for the Block Party game. Note that the probabilities in a probability distribution must add to 1.
@@ -78,7 +78,7 @@
 		<assemblage xml:id="assemblage-expected-value">
 			<title>Expected Value</title>
 			<p>
-				To find the <term>expected value</term> of an experiment, multiply each possible outcome by its probability and sum the products.
+				To find the <term>expected value</term><idx>expected value</idx><idx><h>probability</h><h>expected value</h></idx> of an experiment, multiply each possible outcome by its probability and sum the products.
 			</p>
 		</assemblage>
 		<p>
@@ -90,7 +90,7 @@
 			This tells us that, over the long run, players can expect to win $2.08 per game. This also means that the game organizer will be paying out an average of $2.08 per game. Since the game is intended to be a fundraiser, the organizers need to charge <em>more</em> than $2.08 per game in order to raise money.
 		</p>
 		<p>
-			If the game organizers charge exactly the expected value (about $2.08) to play, the game is considered a <term>fair game</term> since the expected net winnings would be $0. In a fair game, the player isn't expected to win anything, nor is the owner expected to earn anything over the long run. However, if organizers charge the player more than $2.08 to play, they will earn money over the long run.
+			If the game organizers charge exactly the expected value (about $2.08) to play, the game is considered a <term>fair game</term><idx>fair game</idx> since the expected net winnings would be $0. In a fair game, the player isn't expected to win anything, nor is the owner expected to earn anything over the long run. However, if organizers charge the player more than $2.08 to play, they will earn money over the long run.
 		</p>
 		<p>
 			Suppose you suggest charging $5 to play the game. We can determine the expected net winnings by subtracting the $5 the player has to pay from their expected winnings. This gives us:
