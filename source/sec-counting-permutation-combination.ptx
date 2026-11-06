@@ -7,12 +7,12 @@
 		<ul>
 			<li>
 				<p>
-					Use Permutations to solve counting problems.
+					Use permutations to solve counting problems.
 				</p>
 			</li>
 			<li>
 				<p>
-					Use Permutations to solve counting problems.
+					Use combinations to solve counting problems.
 				</p>
 			</li>
 		</ul>
@@ -26,7 +26,7 @@
 	<subsection xml:id="subsec-counting-factorial">
 		<title>Factorials</title>
 		<p>
-			The following example shows how the <term>factorial</term> is a special case of the <xref ref="thm_counting-rule_multiplication" text="custom"> multiplication principle</xref>.
+			The following example shows how the <term>factorial</term> is a special case of the <xref ref="thm_counting-rule_multiplication" text="custom">multiplication principle</xref>.
 		</p>
 		<example xml:id="ex_counting_factorial_dolls">
 			<title>Arranging Items</title>
@@ -38,10 +38,10 @@
 			<solution>
 				<p>This is an example of the multiplication rule using the following steps.
 					<ol>
-						<li><p>Choose which of the 4 items to place first (4 choices)</p></li>
-						<li><p>Choose which of the 3 remaining items to place 2nd (3 choices)</p></li>
-						<li><p>Choose which of the 2 remaining items to place 3rd (2 choices left)</p></li>
-						<li><p>Choose which of the 1 remaining items to place at the end of the row (only one choice).</p></li>
+						<li><p>Choose which of the 4 items to place first (4 choices).</p></li>
+						<li><p>Choose which of the 3 remaining items to place 2nd (3 choices).</p></li>
+						<li><p>Choose which of the 2 remaining items to place 3rd (2 choices).</p></li>
+						<li><p>Place the last item at the end of the row (1 choice).</p></li>
 					</ol>
 					Therefore, according to the multiplication rule, the number of orderings is:
 					<me> 4\times 3\times 2 \times 1 = 24</me>.
@@ -55,7 +55,7 @@
 			<idx>factorial</idx>
 			<statement>
 				<p>
-					For any positive integer <m>n</m>, <m>n!</m> (read <q><m>n</m> <em>factorial</em></q>) is the product of the numbers between <m>1</m> and <m>n</m>. That is:
+					For any positive integer <m>n</m>, <m>n!</m> (read <q><m>n</m> <em>factorial</em></q>) is the product of the integers from <m>1</m> to <m>n</m>. That is:
 					<me>
 						n! = n\times(n-1)\times \cdots \times 2\times 1
 					</me>.
@@ -95,12 +95,12 @@
 		<example>
 			<statement>
 				<p>
-					Six WWU students line up for a photo that will appear in the local paper. The photographer arranges them in a line down the steps of Meske Hall. How many different ways can the student be arranged?
+					Six WWU students line up for a photo that will appear in the local paper. The photographer arranges them in a line down the steps of Meske Hall. How many different ways can the students be arranged?
 				</p>
 			</statement>
 			<solution>
 				<p>
-					Because each student can only be placed in one position, the number of students decreases with each choice. That is, 6 students can be on the top step, but then only 5 remain to be selected for the second step, 4 for the third step, and so on. Thus, there are
+					Because each student can only be placed in one position, the number of students left to place decreases with each choice. That is, any of the 6 students can be on the top step, but then only 5 remain to be selected for the second step, 4 for the third step, and so on. Thus, there are
 					<me>
 						6! = 6\times 5\times 4\times 3\times 2\times 1 = 720
 					</me>
@@ -141,7 +141,7 @@
 		<definition xml:id="def-permutation-in-words">
 			<statement>
 				<p>
-					A <term>permutation</term> of a set of elements is an ordered arrangement where each element is used once. 
+					A <term>permutation</term> of a set of elements is an ordered arrangement of some or all of the elements, with each element used at most once. 
 				</p>
 			</statement>
 		</definition>
@@ -150,13 +150,13 @@
 			<idx><h>counting rules</h><h>permutation</h></idx>
 			<statement>
 				<p>
-					A <term>permutation of n items taken r at a time</term> is used to count the number of ways to arrange (or permute) <m>r</m> items chosen from <m>n</m> possible items. The formula for this permutation is:
+					The number of <term>permutations of <m>n</m> items taken <m>r</m> at a time</term>, written <m>P(n,r)</m>, is the number of ways to arrange (or permute) <m>r</m> items chosen from <m>n</m> possible items. The formula is:
 					<me>
 						P(n,r) = \frac{n!}{(n-r)!}
 					</me>.
 			</p>
 			<p>
-				<alert>Note:</alert> Scientific calculators have built-in permutation functions. If you're unsure how to use yours or whether to use it instead of the formula above, ask your instructor for guidance.
+				<alert>Note:</alert> Scientific calculators have built-in permutation functions, usually labeled <c>nPr</c>. If you're unsure how to use yours or whether to use it instead of the formula above, ask your instructor for guidance.
 			</p>
 			</statement>
 		</fact>
@@ -192,7 +192,7 @@
 		</ul>
 		Additionally, the formula shown in <xref ref="fact-permutation-formula"/> algebraically reduces to the following form,
 		<me>
-			P(n,r) = \underbrace{n\times (n-1) \times \cdots \times (n-r+1)}_{r \text { items}}
+			P(n,r) = \underbrace{n\times (n-1) \times \cdots \times (n-r+1)}_{r \text{ factors}}
 		</me>,
 		which looks like the multiplication rule.  You may find this easier to use than the version written with factorials.
 		</p>
@@ -203,7 +203,7 @@
 			Permutations are useful when the order in which we select objects matters<mdash/>as in running a race or creating a schedule. However, order does not always matter. In such cases, we need to change the way we count. This important distinction is illustrated in the following example.
 		</p>
 		<example xml:id="ex_counting_combination_movies">
-			<title>Counting when Order Doesn't Matter</title>
+			<title>Counting When Order Doesn't Matter</title>
 			<statement>
 				<p>
 					You have two extra movie tickets and want to invite two of your four good friends to join you. In how many different ways can you choose which friends to take to the movies?
@@ -211,7 +211,7 @@
 			</statement>
 			<solution>
 				<p>
-					Suppose your friends' names are: Alice, Bob, Candace, and David. If you try to count the number of ways you could invite two friends using a permutation, you get:
+					Suppose your friends' names are Alice, Bob, Candace, and David. If you try to count the number of ways you could invite two friends using a permutation, you get:
 					<me>
 						P(4,2) = 4\times 3 = 12
 					</me>.
@@ -241,8 +241,8 @@
 					</tabular>
 				</table>
 				<p>
-					Notice that each pair appears twice. For example, AB and BA are counted separately but these two pairs represent inviting the same group of friends to a movie. This is because in a permutation, the order in which we hand out the tickets makes a difference. 
-					But really, we don't care who got the first ticket; we just want to know who is going. Since there are two of each possible pairs, the actual number of ways to pick the two friends to go with us is:
+					Notice that each pair appears twice. For example, AB and BA are counted separately but these two pairs represent inviting the same group of friends to a movie. This is because in a permutation, the order in which you hand out the tickets makes a difference. 
+					But really, you don't care who got the first ticket; you just want to know who is going. Since each pair appears twice, the actual number of ways to pick the two friends to go with you is:
 					<me>
 						\frac{P(4,2)}{P(2,2)} = \frac{12}{2} = 6
 					</me>.
@@ -251,19 +251,19 @@
 			</solution>
 		</example>
 		<p>
-			In the example above, we arrived at the final solution using two steps. First, we counted the number of ways to pick the friends to go with us if the order did matter, in this case it was 12. Then we counted the number of ways that those two friends could be arranged, which was 2. 
-			Finally, we divide the 12 ordered ways by the 2 different orderings to get a total of 6 ways to choose our two friends if the order does not matter. This process can be combined into a single counting rule called a combination.
+			In the example above, we arrived at the final solution using two steps. First, we counted the number of ways to pick the friends to go with you if the order did matter (12). Then we counted the number of ways that those two friends could be arranged, which was 2. 
+			Finally, we divide the 12 ordered ways by the 2 different orderings to get a total of 6 ways to choose your two friends if the order does not matter. This process can be combined into a single counting rule called a combination.
 		</p>
 		<fact xml:id="fact_counting-rule_combination">
 			<idx>combination</idx>
 			<idx><h>counting rules</h><h>combination</h></idx>
 			<statement>
 				<p>
-					A <term>combination of n items taken r at a time </term> is used to count the number of ways to choose <m>r</m> items from <m>n</m> possible items if the order in which we select them does not matter. The formula for this combination is:
+					The number of <term>combinations of <m>n</m> items taken <m>r</m> at a time</term>, written <m>C(n,r)</m>, is the number of ways to choose <m>r</m> items from <m>n</m> possible items if the order in which we select them does not matter. The formula is:
 					<me>C(n,r) = \frac{P(n,r)}{r!} = \frac{n!}{r!(n-r)!}</me>.
 				</p>
 				<p>
-					<alert>Note:</alert> Scientific calculators also have built-in combination functions. Ask your instructor for help finding this if appropriate.
+					<alert>Note:</alert> Scientific calculators also have built-in combination functions, usually labeled <c>nCr</c>. Ask your instructor for help finding this if appropriate.
 				</p>
 			</statement>
 		</fact>
@@ -282,7 +282,7 @@
 			</statement>
 			<solution>
 				<p>
-					The order in which a subcommittee is selected does not matter<mdash/>a person is either on the committee or not on the committee. Therefore, this is a combination and the solution is:
+					The order in which a subcommittee is selected does not matter<mdash/>a person is either on the subcommittee or not on the subcommittee. Therefore, this is a combination and the solution is:
 					<me>
 						C(10,3) = \frac{10!}{3!(10-3)!} = \frac{10\times 9\times 8 \times 7!}{3!\times 7!} = \frac{10\times 9\times 8}{3\times 2\times 1} = 120
 					</me>.
@@ -293,12 +293,13 @@
 			As with permutations, there are a few general rules that combinations follow no matter what the value of <m>n</m> is. Several of these rules are shown below.
 		  <ul>
 		  	<li><p><m>C(n,n) = 1</m></p></li>
+		  	<li><p><m>C(n,0) = 1</m></p></li>
 		  	<li><p><m>C(n,1) = n</m></p></li>
 		  	<li><p><m>C(n,r) = C(n,n-r)</m></p></li>
 		  </ul>
-			The definition of the combination shown above simplifies to a form you may find easier to use: 
+			The combination formula shown above simplifies to a form you may find easier to use: 
 		 	<me> 
-				C(n,r) = \frac{\overbrace{n\times (n-1) \times \cdots \times (n-r+1)}^{r \text{ values}}}{r!}
+				C(n,r) = \frac{\overbrace{n\times (n-1) \times \cdots \times (n-r+1)}^{r \text{ factors}}}{r!}
 			</me>.
 		</p>
 	</subsection>
@@ -312,11 +313,11 @@
 			<idx><h>counting rules</h><h>combining</h></idx>
 				<p>
 					<ol>
-						<li><p>If the things you are counting come in two distinct groups, count each group, then add together the results. (<xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> <mdash/> goes with <q>or</q>)</p></li>
-						<li><p>If there is overlap between the two groups, remember to subtract the intersection. (<xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion/exclusion rule</xref>)</p></li>
+						<li><p>If the things you are counting come in two groups that don't overlap, count each group, then add together the results. (<xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> <mdash/> goes with <q>or</q>)</p></li>
+						<li><p>If there is overlap between the two groups, remember to subtract the intersection. (<xref ref="fact-sets-inclusion-exclusion-rule" text="custom">inclusion-exclusion rule</xref>)</p></li>
 						<li><p>If the process you are counting can be broken down into steps, count the number of ways each step can be performed and multiply. (<xref ref="thm_counting-rule_multiplication" text="custom">multiplication rule</xref> <mdash/> goes with <q>and</q>)</p></li>
-						<li><p>If you are arranging things or selecting multiple items and the order of selection matters, use a permutation. (<xref ref="fact-permutation-formula">permutation rule</xref>).</p></li>
-						<li><p>If you are selecting multiple items from a group of items and the order in which you pick them does not matter, use a combination. (<xref ref="fact_counting-rule_combination" text="custom">combination rule</xref>).</p></li>
+						<li><p>If you are arranging things or selecting multiple items and the order of selection matters, use a permutation. (<xref ref="fact-permutation-formula" text="custom">permutation rule</xref>)</p></li>
+						<li><p>If you are selecting multiple items from a group of items and the order in which you pick them does not matter, use a combination. (<xref ref="fact_counting-rule_combination" text="custom">combination rule</xref>)</p></li>
 					</ol>
 				</p>
 		</assemblage>
@@ -329,7 +330,7 @@
 				<p>The front row of Professor Jackson's classroom has only 4 seats, and there are 8 students who wish to sit in them. In how many ways can the seats be assigned?</p>
 			</statement>
 			<solution>
-				<p>In a seating chart, the order would matter. Therefore, this must a permutation, and the solution is:
+				<p>In a seating chart, the order would matter. Therefore, this must be a permutation, and the solution is:
 					<me>
 						P(8,4) = 8\times 7\times 6\times 5 = 1680
 					</me>.
@@ -369,16 +370,16 @@
 			<title>Counting by Combining Objects</title>
 			<statement>
 				<p>
-					Trains arrive at a station in random order from Berlin, Munich, Salzberg, Vienna, and Hamburg. In how many ways can the trains arrive so that the train from Berlin arrives immediately after the train from Salzberg?
+					Trains arrive at a station in random order from Berlin, Munich, Salzburg, Vienna, and Hamburg. In how many ways can the trains arrive so that the train from Berlin arrives immediately after the train from Salzburg?
 				</p>
 			</statement>
 			<solution>
 				<p>
 					This problem specifically mentions the order of the trains, so the order will matter. However, we are not asked in how many ways the trains can arrive in general, which would be 
 					<me>
-						P(5,5) = 5!
+						P(5,5) = 5! = 120
 					</me>.
-					Instead, we specify that the Berlin and Salzberg train must arrive one after the other. Symbolically, we want to arrange the following four trains in order: BS, M, V, H. BS is listed together because of the condition mentioned above. We can order these in 
+					Instead, the Salzburg train must arrive immediately before the Berlin train. Treat that pair as a single block, SB, and arrange the four units SB, M, V, H. The order inside the block is fixed (Salzburg, then Berlin), so we do not multiply by 2. We can order the four units in 
 					<me>
 						P(4,4) = 4! = 24
 					</me> 
@@ -397,14 +398,14 @@
 				<p>
 					This is actually the most challenging problem in this section. The reason is that we have to use both the multiplication rule to split the process into steps and the addition rule to split the process into cases. Here's how we do it:
 					<ul>
-						<li><title>Case 1</title><p>Pick two sandwiches from 8 sandwiches and 2 from the remaining 9 items
+						<li><title>Case 1: exactly two sandwiches</title><p>Pick 2 of the 8 sandwiches and 2 of the 9 non-sandwich items (salads and chips)
 						  <me>C(8,2)\times C(9,2) = \frac{8\times 7}{2\times 1}\times\frac{9\times 8}{2\times 1} = 1008</me>.</p></li>
-						<li><title>Case 2</title><p>Pick three sandwiches from 8 available and 1 item from remaining 9
+						<li><title>Case 2: exactly three sandwiches</title><p>Pick 3 of the 8 sandwiches and 1 of the 9 non-sandwich items
 						  <me>C(8,3)\times C(9,1) = \frac{8\times 7\times 6}{3\times 2\times 1} \times 9 = 504</me>.</p></li>
-						<li><title>Case 3</title><p>Pick four sandwiches from 8 available and none of the remaining 9 items
+						<li><title>Case 3: exactly four sandwiches</title><p>Pick 4 of the 8 sandwiches and none of the 9 non-sandwich items
 						  <me>C(8,4)\times C(9,0) = \frac{8\times 7\times 6\times 5}{4\times 3\times 2\times 1}\times 1 = 70</me>.</p></li>
 					</ul>
-					Note that these three cases are mutually exclusive based on the number of sandwiches chosen, and that a picnic basket with at least two sandwiches would fall into one of these cases. So using the addition rule, the total number of picnic baskets is:
+					Note that these three cases are mutually exclusive based on the number of sandwiches chosen, and that a picnic basket with at least two sandwiches would fall into exactly one of these cases. So using the addition rule, the total number of picnic baskets is:
 					<me>
 						1008 + 504 + 70 = 1582
 					</me>.
