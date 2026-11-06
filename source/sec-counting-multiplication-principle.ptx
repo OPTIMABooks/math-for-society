@@ -20,34 +20,34 @@
 
 	<introduction>
 		<p>
-			In the previous section, we explored the art of counting by examining the number of elements in finite sets. Building on that foundation, particularly the inclusion-exclusion principle, we now introduce our first result: the addition rule. Following our discussion on the addition rule, we will further expand our counting techniques by introducing and applying another foundational tool, the multiplication principle.
+			In the previous section, we explored the art of counting by examining the number of elements in finite sets. Building on that foundation, particularly the inclusion-exclusion rule, we now introduce our first result: the addition rule. Following our discussion of the addition rule, we will further expand our counting techniques by introducing and applying another foundational tool, the multiplication principle.
 		</p>
 	</introduction>
 	<subsection>
 		<title>The Addition Rule</title>
 		<p>
-			The <term>addition rule</term> is a reformulation of the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule"> Inclusion-Exclusion Rule</xref> for <xref text="custom" ref="def_mutually-exclusive"> mutually exclusive</xref> sets.
+			The <term>addition rule</term> is a reformulation of the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule">inclusion-exclusion rule</xref> for <xref text="custom" ref="def_mutually-exclusive">mutually exclusive</xref> sets.
 		</p>
 		<principle xml:id="thm_counting-rule_addition-informal">
 			<title>Addition Rule</title>
 			<statement>
 				<p>
-					The <term>addition rule</term> states that if a process can occur in one of two distinct ways, where the first way has <m>n</m> possibilities and the second way has <m>m</m> possibilities, then the entire process can occur in <m>n+m</m> ways.
+					The <term>addition rule</term> states that if the things being counted fall into two distinct cases that don't overlap, with <m>n</m> possibilities in the first case and <m>m</m> in the second, then there are <m>n+m</m> possibilities in all.
 				</p>
 			</statement>
 		</principle>
 		<p>
-			Note that the addition rule can be extended to include processes or tasks that require <m>k</m> steps. In that case, if there are <m>n_1</m> ways to complete the first step, <m>n_2</m> ways to complete the second, and so forth, then there are 
+			Note that the addition rule can be extended to processes that can occur in one of <m>k</m> distinct, non-overlapping ways. If there are <m>n_1</m> possibilities of the first kind, <m>n_2</m> of the second, and so forth, then there are 
 			<me>
 				n_1 + n_2 + \cdots + n_k
 			</me>
-			total ways to complete the task. 
+			total possibilities. 
 			To see this common-sense counting rule in action, consider the following example.
 		</p>
 		<example xml:id="ex_counting_addition-informal">
 			<title>Using the Addition Rule</title>
 			<statement>
-				<p>You have won a church raffle. The winning ticket entitles you to choose either one of eight possible home-made pies, or one of six types of home-made cakes. In how many ways can you make your choice?</p>
+				<p>You have won a church raffle. The winning ticket entitles you to choose either one of eight possible homemade pies or one of six types of homemade cakes. In how many ways can you make your choice?</p>
 			</statement>
 			<solution>
 				<p>
@@ -56,7 +56,7 @@
 			</solution>
 		</example>
 		<p>
-			The addition rule is useful for counting mutually exclusive cases. For non-mutually exclusive scenarios, use <xref text="custom" ref="fact-sets-inclusion-exclusion-rule"> Inclusion-Exclusion Rule</xref>.
+			The addition rule is useful for counting mutually exclusive cases. For non-mutually exclusive scenarios, use the <xref text="custom" ref="fact-sets-inclusion-exclusion-rule">inclusion-exclusion rule</xref>.
 		</p>
 	</subsection>
 	<subsection xml:id="sec_counting_multiplication">
@@ -69,12 +69,12 @@
 			<idx><h>counting rules</h><h>multiplication</h></idx>
 			<statement>
 				<p>
-					The <term>multiplication rule</term> states that if a task consists of two steps where step one can happen in <m>n_1</m> ways and step two can happen in <m>n_2</m> ways, then the entire task can be done in <m>n_1 \times n_2</m> different ways.
+					The <term>multiplication rule</term> (also called the <term>multiplication principle</term>) states that if a task consists of two steps where step one can happen in <m>n_1</m> ways and step two can happen in <m>n_2</m> ways, then the entire task can be done in <m>n_1 \times n_2</m> different ways.
 				</p>
 			</statement>
 		</principle>
 		<p>
-			<alert>Note:</alert> The multiplication rule can be expanded to processes that include <m>k</m> stages, the <m>i^\text{th}</m> of which can happen in <m>n_i</m> ways, then the total number of ways the task can be done is:
+			<alert>Note:</alert> If a process has <m>k</m> steps and the <m>i^\text{th}</m> step can happen in <m>n_i</m> ways, then the total number of ways the process can be done is:
 			<me>
 				n_1 \times n_2 \times \cdots \times n_k
 			</me>.
@@ -105,7 +105,7 @@
 			</statement>
 			<solution>
 				<p> 
-					Selecting a meal requires three steps::
+					Selecting a meal requires three steps:
 					<ol>
 						<li><p>Choosing a sandwich from 4 options,</p></li>
 						<li><p>Choosing a drink from 5 options,</p></li>
@@ -138,9 +138,9 @@
 					Note that the tree has 6 <em>leaves</em> <mdash></mdash> the number of outfits (outcomes) predicted by the multiplication rule.
 				</p>
 				<figure xml:id="fig_counting_multiplication_2-step">
-					<caption>Tree diagram illustrating the 6 outcomes possible in <xref ref="ex_counting_multiplication_2-step"/>..</caption>
+					<caption>Tree diagram illustrating the 6 outcomes possible in <xref ref="ex_counting_multiplication_2-step"/>.</caption>
 					<image xml:id="tikz-ex-counting-tree-2-step" width="55%">
-						<shortdescription>A tree diagram with one branch from the starting point for each of of two pairs of pants, and three branches from each pair or pants, one for each clean shirt (1 through 3).</shortdescription>
+						<shortdescription>A tree diagram with one branch from the starting point for each of two pairs of pants, and three branches from each pair of pants, one for each clean shirt (1 through 3).</shortdescription>
 						<latex-image>
 							% Tree options
 							% Set the overall layout of the tree
@@ -171,7 +171,7 @@
 			</solution>
 		</example>
 		<p>
-			The next example demonstrates that while a tree diagram faithfully represents a counting problem that uses the multiplication principle, it can be very large and unwieldy to use!
+			The next example demonstrates that while a tree diagram faithfully represents a counting problem that uses the multiplication rule, it can be very large and unwieldy to use!
 		</p>
 		<example>
 			<statement>
@@ -181,19 +181,19 @@
 			</statement>
 			<solution>
 				<p>
-					Sixty branches makes this tree inconvenient to use, though it does visually represent all possible lunch options. For problems with many levels or options, the multiplication rule is a more efficient way to solve counting problems.
+					Sixty branches at the last level make this tree inconvenient to use, though it does visually represent all possible lunch options. For problems with many levels or options, the multiplication rule is a more efficient way to solve counting problems.
 				</p>
 				<figure xml:id="fig_counting_multiplication_3-step">
 					<caption>Tree diagram showing all 60 outcomes possible in <xref ref="ex_counting_multiplication_3-step"/>.</caption>
 					<!-- For unknown reasons, the tikz code for this image won't create an SVG file in Pretext (the file is blank). To update this diagram, edit /assets/images/sets_and_prob/tikz-source/tree-3-step-code_v1.tex (or v2) and turn the resulting PDF into a PNG file. -->
 					<image xml:id="tikz-ex-counting-tree-3-step" width="85%" source="images/sets_and_prob/tree-3-step-code_v1.png">
-						<shortdescription>A tree diagram with one branch from the starting point for each of four sandwich options, and five branches from each sandwich option representing drinks, and three from each drink representing drink choices. This leads to 60 total options, which agrees with the multiplication rule.</shortdescription>
+						<shortdescription>A tree diagram with one branch from the starting point for each of four sandwich options, and five branches from each sandwich option representing drinks, and three from each drink representing dessert choices. This leads to 60 total options, which agrees with the multiplication rule.</shortdescription>
 					</image>
 				</figure>
 			</solution>
 		</example>
 		<p>
-			Notice that in a tree diagram we represent a particular sequence of choices by following a path through the tree. For example, in the second tree diagram, going along the second branch to sandwich 2, then the first branch to drink 1, and then the third branch to dessert 3 gives us one complete lunch option. The total number of possible lunches is the same as the total number of branches at the last step.
+			Notice that in a tree diagram we represent a particular sequence of choices by following a path through the tree. For example, in <xref ref="fig_counting_multiplication_3-step"/>, going along the second branch to sandwich 2, then the first branch to drink 1, and then the third branch to dessert 3 gives us one complete lunch option. The total number of possible lunches is the same as the total number of branches at the last step.
 		</p>
 		<p>
 			There are some instances where the number of choices we have at a given step depends on the choice we made at the previous step. In these cases, the multiplication rule will not work. However, as shown in the next example, a tree diagram can still be a useful tool for counting the total number of ways to complete such a process.
@@ -213,7 +213,7 @@
 						</ol>
 					</p>
 					<figure xml:id="fig_counting_multiplication_ex_unbalanced-tree">
-						<caption>Vacations.</caption>
+						<caption>Tree diagram of the six vacation packages.</caption>
 						<image xml:id="image_counting_multiplication_ex_unbalanced-tree">
 							<shortdescription> A tree with one branch from the starting point for each destination, Hawaii, Florida, and Alaska.  Hawaii has two branches for its two resorts, Florida has three branches for its three resorts, and Alaska has one branch.</shortdescription>
 							<latex-image>
@@ -244,8 +244,9 @@
 					</figure>
 				</sidebyside>
 				<p>
-					Since the number of options in Step 2 depends on the choice made in Step 1, we cannot apply the multiplication rule directly. Instead, we use a tree diagram, as shown above. This diagram illustrates how the number of available choices varies based on the selected destination. 
+					Since the number of options in step 2 depends on the choice made in step 1, we cannot apply the multiplication rule directly. Instead, we use a tree diagram, as shown above. This diagram illustrates how the number of available choices varies based on the selected destination. 
 					Notice that there are six branches at the final level of the tree, indicating six distinct vacation package combinations. The tree diagram effectively captures the conditional nature of the choices and helps visualize all possible outcomes.
+					Equivalently, the destinations split the packages into three cases that don't overlap, so by the addition rule there are <m>2+3+1=6</m> packages.
 				</p>
 			</solution>
 		</example>
