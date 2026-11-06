@@ -7,27 +7,27 @@
 			<ul>
 			<li>
 				<p>
-					Define and identify the population, parameter, sample, and statistic
+					Define and identify the population, parameter, sample, and statistic.
 				</p>
 			</li>
 			<li>
 				<p>
-					Identify four sampling methods: simple random sample (SRS), stratified, systematic and convenience
+					Identify five sampling methods: simple random, systematic, stratified, cluster, and convenience.
 				</p>
 			</li>
 			<li>
 				<p>
-					Identify and discuss types of bias association with sampling
+					Identify and discuss types of bias associated with sampling.
 				</p>
 			</li>
 			<li>
 				<p>
-					Distinguish between experimental and observational studies
+					Distinguish between experimental and observational studies.
 				</p>
 			</li>
 			<li>
 				<p>
-					Explain margin of error and confidence intervals
+					Explain margin of error and confidence intervals.
 				</p>
 			</li>
 		</ul>
@@ -42,7 +42,7 @@
 				<ul>
 					<li>
 						<p>
-							4 out of 5 dentists recommend Dentyne chewing gum.
+							4 out of 5 dentists recommend Trident chewing gum.
 						</p>
 					</li>
 					<li>
@@ -77,7 +77,7 @@
 					</li>
 					<li>
 						<p>
-							There is an 80% chance that in a room full of 30 people that at least two people will share the same birthday.
+							In a room of 30 people, there is about a 71% chance that at least two share a birthday.
 						</p>
 					</li>
 					<li>
@@ -94,7 +94,7 @@
 	<subsection xml:id="subsec-statistics-populations">
 		<title>Populations and samples</title>
 		<p>
-			Before we begin gathering any data to analyze, we need to identify the population we are studying. The population of a study is the group we want to know something about. The <term>population</term> could be people, auto parts or tomato plants.
+			Before we begin gathering any data to analyze, we need to identify the population we are studying. The <term>population</term> of a study is the group we want to know something about. The population could be people, auto parts, or tomato plants.
 		</p>
 		<p>
 			If we want to know the amount of money spent on textbooks by a typical college student, our population might be all students at Walla Walla University. Or it might be:
@@ -106,12 +106,12 @@
 				</li>
 				<li>
 					<p>
-						All freshman at private colleges in Oregon and Washington.
+						All freshmen at private colleges in Oregon and Washington.
 					</p>
 				</li>
 				<li>
 					<p>
-						All students at colleges and universities in west coast states.
+						All students at colleges and universities in West Coast states.
 					</p>
 				</li>
 				<li>
@@ -119,12 +119,8 @@
 						All students at all colleges and universities in the entire United States.
 					</p>
 				</li>
-				<li>
-					<p>
-						And so on.
-					</p>
-				</li>
 			</ol>
+			And so on.
 		</p>
 		<p>
 			The intended population is sometimes called the <term>target population</term>. If we design our study badly, the collected data might not actually be representative of the intended population.
@@ -169,7 +165,7 @@
 			</statement>
 		</definition>
 		<p>
-			To get our <term>data</term>, we would then ask each student in the sample how much they spent on textbooks and record the answers, or <alert>raw data</alert>. Then we could calculate the average, which is our statistic. A <alert>statistic</alert> is a descriptive value calculated using data from a sample.
+			To get our data, we would then ask each student in the sample how much they spent on textbooks and record the answers, or <alert>raw data</alert>. Then we could calculate the average, which is our statistic. A <alert>statistic</alert> is a descriptive value calculated using data from a sample.
 		</p>
 		<definition xml:id="def_statistic">
 			<idx>statistic</idx>
@@ -185,7 +181,7 @@
 			</statement>
 			<solution>
 				<p>
-					<em>Population</em>: While the intended population of this survey is Walla Walla citizens, the effective population is everyone walking through Land Title Plaza. There is no reason to assume that these pedestrians are representative of all Walla Walla citizens. (In fact, many are probably out of town visitors!)
+					<em>Population</em>: While the intended population of this survey is Walla Walla citizens, the effective population is everyone walking through Land Title Plaza. There is no reason to assume that these pedestrians are representative of all Walla Walla citizens. (In fact, many are probably out-of-town visitors!)
 				</p>
 				<p>
 					<em>Parameter</em>: The parameter is what we want to know about the population, in this case the percentage of Walla Walla citizens who support the initiative.
@@ -232,11 +228,11 @@
 				</ul>
 			</p>
 			<p>
-				That said, one of the major contributing factors was that Ventura recruited a substantial amount of support from young people, particularly college students, who had never voted before and who registered specifically to vote in that election. The polls did not deem these young people likely voters (since in most cases young people have a lower rate of voter registration and a lower turnout rate for elections) so the polling samples were subject to <term>sampling bias</term>: they omitted a portion of the electorate that was weighted in favor of the winning candidate.
+				That said, one of the major contributing factors was that Ventura recruited a substantial amount of support from young people, particularly college students, who had never voted before and who registered specifically to vote in that election. The polls did not deem these young people likely voters (since in most cases young people have a lower rate of voter registration and a lower turnout rate for elections), so the polling samples were subject to <term>sampling bias</term>: they omitted a portion of the electorate that was weighted in favor of the winning candidate.
 			</p>
 		</example>
 		<p>
-			Identifying the population can be tricky, but once we know who we're studying, how do we choose a good sample? We want our sample statistic to accurately estimate the population parameter, which means we need a representative sample. Going back to our political polling example: we wouldn't expect accurate results if we only surveyed Starbucks customers or your TikTok followers<mdash/>groups might not reflect the broader voting population. So how can we select a sample that truly reflects the characteristics of our population?
+			Identifying the population can be tricky, but once we know who we're studying, how do we choose a good sample? We want our sample statistic to accurately estimate the population parameter, which means we need a representative sample. Going back to our political polling example: we wouldn't expect accurate results if we only surveyed Starbucks customers or your TikTok followers<mdash/>groups that might not reflect the broader voting population. So how can we select a sample that truly reflects the characteristics of our population?
 		</p>
 	</subsection>
 	<subsection xml:id="subsec_statistics_sampling_methods">
@@ -265,13 +261,13 @@
 				</p>
 			</example>
 			<p>
-				In practice, computers are better suited for this kind of task. Still, even a random sample might not perfectly reflect the population. For instance, if we repeatedly select samples of 100 student ID numbers from the basket, some samples might include a slightly higher number of students from one major or class year than others. Some samples might have more first-year students, while others might include more seniors. This natural difference from sample to sample is called <term>sampling variation</term>. When we want to ensure certain groups are represented, we need to use a different sampling method.
+				In practice, computers are better suited for this kind of task. Still, even a random sample might not perfectly reflect the population. For instance, if we repeatedly select samples of 100 student ID numbers from the basket, some samples might include a slightly higher number of students from one major or class year than others. Some samples might have more first-year students, while others might include more seniors. This natural difference from sample to sample is called <term>sampling variation</term>. When we want to ensure certain groups are represented, we need to use a different sampling method, such as a stratified sample (described below).
 			</p>
 		</subsubsection>
 		<subsubsection xml:id="subsubsec-statistics_sampling_systematic">
 			<title>Systematic Sample</title>
 			<p>
-				A <term>systematic sample</term> is particularly useful when the population from which we are sampling is already ordered. Examples of this include products coming off of an assembly line, or cars moving through a sobriety check point.
+				A <term>systematic sample</term> is particularly useful when the population from which we are sampling is already ordered. Examples of this include products coming off an assembly line, or cars moving through a sobriety checkpoint.
 			</p>
 			<definition xml:id="def_systematic_sample">
 				<idx><h>sample</h><h>systematic sample</h></idx>
@@ -281,7 +277,7 @@
 			</definition>
 			<example>
 				<p>
-					ASWWU is conducting a survey to find out whether WWU students would prefer different operating hours at the Atlas. To gather responses, student workers stand outside the Caf and survey the third student to exit the building, then every tenth student thereafter.
+					ASWWU is conducting a survey to find out whether WWU students would prefer different operating hours at the Atlas. To gather responses, student workers stand outside the Caf, randomly choose one of the first ten students to exit the building (say, the third), and then survey every tenth student after that.
 				</p>
 			</example>
 			<figure xml:id="fig_data_def_systematic-sample">
@@ -295,7 +291,7 @@
 							\foreach \num in {1,2,...,48} {
 									\draw[fill=gray] ({\num - 8*floor((\num-1) / 8)},{floor((\num-1) / 8)}) circle (0.3) node[white] {\num};
 							}
-							\foreach \num in {2,7,...,42} {
+							\foreach \num in {2,7,...,47} {
 									\draw[draw=red,thick] ({\num - 8*floor((\num-1) / 8)},{floor((\num-1) / 8)}) circle (0.4) node[yellow] {\num};
 							}
 						\end{tikzpicture}
@@ -316,14 +312,14 @@
 			</definition>
 			<example>
 				<p>
-					Suppose voter registration data for the state shows that the electorate consists of 39% Democrats, 37% Republicans, and 24% Independents. A political action group wishes to survey 1000 people about a particular initiative. To ensure the sample reflects this composition, a stratified sampling method is used. From a total sample of 1,000 voters, researchers randomly select 390 Democrats, 370 Republicans, and 240 Independents from their respective groups. This approach guarantees that each political affiliation is proportionally represented in the sample.
+					Suppose voter registration data for the state shows that the electorate consists of 39% Democrats, 37% Republicans, and 24% Independents. A political action group wishes to survey 1,000 people about a particular initiative. To ensure the sample reflects this composition, a stratified sampling method is used. From a total sample of 1,000 voters, researchers randomly select 390 Democrats, 370 Republicans, and 240 Independents from their respective groups. This approach guarantees that each political affiliation is proportionally represented in the sample.
 				</p>
 			</example>
 			<figure xml:id="fig_data_def_stratified-sample">
 				<caption>Stratified Sample: Three subjects are sampled from each stratum</caption>
 				<image width="75%" xml:id="image_data_def_stratified-sample">
 					<shortdescription>
-						The dots have been divided into six groups, and then two dots are randomly selected from each group to form the sample.
+						The dots have been divided into six groups, and then three dots are randomly selected from each group to form the sample.
 					</shortdescription>
 					<latex-image>
 						\begin{tikzpicture}[font=\figfont]
@@ -368,7 +364,7 @@
 		<subsubsection xml:id="subsubsec-statistics_sampling_cluster">
 			<title>Cluster Sample</title>
 			<p>
-				The difference between a <term>cluster sample</term> and a <term>stratified sample</term> lies in how the groups are used. In a stratified sample, the population is divided into groups (strata), and a random sample is taken from each group. In contrast, a cluster sample involves dividing the population into clusters, then randomly selecting entire clusters and including all individuals within those clusters in the sample.
+				The difference between a <term>cluster sample</term> and a stratified sample lies in how the groups are used. In a stratified sample, the population is divided into groups (strata), and a random sample is taken from each group. In contrast, a cluster sample involves dividing the population into clusters, then randomly selecting entire clusters and including all individuals within those clusters in the sample.
 			</p>
 			<definition xml:id="def_cluster_sample">
 				<idx><h>sample</h><h>cluster sample</h></idx>
@@ -448,11 +444,11 @@
 			Samples are collected from populations for two main reasons. The first is to conduct an <alert>observational study</alert><mdash/>a study based on observations or measurements. These may be <q>solicited</q>, such as in surveys or polls, or <q>unsolicited</q>, like observing how many drivers turn right at a red light despite a <q>no turn on red</q> sign.
 		</p>
 		<p>
-			The second reason is to perform an <alert>experiment</alert>, where a <alert>treatment</alert> is applied to subjects to observe their response. In experiments, isolating the effect of the treatment is crucial to ensure valid results. The following example gives examples of treatments.
+			The second reason is to perform an <alert>experiment</alert>, where a <alert>treatment</alert> is applied to subjects to observe their response. In experiments, isolating the effect of the treatment is crucial to ensure valid results. The following examples describe treatments.
 		</p>
 		<example>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
 							A pharmaceutical company tests a new medicine for treating Alzheimer's disease by administering the drug to 50 elderly patients with recent diagnoses. The treatment here is the new drug.
@@ -470,10 +466,10 @@
 					</li>
 					<li>
 						<p>
-							Suppose a middle school finds that their students are not scoring well on the state's standardized math test. They decide to run an experiment to see if a new curriculum would improve scores. To run the test, they hire a math specialist to come in and teach a class using the new curriculum. To their delight, they see an improvement in test scores.
+							Suppose a middle school finds that its students are not scoring well on the state's standardized math test. They decide to run an experiment to see if a new curriculum would improve scores. To run the test, they hire a math specialist to come in and teach a class using the new curriculum. To their delight, they see an improvement in test scores.
 						</p>
 						<p>
-							The difficulty with the last scenario is that it is not clear whether the new curriculum or the math specialist is responsible for the improvement. This is called confounding and it is the downfall of many experiments, though it is often hidden.
+							The difficulty with the last scenario is that it is not clear whether the new curriculum or the math specialist is responsible for the improvement. This is called <term>confounding</term>, and it is the downfall of many experiments, though it is often hidden.
 						</p>
 					</li>
 				</ol>
@@ -501,7 +497,7 @@
 	<subsection>
 		<title>Statistical Bias</title>
 		<p>
-			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling</term> or <term>selection bias</term>, which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data is collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
+			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling bias</term> (or <term>selection bias</term>), which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data is collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
 			<ul>
 				<li>
 					<p>
@@ -541,14 +537,14 @@
 			</ul>
 		</p>
 		<p>
-			Sources of bias may be conscious or unconscious. They may be innocent or as intentional as pressuring by a pollster. Here are some examples of the types of bias.
+			Sources of bias may be conscious or unconscious. They may be innocent, or as intentional as a pollster pressuring respondents. Here are some examples of the types of bias.
 		</p>
 		<example>
 			<p>
-				<ol marker="a.">
+				<ol marker="a)">
 					<li>
 						<p>
-							Consider a recent study which found that chewing gum may raise math grades in teenagers.<fn>Reuters.<url href="https://www.reuters.com/article/lifestyle/chewing-gum-may-raise-math-grades-in-teens-idUSTRE53L793/" visual="reuters.com"/> Retrieved 5/27/25</fn> This study was conducted by the Wrigley Science Institute, a branch of the Wrigley chewing gum company. This is an example of a self-interest study; one in which the researchers have a vested interest in the outcome of the study. While this does not necessarily mean the study was biased, we should subject the study to extra scrutiny.
+							Consider a 2009 study which found that chewing gum may raise math grades in teenagers.<fn>Reuters. <url href="https://www.reuters.com/article/lifestyle/chewing-gum-may-raise-math-grades-in-teens-idUSTRE53L793/" visual="reuters.com"/> Retrieved 5/27/2025</fn> This study was conducted by the Wrigley Science Institute, a branch of the Wrigley chewing gum company. This is an example of a self-interest study: one in which the researchers have a vested interest in the outcome of the study. While this does not necessarily mean the study was biased, we should subject the study to extra scrutiny.
 						</p>
 					</li>
 					<li>
@@ -568,23 +564,23 @@
 					</li>
 					<li>
 						<p>
-							A survey asks, <q>Do you support funding research on alternative energy sources to reduce our reliance on high-polluting fossil fuels?</q> This is an example of a loaded or leading question<mdash/>questions whose wording leads the respondent towards a certain answer.
+							A survey asks, <q>Do you support funding research on alternative energy sources to reduce our reliance on high-polluting fossil fuels?</q> This is an example of a loaded or leading question<mdash/>one whose wording leads the respondent towards a certain answer.
 						</p>
 					</li>
 					<li>
 						<p>
-							A poll was conducted by phone with the question, “Do you often have time to relax and read a book?” Fifty percent of the people who were called refused to participate in the survey (Probably because they didn't have the time). It is unlikely that the results will be representative of the entire population. This is an example of non-response bias.
+							A poll was conducted by phone with the question, <q>Do you often have time to relax and read a book?</q> Fifty percent of the people who were called refused to participate in the survey (probably because they didn't have the time). It is unlikely that the results will be representative of the entire population. This is an example of non-response bias.
 						</p>
 					</li>
 				</ol>
 			</p>
 		</example>
 		<p>
-			Loaded questions can occur intentionally by pollsters with an agenda, or accidentally through poor question wording. A related concern is question order, where the order of questions changes the results. Here is an example from a psychology researcher:<fn>Schwartz, Norbert. <url href="https://web.archive.org/web/20050413172152/http://www.umich.edu/~newsinfo/MT/01/Fal01/mt6f01.html" visual="umich.edu"/> Retrieved 5/27/2025</fn>
+			Loaded questions can occur intentionally by pollsters with an agenda, or accidentally through poor question wording. A related concern is question order, where the order of questions changes the results. Here is an example from a psychology researcher:<fn>Schwarz, Norbert. <url href="https://web.archive.org/web/20050413172152/http://www.umich.edu/~newsinfo/MT/01/Fal01/mt6f01.html" visual="umich.edu"/> Retrieved 5/27/2025</fn>
 		</p>
 		<example>
 			<p>
-				<q>My favorite finding is this: we did a study where we asked students, 'How satisfied are you with your life? How often do you have a date?' The two answers were not statistically related; you would conclude that there is no relationship between dating frequency and life satisfaction. But when we reversed the order and asked, 'How often do you have a date? How satisfied are you with your life?' the statistical relationship was a strong one. You would now conclude that there is nothing as important in a student's life as dating frequency.</q>      
+				<q>My favorite finding is this: we did a study where we asked students, <q>How satisfied are you with your life? How often do you have a date?</q> The two answers were not statistically related; you would conclude that there is no relationship between dating frequency and life satisfaction. But when we reversed the order and asked, <q>How often do you have a date? How satisfied are you with your life?</q> the statistical relationship was a strong one. You would now conclude that there is nothing as important in a student's life as dating frequency.</q>      
 			</p>
 		</example>
 	</subsection>
@@ -594,15 +590,15 @@
 			Even when a study or experiment has successfully avoided bias and has been well done, there is still an element of variation. If we took 5 different random samples of 100 college students and calculated their average textbook cost, we wouldn't expect to get the exact same average for each sample. This is due to sampling variation. To account for this, researchers publish their margin of error or a confidence interval for their statistics. These numbers describe the precision of the estimate for a certain confidence level. 
 		</p>
 		<p>
-			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percent.</q> The 3% is called the <term>margin of error</term>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
+			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percentage points.</q> The 3 percentage points are called the <term>margin of error</term>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
 		</p>
 		<p>
-			The most common <term>confidence level</term> is 95%, which means if the poll was conducted repeatedly, and we made a confidence interval each time, we would expect the true percentage, or parameter, to fall within our confidence interval 95 out of 100 times. You can learn more on how to calculate the margin of error for different confidence levels in a statistics class.
+			The most common <term>confidence level</term> is 95%, which means if the poll were conducted repeatedly, and we made a confidence interval each time, we would expect about 95 out of every 100 of those intervals to contain the true percentage, or parameter. You can learn more on how to calculate the margin of error for different confidence levels in a statistics class.
 		</p>
 		<example>
 			<statement>
 				<p>
-					Let's say we asked a random sample of 100 students at Walla Walla University and found that they spent an average of $451.32 on books their first year, plus or minus $85.63. Write this as a confidence interval, assuming a 95% confidence level.
+					Let's say we asked a random sample of 100 students at Walla Walla University and found that they spent an average of $451.32 on textbooks last year, plus or minus $85.63. Write this as a confidence interval, assuming a 95% confidence level.
 				</p>
 			</statement>
 			<solution>
@@ -610,7 +606,7 @@
 					If the margin of error was calculated to be plus or minus $85.63, then with a confidence level of 95% we could say that the average amount spent by the population is somewhere between $365.69 and $536.95.
 				</p>
 				<p>
-					These values are found by computing <m>\$451.32 - \$85.63 = \$365.69</m> and <m>\$451.32 + \$85.63 = \$536.95</m>
+					These values are found by computing <m>\$451.32 - \$85.63 = \$365.69</m> and <m>\$451.32 + \$85.63 = \$536.95</m>.
 				</p>
 				<p>
 					We could also write this as a <alert>confidence interval</alert>: ($365.69, $536.95).
