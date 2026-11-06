@@ -781,8 +781,8 @@
 										}
 
 										% Establish precise coordinates for clean labeling (like first code)
-										\coordinate (left border) at (4.25,0);
-										\coordinate (right border) at (-4.25,0);
+										\coordinate (left border) at (4.6,0);
+										\coordinate (right border) at (-4.6,0);
 										\coordinate (l1) at (88.2:1.75);    % Anchovies
 										\coordinate (l2) at (70.2:1.0);     % Bacon
 										\coordinate (l3) at (15:1.3);       % Cheese
@@ -1322,7 +1322,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram A},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,
@@ -1365,7 +1365,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram B},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,
@@ -1410,7 +1410,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram C},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,
@@ -1453,7 +1453,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram D},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,
@@ -1498,7 +1498,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram E},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,
@@ -1541,7 +1541,7 @@ Stem | Leaf
 														xlabel={Class},
 														ylabel={Frequency},
 														title={\large\bfseries\figfont Histogram F},
-														ticklabel style={font=\small},
+														ticklabel style={font=\small\figfont},
 														enlargelimits=false,
 														clip=false,
 														grid = none,

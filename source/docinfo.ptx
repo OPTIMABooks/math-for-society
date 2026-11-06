@@ -54,6 +54,9 @@
       \usepackage[defaultsans]{opensans}
       \newcommand{\figfont}{\sffamily}
     \fi
+    % pgfplots numbers (tick labels, nodes near coords) as text, not math,
+    % so they take the axis's font=\figfont setting
+    \pgfplotsset{/pgf/number format/assume math mode=true}
   </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->
