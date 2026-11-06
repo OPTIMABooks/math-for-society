@@ -39,6 +39,7 @@
 			In each of these cases, we are measuring how likely a certain event is to take place. This is probability.
 		</p>
 		<definition xml:id="def-probability-branch-of-math">
+			<idx>probability</idx>
 			<statement>
 				<p>
 					<term>Probability</term> is the branch of mathematics that studies possible outcomes of events, their relative likelihoods, and how they are distributed.
@@ -49,7 +50,7 @@
 	<subsection>
 		<title>Theoretical Probability</title>
 		<p>
-			Probabilities calculated from observed data or simulated results are known as <term>experimental</term> (or <term>empirical</term>) <term>probabilities</term>. In contrast, when the likelihood (or chance) of an event is determined by analyzing all the possible outcomes and calculating the ratio of favorable outcomes to the total number of outcomes, it is referred to as <term>theoretical probability</term>. A third type of probability, called <term>subjective probability</term>, is essentially an educated guess based on personal experience or intuition. This section will primarily focus on theoretical probabilities.
+			Probabilities calculated from observed data or simulated results are known as <term>experimental</term> (or <term>empirical</term>) <term>probabilities</term><idx>experimental probability</idx><idx><h>empirical probability</h><see>experimental probability</see></idx><idx><h>probability</h><h>types</h><h>experimental</h></idx>. In contrast, when the likelihood (or chance) of an event is determined by analyzing all the possible outcomes and calculating the ratio of favorable outcomes to the total number of outcomes, it is referred to as <term>theoretical probability</term>. A third type of probability, called <term>subjective probability</term><idx>subjective probability</idx><idx><h>probability</h><h>types</h><h>subjective</h></idx>, is essentially an educated guess based on personal experience or intuition. This section will primarily focus on theoretical probabilities.
 		</p>
 		<definition xml:id="def_theoretical-probability">
 			<idx>theoretical probability</idx>
@@ -71,6 +72,9 @@
 			Before we can discuss the basic rules of probability, it is important to understand the terminology used. The terms we need to define are rooted in sets, which we discussed earlier in this chapter.  First, we need to define what we mean by an <term>experiment</term> in probability theory.
 		</p>
 		<definition xml:id="def-experiment_probability">
+			<idx>experiment</idx>
+			<idx><h>probability</h><h>experiment</h></idx>
+			<idx><h>trial</h><see>experiment</see></idx>
 			<statement>
 				<p>
 					An <term>experiment</term> or <term>trial</term> is any procedure that can be repeated any number of times and has a well-defined set of possible outcomes, known as the <term>sample space</term>.
@@ -310,6 +314,8 @@
 			The word <q>not</q> often appears in probability problems, and you likely have an instinctive understanding of how to deal with it. For example, suppose you were told there was a 40% chance (probability) of rain. What is the probability that it does not rain? That is right <mdash/> 60%!  This is the <term>complement rule</term>, which is closely related to the idea of the <xref ref="def_complement" text="custom">complement of a set</xref>, discussed in a previous section.
 		</p>
 		<definition xml:id="def-complement_event">
+			<idx><h>complement</h><h>of an event</h></idx>
+			<idx><h>probability</h><h>complement of an event</h></idx>
 			<statement>
 				<p>
 					The <term>complement</term> of an event <m>E</m> is the set of outcomes in the sample space that are not in <m>E</m>. That is, <m>E^C</m> is the event <q><m>E</m> didn't happen.</q>
