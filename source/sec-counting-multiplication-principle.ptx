@@ -185,9 +185,155 @@
 				</p>
 				<figure xml:id="fig_counting_multiplication_3-step">
 					<caption>Tree diagram showing all 60 outcomes possible in <xref ref="ex_counting_multiplication_3-step"/>.</caption>
-					<!-- For unknown reasons, the tikz code for this image won't create an SVG file in Pretext (the file is blank). To update this diagram, edit /assets/images/sets_and_prob/tikz-source/tree-3-step-code_v1.tex (or v2) and turn the resulting PDF into a PNG file. -->
-					<image xml:id="tikz-ex-counting-tree-3-step" width="85%" source="images/sets_and_prob/tree-3-step-code_v1.png">
+					<image xml:id="tikz-ex-counting-tree-3-step" width="85%">
 						<shortdescription>A tree diagram with one branch from the starting point for each of four sandwich options, and five branches from each sandwich option representing drinks, and three from each drink representing dessert choices. This leads to 60 total options, which agrees with the multiplication rule.</shortdescription>
+						<latex-image>
+							% 60 leaves make this tree ~20in tall, taller than the page PreTeXt
+							% compiles each image on (the SVG came out blank). Scale it to fit;
+							% the web and PDF size the image by width, so the look is unchanged.
+							\resizebox{!}{8in}{%
+							\begin{tikzpicture}[grow=right, sloped, scale=0.85, font=\figfont,
+							    level 1/.style={level distance=6cm, sibling distance=15cm},
+							    level 2/.style={level distance=3.5cm, sibling distance=3cm},
+							    level 3/.style={level distance=2.5cm, sibling distance=1cm},
+							    end/.style={circle, minimum width=1pt, fill, inner sep=0pt},
+							    category/.style={text width=6em, text centered}]
+							    \node[category] {Lunch Meal}
+							        child {
+							            node[category] {Sandwich 4}
+							                child {
+							                    node[category] {Drink 5}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 4}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 3}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 2}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 1}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							        }
+							        child {
+							            node[category] {Sandwich 3}
+							                child {
+							                    node[category] {Drink 5}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 4}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 3}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 2}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 1}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							        }
+							        child {
+							            node[category] {Sandwich 2}
+							                child {
+							                    node[category] {Drink 5}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 4}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 3}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 2}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 1}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							        }
+							        child {
+							            node[category] {Sandwich 1}
+							                child {
+							                    node[category] {Drink 5}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 4}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 3}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 2}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							                child {
+							                    node[category] {Drink 1}
+							                        child { node[end, label=right:{Dessert 3}] {} }
+							                        child { node[end, label=right:{Dessert 2}] {} }
+							                        child { node[end, label=right:{Dessert 1}] {} }
+							                }
+							        };
+							\end{tikzpicture}%
+							}
+						</latex-image>
 					</image>
 				</figure>
 			</solution>
