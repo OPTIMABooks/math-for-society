@@ -7,12 +7,12 @@
 			<ul>
 				<li>
 					<p>
-						Identify independent and dependent events
+						Identify independent and dependent events.
 					</p>
 				</li>
 				<li>
 					<p>
-						Compute and interpret conditional probabilities
+						Compute and interpret conditional probabilities.
 					</p>
 				</li>
 				<li>
@@ -42,7 +42,7 @@
 			</statement>
 		</definition>
 		<p>
-			Coin flips and dice rolls are common examples of independent events; flipping heads does not change the probability of flipping heads the next time, nor does rolling a six change the probability that the next roll will be a six. Here is another example illustrating the difference between independent and dependent events.
+			Coin flips and dice rolls are common examples of independent events; flipping heads does not change the probability of flipping heads the next time, nor does rolling a six change the probability that the next roll will be a six. Here are two more examples illustrating the difference between independent and dependent events.
 			<ul>
 				<li>
 					<p>
@@ -58,19 +58,19 @@
 			Why might rain and a traffic jam be <em>dependent</em>? Because heavy rain can make driving more difficult, increasing the likelihood of slowdowns or accidents that lead to traffic jams! The following example gives more illustrations of dependent and independent events.
 		</p>
 		<example xml:id="ex_conditional_independent-or-dependent">
-			<!-- <title>Determining if Events are Independent or Dependent</title> -->
+			<title>Determining if Events Are Independent or Dependent</title>
 			<statement>
 				<p>
 					Determine if the pairs of events <m>A</m> and <m>B</m> described below are independent or dependent.
 					<ol marker="a.">
 						<li>
 							<p>
-								A coin is flipped three times and <m>A =</m> <q>the first flip is a heads</q> while <m>B =</m> <q>the last flip is a heads.</q>
+								A coin is flipped three times and <m>A =</m> <q>the first flip is heads</q> while <m>B =</m> <q>the last flip is heads.</q>
 							</p>
 						</li>
 						<li>
 							<p>
-								A coin is flipped three times and <m>A =</m> <q>the first flip is a heads</q> while <m>B =</m> <q>all flips are heads.</q>
+								A coin is flipped three times and <m>A =</m> <q>the first flip is heads</q> while <m>B =</m> <q>all flips are heads.</q>
 							</p>
 						</li>
 						<li>
@@ -91,17 +91,17 @@
 					<ol marker="a.">
 						<li>
 							<p>
-								Does knowing if the first flip was a heads or tails change the probability that the third flip will be a heads? Coins do not have memories. Anything we know about the first flip has no effect on what happens on the second flip, so <m>A</m> and <m>B</m> are <term>independent</term>.
+								Does knowing if the first flip was heads or tails change the probability that the third flip will be heads? Coins do not have memories. Anything we know about the first flip has no effect on what happens on the third flip, so <m>A</m> and <m>B</m> are <term>independent</term>.
 							</p>
 						</li>
 						<li>
 							<p>
-								This experiment is different from the previous one. Knowing that the first flip came up a heads does have an effect on whether all three flips come up heads. After all, if <m>A</m> did not happen, then <m>B</m> can not possibly happen either. Therefore, <m>A</m> and <m>B</m> are <term>dependent</term>.
+								This experiment is different from the previous one. Knowing that the first flip came up heads does have an effect on whether all three flips come up heads. After all, if <m>A</m> did not happen, then <m>B</m> cannot possibly happen either. Therefore, <m>A</m> and <m>B</m> are <term>dependent</term>.
 							</p>
 						</li>
 						<li>
 							<p>
-								Since we are replacing the marbles after we draw them, the probability of getting a red on the first draw and on the second draw are the same: <m>\frac{2}{3}</m>. What happens on the first draw does not affect the probability of getting a red on the second draw. Because of this, <m>A</m> and <m>B</m> are <term>independent</term>.
+								Since we are replacing the marbles after we draw them, the probability of getting a white marble on the first draw and on the second draw is the same: <m>\frac{1}{3}</m>. What happens on the first draw does not affect the probability of getting a white marble on the second draw. Because of this, <m>A</m> and <m>B</m> are <term>independent</term>.
 							</p>
 						</li>
 						<li>
@@ -129,7 +129,7 @@
 			</statement>
 		</definition>
 		<p>
-			We read <m>P(A\mid B)</m> as <q>the probability of <m>A</m> given <m>B</m>.</q> This simply means the probability of <m>A</m> with the extra information that <m>B</m> has happened. In <xref ref="ex_conditional_independent-or-dependent"/> we saw several pairs <m>A</m> and <m>B</m> of events for which having the information that <m>B</m> happened changed the probability of <m>A</m>. These dependent events provide good examples for computing conditional probabilities.
+			We read <m>P(A\mid B)</m> as <q>the probability of <m>A</m> given <m>B</m>.</q> This simply means the probability of <m>A</m> with the extra information that <m>B</m> has happened. In <xref ref="ex_conditional_independent-or-dependent"/>, we saw several pairs <m>A</m> and <m>B</m> of events for which having the information that <m>B</m> happened changed the probability of <m>A</m>. These dependent events provide good examples for computing conditional probabilities.
 		</p>
 		<example xml:id="ex_conditional_compute">
 			<title>Computing Conditional Probabilities from Outcomes</title>
@@ -137,7 +137,7 @@
 				<p>
 					A coin is flipped three times. Events <m>A</m> and <m>B</m> are defined as follows.
 					<ul cols="2">
-						<li><p><m>A</m>: the first flip is a heads</p></li>
+						<li><p><m>A</m>: the first flip is heads</p></li>
 						<li><p><m>B</m>: all three flips are heads</p></li>
 					</ul>
 				</p>
@@ -153,7 +153,7 @@
 					</me>.
 				</p>
 				<p>
-					The first event of interest, <m>A</m>, consists of all of the outcomes above resulting in a heads on the first flip. This is:
+					The first event of interest, <m>A</m>, consists of all of the outcomes above resulting in heads on the first flip. This is:
 					<me>
 						A = \lbrace HHH, HHT, HTH, HTT \rbrace
 					</me>.
@@ -167,7 +167,7 @@
 					<me>
 						B = \lbrace HHH \rbrace
 					</me>.
-					If we know that <m>B</m> has happened, then we automatically know that <m>A</m> has happened as well.  This is because if all three flips are heads, the first one must have been a heads (<m>B</m> is a subset of <m>A</m>). Therefore, 
+					If we know that <m>B</m> has happened, then we automatically know that <m>A</m> has happened as well.  This is because if all three flips are heads, the first one must have been heads (<m>B</m> is a subset of <m>A</m>). Therefore, 
 					<me>
 						P(A\mid B) = 1
 					</me>.
@@ -178,7 +178,7 @@
 			</solution>
 		</example>
 		<p>
-			One good tool for visualizing conditional probability is a <xref ref="def_venn-diagram" text="custom">Venn Diagram</xref>. In the two Venn Diagrams below, we see how the <q>extra</q> information that <m>B</m> has happened changes the probability of <m>A</m> by, in a sense, redefining the sample space.
+			One good tool for visualizing conditional probability is a <xref ref="def_venn-diagram" text="custom">Venn diagram</xref>. In the two Venn diagrams below, we see how the <q>extra</q> information that <m>B</m> has happened changes the probability of <m>A</m> by, in a sense, redefining the sample space.
 		</p>
 		<sbsgroup widths="45% 45%" margins="auto">
 			<sidebyside>
@@ -226,7 +226,7 @@
 			</sidebyside>
 			<sidebyside>
 				<p>
-					To compute <m>P(A)</m> we ignore <m>B</m> and take the ratio of the yellow area in <m>A</m>, to the area of the whole box. This is equivalent to saying that
+					To compute <m>P(A)</m> we ignore <m>B</m> and take the ratio of the yellow area in <m>A</m> to the area of the whole box. This is equivalent to saying that
 					<me>
 						P(A) = \frac{P(A)}{P(S)} = \frac{P(A)}{1}
 					</me>
@@ -234,7 +234,7 @@
 				<p>
 					When computing <m>P(A\mid B)</m>, we know <m>B</m> has happened, so we are in the pink area above.  To figure out how likely <m>A</m> is, we take the ratio of the area in common to <m>A</m> and <m>B</m> to the area in <m>B</m>. This is equivalent to saying that 
 					<me>
-						P(A|B) = \frac{P(A\cap B)}{P(B)}
+						P(A\mid B) = \frac{P(A\cap B)}{P(B)}
 					</me>
 				</p>
 			</sidebyside>
@@ -244,11 +244,11 @@
 			<idx><h>probability</h><h>formula</h><h>conditional formula</h></idx>
 			<statement>
 				<p>
-					If <m>A</m> and <m>B</m> are events in a sample space <m>S</m>, then the conditional probability of <m>A</m> given <m>B</m> is:
+					If <m>A</m> and <m>B</m> are events in a sample space <m>S</m> with <m>P(B) \gt 0</m>, then the conditional probability of <m>A</m> given <m>B</m> is:
 					<me>
 						P(A\mid B) = \frac{P(A\cap B)}{P(B)} = \frac{n(A\cap B)}{n(B)}
 					</me>.
-					<alert>Note:</alert> You can use unconditioned probabilities or counts to compute conditional probability.
+					<alert>Note:</alert> You can compute a conditional probability from probabilities or, when outcomes are equally likely, from counts.
 				</p>
 			</statement>
 		</fact>
@@ -259,7 +259,7 @@
 			<title>Conditional Probabilities Using the Formula</title>
 			<statement>
 				<p>
-					A hospital conducts a research study on 138 patients who have a history of serious headaches. Several of the patients are given an experimental painkiller, while others are given ordinary Tylenol. Patients are then checked after 45 minutes to see if they are still suffering from headaches.  The resulting data is summarized in the table below.
+					A hospital conducts a research study on 138 patients who have a history of serious headaches. Some of the patients are given an experimental painkiller, while others are given ordinary Tylenol. Patients are then checked after 45 minutes to see if they are still suffering from headaches.  The resulting data is summarized in the table below.
 				</p>
 				<table>
 					<title>Study Results</title>
@@ -321,7 +321,7 @@
 					<ol marker="a.">
 						<li>
 							<p>
-								<m>P(\text{H. Gone}) = \frac{86}{138} \approx 0.6232</m> since 86 of the 138 peoples' headaches were gone after 45 minutes.
+								<m>P(\text{H. Gone}) = \frac{86}{138} \approx 0.6232</m> since 86 of the 138 people's headaches were gone after 45 minutes.
 							</p>
 						</li>
 						<li>
@@ -352,7 +352,7 @@
 	<subsection xml:id="sec_probability_conditional_multiplication-rule">
 		<title>General Multiplication Rule</title>
 		<p>
-			In <xref ref="sec_probability_more-rules"/>, we discussed a rule for finding <m>P(A\cup B)</m>, which we called the <xref ref="thm_probability-rule_general-addition">general addition rule</xref>.  We have not yet, however, seen a general rule for finding <m>P(A\cap B)</m>, the probability that both <m>A</m> and <m>B</m> occur. Applying a little bit of algebra to the conditional probability formula produces just such a rule. This is called the <term>general multiplication rule</term> because it works in general<mdash/>for any <m>A</m> and <m>B</m>.
+			In <xref ref="sec_probability_more-rules"/>, we discussed a rule for finding <m>P(A\cup B)</m>, which we called the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>.  We have not yet, however, seen a general rule for finding <m>P(A\cap B)</m>, the probability that both <m>A</m> and <m>B</m> occur. Applying a little bit of algebra to the conditional probability formula produces just such a rule. This is called the <term>general multiplication rule</term> because it works in general<mdash/>for any <m>A</m> and <m>B</m>.
 		</p>
 		<fact xml:id="thm_probability-rule_general-multiplication">
 			<title>General Multiplication Rule</title>
@@ -368,6 +368,7 @@
 			</statement>
 		</fact>
 		<example xml:id="ex_conditional_multiplication-rule-1">
+		<title>Drawing With and Without Replacement</title>
 		<statement>
 			<p>
 				Suppose you have a bag containing 6 red Legos, 4 green Legos, and 3 black Legos. We will make exactly two Lego selections from the bag. What is the probability of selecting:
@@ -400,7 +401,7 @@
 							<p>
 								If we replace the red Lego we selected (making the selections independent), we go back to having 6 red Legos in the bag of 13 Legos total. Therefore,
 								<md>
-								<mrow>P(\text{red and red}) \amp= P(\text{red})\times P(\text{red})</mrow>
+								<mrow>P(\text{1st }R\cap\text{2nd }R) \amp= P(\text{1st }R)\times P(\text{2nd }R)</mrow>
 								<mrow>\amp= \frac{6}{13}\times\frac{6}{13}</mrow>
 								<mrow>\amp\approx 0.213 \text{ or } 21.3\%</mrow>
 								</md>.
@@ -410,7 +411,7 @@
 							<p>
 								If we do not replace the first red Lego (making the selections dependent), then on our second draw, there will only be 5 red Legos remaining and 12 Legos in total. Therefore,
 								<md>
-								<mrow>P(\text{red and then red})\amp=P(\text{red})\times P(\text{red given red taken out})</mrow>
+								<mrow>P(\text{1st }R\cap\text{2nd }R)\amp=P(\text{1st }R)\times P(\text{2nd }R\mid\text{1st }R)</mrow>
 								<mrow>\amp=\frac{6}{13}\times\frac{5}{12}</mrow>
 								<mrow>\amp\approx 0.192 \text{ or } 19.2\%</mrow>
 								</md>.
@@ -418,9 +419,9 @@
 						</li>
 						<li>
 							<p>
-								The probability of selecting a red Lego on the first draw is the same as in parts a and b. Since we are not putting the red Lego back into the bag, we will have only 12 Legos left in total, of which 4 are green. Therefore,
+								The probability of selecting a red Lego on the first draw is the same as in parts (a) and (b). Since we are not putting the red Lego back into the bag, we will have only 12 Legos left in total, of which 4 are green. Therefore,
 								<md>
-								<mrow>P(\text{red and green})\amp=P(\text{red})\times P(\text{green given red taken out})</mrow>
+								<mrow>P(\text{1st }R\cap\text{2nd }G)\amp=P(\text{1st }R)\times P(\text{2nd }G\mid\text{1st }R)</mrow>
 								<mrow>\amp=\frac{6}{13}\times\frac{4}{12}</mrow>
 								<mrow>\amp=\frac{6}{13}\times\frac{1}{3}</mrow>
 								<mrow>\amp\approx 0.154 \text{ or } 15.4\%</mrow>
@@ -439,12 +440,12 @@
 					<ol marker="a.">
 						<li>
 							<p>
-								The second marble is red given that the first marble was red.
+								the second marble is red given that the first marble was red.
 							</p>
 						</li>
 						<li>
 							<p>
-								The first and second marbles are both red.
+								the first and second marbles are both red.
 							</p>
 						</li>
 					</ol>
@@ -469,7 +470,7 @@
 			</solution>
 		</example>
 		<p>
-			In the special case where <m>A</m> and <m>B</m> are <xref ref="def_independent" text="custom">independent</xref>, the conditional probability for <m>B</m> given <m>A</m> is the same as the probability for <m>B</m>. That is, <m>P(B|A) = P(B)</m>. The general multiplication rule then becomes:
+			In the special case where <m>A</m> and <m>B</m> are <xref ref="def_independent" text="custom">independent</xref>, the conditional probability for <m>B</m> given <m>A</m> is the same as the probability for <m>B</m>. That is, <m>P(B\mid A) = P(B)</m>. The general multiplication rule then becomes:
 			<me>
 				P(A\cap B) = P(A)P(B)
 			</me>.
@@ -507,7 +508,7 @@
 				<p>
 					Next, we check using our test of independence.
 					<me>
-						P(A\cap B) = P(A)P(B) \Leftrightarrow 0.09 = 0.36 \times 0.25
+						P(A)P(B) = 0.36 \times 0.25 = 0.09 = P(A\cap B)
 					</me>.
 				</p>
 				<p>
@@ -515,7 +516,8 @@
 				</p>
 			</solution>
 		</example>
-		<example>
+		<example xml:id="ex_conditional_testing-independence-2">
+			<title>Testing Independence with a Table</title>
 			<statement>
 				<p>
 					Use the table below to determine whether <m>T = </m> <q>ticket</q> and <m>R=</m> <q>red car</q> are independent events.
@@ -534,7 +536,7 @@
 							<cell>Total</cell>
 						</row>
 						<row>
-							<cell>Red Car</cell>
+							<cell>Red car</cell>
 							<cell>15</cell>
 							<cell>135</cell>
 							<cell>150</cell>
@@ -558,7 +560,7 @@
 				<p>
 					Apply the test for independence. First, note that 
 					<me>
-						P(T\cap R)=\frac{15}{665} \approx 0.02256	
+						P(T\cap R)=\frac{15}{665} \approx 0.02256
 					</me>.
 					Next, compute
 					<me>
@@ -568,14 +570,20 @@
 				</p>
 			</solution>
 		</example>
+		<note xml:id="note_mutually-exclusive-vs-independent">
+			<title>Mutually Exclusive Is Not the Same as Independent</title>
+			<p>
+				<xref ref="def_mutually-exclusive" text="custom">Mutually exclusive</xref> events cannot happen together: <m>P(A\cap B) = 0</m>. <xref ref="def_independent" text="custom">Independent</xref> events do not affect each other's probabilities: <m>P(A\cap B) = P(A)P(B)</m>. In fact, if <m>A</m> and <m>B</m> are mutually exclusive and each has a positive probability, they must be dependent. Knowing that <m>A</m> happened tells us that <m>B</m> did not, so <m>P(B\mid A) = 0 \neq P(B)</m>. For example, on a single roll of a die, <q>roll a 1</q> and <q>roll a 2</q> are mutually exclusive and dependent. On two rolls, <q>the first roll is a 1</q> and <q>the second roll is a 2</q> are independent but not mutually exclusive.
+			</p>
+		</note>
 	</subsection>
 	<subsection xml:id="sec_probability_conditional_trees">
 		<title>Tree Diagrams and Probability</title>
 		<p>
-			In a previous section, <xref ref="def_tree-diagram" text="custom">tree diagrams</xref> were useful for working with multi-stage experiments. Since the multiplication rule naturally fits experiments that can be broken up into stages (first <m>A</m> happens, then <m>B</m>, etc.), it makes sense to look into using a tree diagram again. In fact, doing so provides a useful visualization of conditional probability.  This utility is illustrated in the following example.
+			In <xref ref="sec-set-multiplication-principle"/>, <xref ref="def_tree-diagram" text="custom">tree diagrams</xref> were useful for working with multi-stage experiments. Since the general multiplication rule naturally fits experiments that can be broken up into stages (first <m>A</m> happens, then <m>B</m>, etc.), it makes sense to look into using a tree diagram again. In fact, doing so provides a useful visualization of conditional probability.  This utility is illustrated in the following example.
 		</p>
 		<example xml:id="ex_conditional_probability-tree-1">
-			<!-- <title>Computing Probabilities with a Tree Diagram</title> -->
+			<title>Computing Probabilities with a Tree Diagram</title>
 			<statement>
 				<p>
 					A jar contains six marbles: 3 blue marbles, 2 red marbles, and 1 white marble. Two marbles are drawn, one after the other, without replacement and their colors are noted. Draw a tree diagram and label the branches with appropriate probabilities for this experiment. Use the tree diagram to find
@@ -601,7 +609,7 @@
 						<caption>Tree Diagram</caption>
 						<image xml:id="image_conditional_ex_probability-tree" width="55%">
 							<shortdescription>
-								A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Off of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probably 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and W with probability 2/5.
+								A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Off of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probability 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and R with probability 2/5.
 							</shortdescription>
 							<latex-image>
 								\begin{tikzpicture}[
@@ -676,7 +684,7 @@
 				</li>
 				<li>
 					<p>
-						Etc...
+						and so on.
 					</p>
 				</li>
 			</ul>
@@ -686,22 +694,22 @@
  			The following example utilizes these principles and demonstrates an additional advantage of a tree diagram: the ability to compute probabilities when the condition is <q>backwards</q> from the given conditional probability.
 		</p>
 		<example xml:id="ex_conditional_probability-tree-2">
-			<!-- <title>Probability and Intimate Partner Violence</title> -->
+			<title>Probability and Intimate Partner Violence</title>
 			<statement>
 				<p>
 					According to OHSU's Center for Women's Health, approximately 1 in 4 women and 1 in 7 men will experience 
-					intimate partner violence (IPV) at some point in their lives.<fn>https://www.ohsu.edu/womens-health/domestic-violence-more-common-you-might-think</fn>
-					Assuming a population of only heterosexual couples with equal representation of men and women, answer the following questions.
+					intimate partner violence (IPV) at some point in their lives.<fn><url href="https://www.ohsu.edu/womens-health/domestic-violence-more-common-you-might-think" visual="ohsu.edu/womens-health/domestic-violence-more-common-you-might-think"/></fn>
+					Assume a population made up of equal numbers of men and women, and answer the following questions.
 					<ol marker="a.">
 						<li>What is the probability that a randomly selected person experiences IPV?</li>
 						<li>Given that a person has experienced IPV, what is the probability that the person is a woman?</li>
-						<li>Given that a person has experienced IPV what is the probability that the person is a man?</li>
+						<li>Given that a person has experienced IPV, what is the probability that the person is a man?</li>
 					</ol>
 				</p>
 			</statement>
 			<solution>
 				<p>
-					While not strictly necessary, drawing a tree diagram will help us find the required probabilities. Let <m>M</m> represent the event <q>person is a man</q>, <m>W</m> be the event <q>person is a woman</q>, and <m>V</m> be the event <q>person has experienced intimate partner violence</q>. In this notation, <m>\overline{V}</m> is the complement of those who have experienced IPV, that is, the people who have no experienced IPV.
+					While not strictly necessary, drawing a tree diagram will help us find the required probabilities. Let <m>M</m> represent the event <q>person is a man</q>, <m>W</m> be the event <q>person is a woman</q>, and <m>V</m> be the event <q>person has experienced intimate partner violence</q>. In this notation, <m>\overline{V}</m> (also written <m>V^C</m>) is the complement of <m>V</m>, that is, the people who have not experienced IPV.
 				</p>
 				<figure xml:id="fig_conditional_ex_probability-tree-IPV">
 					<caption>Tree Diagram</caption>
@@ -744,10 +752,10 @@
 					<ol marker="a.">
 						<li>
 							<p>
-								Denote the probability that a randomly selected person has experienced IPV by <m>P(V)</m>. Notice that either a man or a woman can experience IPV. That is, <m>P(V)</m> is composed of cases where either men or women experience IPV. These two mutually exclusive cases are summed by the <xref ref="thm_probability-rule_general-addition" text="custom">addition rule</xref>, and are shown in the tree diagram above as the first and third of the four right-most branches. Multiplying to the end of each branch,
+								Denote the probability that a randomly selected person has experienced IPV by <m>P(V)</m>. Notice that either a man or a woman can experience IPV. That is, <m>P(V)</m> is composed of cases where either men or women experience IPV. These two mutually exclusive cases are summed using the mutually exclusive case of the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref>, and are shown in the tree diagram above as the first and third of the four right-most branches. Multiplying to the end of each branch,
 								<md>
 									<mrow>P(V) \amp= \frac{1}{2}\left(\frac{1}{7}\right) + \frac{1}{2}\left(\frac{1}{4}\right) </mrow>
-									<mrow> \amp= \frac{1}{14} + \frac{3}{8} </mrow>
+									<mrow> \amp= \frac{1}{14} + \frac{1}{8} </mrow>
 									<mrow> \amp= \frac{11}{56} </mrow>
 									<mrow> \amp\approx 0.1964 \text{ or } 19.6\% </mrow>
 								</md>.
@@ -756,23 +764,23 @@
 						</li>
 						<li>
 							<p>
-								Here we are told that the person has experienced IPV and are wondering what is the chance the person is a woman. That is, we seek <m>P(W\mid V)</m> At first glance, it may appear that the answer is 1/4. Be careful: 1/4 is the probability of IPV given knowledge that the person is a woman, which is <m>P(V\mid W)</m>. These are different probabilities. The probability we are asked for here, <m>P(W\mid V)</m>, is not one of the values shown on the tree. However, we can use the tree to find the correct value. 
+								Here we are told that the person has experienced IPV and are wondering what is the chance the person is a woman. That is, we seek <m>P(W\mid V)</m>. At first glance, it may appear that the answer is 1/4. Be careful: 1/4 is the probability of IPV given knowledge that the person is a woman, which is <m>P(V\mid W)</m>. These are different probabilities. The probability we are asked for here, <m>P(W\mid V)</m>, is not one of the values shown on the tree. However, we can use the tree to find the correct value. 
 							</p>
 							<p>
-								To do so, apply the <xref ref="thm_conditional-probability-formula" text="custom">conditional probability formula</xref> and the answer from part a:
+								To do so, apply the <xref ref="thm_conditional-probability-formula" text="custom">conditional probability formula</xref> and the answer from (a):
 								<md>
 									<mrow> P(W\mid V) \amp= \frac{P(W\cap V)}{P(V)} </mrow>
 									<mrow> \amp= \cfrac{\frac{1}{2}\cdot\frac{1}{4}}{\frac{11}{56}} </mrow>
 									<mrow> \amp= \frac{1}{8}\cdot\frac{56}{11} </mrow>
 									<mrow> \amp= \frac{7}{11} </mrow>
-									<mrow> \amp\approx 0.6363 </mrow>
+									<mrow> \amp\approx 0.6364 </mrow>
 								</md>.
 								That is, there is a 63.6% chance that a person experiencing IPV is a woman.
 							</p>
 						</li>
 						<li>
 							<p>
-								Because everyone in our population is either a man or a woman, the probability <m>P(M\mid V)</m> should be complementary to the probability of <m>P(W\mid V)</m> That is, by the <xref ref="def_probability-rule_complement" text="custom">complement rule</xref>
+								Because everyone in our population is either a man or a woman, the probability <m>P(M\mid V)</m> should be complementary to <m>P(W\mid V)</m>. That is, by the <xref ref="def_probability-rule_complement" text="custom">complement rule</xref>
 								<md>
 									<mrow> P(M\mid V) \amp= 1 - P(W\mid V) </mrow>
 									<mrow> \amp= 1 - \frac{7}{11} </mrow>
@@ -782,15 +790,15 @@
 								which is approximately 36.4%.
 							</p> 
 							<p>
-								Alternatively, we could use the conditional probability formula again along with the answer from part a:
+								Alternatively, we could use the conditional probability formula again along with the answer from (a):
 								<md>
 									<mrow> P(M\mid V) \amp= \frac{P(M\cap V)}{P(V)} </mrow>
-									<mrow> \amp= \cfrac{\frac{1}{2}\cdot\frac{1}{7}}{\frac{25}{56}} </mrow>
+									<mrow> \amp= \cfrac{\frac{1}{2}\cdot\frac{1}{7}}{\frac{11}{56}} </mrow>
 									<mrow> \amp= \frac{1}{14}\cdot\frac{56}{11} </mrow>
 									<mrow> \amp= \frac{4}{11} </mrow>
 									<mrow> \amp\approx 0.3636</mrow>
 								</md>.
-								Note that this is the same answer as found using the complement law above.
+								Note that this is the same answer as found using the complement rule above.
 							</p>
 						</li>
 					</ol>
@@ -801,7 +809,7 @@
 	<subsection xml:id="sec_probability_conditional_bayes">
 		<title>Bayesian Probability</title>
 		<p>
-			Tree diagrams provide a powerful visual tool for working with conditional probabilities, particularly when events occur in sequence. In multi-stage experiments, tree diagrams clearly illustrate the probability of outcomes at each stage, given what happened in previous stages. However, as we saw in the last example, sometimes we need to find conditional probabilities that run <q>backwards</q> through the diagram <mdash/> asking about earlier events given later ones. For these situations, we use Bayes' theorem, developed by Thomas Bayes, a British mathematician and Presbyterian minister. The theorem, named in his honor after his death, is presented below for the special case of a sample space containing just two events.
+			Tree diagrams provide a powerful visual tool for working with conditional probabilities, particularly when events occur in sequence. In multi-stage experiments, tree diagrams clearly illustrate the probability of outcomes at each stage, given what happened in previous stages. However, as we saw in the last example, sometimes we need to find conditional probabilities that run <q>backwards</q> through the diagram <mdash/> asking about earlier events given later ones. For these situations, we use Bayes' theorem, developed by Thomas Bayes, a British mathematician and Presbyterian minister. The theorem, named in his honor after his death, is presented below for the special case where the sample space is split into two cases, an event <m>A</m> and its complement.
 		</p>
 		<fact xml:id="thm_bayes">
 			<title>Bayes' Theorem (Special Case)</title>
@@ -809,25 +817,25 @@
 			<idx><h>probability</h><h>formula</h><h>Bayes' theorem</h></idx>
 			<statement>
 				<p>
-					If a sample space can be split into mutually exclusive events <m>A</m> and <m>B</m>, then:
+					If <m>A</m> is an event in a sample space, <m>A^C</m> is its complement, and <m>B</m> is any event with <m>P(B) \gt 0</m>, then:
 				  <me>
-						P(A|B) = \frac{P(A)P(B|A)}{P(A)P(B|A) + P(A')P(B|A')}
+						P(A\mid B) = \frac{P(A)P(B\mid A)}{P(A)P(B\mid A) + P(A^C)P(B\mid A^C)}
 					</me>.
 				</p>
 			</statement>
 		</fact>
 		<p>
-			While this theorem formally states the rule we use to solve problems such as the one above, it is not something you should memorize. Instead, use a tree diagram and the conditional probability formula to solve these problems as we did in <xref ref="ex_conditional_probability-tree-2"/>. Note that the denominator in Bayes' Theorem is just the sum of the probabilities of all cases that result in event <m>B</m>. As shown in the next example, this realization means we can easily solve <q>backwards</q> problems even if they involve more than two events.
+			While this theorem formally states the rule we use to solve problems such as the one above, it is not something you should memorize. Instead, use a tree diagram and the conditional probability formula to solve these problems as we did in <xref ref="ex_conditional_probability-tree-2"/>. Note that the denominator in Bayes' theorem is just the sum of the probabilities of all cases that result in event <m>B</m>. As shown in the next example, this realization means we can easily solve <q>backwards</q> problems even if they involve more than two cases.
 		</p>
 		<example xml:id="ex_conditional_bayes">
-			<!-- <title>Computing <q>Backwards</q> Probabilities</title> -->
+			<title>Computing <q>Backwards</q> Probabilities</title>
 			<statement>
 				<p>Recall from <xref ref="ex_conditional_probability-tree-1"/> that the tree diagram below gives us the probabilities for an experiment in which two marbles are drawn, without replacement, from a jar containing 3 blue marbles, 2 red marbles, and 1 white marble. Use the tree to help find the probability that the 1st marble was white given that the second is red.</p>
 				<figure xml:id="fig_conditional_bayes-tree">
 					<caption>Tree Diagram</caption>
 					<image xml:id="image_conditional_bayes-tree" width="55%">
 						<shortdescription>
-							A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Of of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probably 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and W with probability 2/5.
+							A tree with three branches off of the start.  Branch B has a probability 3/6, branch R has a probability 2/6, and branch W has a probability 1/6.  Off of branch B, there are three branches: B with probability 2/5, R with probability 2/5, and W with probability 1/5.  Off of the initial branch R, there are also three branches: B with probability 3/5, R with probability 1/5, and W with probability 1/5.  Finally, off of the original branch W there are just two branches: B with probability 3/5 and R with probability 2/5.
 						</shortdescription>
 						<latex-image>
 							\begin{tikzpicture}[
@@ -873,7 +881,7 @@
 					</me>.
 				</p>
 				<p>
-					The numerator of this fraction can be found by multiplying along a single branch in the tree: <m>\frac{1}{6} \times \frac{2}{5} = \frac{2}{30}</m>. To get the denominator, we need to add together the probabilities for all possible ways the last marble can be red. This is:
+					The numerator of this fraction can be found by multiplying along a single branch in the tree: <m>\frac{1}{6} \times \frac{2}{5} = \frac{2}{30}</m>. To get the denominator, we need to add together the probabilities for all possible ways the second marble can be red. This is:
 				  <me>
 						P(\text{2nd }R) = \left(\frac{3}{6}\times\frac{2}{5}\right) + \left(\frac{2}{6}\times\frac{1}{5}\right) + \left(\frac{1}{6}\times\frac{2}{5}\right) = \frac{1}{3}
 					</me>.
