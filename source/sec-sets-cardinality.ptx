@@ -158,6 +158,8 @@
 			</image>
 		</example>
 		<fact xml:id="fact-sets-inclusion-exclusion-rule">
+			<idx>inclusion-exclusion rule</idx>
+			<idx><h>sets</h><h>inclusion-exclusion rule</h></idx>
 			<title>Inclusion-Exclusion Rule</title>
 			<statement>
 				<p>
@@ -169,7 +171,7 @@
 			</statement>
 		</fact>
 		<p>
-			(This is also called the <term>addition law</term>; its probability version is the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref> in <xref ref="sec-probability-basics"/>. It is not the same as the <xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> in <xref ref="sec-set-multiplication-principle"/>, which applies only when the sets do not overlap.)
+			(This is also called the <term>addition law</term><idx><h>addition law</h><see>inclusion-exclusion rule</see></idx>; its probability version is the <xref ref="thm_probability-rule_general-addition" text="custom">general addition rule</xref> in <xref ref="sec-probability-basics"/>. It is not the same as the <xref ref="thm_counting-rule_addition-informal" text="custom">addition rule</xref> in <xref ref="sec-set-multiplication-principle"/>, which applies only when the sets do not overlap.)
 		</p>
 		<definition xml:id="def_mutually-exclusive">
 	  	<idx>mutually exclusive</idx>
