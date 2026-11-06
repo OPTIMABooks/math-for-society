@@ -1,5 +1,7 @@
 \documentclass{standalone}
 \usepackage{tikz}
+% Open Sans to match the book's other graphics (web); build with xelatex
+\usepackage[defaultsans]{opensans}
 \begin{document}
 
 % Tree options
@@ -9,7 +11,7 @@
 \tikzstyle{level 3}=[level distance=2.5cm, sibling distance=1cm]
 \tikzstyle{end} = [circle, minimum width=1pt, fill, inner sep=0pt]
 % Define styles for categories and items
-\tikzstyle{category} = [text width=5em, text centered]
+\tikzstyle{category} = [text width=6em, text centered]
 
 \begin{tikzpicture}[grow=right, sloped, scale=0.85, font=\sffamily]
     \node[category] {Lunch Meal}

@@ -50,8 +50,14 @@
       \usepackage[defaultsans]{opensans}
       \newcommand{\figfont}{\sffamily}
     \else
-      % Web SVGs: Open Sans, to match the HTML body text.
+      % Web SVGs: Open Sans, to match the HTML body text, for ALL labels:
+      % mathastext sets math letters, digits and ( ) = + / in the text
+      % font, so $A$, $A^C$, $1/4$ match the plain-text labels. fontspec's
+      % no-math keeps it from resetting math digits to Latin Modern.
+      \PassOptionsToPackage{no-math}{fontspec}
       \usepackage[defaultsans]{opensans}
+      \renewcommand{\familydefault}{\sfdefault}
+      \usepackage[italic]{mathastext}
       \newcommand{\figfont}{\sffamily}
     \fi
     % pgfplots numbers (tick labels, nodes near coords) as text, not math,
