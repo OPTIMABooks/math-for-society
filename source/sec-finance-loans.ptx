@@ -211,7 +211,7 @@
             \addplot[fill=CustomB1, draw=black] coordinates {
               (1,3306.13) (2,3087.74) (3,2846.49) (4,2579.95) (5,2285.52)
               (6,1960.28) (7,1600.97) (8,1204.01) (9,765.50) (10,281.08)};
-            \addplot[fill=orange!35, draw=black] coordinates {
+            \addplot[fill=CustomB1!15, draw=black] coordinates {
               (1,2085.59) (2,2303.98) (3,2545.23) (4,2811.77) (5,3106.20)
               (6,3431.44) (7,3790.75) (8,4187.71) (9,4626.22) (10,5110.64)};
             \legend{Interest, Principal}
