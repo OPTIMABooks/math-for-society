@@ -123,7 +123,7 @@
 			And so on.
 		</p>
 		<p>
-			The intended population is sometimes called the <term>target population</term>. If we design our study badly, the collected data might not actually be representative of the intended population.
+			The intended population is sometimes called the <term>target population</term><idx><h>population</h><h>target</h></idx>. If we design our study badly, the collected data might not actually be representative of the intended population.
 		</p>
 		<definition xml:id="def_population">
 			<idx><h>population</h></idx>
@@ -156,7 +156,7 @@
 			</statement>
 		</definition>
 		<p>
-			To estimate the parameter, we select a <term>sample</term>, which is a smaller subset of the entire population. It is very important that we choose a <term>representative sample</term>, one that matches the characteristics of the population, to have a good estimate. If we survey 100 students at WWU, those students would be our sample. We will talk about how to choose a representative sample later in this section.
+			To estimate the parameter, we select a <term>sample</term>, which is a smaller subset of the entire population. It is very important that we choose a <term>representative sample</term><idx><h>sample</h><h>representative</h></idx>, one that matches the characteristics of the population, to have a good estimate. If we survey 100 students at WWU, those students would be our sample. We will talk about how to choose a representative sample later in this section.
 		</p>
 		<definition xml:id="def_sample">
 			<idx>sample</idx>
@@ -261,7 +261,7 @@
 				</p>
 			</example>
 			<p>
-				In practice, computers are better suited for this kind of task. Still, even a random sample might not perfectly reflect the population. For instance, if we repeatedly select samples of 100 student ID numbers from the basket, some samples might include a slightly higher number of students from one major or class year than others. Some samples might have more first-year students, while others might include more seniors. This natural difference from sample to sample is called <term>sampling variation</term>. When we want to ensure certain groups are represented, we need to use a different sampling method, such as a stratified sample (described below).
+				In practice, computers are better suited for this kind of task. Still, even a random sample might not perfectly reflect the population. For instance, if we repeatedly select samples of 100 student ID numbers from the basket, some samples might include a slightly higher number of students from one major or class year than others. Some samples might have more first-year students, while others might include more seniors. This natural difference from sample to sample is called <term>sampling variation</term><idx>sampling variation</idx>. When we want to ensure certain groups are represented, we need to use a different sampling method, such as a stratified sample (described below).
 			</p>
 		</subsubsection>
 		<subsubsection xml:id="subsubsec-statistics_sampling_systematic">
@@ -469,7 +469,7 @@
 							Suppose a middle school finds that its students are not scoring well on the state's standardized math test. They decide to run an experiment to see if a new curriculum would improve scores. To run the test, they hire a math specialist to come in and teach a class using the new curriculum. To their delight, they see an improvement in test scores.
 						</p>
 						<p>
-							The difficulty with the last scenario is that it is not clear whether the new curriculum or the math specialist is responsible for the improvement. This is called <term>confounding</term>, and it is the downfall of many experiments, though it is often hidden.
+							The difficulty with the last scenario is that it is not clear whether the new curriculum or the math specialist is responsible for the improvement. This is called <term>confounding</term><idx>confounding</idx>, and it is the downfall of many experiments, though it is often hidden.
 						</p>
 					</li>
 				</ol>
@@ -497,7 +497,7 @@
 	<subsection>
 		<title>Statistical Bias</title>
 		<p>
-			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling bias</term> (or <term>selection bias</term>), which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data is collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
+			There is no way to correct for biased data, so it is important to carefully plan the entire study and data analysis process in advance. One type of bias, discussed earlier, is <term>sampling bias</term> (or <term>selection bias</term>)<idx><h>bias</h><h>sampling</h></idx><idx><h>selection bias</h><see>bias, sampling</see></idx>, which occurs when the sample does not accurately reflect the population. A specific example of this is <term>voluntary response bias</term>, which arises when data is collected only from individuals who choose to participate. This can lead to bias if those who volunteer differ significantly from the general population. Below is a summary of other common sources of bias to consider.
 			<ul>
 				<li>
 					<p>
@@ -506,32 +506,32 @@
 				</li>
 				<li>
 					<p>
-						<term>Voluntary response bias</term>: the sampling bias that often occurs when the sample is made up of volunteers
+						<term>Voluntary response bias</term><idx><h>bias</h><h>voluntary response</h></idx>: the sampling bias that often occurs when the sample is made up of volunteers
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Self-interest study</term>: bias that can occur when the researchers have an interest in the outcome
+						<term>Self-interest study</term><idx><h>bias</h><h>self-interest study</h></idx>: bias that can occur when the researchers have an interest in the outcome
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Response bias</term>: when the responder gives inaccurate responses for any reason
+						<term>Response bias</term><idx><h>bias</h><h>response</h></idx>: when the responder gives inaccurate responses for any reason
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Perceived lack of anonymity</term>: when the responder fears giving an honest answer might negatively affect them
+						<term>Perceived lack of anonymity</term><idx><h>bias</h><h>perceived lack of anonymity</h></idx>: when the responder fears giving an honest answer might negatively affect them
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Loaded questions</term>: when the question wording influences the responses
+						<term>Loaded questions</term><idx><h>bias</h><h>loaded questions</h></idx>: when the question wording influences the responses
 					</p>
 				</li>
 				<li>
 					<p>
-						<term>Non-response bias</term>: when people refuse to participate in a study or drop out of an experiment, we can no longer be certain that our sample is representative of the population
+						<term>Non-response bias</term><idx><h>bias</h><h>non-response</h></idx>: when people refuse to participate in a study or drop out of an experiment, we can no longer be certain that our sample is representative of the population
 					</p>
 				</li>
 			</ul>
@@ -590,10 +590,10 @@
 			Even when a study or experiment has successfully avoided bias and has been well done, there is still an element of variation. If we took 5 different random samples of 100 college students and calculated their average textbook cost, we wouldn't expect to get the exact same average for each sample. This is due to sampling variation. To account for this, researchers publish their margin of error or a confidence interval for their statistics. These numbers describe the precision of the estimate for a certain confidence level. 
 		</p>
 		<p>
-			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percentage points.</q> The 3 percentage points are called the <term>margin of error</term>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
+			You've probably heard something like, <q>The candidate has 54 percent of the likely voters, plus or minus three percentage points.</q> The 3 percentage points are called the <term>margin of error</term><idx><h>confidence interval</h><h>margin of error</h></idx><idx>margin of error</idx>, so the true percentage is somewhere between 51% and 57%, with a certain level of confidence. To write this as a <term>confidence interval</term><idx><h>confidence interval</h></idx>, we place the numbers in parentheses, from smallest to largest, separated by a comma: (51%, 57%).
 		</p>
 		<p>
-			The most common <term>confidence level</term> is 95%, which means if the poll were conducted repeatedly, and we made a confidence interval each time, we would expect about 95 out of every 100 of those intervals to contain the true percentage, or parameter. You can learn more on how to calculate the margin of error for different confidence levels in a statistics class.
+			The most common <term>confidence level</term><idx><h>confidence interval</h><h>confidence level</h></idx> is 95%, which means if the poll were conducted repeatedly, and we made a confidence interval each time, we would expect about 95 out of every 100 of those intervals to contain the true percentage, or parameter. You can learn more on how to calculate the margin of error for different confidence levels in a statistics class.
 		</p>
 		<example>
 			<statement>

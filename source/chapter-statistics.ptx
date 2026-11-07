@@ -35,7 +35,7 @@
 
 	<introduction>
 		<p>
-			We live in a world awash with data. From social media analytics and shopping recommendations to medical research and weather forecasting, information is everywhere. Making sense of this flood of data is critical for informed decision-making. <term>Statistics</term> is the branch of mathematics that deals with collecting, organizing, analyzing, and interpreting data to uncover patterns, draw conclusions, and guide our choices. While statistics can be used to make inferences about entire populations from samples, this chapter will focus on <term>descriptive statistics</term><mdash/>the tools used to summarize and describe data.
+			We live in a world awash with data. From social media analytics and shopping recommendations to medical research and weather forecasting, information is everywhere. Making sense of this flood of data is critical for informed decision-making. <term>Statistics</term><idx>statistics</idx> is the branch of mathematics that deals with collecting, organizing, analyzing, and interpreting data to uncover patterns, draw conclusions, and guide our choices. While statistics can be used to make inferences about entire populations from samples, this chapter will focus on <term>descriptive statistics</term><idx>descriptive statistics</idx><mdash/>the tools used to summarize and describe data.
 		</p>
 	</introduction>
 
